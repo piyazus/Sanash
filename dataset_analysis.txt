@@ -1,0 +1,31 @@
+# ShanghaiTech Dataset Analysis
+
+## Overview
+Dataset downloaded successfully. Contains two parts:
+- **Part A**: Congested scenes (likely web images). High density.
+- **Part B**: Sparse scenes (surveillance view). Low/Medium density.
+
+## Statistics
+
+### Part A
+- **Train Images**: 300
+- **Test Images**: 182
+- **Annotation Format**: MATLAB (.mat) files with head center points.
+- **Average Density (Train)**: ~581 people per image.
+- **Image Resolution**: Variable, high resolution.
+
+### Part B
+- **Train Images**: 400
+- **Test Images**: 316
+- **Annotation Format**: MATLAB (.mat) files with head center points.
+- **Average Density (Train)**: ~123 people per image (estimated).
+- **Image Resolution**: Fixed, 768x1024.
+
+## Notes for Modeling
+1. **YOLOv8**: Requires bounding boxes. Since only points are available, we will generate pseudo-bounding boxes of fixed size (e.g., 10% of image height/width or fixed pixel size) around each point.
+2. **CSRNet**: Optimized for Part A's high density.
+3. **P2PNet**: Should handle both well.
+
+## Usage
+- Training will use the combined dataset or separate parts depending on model limitations.
+- Validation will use the provided test sets.

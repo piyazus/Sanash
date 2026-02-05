@@ -1,0 +1,6 @@
+path: ../../data/yolo_dataset # Relative to where training runs usually or absolute
+train: images/train
+val: images/val
+
+nc: 1
+names: ['person']

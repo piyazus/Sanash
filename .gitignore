@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Datasets (Too large for Git)
+data/
+data/shanghaitech/
+data/people_counting/
+data/zenodo/
+
+# Model Weights (Often >100MB, use Git LFS if you really need them)
+*.pth
+*.pt
+!models/yolov8n.pt 
+# We might want to keep the final best weights if small, but VGG based ones are huge.
+# Safest to ignore execution checkpoints
+checkpoint.pth
+last.pt
+best.pt
+
+# Training Logs/Artificats
+runs/
+inference_results/
+output/
+
+# IDE
+.vscode/
+.idea/

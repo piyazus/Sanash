@@ -1,0 +1,166 @@
+# =====================================================
+# Bus Vision - Docker Compose
+# =====================================================
+# Local Development Environment
+#
+# Usage:
+#   docker-compose up -d          # Start all services
+#   docker-compose logs -f        # View logs
+#   docker-compose down           # Stop all services
+# =====================================================
+
+version: '3.8'
+
+services:
+  # =================================================
+  # PostgreSQL Database
+  # =================================================
+  postgres:
+    image: postgres:15-alpine
+    container_name: busvision_db
+    environment:
+      POSTGRES_DB: bus_vision
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # =================================================
+  # Redis (Cache + Message Queue)
+  # =================================================
+  redis:
+    image: redis:7-alpine
+    container_name: busvision_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # =================================================
+  # FastAPI Backend
+  # =================================================
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: busvision_api
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/bus_vision
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      SECRET_KEY: dev-secret-key-change-in-production
+      DEBUG: "true"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./outputs:/app/outputs
+      - ./models:/app/models
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  # =================================================
+  # Celery Worker (CPU/GPU Processing)
+  # =================================================
+  celery_worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: busvision_worker
+    command: celery -A api.workers.celery_app worker --loglevel=info --concurrency=2
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/bus_vision
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+    volumes:
+      - ./uploads:/app/uploads
+      - ./outputs:/app/outputs
+      - ./models:/app/models
+    # Uncomment for GPU support:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+    restart: unless-stopped
+
+  # =================================================
+  # Celery Beat (Scheduled Tasks)
+  # =================================================
+  celery_beat:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: busvision_beat
+    command: celery -A api.workers.celery_app beat --loglevel=info
+    depends_on:
+      - redis
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+    restart: unless-stopped
+
+  # =================================================
+  # React Frontend
+  # =================================================
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    container_name: busvision_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # =================================================
+  # Nginx Reverse Proxy
+  # =================================================
+  nginx:
+    image: nginx:alpine
+    container_name: busvision_nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./docker/nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - frontend
+      - backend
+    restart: unless-stopped
+
+# =================================================
+# Volumes
+# =================================================
+volumes:
+  postgres_data:
+  redis_data:

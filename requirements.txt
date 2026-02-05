@@ -1,0 +1,21 @@
+# Core Detection & Tracking
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+lapx>=0.5.0
+
+# Visualization & Dashboard
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Training & Monitoring
+tensorboard>=2.14.0
+pandas>=2.0.0
+
+# Reporting
+jinja2>=3.1.0
+tqdm>=4.65.0
+
+# Performance Profiling
+psutil>=5.9.0
+GPUtil>=1.4.0

@@ -1,0 +1,1 @@
+python -m bus_tracker.detector --input "path\to\your\video.mp4" --dashboard
