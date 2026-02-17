@@ -1,0 +1,43 @@
+# Base image for NVIDIA Jetson Orin Nano (L4T / JetPack stack).
+# This image typically includes CUDA, cuDNN, and TensorRT libraries.
+FROM nvcr.io/nvidia/l4t-pytorch:r35.4.1-pth2.1-py3
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    TZ=Etc/UTC
+
+WORKDIR /workspace/sanash
+
+# System dependencies commonly needed for CV and deep learning workloads.
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        python3-pip \
+        python3-dev \
+        libglib2.0-0 \
+        libsm6 \
+        libxext6 \
+        libxrender1 \
+        libopencv-dev \
+        git \
+        wget \
+        ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip and install Python dependencies.
+# requirements.txt is expected to be provided from the repository root.
+COPY requirements.txt ./requirements.txt
+
+RUN python3 -m pip install --upgrade pip && \
+    python3 -m pip install --no-cache-dir -r requirements.txt
+
+# TensorRT is provided by the L4T / JetPack base image. We expose a few
+# conventional environment variables that downstream scripts can use.
+ENV TENSORRT_ROOT=/usr \
+    LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu:${LD_LIBRARY_PATH}
+
+# Copy the entire repository into the container.
+COPY . /workspace/sanash
+
+# Default command: show help for the experiment runner.
+CMD ["python3", "training/experiment_runner.py", "--help"]
+

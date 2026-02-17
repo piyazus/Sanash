@@ -13,8 +13,9 @@ def train_yolo():
     data_path = os.path.abspath('data.yaml')
     
     print(f"Starting training with data config: {data_path}")
-    
+
     # Check for existing run to resume
+    # Expected layout from Ultralytics: runs/detect/<run_name>/weights/last.pt
     last_pt = 'runs/detect/yolov8n_crowd_overnight/weights/last.pt'
     if os.path.exists(last_pt):
         print(f"Resuming from {last_pt}...")

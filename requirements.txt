@@ -1,3 +1,27 @@
+# Core numerical and scientific stack
+numpy
+scipy
+pandas
+
+# Machine learning and computer vision
+scikit-learn
+opencv-python
+torch
+torchvision
+
+# YOLO training (Ultralytics YOLOv8+)
+ultralytics
+
+# Experiment tracking
+wandb
+
+# Discrete-event simulation
+simpy
+
+# Utilities
+tqdm
+pyyaml
+
 # Core Detection & Tracking
 ultralytics>=8.0.0
 opencv-python>=4.8.0

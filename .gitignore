@@ -1,3 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.env.*
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Model weights and artifacts
+*.pt
+*.pth
+*.onnx
+*.weights
+*.engine
+checkpoints/
+runs/
+wandb/
+
+# Large data / media
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.gif
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Cache
+*.cache
+.cache/
+
 # Python
 __pycache__/
 *.pyc
