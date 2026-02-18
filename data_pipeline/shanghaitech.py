@@ -116,6 +116,17 @@ class ShanghaiSample:
     points: np.ndarray
 
 
+# ShanghaiTech convention: annotations are often GT_IMG_1.mat, images are IMG_1.jpg
+GT_PREFIX = "GT_"
+
+
+def _image_stem_from_mat_stem(mat_stem: str) -> str:
+    """Map .mat file stem to image file stem (strip GT_ prefix if present)."""
+    if mat_stem.startswith(GT_PREFIX):
+        return mat_stem[len(GT_PREFIX) :]
+    return mat_stem
+
+
 def iter_shanghaitech_samples(
     image_dir: Path,
     mat_dir: Path,
@@ -123,11 +134,13 @@ def iter_shanghaitech_samples(
 ) -> Iterable[ShanghaiSample]:
     """
     Yield ShanghaiSample objects by matching stems between images and .mat files.
+    Handles ShanghaiTech naming: .mat files may be GT_IMG_1.mat while images are IMG_1.jpg.
     """
     mat_paths = sorted(p for p in mat_dir.glob("*.mat") if p.is_file())
     for mat_path in mat_paths:
         stem = mat_path.stem
-        img_path = image_dir / f"{stem}{image_ext}"
+        image_stem = _image_stem_from_mat_stem(stem)
+        img_path = image_dir / f"{image_stem}{image_ext}"
         if not img_path.is_file():
             continue
         points = load_shanghaitech_points(mat_path)

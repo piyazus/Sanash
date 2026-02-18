@@ -1,0 +1,8 @@
+# YOLO dataset config for ShanghaiTech (Colab / local).
+# path: absolute or relative to cwd when training runs.
+# Colab: set path to e.g. /content/data/yolo_dataset or /content/drive/MyDrive/sanash/data/yolo_dataset
+path: ../../data/yolo_dataset
+train: images/train
+val: images/val
+nc: 1
+names: ['person']

@@ -212,6 +212,17 @@ def infer_image_size(image_path: Path) -> Tuple[int, int]:
     return int(h), int(w)
 
 
+# ShanghaiTech convention: annotations are often GT_IMG_1.mat, images are IMG_1.jpg
+GT_PREFIX = "GT_"
+
+
+def _image_stem_from_mat_stem(mat_stem: str) -> str:
+    """Map .mat file stem to image file stem (strip GT_ prefix if present)."""
+    if mat_stem.startswith(GT_PREFIX):
+        return mat_stem[len(GT_PREFIX) :]
+    return mat_stem
+
+
 def process_sample(
     mat_path: Path,
     image_dir: Path,
@@ -222,15 +233,16 @@ def process_sample(
     """
     Process a single .mat annotation file and write its YOLO label file.
 
-    The script assumes that the image name shares the same stem as the .mat file
-    (e.g., IMG_1.mat -> IMG_1.jpg).
+    Handles ShanghaiTech naming: .mat files may be GT_IMG_1.mat while images are
+    IMG_1.jpg. Label files are written with the image stem (e.g. IMG_1.txt).
     """
     points = load_shanghaitech_points(mat_path)
-    image_path = image_dir / (mat_path.stem + image_ext)
+    image_stem = _image_stem_from_mat_stem(mat_path.stem)
+    image_path = image_dir / (image_stem + image_ext)
     image_size = infer_image_size(image_path)
 
     boxes = points_to_yolo_boxes(points, image_size=image_size, k=k)
-    label_path = output_dir / f"{mat_path.stem}.txt"
+    label_path = output_dir / f"{image_stem}.txt"
     write_yolo_labels(label_path, boxes)
 
 

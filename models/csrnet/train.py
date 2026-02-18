@@ -28,7 +28,7 @@ def train_csrnet():
     val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False)
     
     model = CSRNet().to(device)
-    criterion = nn.MSELoss(size_average=False).to(device)
+    criterion = nn.MSELoss(reduction="sum").to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     
     start_epoch = 0

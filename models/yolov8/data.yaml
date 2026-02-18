@@ -1,4 +1,5 @@
-path: ../../data/yolo_dataset # Relative to where training runs usually or absolute
+# For Colab use absolute path, e.g. /content/data/yolo_dataset
+path: ../../data/yolo_dataset
 train: images/train
 val: images/val
 
