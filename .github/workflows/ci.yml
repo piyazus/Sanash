@@ -1,0 +1,90 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test & Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install test dependencies
+        run: |
+          pip install --upgrade pip
+          pip install pytest pytest-cov numpy scipy matplotlib pandas statsmodels seaborn
+
+      - name: Run unit tests (no GPU/DB required)
+        run: |
+          pytest tests/ -x --tb=short -v
+
+      - name: Smoke test — survey analysis (synthetic data)
+        run: |
+          python survey/analysis/survey_analysis.py --output /tmp/survey_out
+          ls /tmp/survey_out/
+
+      - name: Smoke test — simulation config import
+        run: |
+          python -c "
+          import sys; sys.path.insert(0, '.')
+          from simulation import config as cfg
+          assert cfg.NUM_STOPS == 8
+          assert cfg.BUS_CAPACITY == 60
+          assert cfg.NUM_REPLICATIONS == 100
+          print('simulation/config.py OK')
+          "
+
+      - name: Smoke test — scatter plot (synthetic data)
+        run: |
+          python scripts/generate_scatter_plot.py --output /tmp/scatter.png
+          ls -lh /tmp/scatter.png
+
+      - name: Smoke test — density map visualization (demo mode)
+        run: |
+          python scripts/visualize_predictions.py \
+            --model-path /nonexistent/ \
+            --data-dir /nonexistent/ \
+            --num-images 2 \
+            --output-dir /tmp/density_maps/
+          ls /tmp/density_maps/
+
+      - name: Lint with ruff
+        run: |
+          pip install ruff
+          ruff check survey/analysis/ simulation/ scripts/ data_pipeline/ \
+            --ignore=E501,E402,W503 \
+            --select=E,W,F \
+            || true  # Lint warnings don't fail CI
+
+      - name: Check all Python files parse (no syntax errors)
+        run: |
+          python -c "
+          import ast, pathlib, sys
+          errors = []
+          for p in pathlib.Path('.').rglob('*.py'):
+              skip = any(part in p.parts for part in
+                         ['.venv', 'node_modules', '__pycache__', '.git'])
+              if skip:
+                  continue
+              try:
+                  ast.parse(p.read_text(encoding='utf-8', errors='replace'))
+              except SyntaxError as e:
+                  errors.append(f'{p}: {e}')
+          if errors:
+              print('SYNTAX ERRORS:')
+              for e in errors: print(e)
+              sys.exit(1)
+          print(f'All Python files parse OK')
+          "
