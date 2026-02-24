@@ -1,0 +1,49 @@
+# Sanash Edge Deployment Configuration
+# Copy to /opt/sanash/config.yaml on Jetson Nano
+
+api:
+  endpoint: "http://sanash-api.example.com/api/v1"
+  bus_count_path: "/buses/{bus_id}/count"
+  health_path: "/health"
+  timeout_seconds: 10
+  retry_attempts: 3
+  retry_delay_seconds: 2
+  # Set actual token via environment variable: SANASH_API_TOKEN
+  auth_token: ""
+
+camera:
+  device_id: 0        # /dev/video0 (USB) or 0 for CSI
+  width: 1280
+  height: 720
+  fps: 30
+  flip_horizontal: false
+  flip_vertical: false
+  auto_exposure: true
+
+model:
+  path: "/opt/sanash/models/csrnet_fp16.trt"
+  input_width: 512
+  input_height: 384
+  precision: "fp16"
+  warmup_runs: 3
+  mean: [0.485, 0.456, 0.406]   # ImageNet normalization
+  std: [0.229, 0.224, 0.225]
+
+inference:
+  interval_seconds: 30      # How often to count and upload
+  bus_id: "BUS_001"         # Override with BUS_ID environment variable
+  route_id: "ROUTE_36A"
+  min_count: 0
+  max_count: 80             # Alert if predicted count > this (sanity check)
+
+offline:
+  buffer_enabled: true
+  buffer_db: "/opt/sanash/offline_buffer.db"
+  max_buffer_rows: 1000     # Sync when network reconnects
+
+logging:
+  level: "INFO"             # DEBUG / INFO / WARNING / ERROR
+  file: "/var/log/sanash/inference.log"
+  max_bytes: 10485760       # 10 MB
+  backup_count: 5
+  console: true
