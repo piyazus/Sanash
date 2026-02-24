@@ -23,17 +23,20 @@ export default function Login() {
         setError('')
 
         try {
-            const response = await api.post('/api/v1/auth/login', data)
-            const { access_token, refresh_token } = response.data
+            // OAuth2PasswordRequestForm expects URL-encoded form data
+            const formData = new URLSearchParams()
+            formData.append('username', data.email)
+            formData.append('password', data.password)
 
-            // Get user info
-            api.defaults.headers.common['Authorization'] = `Bearer ${access_token}`
-            const userResponse = await api.get('/api/v1/auth/me')
+            const response = await api.post('/api/v1/auth/login', formData, {
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            })
+
+            const { access_token, operator_id, name, company } = response.data
 
             dispatch(setCredentials({
                 accessToken: access_token,
-                refreshToken: refresh_token,
-                user: userResponse.data,
+                operator: { id: operator_id, name, email: data.email, company },
             }))
 
             navigate('/')
@@ -49,8 +52,8 @@ export default function Login() {
             <div className="w-full max-w-md">
                 <div className="card p-8">
                     <div className="text-center mb-8">
-                        <h1 className="text-3xl font-bold gradient-text mb-2">Bus Vision</h1>
-                        <p className="text-gray-500 dark:text-gray-400">AI-Powered Passenger Detection</p>
+                        <h1 className="text-3xl font-bold gradient-text mb-2">SANASH</h1>
+                        <p className="text-gray-500 dark:text-gray-400">Bus Occupancy Monitoring</p>
                     </div>
 
                     {error && (
@@ -65,6 +68,7 @@ export default function Login() {
                             <input
                                 type="email"
                                 className="input"
+                                placeholder="demo@sanash.kz"
                                 {...register('email', { required: 'Email is required' })}
                             />
                             {errors.email && (
@@ -94,7 +98,7 @@ export default function Login() {
                     </form>
 
                     <p className="mt-6 text-center text-sm text-gray-500">
-                        Demo: admin@busvision.local / password123
+                        Demo: demo@sanash.kz / demo1234
                     </p>
                 </div>
             </div>

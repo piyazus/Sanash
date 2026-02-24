@@ -1,44 +1,45 @@
 # =====================================================
-# Bus Vision - Docker Compose
+# SANASH — Docker Compose
 # =====================================================
-# Local Development Environment
+# Local development environment
 #
 # Usage:
-#   docker-compose up -d          # Start all services
-#   docker-compose logs -f        # View logs
-#   docker-compose down           # Stop all services
+#   docker compose up -d          # Start all services
+#   docker compose logs -f        # View logs
+#   docker compose down           # Stop all services
+#
+# After first start, seed demo data:
+#   docker compose exec api python scripts/seed_data.py
 # =====================================================
 
-version: '3.8'
-
 services:
-  # =================================================
+  # ---------------------------------------------------
   # PostgreSQL Database
-  # =================================================
+  # ---------------------------------------------------
   postgres:
     image: postgres:15-alpine
-    container_name: busvision_db
+    container_name: sanash_db
     environment:
-      POSTGRES_DB: bus_vision
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: sanash
+      POSTGRES_USER: sanash
+      POSTGRES_PASSWORD: sanash
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U sanash"]
       interval: 10s
       timeout: 5s
       retries: 5
     restart: unless-stopped
 
-  # =================================================
-  # Redis (Cache + Message Queue)
-  # =================================================
+  # ---------------------------------------------------
+  # Redis (optional: cache / future task queue)
+  # ---------------------------------------------------
   redis:
     image: redis:7-alpine
-    container_name: busvision_redis
+    container_name: sanash_redis
     ports:
       - "6379:6379"
     volumes:
@@ -50,117 +51,56 @@ services:
       retries: 5
     restart: unless-stopped
 
-  # =================================================
+  # ---------------------------------------------------
   # FastAPI Backend
-  # =================================================
-  backend:
+  # ---------------------------------------------------
+  api:
     build:
       context: .
       dockerfile: docker/Dockerfile.api
-    container_name: busvision_api
+    container_name: sanash_api
     depends_on:
       postgres:
         condition: service_healthy
-      redis:
-        condition: service_healthy
     environment:
-      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/bus_vision
+      DATABASE_URL: postgresql://sanash:sanash@postgres:5432/sanash
       REDIS_URL: redis://redis:6379/0
-      CELERY_BROKER_URL: redis://redis:6379/1
-      CELERY_RESULT_BACKEND: redis://redis:6379/2
       SECRET_KEY: dev-secret-key-change-in-production
-      DEBUG: "true"
-    volumes:
-      - ./uploads:/app/uploads
-      - ./outputs:/app/outputs
-      - ./models:/app/models
+      DEBUG: "false"
+      CORS_ORIGINS: '["http://localhost:3000","http://localhost:5173","http://localhost:80"]'
     ports:
       - "8000:8000"
     restart: unless-stopped
 
-  # =================================================
-  # Celery Worker (CPU/GPU Processing)
-  # =================================================
-  celery_worker:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile.api
-    container_name: busvision_worker
-    command: celery -A api.workers.celery_app worker --loglevel=info --concurrency=2
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    environment:
-      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/bus_vision
-      REDIS_URL: redis://redis:6379/0
-      CELERY_BROKER_URL: redis://redis:6379/1
-      CELERY_RESULT_BACKEND: redis://redis:6379/2
-    volumes:
-      - ./uploads:/app/uploads
-      - ./outputs:/app/outputs
-      - ./models:/app/models
-    # Uncomment for GPU support:
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
-    restart: unless-stopped
-
-  # =================================================
-  # Celery Beat (Scheduled Tasks)
-  # =================================================
-  celery_beat:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile.api
-    container_name: busvision_beat
-    command: celery -A api.workers.celery_app beat --loglevel=info
-    depends_on:
-      - redis
-    environment:
-      REDIS_URL: redis://redis:6379/0
-      CELERY_BROKER_URL: redis://redis:6379/1
-    restart: unless-stopped
-
-  # =================================================
-  # React Frontend
-  # =================================================
+  # ---------------------------------------------------
+  # React Dashboard (Vite build → Nginx)
+  # ---------------------------------------------------
   frontend:
     build:
       context: .
       dockerfile: docker/Dockerfile.frontend
-    container_name: busvision_frontend
+    container_name: sanash_frontend
     ports:
       - "3000:80"
     depends_on:
-      - backend
+      - api
     restart: unless-stopped
 
-  # =================================================
-  # Nginx Reverse Proxy
-  # =================================================
+  # ---------------------------------------------------
+  # Nginx reverse proxy
+  # ---------------------------------------------------
   nginx:
     image: nginx:alpine
-    container_name: busvision_nginx
+    container_name: sanash_nginx
     ports:
       - "80:80"
-      - "443:443"
     volumes:
       - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./docker/nginx/ssl:/etc/nginx/ssl:ro
     depends_on:
       - frontend
-      - backend
+      - api
     restart: unless-stopped
 
-# =================================================
-# Volumes
-# =================================================
 volumes:
   postgres_data:
   redis_data:

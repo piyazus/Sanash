@@ -23,7 +23,7 @@ const navigation = [
 export default function Layout() {
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const { user } = useSelector((state: RootState) => state.auth)
+    const { operator } = useSelector((state: RootState) => state.auth)
     const { unreadCount } = useSelector((state: RootState) => state.alerts)
 
     const handleLogout = () => {
@@ -65,12 +65,12 @@ export default function Layout() {
                         <div className="flex items-center gap-3">
                             <div className="w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center">
                                 <span className="text-sm font-medium text-primary-600 dark:text-primary-400">
-                                    {user?.fullName?.[0] || user?.email?.[0] || 'U'}
+                                    {operator?.name?.[0] || operator?.email?.[0] || 'U'}
                                 </span>
                             </div>
                             <div className="text-sm">
-                                <p className="font-medium text-gray-900 dark:text-gray-100">{user?.fullName || 'User'}</p>
-                                <p className="text-gray-500 dark:text-gray-400">{user?.role}</p>
+                                <p className="font-medium text-gray-900 dark:text-gray-100">{operator?.name || 'Operator'}</p>
+                                <p className="text-gray-500 dark:text-gray-400">{operator?.company || ''}</p>
                             </div>
                         </div>
                         <button onClick={handleLogout} className="p-2 text-gray-400 hover:text-gray-600">

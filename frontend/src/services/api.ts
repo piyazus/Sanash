@@ -9,7 +9,7 @@ export const api = axios.create({
     },
 })
 
-// Request interceptor - add auth token
+// Request interceptor — attach JWT bearer token
 api.interceptors.request.use(
     (config) => {
         const token = store.getState().auth.accessToken
@@ -21,34 +21,12 @@ api.interceptors.request.use(
     (error) => Promise.reject(error)
 )
 
-// Response interceptor - handle 401
+// Response interceptor — logout on 401
 api.interceptors.response.use(
     (response) => response,
-    async (error) => {
+    (error) => {
         if (error.response?.status === 401) {
-            // Try refresh token
-            const refreshToken = store.getState().auth.refreshToken
-            if (refreshToken) {
-                try {
-                    const response = await axios.post('/api/v1/auth/refresh', {
-                        refresh_token: refreshToken,
-                    })
-
-                    // Update tokens
-                    const { access_token, refresh_token } = response.data
-                    localStorage.setItem('accessToken', access_token)
-                    localStorage.setItem('refreshToken', refresh_token)
-
-                    // Retry original request
-                    error.config.headers.Authorization = `Bearer ${access_token}`
-                    return axios(error.config)
-                } catch {
-                    // Refresh failed - logout
-                    store.dispatch(logout())
-                }
-            } else {
-                store.dispatch(logout())
-            }
+            store.dispatch(logout())
         }
         return Promise.reject(error)
     }

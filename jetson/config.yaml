@@ -1,0 +1,42 @@
+# SANASH Jetson Edge Device Configuration
+# Copy to /opt/sanash/config.yaml on the device
+
+device:
+  bus_id: "BUS_001"            # Unique identifier — must match backend registration
+  route_id: "68"               # Almaty bus route number
+
+api:
+  endpoint: "https://api.sanash.kz"   # Replace with your backend URL
+  timeout_seconds: 10
+  retry_attempts: 3
+  retry_delay_seconds: 5
+
+inference:
+  interval_seconds: 30         # How often to capture + infer
+  input_width: 512
+  input_height: 384
+  confidence_threshold: 0.5
+  model_path: "/opt/sanash/models/csrnet_fp16.trt"   # TensorRT FP16 engine
+  fallback_model_path: "/opt/sanash/models/csrnet.pth"  # PyTorch fallback
+
+camera:
+  device_id: 0                 # /dev/video0
+  width: 1280
+  height: 720
+  fps: 30
+
+gps:
+  enabled: true
+  device: "/dev/ttyUSB0"       # GPS UART port (or "mock" for testing)
+  baud_rate: 9600
+  timeout_seconds: 2
+
+offline_buffer:
+  db_path: "/opt/sanash/offline_buffer.db"
+  max_entries: 10000           # ~83 hours at 30s interval
+
+logging:
+  level: "INFO"
+  log_file: "/var/log/sanash/inference.log"
+  max_bytes: 10485760          # 10 MB
+  backup_count: 3
