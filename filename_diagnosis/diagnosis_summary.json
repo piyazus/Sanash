@@ -1,0 +1,204 @@
+{
+  "ambiguous_numeric_suffix_matches": 406,
+  "case_insensitive_basename_matches": 0,
+  "duplicate_disk_basenames": 1225,
+  "duplicate_numeric_suffixes": 1225,
+  "exact_basename_matches": 0,
+  "first_20_disk_filenames": [
+    "diyas/batch_001/frame_000000s.jpg",
+    "diyas/batch_001/frame_000001s.jpg",
+    "diyas/batch_001/frame_000002s.jpg",
+    "diyas/batch_001/frame_000003s.jpg",
+    "diyas/batch_001/frame_000004s.jpg",
+    "diyas/batch_001/frame_000005s.jpg",
+    "diyas/batch_001/frame_000006s.jpg",
+    "diyas/batch_001/frame_000007s.jpg",
+    "diyas/batch_001/frame_000008s.jpg",
+    "diyas/batch_001/frame_000009s.jpg",
+    "diyas/batch_001/frame_000010s.jpg",
+    "diyas/batch_001/frame_000011s.jpg",
+    "diyas/batch_001/frame_000012s.jpg",
+    "diyas/batch_001/frame_000013s.jpg",
+    "diyas/batch_001/frame_000014s.jpg",
+    "diyas/batch_001/frame_000015s.jpg",
+    "diyas/batch_001/frame_000016s.jpg",
+    "diyas/batch_001/frame_000017s.jpg",
+    "diyas/batch_001/frame_000018s.jpg",
+    "diyas/batch_001/frame_000019s.jpg"
+  ],
+  "first_20_likely_matches": [
+    {
+      "disk_basename": "frame_000970s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000970s.jpg",
+      "image_id": "0",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000970.jpg"
+    },
+    {
+      "disk_basename": "frame_000971s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000971s.jpg",
+      "image_id": "1",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000971.jpg"
+    },
+    {
+      "disk_basename": "frame_000972s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000972s.jpg",
+      "image_id": "2",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000972.jpg"
+    },
+    {
+      "disk_basename": "frame_000973s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000973s.jpg",
+      "image_id": "3",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000973.jpg"
+    },
+    {
+      "disk_basename": "frame_000974s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000974s.jpg",
+      "image_id": "4",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000974.jpg"
+    },
+    {
+      "disk_basename": "frame_000975s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000975s.jpg",
+      "image_id": "5",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000975.jpg"
+    },
+    {
+      "disk_basename": "frame_000976s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000976s.jpg",
+      "image_id": "6",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000976.jpg"
+    },
+    {
+      "disk_basename": "frame_000977s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000977s.jpg",
+      "image_id": "7",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000977.jpg"
+    },
+    {
+      "disk_basename": "frame_000978s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000978s.jpg",
+      "image_id": "8",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000978.jpg"
+    },
+    {
+      "disk_basename": "frame_000979s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000979s.jpg",
+      "image_id": "9",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000979.jpg"
+    },
+    {
+      "disk_basename": "frame_000980s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000980s.jpg",
+      "image_id": "10",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000980.jpg"
+    },
+    {
+      "disk_basename": "frame_000981s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000981s.jpg",
+      "image_id": "11",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000981.jpg"
+    },
+    {
+      "disk_basename": "frame_000982s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000982s.jpg",
+      "image_id": "12",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000982.jpg"
+    },
+    {
+      "disk_basename": "frame_000983s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000983s.jpg",
+      "image_id": "13",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000983.jpg"
+    },
+    {
+      "disk_basename": "frame_000984s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000984s.jpg",
+      "image_id": "14",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000984.jpg"
+    },
+    {
+      "disk_basename": "frame_000985s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000985s.jpg",
+      "image_id": "15",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000985.jpg"
+    },
+    {
+      "disk_basename": "frame_000986s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000986s.jpg",
+      "image_id": "16",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000986.jpg"
+    },
+    {
+      "disk_basename": "frame_000987s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000987s.jpg",
+      "image_id": "17",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000987.jpg"
+    },
+    {
+      "disk_basename": "frame_000988s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000988s.jpg",
+      "image_id": "18",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000988.jpg"
+    },
+    {
+      "disk_basename": "frame_000989s.jpg",
+      "disk_relative_path": "diyas/batch_001/frame_000989s.jpg",
+      "image_id": "19",
+      "match_type": "source_numeric",
+      "xml_name": "D02_20260420073459_000989.jpg"
+    }
+  ],
+  "first_20_xml_filenames": [
+    "D02_20260420073459_000970.jpg",
+    "D02_20260420073459_000971.jpg",
+    "D02_20260420073459_000972.jpg",
+    "D02_20260420073459_000973.jpg",
+    "D02_20260420073459_000974.jpg",
+    "D02_20260420073459_000975.jpg",
+    "D02_20260420073459_000976.jpg",
+    "D02_20260420073459_000977.jpg",
+    "D02_20260420073459_000978.jpg",
+    "D02_20260420073459_000979.jpg",
+    "D02_20260420073459_000980.jpg",
+    "D02_20260420073459_000981.jpg",
+    "D02_20260420073459_000982.jpg",
+    "D02_20260420073459_000983.jpg",
+    "D02_20260420073459_000984.jpg",
+    "D02_20260420073459_000985.jpg",
+    "D02_20260420073459_000986.jpg",
+    "D02_20260420073459_000987.jpg",
+    "D02_20260420073459_000988.jpg",
+    "D02_20260420073459_000989.jpg"
+  ],
+  "source_map": {
+    "D02": "diyas"
+  },
+  "source_numeric_ambiguous": 0,
+  "source_numeric_matches": 498,
+  "source_numeric_missing": 0,
+  "stem_matches": 0,
+  "still_unmatched_xml_images_after_auto": 0,
+  "total_disk_images_found": 5572,
+  "total_xml_images": 498,
+  "unique_numeric_suffix_matches": 92
+}

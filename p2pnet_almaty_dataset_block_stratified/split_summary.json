@@ -1,0 +1,193 @@
+{
+  "actual_val_ratio": 0.21212121212121213,
+  "block_size": 30,
+  "selected_val_blocks": [
+    {
+      "block_id": "block_007",
+      "density_group": "medium",
+      "end_frame": 1271,
+      "max_count": 32,
+      "mean_count": 25.266666666666666,
+      "median_count": 26.0,
+      "min_count": 20,
+      "sample_count": 30,
+      "start_frame": 1225,
+      "total_points": 758
+    },
+    {
+      "block_id": "block_008",
+      "density_group": "high",
+      "end_frame": 1322,
+      "max_count": 34,
+      "mean_count": 28.8,
+      "median_count": 29.5,
+      "min_count": 20,
+      "sample_count": 30,
+      "start_frame": 1272,
+      "total_points": 864
+    },
+    {
+      "block_id": "block_013",
+      "density_group": "low",
+      "end_frame": 1529,
+      "max_count": 25,
+      "mean_count": 17.6,
+      "median_count": 18.0,
+      "min_count": 13,
+      "sample_count": 30,
+      "start_frame": 1478,
+      "total_points": 528
+    },
+    {
+      "block_id": "block_016",
+      "density_group": "low",
+      "end_frame": 1740,
+      "max_count": 9,
+      "mean_count": 5.4,
+      "median_count": 5.0,
+      "min_count": 3,
+      "sample_count": 15,
+      "start_frame": 1719,
+      "total_points": 81
+    }
+  ],
+  "split_mode": "block_stratified",
+  "target_val_ratio": 0.2,
+  "total_blocks": 17,
+  "total_samples": 495,
+  "train_frame_ranges": [
+    {
+      "block_id": "block_000",
+      "density_group": "low",
+      "end_frame": 999,
+      "sample_count": 30,
+      "start_frame": 970
+    },
+    {
+      "block_id": "block_001",
+      "density_group": "low",
+      "end_frame": 1034,
+      "sample_count": 30,
+      "start_frame": 1000
+    },
+    {
+      "block_id": "block_002",
+      "density_group": "medium",
+      "end_frame": 1064,
+      "sample_count": 30,
+      "start_frame": 1035
+    },
+    {
+      "block_id": "block_003",
+      "density_group": "medium",
+      "end_frame": 1100,
+      "sample_count": 30,
+      "start_frame": 1065
+    },
+    {
+      "block_id": "block_004",
+      "density_group": "medium",
+      "end_frame": 1151,
+      "sample_count": 30,
+      "start_frame": 1101
+    },
+    {
+      "block_id": "block_005",
+      "density_group": "medium",
+      "end_frame": 1181,
+      "sample_count": 30,
+      "start_frame": 1152
+    },
+    {
+      "block_id": "block_006",
+      "density_group": "medium",
+      "end_frame": 1224,
+      "sample_count": 30,
+      "start_frame": 1182
+    },
+    {
+      "block_id": "block_009",
+      "density_group": "high",
+      "end_frame": 1378,
+      "sample_count": 30,
+      "start_frame": 1323
+    },
+    {
+      "block_id": "block_010",
+      "density_group": "high",
+      "end_frame": 1409,
+      "sample_count": 30,
+      "start_frame": 1379
+    },
+    {
+      "block_id": "block_011",
+      "density_group": "high",
+      "end_frame": 1444,
+      "sample_count": 30,
+      "start_frame": 1412
+    },
+    {
+      "block_id": "block_012",
+      "density_group": "high",
+      "end_frame": 1477,
+      "sample_count": 30,
+      "start_frame": 1445
+    },
+    {
+      "block_id": "block_014",
+      "density_group": "low",
+      "end_frame": 1579,
+      "sample_count": 30,
+      "start_frame": 1530
+    },
+    {
+      "block_id": "block_015",
+      "density_group": "low",
+      "end_frame": 1718,
+      "sample_count": 30,
+      "start_frame": 1580
+    }
+  ],
+  "train_max_count": 40,
+  "train_mean_count": 21.223076923076924,
+  "train_median_count": 22.0,
+  "train_min_count": 2,
+  "train_samples": 390,
+  "train_total_points": 8277,
+  "val_frame_ranges": [
+    {
+      "block_id": "block_007",
+      "density_group": "medium",
+      "end_frame": 1271,
+      "sample_count": 30,
+      "start_frame": 1225
+    },
+    {
+      "block_id": "block_008",
+      "density_group": "high",
+      "end_frame": 1322,
+      "sample_count": 30,
+      "start_frame": 1272
+    },
+    {
+      "block_id": "block_013",
+      "density_group": "low",
+      "end_frame": 1529,
+      "sample_count": 30,
+      "start_frame": 1478
+    },
+    {
+      "block_id": "block_016",
+      "density_group": "low",
+      "end_frame": 1740,
+      "sample_count": 15,
+      "start_frame": 1719
+    }
+  ],
+  "val_max_count": 34,
+  "val_mean_count": 21.247619047619047,
+  "val_median_count": 22.0,
+  "val_min_count": 3,
+  "val_samples": 105,
+  "val_total_points": 2231
+}

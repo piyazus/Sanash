@@ -1,0 +1,18 @@
+{
+  "match_strategy": "auto",
+  "max_count": 40,
+  "mean_count": 21.100401606425702,
+  "median_count": 22.0,
+  "min_count": 0,
+  "source_map": {
+    "D02": "diyas"
+  },
+  "total_ambiguous_numeric_matches": 0,
+  "total_duplicate_filenames_on_disk": 0,
+  "total_head_points": 10508,
+  "total_images_found_on_disk": 498,
+  "total_images_in_xml": 498,
+  "total_images_missing_on_disk": 0,
+  "total_nonempty_images": 495,
+  "total_zero_annotation_images": 3
+}

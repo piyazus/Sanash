@@ -1,0 +1,27 @@
+{
+  "actual_val_ratio": 0.2,
+  "split_mode": "temporal_tail",
+  "total_points": 10508,
+  "total_samples": 495,
+  "train_count_max": 40,
+  "train_count_mean": 24.141414141414142,
+  "train_count_median": 24.0,
+  "train_count_min": 7,
+  "train_frame_range": [
+    970,
+    1492
+  ],
+  "train_samples": 396,
+  "train_total_points": 9560,
+  "val_count_max": 21,
+  "val_count_mean": 9.575757575757576,
+  "val_count_median": 8.0,
+  "val_count_min": 2,
+  "val_frame_range": [
+    1493,
+    1740
+  ],
+  "val_ratio": 0.2,
+  "val_samples": 99,
+  "val_total_points": 948
+}
