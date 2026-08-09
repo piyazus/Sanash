@@ -1,6 +1,6 @@
 ---
 name: research-writer
-description: Use when writing, editing, or reviewing academic paper content for the Sanas/Avtobys RTCI field-experiment paper — intro sections, literature review, discussion, citations, or any figure/chart that goes into the paper. Invoke with /research-writer or let Claude pick it up automatically for academic writing tasks in this repo.
+description: Use when writing, editing, or reviewing academic paper content for the Sanas/Avtobys RTCI field-experiment paper — intro sections, literature review, discussion, or citations. Invoke with /research-writer or let Claude pick it up automatically for academic writing tasks in this repo.
 ---
 
 # Research Writer
@@ -38,10 +38,12 @@ track — use research-trainer for that.
 Target 300-350 words unless told otherwise.
 
 ## Figures/charts
-When a figure is needed (e.g. crowding valuation comparison, RTCI effect
-sizes across studies), generate it with actual code (matplotlib/plotly via
-bash or code execution) using real numbers from verified sources — never a
-mocked-up placeholder chart presented as if it were data-backed.
+Danyshpan doesn't build figures. When one is needed (e.g. crowding valuation
+comparison, RTCI effect sizes across studies), specify it for CADy: which
+numbers and which verified sources they come from, what's being compared,
+and what type of figure it should be. Assign the figure number and write the
+caption per IEEE convention (caption below figure, numbered, referenced in
+text); CADy does the actual build under the research-diagrams skill.
 
 ## Before writing
 If Diyas says "tell me what you'd write first" or similar, state the
