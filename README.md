@@ -14,8 +14,8 @@
 - `CLAUDE.md` — project context and rules, loads automatically every session
 - `.claude/skills/research-writer/` — academic writing rules (IEEE, citations)
 - `.claude/skills/research-trainer/` — training/backend rules
-- `.claude/skills/research-diagrams/` — diagram/figure rules (diagrams-as-code,
-  no fabricated data points)
+- `.claude/skills/research-diagrams/` — diagram, schematic and chart-code
+  rules (diagrams-as-code, hardware CAD, no fabricated data points)
 - `.claude/agents/danyshpan.md`, `.claude/agents/donatello.md`,
   `.claude/agents/cady.md` — subagents with isolated context for each track
 - `.claude/settings.json` — permission rules (safe reads auto-allowed,
@@ -28,16 +28,19 @@
 - For paper work: `/research-writer` then describe the task, or just start
   writing about the paper and Claude will pick the skill up automatically.
 - For training work: `/research-trainer` then describe the task.
-- For diagrams and paper figures: `/research-diagrams` then describe the task.
+- For diagrams, hardware and chart code: `/research-diagrams` then describe
+  the task.
 - For a genuinely separate context, name the subagent (e.g. train in
   background while writing in the main session):
   - "use donatello to start a training run on a 5% subset" — CV/training
     track, runs with its own context window.
   - "use danyshpan to draft the intro section" — paper track, no training
-    context bleeding into it.
-  - "use cady to diagram the edge inference pipeline" — diagrams and paper
-    figures, built from Donatello's log or Danyshpan's verified sources
-    rather than invented on the spot.
+    context bleeding into it. Paper figures are his too: he specifies and
+    numbers them and interprets the data, CADy builds them.
+  - "use cady to diagram the edge inference pipeline" — architecture and
+    data-flow diagrams, hardware CAD and wiring schematics, and the plotting
+    code behind charts. Built from Donatello's log or Danyshpan's verified
+    sources rather than invented on the spot.
 - Checking on a long job from your phone: ask "what's the status of the
   training run" — the donatello role is set up to make this answerable
   without reconstructing context.

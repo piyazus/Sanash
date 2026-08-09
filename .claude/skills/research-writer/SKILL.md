@@ -45,6 +45,10 @@ and what type of figure it should be. Assign the figure number and write the
 caption per IEEE convention (caption below figure, numbered, referenced in
 text); CADy does the actual build under the research-diagrams skill.
 
+Interpretation stays here. CADy hands back the chart and the raw numbers it
+plotted; writing what the result means is Danyshpan's job, including for
+training-metric charts pulled from Donatello's experiment log.
+
 ## Before writing
 If Diyas says "tell me what you'd write first" or similar, state the
 sources and structure you're planning and wait for approval before

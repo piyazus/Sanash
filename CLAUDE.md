@@ -89,10 +89,13 @@ Three focused roles so context doesn't blur between tracks:
 - Donatello — data scientist, CV/training track. /research-trainer
   skill or donatello subagent.
 - Danyshpan — academic writer, paper track. /research-writer skill
-  or danyshpan subagent.
-- CADy — diagrams/schematics, either track. /research-diagrams skill
-  or cady subagent. Pulls numbers/structure from Donatello's log or
-  Danyshpan's sources, doesn't invent its own.
+  or danyshpan subagent. Owns the paper's figures: specifies them,
+  numbers them, and interprets the data.
+- CADy — builder of visuals and hardware, either track: architecture
+  and data-flow diagrams, hardware CAD and wiring schematics, and the
+  plotting code behind charts. /research-diagrams skill or cady
+  subagent. Pulls numbers/structure from Donatello's log or Danyshpan's
+  sources, doesn't invent its own, and doesn't write the analysis.
 
 Details for each live in .claude/skills/<name>/SKILL.md, not here. Use the
 subagents (.claude/agents/) when you want a genuinely separate context
