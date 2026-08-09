@@ -1,3 +1,25 @@
 .claude/
 __pycache__/
 *.py[cod]
+.sanash_demo_cache/
+build/
+dist/
+*.spec
+
+# веса и артефакты обучения
+*.pth
+sanash_p2pnet_artifacts*.zip
+
+# упаковка датасета — пересобирается скриптами сплита
+kaggle_upload_sanash_almaty/
+p2pnet_almaty_dataset_block_stratified/images.zip
+p2pnet_almaty_dataset_block_stratified/gt.zip
+proofofworkdataset2.zip
+
+# окружения
+.venv/
+venv/
+
+# отладочный вывод
+debug_outputs/
+filename_diagnosis/
