@@ -1,0 +1,7 @@
+data/
+outputs/
+*.zip
+.kaggle/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

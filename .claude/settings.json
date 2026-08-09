@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Edit",
+      "Write",
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(kaggle kernels status*)",
+      "Bash(kaggle kernels output*)",
+      "Bash(kaggle datasets list*)",
+      "Bash(python3*)",
+      "Bash(pip install*)"
+    ],
+    "ask": [
+      "Bash(kaggle kernels push*)",
+      "Bash(wget*)",
+      "Bash(curl*)",
+      "Bash(git push*)"
+    ],
+    "deny": [
+      "Bash(rm -rf*)",
+      "Bash(git reset --hard*)",
+      "Bash(git push --force*)",
+      "Read(~/.kaggle/**)",
+      "Read(**/*.env)",
+      "Read(**/kaggle.json)"
+    ]
+  },
+  "env": {
+    "PYTHONUNBUFFERED": "1"
+  }
+}
