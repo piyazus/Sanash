@@ -1,6 +1,8 @@
 data/
 outputs/
 *.zip
+# Reference papers kept on disk, too large for history
+/*.pdf
 .kaggle/
 __pycache__/
 *.pyc
