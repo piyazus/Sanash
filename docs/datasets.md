@@ -1,0 +1,296 @@
+# External datasets
+
+Provenance record for pretraining data pulled into `data/external/`.
+`data/` is gitignored, so the archives themselves are not in git. This file is
+the tracked record of what was fetched, from where, under what licence, and
+what the files actually contain after verification.
+
+All statistics below were measured from the downloaded artifacts, not copied
+from the publications. Where a measured value disagrees with the published
+value, both are given.
+
+Download date: 2026-08-09. Fetched with `curl -L -C -`.
+Total on disk: 3,471,468,120 bytes (3.47 GB).
+
+Verification scripts used are throwaway and live in the session scratchpad,
+not in the repo. They are trivial to re-derive from the numbers below.
+
+---
+
+## 1. RPEE-HEADS
+
+Pedestrian head detection in crowded railway platforms and event entrances.
+
+| Field | Value |
+| --- | --- |
+| Landing page | https://ped.fz-juelich.de/da/doku.php?id=rpee_heads |
+| Dataset DOI | 10.34735/ped.2024.2 |
+| Direct file URL | http://ped.fz-juelich.de/data/machine_learning/2024_11_Recognition_In_Field_Studies/data/2024rpee_heads_dataset.zip |
+| Paper | IEEE Access, DOI 10.1109/ACCESS.2025.3563311; preprint arXiv:2411.18164 |
+| Publisher | IAS-7 Civil Safety Research, Forschungszentrum Jülich |
+| Local file | `data/external/2024rpee_heads_dataset.zip` |
+| Size | 1,163,119,976 bytes (1.163 GB) |
+| MD5 | `2b10f2cdc6cea78b748ea415de33e870` |
+| SHA256 | `d8f0ac0ea3998300e77ed24f6068c35e4b38918309b1fe0628c4eef46b3a073c` |
+| Measured throughput | 1.91 MB/s, 609 s |
+
+### Licence
+
+**CC BY-SA 4.0**, taken from the "License" section of the DOI landing page,
+which reads in full: `Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).`
+
+Two caveats that matter for the product path:
+
+1. **No licence file ships inside the archive.** The zip contains only images
+   and label files. There is no LICENSE, README, COPYING or CITATION file. The
+   licence exists only on the landing page and in the paper, so the artifact
+   itself is unmarked.
+2. **The site footer contradicts the page.** The DokuWiki footer says
+   "Except where otherwise noted, content on this wiki is licensed under
+   CC Attribution 4.0 International" and links to `creativecommons.org/licenses/by/4.0/`.
+   The page-level License section is the "otherwise noted" case, so CC BY-SA 4.0
+   is the governing term. Anyone skimming the footer would read CC BY 4.0 and be
+   wrong. Assume ShareAlike.
+
+ShareAlike is the open legal question for shipping. Whether model weights
+trained on this constitute an adaptation of the dataset is unsettled. Fine for
+the paper track and internal pretraining; needs a legal read before it goes
+into an Avtobys build.
+
+### Verified contents
+
+1,886 JPEG images and 1,886 label files, one label per image.
+
+| Split | Images | Head annotations |
+| --- | --- | --- |
+| training | 1,346 | 78,606 |
+| validation | 246 | 16,022 |
+| testing | 294 | 15,285 |
+| **Total** | **1,886** | **109,913** |
+
+Image count, annotation total and per-split breakdown all match the published
+figures exactly.
+
+**One discrepancy.** The paper and landing page state an average of
+approximately 56.2 heads per image. The measured average is **58.28**
+(109,913 / 1,886). The published average does not reproduce from the published
+totals either, so this is an error in the source, not in our download.
+
+Per-image head count: min 0, max 255, mean 58.28, median 51. Twenty-four images
+contain 0 to 5 heads.
+
+Distribution, which is the reason we took this dataset:
+
+| Heads per image | Images | Share |
+| --- | --- | --- |
+| 0-5 | 24 | 1.3% |
+| 6-15 | 60 | 3.2% |
+| 16-30 | 198 | 10.5% |
+| 31-60 | 975 | 51.7% |
+| 61-100 | 471 | 25.0% |
+| 101+ | 158 | 8.4% |
+
+85.1% of images carry more than 30 heads. This is genuine crowded-end coverage.
+
+Resolutions are heterogeneous, 12+ distinct sizes. Most common: 981x552 (387),
+3840x1944 (346), 4000x2640 (333), 736x552 (192), 4000x3000 (105). Roughly 31%
+of images are small (under 1 MP), so resize policy matters.
+
+### Scene families
+
+The dataset is not homogeneous. Classified by filename prefix and confirmed by
+viewing samples, it splits into two visually distinct populations:
+
+| Family | Images | Heads | Heads/img | Images with mean luma < 60 |
+| --- | --- | --- | --- | --- |
+| field_natural | 1,307 (69.3%) | 75,413 | 57.7 | 666 |
+| lab_capped | 579 (30.7%) | 34,500 | 59.6 | 0 |
+
+- **field_natural** (prefixes `DMAGB41`, `DMAGB72`, `DMLGB72`, `DMLGP41`,
+  `DMPG41`, `DMSA0442`, `DMSA0472`, `DMSA0542`, `DMSA0572`, `DMSAF951`,
+  `DMWW71`, `DMWWX2`): real crowds at railway platforms and outdoor event
+  entrances, ordinary clothing, elevated oblique cameras.
+- **lab_capped** (prefixes `2C100`, `3C080`, `3C121`, `D2`, `EXP`, `entrance`,
+  `predict`): controlled corridor and entrance experiments filmed near-nadir
+  from a gymnasium ceiling, in which **participants wear brightly coloured or
+  numbered caps** (red, fluorescent green, white with printed numbers).
+
+The caps are a serious domain artifact. A detector trained on the full set can
+learn "saturated coloured blob = head", which will not transfer to a bus cabin.
+Recommend training on `field_natural` only, or at minimum holding
+`lab_capped` out of validation so the metric is not flattered by it.
+
+### Low light
+
+666 images (35.3%) have mean luma below 60; 47 (2.5%) below 40; darkest is 19.0.
+All 666 fall in the `field_natural` family. Visual check confirms real night
+conditions: wet pavement, car headlights, artificial street lighting, crowds
+queueing in the dark. This is authentic low-light crowd data, not underexposed
+daylight.
+
+### Annotation format
+
+YOLO normalized detection format, one line per head:
+
+```
+0 0.448012 0.539855 0.015291 0.021739
+```
+
+`class cx cy w h`, all normalized to [0,1]. Single class, id `0`, across all
+109,913 boxes.
+
+---
+
+## 2. DISCO (audiovisual crowd counting)
+
+| Field | Value |
+| --- | --- |
+| Record | https://zenodo.org/records/3828468 |
+| Concept DOI | 10.5281/zenodo.3828467 |
+| Version DOI | 10.5281/zenodo.3828468 (v1.0) |
+| Paper | "Ambient Sound Helps: Audiovisual Crowd Counting in Extreme Conditions", arXiv:2005.07097 |
+| Local files | `data/external/disco_images.zip`, `data/external/disco_density_maps.zip` |
+
+| File | Size (bytes) | MD5 | Matches Zenodo MD5 | SHA256 | Throughput |
+| --- | --- | --- | --- | --- | --- |
+| disco_images.zip | 2,186,215,586 | `ab28329777d05af94eb0992d8de1da89` | yes | `258d31f8af1357401c40bf5d044cc1199e0e83de40d3ab371e0b9d5917ebe99d` | 2.18 MB/s, 1002 s |
+| disco_density_maps.zip | 122,132,558 | `0a9633a4e190414f9c6a41aee4e06a38` | yes | `690fbf007b2856c60d32f6b8028586f89c40dc1ad0e14ba263ca4db25ac3cd7c` | 0.62 MB/s, 196 s |
+
+`audio.zip` (1,431,120,033 bytes) was deliberately not downloaded. We use RGB only.
+
+Both MD5s match the checksums published in the Zenodo record metadata, so
+integrity is confirmed against the publisher, not just internally.
+
+### Licence
+
+**CC BY 4.0**, from the Zenodo record metadata (`"license": {"id": "cc-by-4.0"}`),
+access right `open`. Verified against the versioned record 3828468, not only the
+concept DOI.
+
+As with RPEE, **no licence file ships inside either archive**. The licence is
+carried in the Zenodo record, which is the authoritative distribution record and
+is adequate for due diligence, but the artifacts on disk are unmarked.
+
+CC BY 4.0 permits commercial use with attribution and has no ShareAlike clause.
+This is the cleanest licence of anything surveyed for the product path.
+
+### Verified contents
+
+**The archive ships far more images than are annotated.**
+
+| Item | Count |
+| --- | --- |
+| JPEG images in `images.zip` | 8,116 |
+| Density maps in `density_maps.zip` | 1,935 |
+| Images with a matching density map | 1,935 |
+| Density maps with no image | 0 |
+| **Images with no annotation** | **6,181** |
+
+The Zenodo description says "1,935 annotated images". That is accurate about
+annotations but understates the image payload by 4.2x. 2,277 image ids carry a
+`stage2-` prefix; of the 1,935 annotated, 321 are `stage2-` and 1,614 are plain
+numeric.
+
+The 6,181 unannotated images are a bonus, usable for self-supervised or
+domain-adaptation pretraining, but they cannot supervise counting.
+
+Density map split: train 1,435 / val 200 / test 300 = 1,935.
+
+Verified statistics over the annotated subset:
+
+- Total instances, summed over all density maps: **170,269.9**, against a
+  published 170,270. Matches within float accumulation error.
+- Per image: min 0.3, max 708.4, mean **87.99**, median 54.0.
+- Published average of 88 per image reproduces exactly.
+
+Images are 1920x1080 (confirmed from density map array shape (1080, 1920)).
+
+### Low light
+
+Measured over the 1,935 annotated images:
+
+| Threshold (mean luma) | Images | Share |
+| --- | --- | --- |
+| < 30 | 141 | 7.3% |
+| < 40 | 273 | 14.1% |
+| < 50 | 422 | 21.8% |
+| < 60 | 593 | 30.6% |
+| < 70 | 697 | 36.0% |
+
+Darkest 13.4, median 92.7, brightest 234.8. Visual check of the darkest samples
+confirms genuine night scenes: dense crowds on urban plaza steps under
+artificial light, faces and bodies barely separable from background.
+
+This is the reason we took DISCO and it holds up. Roughly 30% of the annotated
+set is meaningfully dark, and unlike RPEE the licence has no ShareAlike clause.
+
+### Annotation format
+
+MATLAB v5 `.mat`, one per image, single variable `map`, a float64 array of
+shape (1080, 1920) matching the image dimensions. The array is a Gaussian
+density map. Per-image count is the sum of the array.
+
+**Point coordinates are not included in this archive.** Only rasterized density
+maps. If we need head points rather than counts, they are not here.
+
+---
+
+## Converting both to our target label
+
+Neither dataset gives an occupancy level. Both give counts. No public dataset
+supplies a cabin-capacity denominator, so the 5-level ordinal scale cannot be
+derived from either without our own capacity assumption.
+
+Conversion code needed, both small:
+
+1. **RPEE to per-image count.** Read the `.txt` label, count non-empty lines.
+   Exact integer. No parsing of coordinates needed for the count target,
+   though the boxes are there if we want a detection-based head.
+2. **DISCO to per-image count.** Load the `.mat`, take variable `map`, sum,
+   round to nearest integer. The sums are floats and are not exactly integral
+   (observed min 0.3), so rounding policy needs to be fixed once and recorded.
+3. **Common count-to-level mapping.** A single function
+   `level = f(count, capacity)` producing the 5 ordinal levels, with `capacity`
+   a per-vehicle constant we choose. This is the piece no dataset provides and
+   it is a modelling decision, not a data property. It should be defined once
+   and reused, and it must be re-opened when real cabin data arrives.
+4. **A shared loader** emitting `(image, count)` so the two sources can be
+   mixed in one sampler despite different annotation formats.
+
+Nothing here needs to be clever. The risk is not the code, it is silently
+picking a capacity denominator and forgetting it was arbitrary.
+
+---
+
+## Viewpoint reality check
+
+Honest assessment after viewing samples from every scene family in both
+datasets, against the target of a bus cabin camera at 1.5 to 2.5 m looking
+down an aisle.
+
+**RPEE field_natural (railway platforms, event entrances).** Cameras are
+elevated and oblique, roughly 3 to 6 m up on masts or scaffolds, looking down at
+about 40 to 60 degrees, with visible fisheye barrel distortion. People present
+as head-and-shoulders from above and behind, with real inter-person occlusion in
+queues. This is the closest public geometry we have found to an in-cabin camera,
+and closer than any street-level crowd benchmark. It is still not the same
+thing: the floor is open, sightlines are long, and heads are smaller in the frame
+than they would be in a cabin. My earlier characterisation of these as
+"platform-height over open floor" was right about the open floor and wrong to
+imply the camera is at head height. It is well above head height and angled down.
+
+**RPEE lab_capped.** Near-nadir from a high ceiling, tiny heads, coloured caps.
+Geometrically this is a drone-style top-down view, not a cabin view, and the caps
+make it unrepresentative. Low value for us.
+
+**DISCO.** Elevated oblique over urban plazas and steps, but from higher and
+further back than RPEE, maybe 8 to 15 m. Head sizes are small, crowds are wide
+and deep. Geometrically this is the weakest match of the three families. We are
+taking it for the low-light supervision and the clean licence, not the viewpoint.
+
+**What none of it reproduces.** Seat-back and stanchion occlusion, a confined
+metal box with walls close to the lens, heads at 40 to 200 px, interior lamp
+lighting, and the near-field extreme perspective of a camera 2 m from the
+nearest passenger and 10 m from the furthest. These datasets buy crowded-scene
+head features and low-light robustness. They do not buy cabin geometry, and no
+public dataset does.
