@@ -84,15 +84,21 @@ I don't have laptop access, without babysitting a live terminal. This means:
 5. Prefer a small smoke-test run (1 epoch, data subset) before a full run,
    on whichever backend is in use.
 
-## Roles: writer vs trainer
-Two focused roles exist so context doesn't blur between tracks:
-- `/research-writer` (skill) or the `writer` subagent — academic paper track
-- `/research-trainer` (skill) or the `trainer` subagent — CV/training track
-Details for each live in `.claude/skills/<name>/SKILL.md`, not here. Use the
-subagents (`.claude/agents/`) when you want a genuinely separate context
-window (e.g. running a long training job while also drafting the intro);
-use the skill/slash-command form when you just want this same session to
-focus on one track.
+## Roles: Donatello / Danyshpan / CADy
+Three focused roles so context doesn't blur between tracks:
+- Donatello — data scientist, CV/training track. /research-trainer
+  skill or donatello subagent.
+- Danyshpan — academic writer, paper track. /research-writer skill
+  or danyshpan subagent.
+- CADy — diagrams/schematics, either track. /research-diagrams skill
+  or cady subagent. Pulls numbers/structure from Donatello's log or
+  Danyshpan's sources, doesn't invent its own.
+
+Details for each live in .claude/skills/<name>/SKILL.md, not here. Use the
+subagents (.claude/agents/) when you want a genuinely separate context
+window (e.g. Donatello runs a long training job in the background while
+Danyshpan drafts the intro in the main session); use the skill/slash-command
+form when you just want this same session to focus on one track.
 
 ## Directory layout
 - `data/` — raw/processed data (gitignored, too large for git)
