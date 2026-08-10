@@ -324,3 +324,153 @@ def _rankdata(x: np.ndarray) -> np.ndarray:
 
 def spearman(a: np.ndarray, b: np.ndarray) -> float:
     return pearson(_rankdata(a), _rankdata(b))
+
+
+def bootstrap_ci(
+    x: np.ndarray,
+    y: np.ndarray,
+    stat,
+    n_boot: int = 1000,
+    seed: int = 0,
+    alpha: float = 0.05,
+) -> tuple[float, float]:
+    """Percentile bootstrap CI for a correlation statistic.
+
+    Reported because a point estimate looks authoritative and this subset
+    cannot support one: the top occupancy level has very few frames, so the
+    interval is the honest summary.
+    """
+    x = np.asarray(x)
+    y = np.asarray(y)
+    if x.size < 3:
+        return (float("nan"), float("nan"))
+    rng = np.random.default_rng(seed)
+    vals = []
+    for _ in range(n_boot):
+        idx = rng.integers(0, x.size, x.size)
+        v = stat(x[idx], y[idx])
+        if not math.isnan(v):
+            vals.append(v)
+    if not vals:
+        return (float("nan"), float("nan"))
+    return (
+        float(np.percentile(vals, 100 * alpha / 2)),
+        float(np.percentile(vals, 100 * (1 - alpha / 2))),
+    )
+
+
+def fragility_warnings(counts: np.ndarray, min_per_level: int = 100) -> list[str]:
+    """Reasons not to trust a correlation computed on this data."""
+    counts = np.asarray(counts)
+    out = []
+    levels, freq = np.unique(counts, return_counts=True)
+    thin = [(int(a), int(b)) for a, b in zip(levels, freq) if b < min_per_level]
+    if thin:
+        out.append(
+            "sparse levels (fewer than "
+            f"{min_per_level} frames): "
+            + ", ".join(f"count {a}: n={b}" for a, b in thin)
+        )
+    if levels.max() < 4:
+        out.append(
+            f"highest occupancy observed is {int(levels.max())}; the dataset "
+            "never exceeds 4 and this subset tops out lower still, so nothing "
+            "here speaks to a full cabin"
+        )
+    if len(levels) < 3:
+        out.append(f"only {len(levels)} distinct levels present")
+    return out
+
+
+# --------------------------------------------------------------------------
+# Multi-camera rig
+# --------------------------------------------------------------------------
+
+
+def observed_cells(points: np.ndarray, cfg: "GridConfig") -> np.ndarray:
+    """Cells where a camera returned ANY usable range measurement.
+
+    Uses a wide vertical band and a single-point threshold: this is about the
+    sensor's footprint on the floor plan, not about detecting people.
+    """
+    import dataclasses
+
+    wide = dataclasses.replace(cfg, z_min=-0.5, z_max=2.5, min_points_per_cell=1)
+    return bev_grid(points, wide)
+
+
+def merge_grids(grids: list[np.ndarray]) -> np.ndarray:
+    """Union of per-camera boolean grids."""
+    if not grids:
+        raise ValueError("no grids to merge")
+    out = np.zeros_like(grids[0], dtype=bool)
+    for g in grids:
+        out |= g
+    return out
+
+
+def person_region_cells(
+    bbox_dir: str, cfg: "GridConfig", dilate_m: float = 0.30, label: str = "human"
+) -> np.ndarray:
+    """BEV cells where annotated occupants actually appear, over the whole recording.
+
+    This is the denominator for floor coverage. There is no cabin floor polygon
+    in the archive, so rather than inventing one, the region people are known
+    to occupy is derived from every 3D box in bboxes_3d and dilated by roughly
+    a person's radius. Cells outside this are floor we do not need to see.
+    """
+    nx, ny = cfg.shape
+    grid = np.zeros((nx, ny), dtype=bool)
+    if not os.path.isdir(bbox_dir):
+        return grid
+    xs, ys = [], []
+    for name in os.listdir(bbox_dir):
+        if not name.endswith(".json"):
+            continue
+        with open(os.path.join(bbox_dir, name), "rb") as fh:
+            try:
+                entries = json.load(fh)
+            except json.JSONDecodeError:
+                continue
+        for e in entries:
+            if e.get("bbox_label") != label:
+                continue
+            c = e.get("bbox_center")
+            if c and len(c) >= 2:
+                xs.append(float(c[0]))
+                ys.append(float(c[1]))
+    if not xs:
+        return grid
+    r = max(0, int(round(dilate_m / cfg.cell_size)))
+    for x, y in zip(xs, ys):
+        ix = int((x - cfg.x_min) / cfg.cell_size)
+        iy = int((y - cfg.y_min) / cfg.cell_size)
+        lo_x, hi_x = max(0, ix - r), min(nx, ix + r + 1)
+        lo_y, hi_y = max(0, iy - r), min(ny, iy + r + 1)
+        if lo_x < hi_x and lo_y < hi_y:
+            grid[lo_x:hi_x, lo_y:hi_y] = True
+    return grid
+
+
+def coverage_report(per_camera_observed: dict, region: np.ndarray) -> dict:
+    """How much of the occupied-region floor the rig can actually see."""
+    union = merge_grids(list(per_camera_observed.values()))
+    region_cells = int(region.sum())
+    covered = int((union & region).sum())
+    per_camera = {
+        cam: {
+            "observed_cells": int(g.sum()),
+            "region_cells_covered": int((g & region).sum()),
+            "region_fraction": (float((g & region).sum()) / region_cells)
+            if region_cells
+            else 0.0,
+        }
+        for cam, g in per_camera_observed.items()
+    }
+    return {
+        "region_cells": region_cells,
+        "covered_cells": covered,
+        "uncovered_cells": region_cells - covered,
+        "coverage_fraction": (covered / region_cells) if region_cells else 0.0,
+        "per_camera": per_camera,
+    }

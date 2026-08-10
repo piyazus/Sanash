@@ -1,4 +1,11 @@
-"""Frozen backbone + CORN ordinal head.
+"""PHASE 2 ASSET - DORMANT, NOT DEAD. Do not delete.
+
+Unused in Phase 1 (door-mounted APC counting, which is depth geometry and needs
+no learned model). This becomes active in Phase 2: RGB whole-frame cabin
+classification, once camera permission for a real bus lands. Kept intact for
+the same reason as notebooks/depth_occupancy_multizone/ - dormant, not gone.
+
+Frozen backbone + CORN ordinal head.
 
 Two backbones, both permissively licensed (checked 2026-08-09):
 

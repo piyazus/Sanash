@@ -1,4 +1,12 @@
-"""Target definition for the occupancy model.
+"""PHASE 2 ASSET - DORMANT, NOT DEAD. Do not delete.
+
+Unused in Phase 1 (door-mounted APC counting on PCDS is depth geometry and
+tracking, with integer entering/exiting counts as ground truth, so it needs no
+ordinal target encoding). Active in Phase 2: RGB whole-frame cabin
+classification with DINOv2/ConvNeXt + CORN, once real-bus camera permission
+lands. Dormant, not gone.
+
+Target definition for the occupancy model.
 
 The smoke test supervises on RAW COUNT (0-4 persons per frame), because the
 substitute dataset never contains more than four occupants. The eventual

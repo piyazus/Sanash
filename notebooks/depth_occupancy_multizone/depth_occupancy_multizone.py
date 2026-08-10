@@ -1,27 +1,48 @@
 #!/usr/bin/env python
-"""Sanas branch 2: geometric occupancy from stereo depth. CPU only, no training.
+"""CANCELLED 2026-08-10 - INACTIVE, DO NOT PUSH. Kept in case safety work returns.
 
-SELF-CONTAINED. It fetches its own subset from the HuggingFace mirror by HTTP
-range request and then scores occupancy, all in one run.
+Cancelled because the product MVP deferred incident detection to a later
+phase. Without safety features, covering the whole cabin with four sensors is
+over-built; the MVP moved to a door-mounted 3D APC (the iris IRMA MATRIX /
+INIT / Dilax pattern). This kernel was never pushed and never ran.
 
-Why not chain off the extraction kernel: `kernel_sources` mounts the source
-kernel's CODE at /kaggle/input/notebooks/<owner>/<slug>, not its output. A
-diagnostic run confirmed that directory contains 5 files and zero
-subdirectories, so there is no subset/ to read. This kernel therefore fetches
-directly. It still prints a listing of that mount, in case one of those files
-turns out to be a usable artifact that would let the design be simplified.
+It is retained, not deleted: if the safety track comes back, cabin-wide
+occupancy is the right shape for it, and the floor-coverage finding below is
+the reason it would need more or better-placed sensors.
 
-Frame selection is imported from the shared definition in
-src/sanas/selection.py, identical to what `sanas-extract-subset` already ran
-(front_left colour at stride 10, the label tail, matched front_left depth), so
-the numbers stay comparable. The kernel prints a regression check against the
-frame counts that run produced.
+What it measured before cancellation (30-frame local sample, never a
+sanctioned run): four cameras cover only 28.8% of the floor area occupants
+actually use at the 0.3-3.0 m depth spec limit, and only 63.3% even at a
+10 m gate. That gap is what made the cabin-wide design unattractive
+independently of the MVP decision.
 
-Why stereo depth rather than the dataset's lidar: an OS0-128 in every bus is
-not a deployable product, a RealSense-class module is, and IR stereo still
-works in the dark, which is the gap this daytime-only dataset cannot otherwise
-test. The paper uses lidar for calibration and as a fusion input, not as its
-label source, so there is no method here to reproduce.
+--------------------------------------------------------------------------
+Sanas branch 2b: multi-zone occupancy from all four depth streams. CPU only.
+
+SELF-CONTAINED, same pattern as the single-camera kernel: it fetches its own
+subset from the HuggingFace mirror by HTTP range request, then scores.
+
+This is NOT a fork of depth_occupancy.py. Both kernels inline the identical
+generated block from src/sanas/ and differ only in the entry point below
+(`default_mode="multi"` instead of "single"). That is deliberate: the whole
+point of this kernel is a 1-camera vs 4-camera comparison, which is worthless
+if the two paths are separate implementations that can drift apart.
+
+What it does, in order:
+  1. geometric floor coverage on empty-cabin frames, and STOPS if four
+     cameras still leave occupied floor unseen
+  2. merged BEV occupancy grid in base_link
+  3. correlation against ground-truth counts, with bootstrap intervals
+  4. head-to-head 1 camera vs 4 cameras
+  5. an explicit statement of what this tests and what it does not
+
+Fetch size: front_left colour at stride 10 as the timebase (0.335 GB) plus all
+four depth streams matched to those instants (1.124 GB) plus annotations, so
+about 1.47 GB selected per run. Depth frames are MATCHED to the colour
+timebase rather than each stream being strided independently: four
+independently strided streams would sample four different instants, and a
+person who moves between them would land in four different places in the
+merged grid.
 
 DO NOT EDIT the generated block below. Edit src/sanas/ and run
 `python scripts/build_kernels.py`.
@@ -1888,4 +1909,4 @@ def main(default_mode: str = "single", argv=None) -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main(default_mode="single"))
+    raise SystemExit(main(default_mode="multi"))

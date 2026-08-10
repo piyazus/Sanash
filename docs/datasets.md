@@ -235,7 +235,196 @@ maps. If we need head points rather than counts, they are not here.
 
 ---
 
+## 3. PCDS (People Counting DataSet) — NOT DOWNLOADED, blocked on host
+
+Bus-door RGB-D people counting. Phase 1 source for the door-mounted APC, and the
+only public dataset we have found with the overhead-at-the-door geometry the
+Gorelik rig lacks.
+
+**Nothing has been fetched.** This entry records what was verified remotely on
+2026-08-10 and why the download has not happened.
+
+| Field | Value |
+| --- | --- |
+| Repo | https://github.com/shijieS/people-counting-dataset |
+| Project page | https://shijies.github.io/people-counting-dataset/ |
+| Paper | Sun, Akhtar, Song, Zhang, Li, Mian, IEEE T-ITS 20(10), Oct 2019; preprint arXiv:1804.04339 (submitted 12 Apr 2018, revised 28 Oct 2018) |
+| Sensor | Kinect V1, mounted on the ceiling of front/back bus doors, non-zero pitch angle |
+| Scale (README) | 5,464 video pairs, 10,908 videos, ~20,908 people, 30 scenes |
+| Scale (paper body) | "4,689 videos"; abstract says "over 4500 videos" |
+| Routes | No. 25, No. 301, No. 106 in Xi'An, XiNing and YinChuan, China |
+| Collection | "three different bus routes at different times of the day up to 6 different days" |
+| Local file | none — not downloaded |
+| Size | **not stated anywhere and not measurable remotely** — see below |
+
+### Licence
+
+**CC BY-NC-SA 3.0.** From the repo README, verbatim:
+
+> The datasets provided on this page are published under the Creative Commons
+> Attribution-NonCommercial-ShareAlike 3.0 License. This means that you must
+> attribute the work in the manner specified by the authors, you may not use
+> this work for commercial purposes and if you alter, transform, or build upon
+> this work, you may distribute the resulting work only under the same license.
+
+**NonCommercial is a hard blocker for the product, and it is stricter than the
+RPEE-HEADS case.** RPEE-HEADS is CC BY-SA 4.0, where only ShareAlike is
+unsettled. PCDS adds NonCommercial on top, which is not an open question at all:
+a commercial Avtobys deployment is exactly the excluded use.
+
+Permitted: smoke test, method validation, Danyshpan's paper.
+Forbidden: training or shipping any model that goes into commercial Avtobys.
+
+Same class of blocker as the P2PNet "academic research only" clause, with the
+same consequence: **the shipped model must be retrained from scratch on
+licence-clean data, i.e. our own recording.** PCDS can validate that our
+line-crossing logic is correct; it cannot supply production weights.
+
+ShareAlike compounds it. If model weights are held to be a derivative, any
+release would have to carry CC BY-NC-SA 3.0 too. The authors offer a commercial
+route, shijieSun@chd.edu.cn, linked in the README as "contact us" for commercial
+usage. That is the only clean path if PCDS-trained weights are ever wanted in
+the product.
+
+### Download status — checked 2026-08-10
+
+| Host | Status |
+| --- | --- |
+| Google Drive | **DEAD.** HTTP 404. The README already says "has been removed for the space limit"; now confirmed rather than just claimed. |
+| Baidu Pan | **ALIVE but gated.** https://pan.baidu.com/s/10O2JJrTC3WJJvweW8XGWVA with code 2s31. |
+| GitHub releases | none. 0 releases, 0 assets. The repo is 8.6 MB of README and figures. |
+| Project page | points at a different, older Baidu link (/s/1eR3fmdO), not the README one. |
+
+The Baidu share resolves and is not flagged as expired: the shorturlinfo API
+returns shareid 6773605951, uk 2972546568, expired_type 0. Listing the contents
+returns errno -9 (extraction code required) and the verify endpoint returns
+errno 105 (anti-automation). The data is there, but enumerating or downloading
+it needs a browser session and in practice a Baidu account; free-tier Baidu also
+throttles large transfers heavily.
+
+**Consequence: the volume cannot be measured remotely, and no published source
+states it** — not the README, not the paper, not the project page.
+
+### Size estimate — ESTIMATE ONLY, not a measurement
+
+Do not treat as fact. Grounded on the authors' own demo clips, whose durations
+are real (YouTube metadata, 2026-08-10): depth demos 16, 22, 23, 29 s; colour
+demos 17, 31, 41, 45 s. These may be montages, so treat them as a hint at clip
+length rather than a mean.
+
+Kinect V1 depth at 640x480, 16-bit, 30 fps is 18.4 MB/s raw, so a 20 s depth
+clip is roughly 368 MB raw and 5,464 such clips would be about 2 TB
+uncompressed. The archive is therefore certainly compressed, and the real figure
+depends entirely on a codec nobody documents. Plausible range **150 GB to
+800 GB**; the honest summary is that the uncertainty spans more than a factor of
+five.
+
+**Do not start a download on this estimate.** Someone must open the Baidu link
+in a browser and read the actual folder size first. If it is in the hundreds of
+GB, a full pull is off the table on a residential line and we need a scene-level
+subset from the authors or a different plan.
+
+### Sensor caveats that limit transfer to our hardware
+
+**1. Kinect V1 is structured-light IR and degrades in sunlight — and the dataset
+does contain sunlit door scenes.** The authors are explicit, from the paper:
+
+> The rationale of dividing the dataset into noisy and clean videos is that
+> Kinect V1 camera is sensitive to illumination conditions. For strong
+> illumination, there is often noise in the videos [...] The videos in our
+> dataset are mainly recorded in either direct sunlight or diffused sunlight,
+> resulting in a natural division of corresponding levels of noise.
+
+So N+/N- is literally a sunlight axis: N+ is strong/direct sunlight and noisy,
+N- is mild/diffused and clean. That is good news, in that the failure mode is
+present and labelled rather than designed out. But it is heavily imbalanced:
+
+| category | condition | people |
+| --- | --- | --- |
+| N+C+ | strong sunlight, crowded | 2,086 |
+| N+C- | strong sunlight, sequential | 1,284 |
+| N-C+ | mild sunlight, crowded | 12,074 |
+| N-C- | mild sunlight, sequential | 5,464 |
+
+Only **3,370 of 20,908 people (16.1%) are in strong sunlight**. An aggregate
+accuracy figure over the whole dataset is dominated by the benign condition and
+**will be optimistic for a real Almaty door**. Any result we report must be
+stratified N+ against N-, with N+ quoted separately.
+
+**2. Kinect V1 is not the sensor we have been assuming.**
+
+| | Kinect V1 (PCDS) | RealSense D435i (our assumption) |
+| --- | --- | --- |
+| Depth principle | structured light IR | active IR stereo |
+| Depth range | 0.8-4.0 m default; 0.4-3.0 m near mode | ideal 0.3-3 m, max about 10 m |
+| Depth resolution | 640x480 / 320x240 / 80x60 | 848x480 as measured in the Gorelik data |
+| Depth FOV | 57 deg H x 43 deg V | wider |
+| Hardware era | 2010 | current |
+
+Two consequences. Structured light and active stereo fail *differently* in
+sunlight: structured light loses its projected pattern outright, active stereo
+degrades but can still exploit ambient texture. PCDS N+ noise is therefore not a
+direct predictor of D435i behaviour, in either direction. Separately, Kinect V1's
+0.8 m near limit is much higher than the D435i's 0.3 m, which matters for a
+camera directly above a door that passengers pass close underneath.
+
+The paper does **not** state depth resolution, frame rate or range anywhere. The
+figures above are Kinect V1 hardware specifications, not PCDS measurements. An
+automated summary claimed the paper says "VGA resolution (640x480) at 30 fps";
+that string does not occur in the paper and was discarded.
+
+Also unconfirmed: **the Gorelik cameras are never identified as D435i either.**
+848x480 is a characteristic RealSense D400-series depth mode, which is why we
+inferred it, but it remains an inference.
+
+**3. The data is from 2016.** Scene names encode the date, e.g.
+`25_20160411_front`. The paper body never states the recording year; 2016 comes
+from the scene naming and the README. Note that the README misreads its own
+example, glossing `20160411` as "04, Nov. 2016" when the format gives 11 April
+2016. Ten-year-old Kinect V1 footage of Chinese city buses: the hardware is
+obsolete, and Almaty door geometry, crowding and lighting are all unverified
+against it.
+
+### Ground truth format (from README, not yet verified against a real file)
+
+Per scene directory, `label.txt`: the first 4 lines are the camera extrinsics as
+a 4x3 matrix, then one line per video:
+
+    DepthVideoName, EnteringNumber, ExitingNumber, VideoType
+
+VideoType index: 0 = N-C-, 1 = N-C+, 2 = N+C-, 3 = N+C+.
+Scene naming: `BUS_DATETIME_[front|back]`, e.g. `25_20160411_front`.
+
+Take extrinsics from those four lines rather than deriving them.
+
+### RGB is not synchronised with depth
+
+From the README, verbatim, typo included:
+
+> We only focus on the deth video and the color video is an accessory. We cannot
+> guarantee the synchronization of color video and depth video.
+
+Our door counter is a depth method, so this is survivable. **Never treat the RGB
+channel as frame-aligned with depth**; eyeballing only. It also rules PCDS out as
+a source of paired RGB training data for Phase 2.
+
+### Internal inconsistencies to be aware of
+
+- The video count is stated three ways: 5,464 pairs / 10,908 videos (README),
+  4,689 videos (paper body), "over 4500" (abstract). And 5,464 x 2 = 10,928, not
+  the 10,908 the README claims, so its own arithmetic is off by 20.
+- The README per-category table gives N-C- a total of 5,464, numerically
+  identical to the video-pair count. The four category totals do sum to 20,908,
+  matching the stated headline, so it is probably genuine rather than a copy
+  error, but it is worth remembering.
+
+---
+
 ## Converting both to our target label
+
+Scope: RPEE-HEADS and DISCO only. PCDS (section 3) is a depth-only
+line-crossing dataset with integer entering/exiting counts, not a
+crowd-density source, so it does not feed this conversion.
 
 Neither dataset gives an occupancy level. Both give counts. No public dataset
 supplies a cabin-capacity denominator, so the 5-level ordinal scale cannot be
@@ -263,6 +452,10 @@ picking a capacity denominator and forgetting it was arbitrary.
 ---
 
 ## Viewpoint reality check
+
+Scope: RPEE-HEADS and DISCO only, written before PCDS was adopted. PCDS is
+the one source whose viewpoint does match the Phase 1 target, being mounted
+on the ceiling of a bus door looking down at a pitch angle.
 
 Honest assessment after viewing samples from every scene family in both
 datasets, against the target of a bus cabin camera at 1.5 to 2.5 m looking

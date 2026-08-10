@@ -1,4 +1,12 @@
-"""Dataset and splitting for the extracted subset.
+"""PHASE 2 ASSET - DORMANT, NOT DEAD. Do not delete.
+
+Unused in Phase 1 (door-mounted APC counting on PCDS reads depth video, not
+extracted Gorelik colour frames). Active in Phase 2: RGB whole-frame cabin
+classification. The sub-sequence splitting below stays relevant then, because
+near-duplicate neighbouring frames leak across a random split. Dormant, not
+gone.
+
+Dataset and splitting for the extracted subset.
 
 Splitting is by recording sub-sequence, not at random. Frames are ~0.067 s
 apart, so neighbouring frames are near-duplicates; a random split would put
@@ -81,12 +89,12 @@ def usable_rows(rows: list[dict], target: TargetConfig) -> tuple[list[dict], int
 
 def split_by_sequence(
     rows: list[dict], val_fraction: float = 0.25, seed: int = 0
-) -> tuple[list[dict], list[dict]]:
+) -> tuple[list[dict], list[dict], list[int]]:
     """Hold out whole sub-sequences for validation.
 
-    Sequences are assigned to val largest-first until the target fraction is
-    met, which keeps the split deterministic and avoids a val set made only of
-    tiny fragments.
+    Returns (train, val, held_out_sequence_ids). Sequences are assigned to val
+    largest-first until the target fraction is met, which keeps the split
+    deterministic and avoids a val set made only of tiny fragments.
     """
     import random
 
@@ -113,4 +121,4 @@ def split_by_sequence(
 
     train = [r for r in rows if int(r["sequence"]) not in val_seqs]
     val = [r for r in rows if int(r["sequence"]) in val_seqs]
-    return train, val
+    return train, val, sorted(val_seqs)

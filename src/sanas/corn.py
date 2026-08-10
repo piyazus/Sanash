@@ -1,4 +1,13 @@
-"""CORN ordinal regression head: loss and decoding.
+"""PHASE 2 ASSET - DORMANT, NOT DEAD. Do not delete.
+
+Unused in Phase 1 (door-mounted APC counting is depth geometry, no learned
+model). Active in Phase 2: the ordinal head for RGB whole-frame cabin
+classification with DINOv2 or ConvNeXt, once real-bus camera permission lands.
+Kept intact for the same reason as notebooks/depth_occupancy_multizone/ -
+dormant, not gone. The maths below is verified (loss ~0 at optimum, ln 2 at
+chance, rank-consistent, conditional subsets confirmed by gradient masking).
+
+CORN ordinal regression head: loss and decoding.
 
 CORN (Conditional Ordinal Regression for Neural networks) turns K ordered
 classes into K-1 binary tasks. Task k answers "is y > k?" but is trained only

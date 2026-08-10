@@ -189,8 +189,12 @@ def parse_central_directory(blob: bytes) -> list[Member]:
     return members
 
 
-def build_index(url: str, verbose: bool = True) -> dict:
-    """Fetch and parse the central directory. Downloads ~45 MB, not the archive."""
+def read_members(url: str, verbose: bool = True) -> tuple[int, list[Member]]:
+    """Fetch and parse the central directory. Downloads ~45 MB, not the archive.
+
+    Returns (archive_size, members). This is the form the kernels use;
+    build_index() wraps it for the on-disk index artifact.
+    """
     total = remote_size(url)
     if verbose:
         print(f"archive size: {total:,} bytes", flush=True)
@@ -212,6 +216,12 @@ def build_index(url: str, verbose: bool = True) -> dict:
             file=sys.stderr,
         )
 
+    return total, members
+
+
+def build_index(url: str, verbose: bool = True) -> dict:
+    """Serialisable index for the on-disk artifact (scripts/build_zip_index.py)."""
+    total, members = read_members(url, verbose=verbose)
     return {
         "archive": ARCHIVE_NAME,
         "archive_size": total,

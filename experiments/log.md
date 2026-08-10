@@ -156,3 +156,489 @@ be cited as any kind of performance number:
   because it is what a single camera can actually observe; `count_cabin` is the
   product target but is not recoverable from one view under occlusion. Both
   columns are written to `labels.jsonl`.
+
+## 2026-08-10 — sanas-extract-subset RAN; kernel chaining found broken; kernels made self-contained
+
+- commit: 8db774b760ecd37227b37f29a2495167cc661bda (working tree has uncommitted changes)
+- kaggle kernel: `diypyzsdiyas/sanas-extract-subset` — **RAN, succeeded**
+- config: front_left_color stride 10, matched front_left depth, full label tail
+- result (extraction only, no model): 35,404 files, 0.686 GB on disk, 1,289 frames,
+  1,204 depth extensions corrected by magic-byte sniff.
+  count_view  {0: 218, 1: 632, 2: 389, 3: 50}
+  count_cabin {0: 120, 1: 656, 2: 453, 3: 60}
+- **No model has been trained. No GPU has been spent.**
+
+### Finding: `kernel_sources` does not pass data between kernels
+
+A diagnostic run showed `/kaggle/input` containing only:
+`notebooks/diypyzsdiyas/sanas-extract-subset` with 5 files and **zero
+subdirectories**. `kernel_sources` mounts the source kernel's CODE, not its
+output, so there is no `subset/` to read. `kaggle kernels output` does return
+`subset/...`, so the data exists, it is just not reachable from a chained
+kernel. The chained design in the previous entry was wrong.
+
+Fix, approved by Diyas: every kernel is self-contained and fetches its own
+subset by HTTP range request from the HuggingFace mirror. This applies to
+`train_corn` too, which had the same broken assumption and would have failed
+identically on its first run.
+
+### Anti-drift mechanism
+
+Four self-contained kernels sharing hand-copied logic is how the later
+1-camera vs 4-camera comparison would quietly start measuring our own
+inconsistency instead of measuring cameras. So `src/sanas/` is now the single
+source of truth and `scripts/build_kernels.py` inlines modules into each
+kernel between markers. `--check` is the drift detector.
+
+Verified: the vendored block in `depth_occupancy.py` and
+`depth_occupancy_multizone.py` is byte-identical (62,590 chars); the two
+kernels differ only in `main(default_mode=...)`. Selection is shared via
+`src/sanas/selection.py` and carries a regression assertion against the frame
+counts the executed run produced (1,289 / 1,204 / 32,911 / 35,404) — all
+kernels print CLEAN.
+
+### Preliminary depth finding: the rig cannot see the whole cabin floor
+
+Measured locally on a 30-frame sample (NOT the sanctioned run). Coverage is
+the fraction of the region where occupants actually appear — derived from
+every 3D box in `bboxes_3d` over the full recording, dilated 0.3 m, 4,110
+cells — that receives any depth return:
+
+| max range | 1 cam (front_left) | union of 4 cameras |
+|---|---|---|
+| 3.0 m (D435i spec) | 6.7% | **28.8%** |
+| 4.5 m | 12.7% | 44.7% |
+| 6.0 m | 16.1% | 54.9% |
+| 10.0 m | 21.5% | 63.3% |
+
+**Four cameras never cover the floor, at any range gate.** Even trusting depth
+well beyond spec, a third of the occupied region has no return. The multizone
+kernel therefore STOPS at step 1 by default rather than reporting a merged-BEV
+number over floor it cannot see, since that would understate occupancy in a
+way that looks like a model error rather than a sensing gap.
+Caveat: this sample had only ONE empty-cabin frame to build coverage from.
+The cameras are static so the footprint is close to fixed, but the sanctioned
+run on 1,289 frames should be believed over this.
+
+### Statistics warning for when results arrive
+
+The subset tops out at 3 occupants and only 50 frames contain 3. Correlations
+will be fragile. Both depth kernels now report bootstrap 95% intervals beside
+every coefficient and print explicit FRAGILE lines listing sparse levels, and
+the head-to-head states plainly when the 1-camera and 4-camera intervals
+overlap. Do not quote a bare coefficient from this data.
+
+### Not run
+
+`sanas-depth-occupancy` (approved, coordinator will push),
+`sanas-depth-occupancy-multizone` (NOT approved), `sanas-train-corn-smoke`
+(NOT approved, needs GPU quota check).
+
+## 2026-08-10 — PIVOT to door-mounted 3D APC; multizone CANCELLED; feasibility gate PASSED with caveats
+
+- commit: 8db774b760ecd37227b37f29a2495167cc661bda (working tree dirty)
+- kaggle kernel: none pushed. **No GPU spent. Nothing trained.**
+- result: feasibility analysis only, run locally on already-extracted annotations
+  and a 30-frame depth sample.
+
+### Decision
+
+Architecture moves from cabin-wide multi-camera occupancy to a **door-mounted 3D
+Automatic Passenger Counter**: depth deprojection over a door aperture,
+boarding/alighting by virtual line crossing, cumulative count with terminus reset.
+Same principle as iris GmbH IRMA MATRIX, INIT and Dilax.
+
+**Reason: the MVP defers incident detection (safety) to a later phase.** With no
+safety requirement, cabin-wide multi-sensor coverage is over-built for what the
+product must do, and the simpler industry-standard design is justified by MVP
+priority. Explicitly NOT adding a Kalman filter or sensor fusion at this stage;
+the cumulative counter is N_t = N_{t-1} + boardings - alightings.
+
+`notebooks/depth_occupancy_multizone/` is marked **CANCELLED**, inactive, not
+deleted. See `notebooks/depth_occupancy_multizone/CANCELLED.md`. It was never
+pushed and never ran.
+
+Unchanged and still current: `src/sanas/ziprange.py`, the deprojection and BEV
+logic, the extraction path, `count_view`/`count_cabin`, and the CORN head with
+DINOv2/ConvNeXt as future RGB backbone candidates.
+
+### Feasibility gate (point 1): does any camera overlook a door?
+
+Doors were located from the data, not assumed: `person_states.json` gives the exact
+state strings, and each person's `pose_id` matches a `bbox_center` in `bboxes_3d`
+at the same timestamp, so boarding/alighting positions are recoverable in
+`base_link`.
+
+**Finding A — no camera is top-down.** Optical axis angle from straight down:
+
+| camera | mount height | axis off vertical | i.e. below horizontal |
+|---|---|---|---|
+| front_left_depth | 1.95 m | 71 deg | 19 deg |
+| front_right_depth | 2.03 m | 74 deg | 16 deg |
+| center_left_depth | 1.99 m | 67 deg | 23 deg |
+| back_right_depth | 2.04 m | 71 deg | 19 deg |
+
+A real APC looks straight down at the aperture; that is what makes line crossing
+robust to occlusion. **This rig has no such view and cannot reproduce true APC
+geometry.** Any result here is an oblique across-the-aisle approximation.
+
+**Finding B — exactly one camera reaches the door zone in spec.** Points landing in
+a 1.0 x 1.0 m door-zone footprint on the right side (x 0.5-1.5, y 0.05-1.05):
+
+| camera | points/frame within 0.3-3.0 m | actual range |
+|---|---|---|
+| center_left_depth | **1,746** | 2.05-2.77 m |
+| front_left_depth | 0 | 3.62-4.55 m |
+| front_right_depth | 0 | 4.00-4.66 m |
+| back_right_depth | 0 | 4.91-5.43 m |
+
+So a single-camera door test is possible; a multi-camera one is not.
+
+**Finding C — the labelled crossing positions are outside spec, but the
+trajectories are not.** All 24 threshold positions (first frame of an entry
+episode, last frame of an exit episode) sit 3.24-5.96 m from center_left, because
+at that instant the person is still on the kerb, roughly 1 m outside the right
+wall. Zero are usable. However, all **25 of 25** episodes have trajectories that
+pass through center_left's usable zone, closest approach 1.22-2.24 m.
+
+**Consequence for the design: the virtual line must be placed INSIDE the cabin, in
+the vestibule a couple of metres from center_left, not across the door aperture
+itself.** Everyone who boards or alights crosses it, within the reliable window.
+This is a real deviation from the APC pattern and needs Diyas's sign-off before
+counting code is written.
+
+### Ground truth (point 5) — exact strings, as found
+
+`person_states.json` state vocabulary, verbatim and with frame counts:
+`walk` 4905, `sit` 2921, `stand` 2809, `hold on` 1305, `wheelchair` 1257,
+`sit down` 828, `stand up` 705, **`exit vehicle` 436**, **`enter vehicle` 377**,
+`` (empty) 8.
+
+The paper's phrasing "entering or alighting" corresponds to `enter vehicle` and
+`exit vehicle`. These are per-frame states, not events, so they were grouped into
+episodes (contiguous runs, 2 s gap): **12 boardings + 13 alightings = 25 episodes**
+across the whole 32-minute recording, median episode 29 frames (~2.9 s).
+
+Ready-made ground truth with no manual annotation, but **25 events is the entire
+validation set**, involving roughly 9 distinct persons, one of whom (`pose_id 1`)
+contributes 8 episodes. Any accuracy figure from this will be extremely coarse;
+a single miscount moves it by 4 percentage points.
+
+### Not built yet
+
+Points 2-4 (door-zone coverage kernel, line-crossing tracker, cumulative counter)
+are held pending sign-off on the inside-the-cabin line placement from Finding C.
+Building them against the aperture, as briefed, would produce nothing measurable.
+
+## 2026-08-10 — two-phase plan recorded; Phase 2 assets marked dormant; weak-label constraints captured (NOTHING BUILT)
+
+- commit: 8db774b760ecd37227b37f29a2495167cc661bda (working tree dirty)
+- kaggle kernel: none pushed. No GPU. No counting code written.
+- status: **Finding C sign-off still outstanding.** No line-crossing work started.
+
+### Phasing
+
+- **Phase 1** — door-mounted 3D APC: depth deprojection over a door zone, virtual
+  line crossing, cumulative count. Depth geometry only, no learned model.
+- **Phase 2** — RGB whole-frame cabin classification, DINOv2 or ConvNeXt with the
+  CORN head, once camera permission for a real bus lands.
+
+Marked **PHASE 2 ASSET - DORMANT, NOT DEAD** in their module docstrings:
+`src/sanas/models.py`, `src/sanas/corn.py`. Same treatment as the cancelled
+multizone branch. The banners sit in module docstrings, which
+`scripts/build_kernels.py` strips when inlining, so generated kernels are byte
+identical and `--check` stays clean.
+
+Also Phase 2, not yet marked pending confirmation: `src/sanas/config.py`,
+`src/sanas/data.py`, `notebooks/train_corn/` (that kernel *is* the Phase 2 model).
+
+### Verification of the view-vs-cabin gap
+
+Recomputed locally from the complete label tail (no download; all 10,034
+`bboxes_3d` and all 12,890 front_left segmentation JSONs are already on disk).
+Reproduces the executed Kaggle run exactly:
+
+    count_view  {0: 218, 1: 632, 2: 389, 3: 50}
+    count_cabin {0: 120, 1: 656, 2: 453, 3: 60}
+
+Independent confirmation of `sanas-extract-subset`. Two corrections to how that
+gap was characterised:
+
+1. `218 - 120 = 98` is not the count of frames hiding someone. Measured directly,
+   **view==0 and cabin>0 is 102 frames (7.9%)**, not 98 (7.6%). The subtraction
+   under-reports because 4 frames have view>0 while cabin==0 - pseudo-label
+   disagreement, so the zero-sets are not nested.
+2. The more relevant number is larger. Counting any disagreement, **view < cabin
+   in 181 frames (14.0%)** and view > cabin in 7 (0.5%). The 7.9% only counts
+   frames where the camera sees nobody at all; the camera undercounts in 14% of
+   frames. A weak-label scheme binding cabin-level counts to one view inherits
+   that 14%, not 7.6%.
+
+### Weak-supervision design constraints — RECORDED, DELIBERATELY NOT IMPLEMENTED
+
+Idea (Phase 2, not now): door line-crossing gives a running occupancy N_t, and RGB
+frames at the same timestamps inherit it as a noisy label before any manual
+annotation. Requirements to keep the option open:
+
+1. **Label schema must state which quantity it holds.** Already satisfied in
+   spirit: `labels.jsonl` carries `count_view` and `count_cabin` as separate named
+   columns, never a single implicit "count". A door-derived label is a third,
+   cabin-level quantity with different provenance and would need its own named
+   column plus a provenance marker - not a reuse of `count_cabin`.
+2. **Cumulative counters drift, so labels degrade along a run.** Nothing in the
+   current schema records time since last reset. It would need a per-segment
+   anchor so a future run can down-weight late-segment labels.
+3. **Reset anchoring is the only absolute ground truth** and must be recorded
+   explicitly, not derived later.
+
+Current `labels.jsonl` row: `timestamp`, `camera`, `image`, `sequence`,
+`count_view`, `min_score`, `count_cabin`, `cabin_dt_ns`. Frame binding is by
+19-digit nanosecond timestamp throughout, so timestamp-joining a future
+door-count series is already possible. `sequence` is a recording-gap segment id
+(5 s gaps), NOT a terminus reset - do not conflate them.
+
+**Blocker for exercising any of this on the substitute dataset:** it is a single
+32-minute session with no route, terminus or GPS data. There are no resets to
+anchor to, so constraints 2 and 3 cannot be tested here at all - only designed
+for. Flagging so nobody later mistakes `sequence` for a reset anchor.
+
+No fields added, no counting code, no weak-label table. Design constraints
+recorded only.
+
+## 2026-08-10 — Phase 1 source switches to PCDS; download BLOCKED on host; nothing fetched
+
+- commit: 8db774b760ecd37227b37f29a2495167cc661bda (working tree dirty)
+- kaggle kernel: none pushed. No GPU. No download. No counting code written.
+- result: remote verification only.
+
+### Source change
+
+Phase 1 moves off the Gorelik vestibule-line workaround (cancelled; it was a
+patch for sideways-looking cameras and would not have tested real APC geometry)
+onto **PCDS**, github.com/shijieS/people-counting-dataset, arXiv:1804.04339.
+Camera is ceiling-mounted at bus doors with a pitch angle, which is the geometry
+Finding C proved Gorelik lacks. Finding C stands as the reason for the switch.
+
+Gorelik data is retained: it remains the source of `enter vehicle` /
+`exit vehicle` cross-check labels and is the Phase 2 asset for cabin RGB.
+
+Full provenance, licence and caveats: `docs/datasets.md` section 3.
+
+### Download links — checked, and this is the blocker
+
+- **Google Drive: dead, HTTP 404.** The README's note is accurate, now confirmed.
+- **Baidu Pan: alive but gated.** shorturlinfo returns shareid 6773605951,
+  uk 2972546568, expired_type 0, so the share is live. Listing returns errno -9
+  (code required); verify returns errno 105 (anti-automation). Needs a browser
+  session and in practice a Baidu account.
+- GitHub: 0 releases, 0 assets.
+
+**Volume is unknown and unobtainable remotely. It is stated nowhere** — not the
+README, not the paper, not the project page. Estimate from the authors' own demo
+clip durations (depth 16-29 s, real YouTube metadata) and Kinect V1 raw depth
+rate puts it somewhere in **150-800 GB**, an uncertainty of more than 5x. That
+is an estimate, not a measurement, and **no download should start on it**.
+Someone must open the Baidu link in a browser and read the real folder size.
+
+### Sensor caveats, all three verified
+
+1. **Sunlight: present in the data, and labelled.** N+/N- is literally the
+   sunlight axis. Paper: "Kinect V1 camera is sensitive to illumination
+   conditions. For strong illumination, there is often noise in the videos [...]
+   recorded in either direct sunlight or diffused sunlight". So PCDS does NOT
+   avoid the condition. But it is imbalanced: only **3,370 of 20,908 people
+   (16.1%)** are in strong sunlight (N+C+ 2,086 and N+C- 1,284, against N-C+
+   12,074 and N-C- 5,464). **Aggregate accuracy would be optimistic for an
+   Almaty door; results must be stratified N+ vs N-.**
+2. **Kinect V1 differs from the D435i we assumed.** Structured-light IR vs
+   active IR stereo; 0.8-4.0 m default range (0.4-3.0 m near mode) vs ideal
+   0.3-3 m; 640x480/320x240/80x60 vs the 848x480 measured in Gorelik; 57x43 deg
+   FOV. The two fail differently in sunlight, so PCDS noise does not predict
+   D435i behaviour in either direction. The paper states no resolution, frame
+   rate or range at all. Separately, **the Gorelik cameras are never identified
+   as D435i either** — that has been an inference from 848x480 throughout.
+3. **2016 data.** From scene naming (`25_20160411_front`) and the README, not
+   from the paper body. The README misreads its own example as "04, Nov. 2016"
+   when the format gives 11 April 2016.
+
+### Licence — hard blocker, recorded in docs/datasets.md
+
+**CC BY-NC-SA 3.0.** NonCommercial excludes commercial Avtobys outright, and is
+stricter than RPEE-HEADS (CC BY-SA 4.0, where only ShareAlike is unsettled).
+Same class as the P2PNet academic-only clause: **the shipped model must be
+retrained on licence-clean data, meaning our own recording.** PCDS validates the
+line-crossing logic; it cannot supply production weights. Authors offer a
+commercial contact if that is ever needed.
+
+### Also this session
+
+`src/sanas/config.py`, `src/sanas/data.py` and `notebooks/train_corn/` given the
+same PHASE 2 DORMANT banner as `models.py` and `corn.py`, so the model and the
+kernel that trains it stay consistent. All banners are in module docstrings,
+which the generator strips, so `build_kernels.py --check` stays clean. Verified.
+
+### Not done
+
+No counting code. Phase 1 implementation is blocked on two things: the Finding C
+decision is now moot for Gorelik but the PCDS equivalent is unresolved, and more
+immediately **nobody can build against PCDS until the archive is actually
+obtainable.** Next action is a human opening the Baidu share.
+
+## 2026-08-10 — door-APC virtual-line counter RAN locally; full-res vs 8x8 vs 4x4; PCDS still blocked
+
+- commit: 7673883d7094c8fd57ef7ef570e1759937d96ead (working tree dirty; new
+  `src/sanas/door_apc.py`, `scripts/run_door_apc.py` in this change set)
+- backend: **local CPU only.** No kernel pushed, no GPU, nothing trained.
+  Geometric pipeline; an accelerator has no role here.
+- config: center_left_depth only; line x=0.20 m in base_link, hysteresis
+  ±0.15 m; zone x[-0.6,1.6] y[-0.2,1.3] z[0.2,2.0]; bg = per-pixel median
+  over 48 empty-cabin frames; NN tracker gate 0.8 m; ALL DEFAULTS UNTUNED
+  (marked in ApcConfig). Multizone sim: 60×60° crop, 8x8 and 4x4 zone
+  pooling at p20, same tracker. ~7.7 Hz (every 2nd frame), 3 episodes at
+  15 Hz as rate spot check — identical events at both rates.
+- data: 2,215 depth frames, 0.427 GB selected / 0.429 GB transferred in
+  1,778 range requests + ~7 MB annotations. Hard cap 0.5 GB held. CRC32
+  verified; 2,215 `.jpg`→`.png` magic-byte corrections.
+- result (n=25 episodes = 12 board + 13 alight; every event = 4 pp):
+
+  | | full 848x480 | 8x8 sim | 4x4 sim |
+  |---|---|---|---|
+  | detected | 19/25 (CI 57-89%) | **24/25 (CI 80-99%)** | 21/25 (CI 65-94%) |
+  | direction | 19/19 | 24/24 | 18/21 |
+  | FPs / 63 s negatives | 0 | 0 | 0 |
+  | N_t MAE vs door truth | 1.45 | **0.17** | 1.92 |
+  | final error | -3 | +1 | +3 |
+
+- notes:
+  1. **8x8 beat full resolution under untuned defaults.** Diagnosed, not
+     guessed: full-res loses the six line-hover episodes to cluster
+     fragmentation + track birth stealing the association at the crossing
+     instant; 8x8 pooling regularises the person to one centroid. Left
+     unfixed deliberately — tuning against the only 25 events would corrupt
+     the validation set.
+  2. **4x4 is below the working floor** (3 direction errors, 5 duplicates).
+  3. **Vestibule-line ≠ door-event counting, measured:** actors already
+     aboard cross the line plane between episodes (wheelchair user ~t+262 s),
+     so line-truth MAE (1.53 for 8x8) ≫ door-truth MAE (0.17). A cost of the
+     Finding C inside-the-cabin placement that aperture APC does not pay.
+  4. Counting-band ablation (coordinator request → node_design.md §3):
+     detection flat down to 0.7 m band width, collapses at 0.5 m
+     (16/25). ±0.25 m ceiling strip is below the measured working minimum.
+  5. Shared failure: back-to-back double exit (pids 190/172, 0.1 s apart)
+     merged by every variant — simultaneous crossings remain the hard case.
+  6. Frame-rate deviation on the record: the ±5 s full-15 Hz brief costs
+     746 MB > 0.5 GB cap; ran at 7.7 Hz with asymmetric evidence-based
+     buffers (board [-2,+5] s, alight [-5,+2] s) + 15 Hz spot check.
+  7. **Task-brief context correction:** this run executes the Gorelik
+     vestibule-line validation that entry "Phase 1 source switches to PCDS"
+     had cancelled. Coordinator-approved reversal: PCDS remains unobtainable
+     (Baidu-gated, human browser session required, volume unknown) and its
+     CC BY-NC-SA 3.0 licence is paper-track only regardless. Zero PCDS bytes
+     downloaded. Finding C line placement approved via delegated sign-off.
+  8. Episode grouping reproduces the log exactly (25 = 12+13, 377/436 state
+     frames); median episode 31 frames vs 29 recorded earlier — grouping
+     artefact, headline counts identical.
+- artifacts: `paper/results/apc_validation.json` (incl. 1 Hz N_t series +
+  per-episode table, feeds figures), `paper/results/apc_validation.md`,
+  `docs/trade_study.md` (VDV 457 verified-to-secondary-sources; all numbers
+  tagged full-text / abstract / vendor / not-stated).
+- next: real ToF hardware (VL53L7CX) at a real door top-down; PCDS if a
+  human opens the Baidu share; simultaneous-crossing handling; do NOT quote
+  any number here as bus performance — substitute data, oblique geometry.
+
+## 2026-08-10 — code-review fixes + Fig. 1 definition clarifications; metrics verified unchanged
+
+- commit: 7673883d7094c8fd57ef7ef570e1759937d96ead (working tree dirty)
+- backend: local CPU. No fetch, no GPU. Re-scored already-local frames only.
+- changes (coordinator review, 4 items):
+  1. `scripts/run_door_apc.py` process_all: hard SystemExit when any selected
+     frame or background frame is missing on disk — `--evaluate` on a partial
+     fetch can no longer silently write results.
+  2. Spot-check indices now a checked contract: `SPOTCHECK_EPISODES` carries
+     expected (pid, kind) and `check_spotcheck()` hard-verifies at startup
+     (prints: [6]=pid 1 board, [14]=pid 119 alight, [21]=pid 158 board).
+  3. `src/sanas/door_apc.py` gains `self_test()` — 6 deterministic scripted
+     tracker checks (clean board, clean alight, hysteresis hover no-count,
+     side-0 birth exiting either way no-count, round trip board+alight),
+     same no-framework convention as the CORN math verification. PASSED.
+  4. Misleading `block_of` fallback comment fixed (bounds covers negative
+     chunks too; fallback is defensive/unreachable).
+- Fig. 1 mismatches (CADy): all three definitional, nothing recomputed,
+  no published number wrong:
+  1. `series_1hz.estimate` endpoints are RAW counts; final_error fields are
+     errors vs truth at the last processed frame (est 0/-4/+2 minus door
+     truth -1 -> +1/-3/+3). Documented.
+  2. `series_1hz.truth` is full-session LINE-position truth (92 transitions,
+     not chunk-gated/zero-filled); the clean 25-step staircase is the new
+     additive `series_1hz.door_truth` field (25 transitions, range -4..+1;
+     negative because pre-aboard actors exit after an anchor of 0).
+  3. MAEs are over the 2,167 processed frames, never the 1 Hz grid;
+     on-grid MAE would score frozen estimates on unobserved intervals.
+  A `definitions` block was added to apc_validation.json and mirrored in
+  apc_validation.md.
+- verification: post-fix `--evaluate` re-run on local data is BYTE-IDENTICAL
+  to the published JSON before the definitions addition; after the addition,
+  a field-level diff confirms every previously published field identical and
+  only `definitions` + 3 `door_truth` arrays added. Ruff format/check clean.
+
+## 2026-08-10 — COORDINATION RECORD: architecture decided, team run complete, paper + hardware + pitch delivered
+
+- commit: 7673883 (working tree dirty; this entry records the coordinated
+  session, not a training run)
+- backend: local CPU + background agents only. No GPU spent, no kernel
+  pushed, nothing published externally.
+
+### Decision (coordinator, under design authority delegated by Diyas)
+
+Sensing architecture for Sanas Phase 1: **door-mounted downward depth APC
+per door**, counting line inside the vestibule (Finding C signed off under
+delegated authority), with the **single-chip 64-zone ToF (VL53L7CX class)**
+as the target production sensor, pending hardware bench validation.
+Cabin-wide depth occupancy rejected on measured evidence (10% coverage,
+r=0.184, non-monotonic). Salon RGB + CORN ordinal head remains Phase 2,
+dormant, untrained. Fusion: cumulative count, terminus reset, ordinal
+5-level output to Avtobys.
+
+Basis: this session's ablation (8x8 sim 24/25 detected, direction 24/24,
+0 FPs, door-truth MAE 0.17 on n=25 episodes — see the two entries above)
+plus the trade study (docs/trade_study.md). All caveats stand: substitute
+data, oblique geometry, 25 events, staged actors; no VDV 457 claim.
+
+### Team outputs this session
+
+- Donatello: src/sanas/door_apc.py + scripts/run_door_apc.py (reviewed,
+  self-test green, results byte-identical after review fixes),
+  paper/results/apc_validation.{json,md}, docs/trade_study.md.
+- CADy: docs/hardware/ (system_architecture, wiring, node_design, bom +
+  4 SVG figures, FoV corrected to confirmed 60x60), paper/figures/
+  fig1-fig3 scripts + renders; fig4-fig7 exported from SVG via Edge
+  headless by coordinator (no cairo toolchain on this machine).
+- Danyshpan: paper/sanas_apc.tex (IEEEtran draft, compilable; LaTeX not
+  installed locally — compile on Overleaf), paper/figures.md,
+  paper/related_work_notes.md (coordinator), bibliography with explicit
+  TODO markers for unverified metadata.
+- Pitch: docs/pitch/ (avtobys_deck, one_pager, elevator_pitch RU+EN,
+  akimat_note, demo_script) — all numbers sourced or marked
+  [нужна реальная цифра].
+
+### Coordinator corrections on the record
+
+- VL53L7CX FoV: first hardware draft assumed 60 deg diagonal; confirmed
+  60x60 square (90 deg diagonal). Head-height strip is ±0.35 m = exactly
+  the measured 0.7 m band minimum, zero margin — mounting needs tilt or
+  inboard offset. Propagated to node_design.md, figures.md, sanas_apc.tex,
+  sensor_placement.svg.
+- Fig. 1 truth semantics reconciled via the JSON definitions block;
+  door_truth staircase added by Donatello, caption rewritten by Danyshpan.
+
+### Open items for Diyas
+
+1. Buy 2-3 VL53L7CX breakout boards + ESP32-S3 and bench-test the real
+   sensor top-down (the single biggest unvalidated step; sim used D435i
+   noise, oblique view).
+2. PCDS validation needs a human Baidu session (volume unknown, licence
+   NC — paper track only).
+3. Scite quota resets 2026-09-01 — finish full-text citation verification
+   before any submission.
+4. GPU smoke run for Phase 2 CORN head: still NOT approved, still blocked.
+5. Paper author list / affiliation TODO in sanas_apc.tex.

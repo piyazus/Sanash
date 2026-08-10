@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sanas hardware figure H2: sensor placement on a 12 m low-floor bus.
+     Hand-authored SVG, grayscale-safe. Scale 52 px/m, origin x=80 (front bumper).
+     ALL dimensions are parametric and ASSUMED unless marked otherwise —
+     see the parameter box and docs/hardware/system_architecture.md (caption)
+     and docs/hardware/node_design.md (mounting geometry equations). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 630" font-family="Helvetica, Arial, sans-serif" fill="#000">
+  <defs>
+    <marker id="arr" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#000"/>
+    </marker>
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#888" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="800" height="630" fill="#fff"/>
+
+  <text x="400" y="22" text-anchor="middle" font-size="14" font-weight="bold">Sensor placement — 12 m low-floor bus, 2 double doors (parameters ASSUMED, see box)</text>
+
+  <!-- ======================= PANEL A: SIDE VIEW ======================= -->
+  <text x="30" y="52" font-size="12" font-weight="bold">A — side view (from curb)</text>
+
+  <!-- parameter box -->
+  <rect x="556" y="40" width="232" height="128" fill="#f5f5f5" stroke="#999"/>
+  <text x="564" y="56" font-size="10" font-weight="bold">Parameters (ASSUMED unless noted)</text>
+  <text x="564" y="71" font-size="10">L_bus = 12 m · W_bus = 2.55 m</text>
+  <text x="564" y="85" font-size="10">H_ceil ≈ 2.3 m · H_door ≈ 2.0 m</text>
+  <text x="564" y="99" font-size="10">W_door ≈ 1.25 m</text>
+  <text x="564" y="113" font-size="10">x_d1 ≈ 0.9 m · x_d2 ≈ 5.9 m</text>
+  <text x="564" y="127" font-size="10">FoV 60°×60°, 90° diag (confirmed)</text>
+  <text x="564" y="141" font-size="10">d_line ∈ 1.2–2.2 m (Finding C)</text>
+  <text x="564" y="155" font-size="10">s_off ≥ d_line − F/2 (node_design.md)</text>
+
+  <!-- sensor callout -->
+  <text x="30" y="84" font-size="10">ToF node above lintel, face down (×2)</text>
+  <text x="30" y="96" font-size="10">(see node_design.md)</text>
+  <line x1="135" y1="100" x2="158" y2="178" stroke="#666" stroke-width="0.8"/>
+
+  <!-- wheels (drawn under body outline) -->
+  <circle cx="215" cy="294" r="22" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <circle cx="215" cy="294" r="6" fill="none" stroke="#999"/>
+  <circle cx="527" cy="294" r="22" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <circle cx="527" cy="294" r="6" fill="none" stroke="#999"/>
+
+  <!-- bus body -->
+  <rect x="80" y="170" width="624" height="132" fill="none" stroke="#000" stroke-width="1.5"/>
+  <line x1="82" y1="178" x2="702" y2="178" stroke="#999" stroke-dasharray="4,3"/>
+  <line x1="82" y1="298" x2="702" y2="298" stroke="#999" stroke-dasharray="4,3"/>
+  <text x="690" y="174" text-anchor="end" font-size="8" fill="#666">ceiling</text>
+  <text x="690" y="308" text-anchor="end" font-size="8" fill="#666">floor</text>
+
+  <!-- doors -->
+  <rect x="127" y="194" width="65" height="104" fill="#fff" stroke="#000" stroke-width="1.2"/>
+  <line x1="159.5" y1="194" x2="159.5" y2="298" stroke="#999"/>
+  <rect x="387" y="194" width="65" height="104" fill="#fff" stroke="#000" stroke-width="1.2"/>
+  <line x1="419.5" y1="194" x2="419.5" y2="298" stroke="#999"/>
+  <text x="159" y="312" text-anchor="middle" font-size="9">door 1</text>
+  <text x="419" y="312" text-anchor="middle" font-size="9">door 2</text>
+
+  <!-- ToF sensors + FoV cones (longitudinal section of the cone) -->
+  <rect x="151" y="180" width="17" height="7" fill="#000"/>
+  <rect x="411" y="180" width="17" height="7" fill="#000"/>
+  <polygon points="159.5,184 93.7,298 225.3,298" fill="#ccc" fill-opacity="0.35" stroke="#666" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <polygon points="419.5,184 353.7,298 485.3,298" fill="#ccc" fill-opacity="0.35" stroke="#666" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <text x="159.5" y="268" text-anchor="middle" font-size="9">60°×60° FoV (confirmed)</text>
+
+  <!-- Phase-2 RGB camera -->
+  <rect x="530" y="180" width="16" height="8" fill="#fff" stroke="#000" stroke-dasharray="3,2"/>
+  <line x1="538" y1="188" x2="240" y2="298" stroke="#666" stroke-width="0.8" stroke-dasharray="5,3"/>
+  <line x1="538" y1="188" x2="680" y2="298" stroke="#666" stroke-width="0.8" stroke-dasharray="5,3"/>
+  <text x="560" y="230" font-size="9">salon RGB (Phase 2,</text>
+  <text x="560" y="242" font-size="9">dormant), FoV TBD</text>
+  <line x1="558" y1="228" x2="542" y2="190" stroke="#666" stroke-width="0.7"/>
+
+  <!-- ground -->
+  <line x1="60" y1="316" x2="740" y2="316" stroke="#000" stroke-width="1"/>
+
+  <!-- L_bus dimension -->
+  <line x1="80" y1="306" x2="80" y2="342" stroke="#999" stroke-width="0.5"/>
+  <line x1="704" y1="306" x2="704" y2="342" stroke="#999" stroke-width="0.5"/>
+  <line x1="80" y1="336" x2="704" y2="336" stroke="#000" stroke-width="1"/>
+  <polygon points="80,336 90,332 90,340" fill="#000"/>
+  <polygon points="704,336 694,332 694,340" fill="#000"/>
+  <text x="392" y="352" text-anchor="middle" font-size="10">L_bus = 12 m (ASSUMED)</text>
+
+  <!-- H_ceil dimension -->
+  <line x1="702" y1="178" x2="726" y2="178" stroke="#999" stroke-width="0.5"/>
+  <line x1="702" y1="298" x2="726" y2="298" stroke="#999" stroke-width="0.5"/>
+  <line x1="720" y1="178" x2="720" y2="298" stroke="#000" stroke-width="1"/>
+  <polygon points="720,178 716,188 724,188" fill="#000"/>
+  <polygon points="720,298 716,288 724,288" fill="#000"/>
+  <text x="736" y="238" text-anchor="middle" font-size="10" transform="rotate(-90 736 238)">H_ceil ≈ 2.3 m (ASSUMED)</text>
+
+  <!-- ======================= PANEL B: TOP VIEW ======================= -->
+  <text x="30" y="392" font-size="12" font-weight="bold">B — top view</text>
+
+  <!-- bus outline -->
+  <rect x="80" y="412" width="624" height="133" fill="none" stroke="#000" stroke-width="1.5"/>
+  <text x="46" y="472" font-size="9">front</text>
+  <line x1="72" y1="478" x2="36" y2="478" stroke="#000" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- counting-line bands (hatched, 1.2 - 2.2 m from door plane) -->
+  <rect x="101" y="430.6" width="117" height="52" fill="url(#hatch)" fill-opacity="0.5"/>
+  <rect x="361" y="430.6" width="117" height="52" fill="url(#hatch)" fill-opacity="0.5"/>
+  <line x1="101" y1="457" x2="218" y2="457" stroke="#000" stroke-width="2" stroke-dasharray="7,4"/>
+  <line x1="361" y1="457" x2="478" y2="457" stroke="#000" stroke-width="2" stroke-dasharray="7,4"/>
+  <text x="289" y="436" text-anchor="middle" font-size="9">virtual counting line</text>
+  <text x="289" y="448" text-anchor="middle" font-size="9">d_line TBD within band</text>
+  <text x="289" y="460" text-anchor="middle" font-size="9">1.2–2.2 m (Finding C)</text>
+  <line x1="240" y1="452" x2="220" y2="457" stroke="#666" stroke-width="0.7"/>
+  <line x1="338" y1="452" x2="359" y2="457" stroke="#666" stroke-width="0.7"/>
+
+  <!-- ToF floor footprints -->
+  <rect x="90.5" y="429" width="138" height="116" fill="#ccc" fill-opacity="0.3" stroke="#666" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <rect x="350.5" y="429" width="138" height="116" fill="#ccc" fill-opacity="0.3" stroke="#666" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <text x="492" y="502" font-size="9">ToF floor footprint</text>
+  <text x="492" y="514" font-size="9">F ≈ 2.7 m (derived:</text>
+  <text x="492" y="526" font-size="9">H_ceil, 60°×60° confirmed)</text>
+
+  <!-- ToF node marks (X) -->
+  <line x1="154.5" y1="493" x2="164.5" y2="503" stroke="#000" stroke-width="1.5"/>
+  <line x1="154.5" y1="503" x2="164.5" y2="493" stroke="#000" stroke-width="1.5"/>
+  <line x1="414.5" y1="493" x2="424.5" y2="503" stroke="#000" stroke-width="1.5"/>
+  <line x1="414.5" y1="503" x2="424.5" y2="493" stroke="#000" stroke-width="1.5"/>
+
+  <!-- Phase-2 RGB camera, top view -->
+  <rect x="526" y="474" width="9" height="9" fill="#fff" stroke="#000" stroke-dasharray="3,2"/>
+  <line x1="530" y1="478" x2="260" y2="420" stroke="#666" stroke-width="0.8" stroke-dasharray="5,3"/>
+  <line x1="530" y1="478" x2="260" y2="540" stroke="#666" stroke-width="0.8" stroke-dasharray="5,3"/>
+  <text x="560" y="470" font-size="9">RGB (Phase 2, dormant)</text>
+  <line x1="556" y1="468" x2="537" y2="477" stroke="#666" stroke-width="0.7"/>
+
+  <!-- door gaps in curb-side wall -->
+  <line x1="127" y1="545" x2="192" y2="545" stroke="#fff" stroke-width="3"/>
+  <line x1="127" y1="545" x2="192" y2="545" stroke="#999" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="387" y1="545" x2="452" y2="545" stroke="#fff" stroke-width="3"/>
+  <line x1="387" y1="545" x2="452" y2="545" stroke="#999" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="250" y="562" text-anchor="middle" font-size="9">curb side (doors)</text>
+
+  <!-- d_line dimension -->
+  <line x1="334" y1="457" x2="361" y2="457" stroke="#999" stroke-width="0.5"/>
+  <line x1="330" y1="457" x2="330" y2="545" stroke="#000" stroke-width="1"/>
+  <polygon points="330,457 326,467 334,467" fill="#000"/>
+  <polygon points="330,545 326,535 334,535" fill="#000"/>
+  <text x="240" y="509" font-size="9">d_line (TBD)</text>
+  <line x1="304" y1="506" x2="327" y2="502" stroke="#666" stroke-width="0.7"/>
+
+  <!-- W_door dimension -->
+  <line x1="387" y1="547" x2="387" y2="562" stroke="#999" stroke-width="0.5"/>
+  <line x1="452" y1="547" x2="452" y2="562" stroke="#999" stroke-width="0.5"/>
+  <line x1="387" y1="558" x2="452" y2="558" stroke="#000" stroke-width="1"/>
+  <polygon points="387,558 397,554 397,562" fill="#000"/>
+  <polygon points="452,558 442,554 442,562" fill="#000"/>
+  <text x="492" y="562" font-size="9">W_door = 1.25 m (ASSUMED)</text>
+
+  <!-- W_bus dimension -->
+  <line x1="704" y1="412" x2="730" y2="412" stroke="#999" stroke-width="0.5"/>
+  <line x1="704" y1="545" x2="730" y2="545" stroke="#999" stroke-width="0.5"/>
+  <line x1="724" y1="412" x2="724" y2="545" stroke="#000" stroke-width="1"/>
+  <polygon points="724,412 720,422 728,422" fill="#000"/>
+  <polygon points="724,545 720,535 728,535" fill="#000"/>
+  <text x="740" y="478" text-anchor="middle" font-size="10" transform="rotate(-90 740 478)">W_bus = 2.55 m (ASSUMED)</text>
+
+  <!-- sensor offset note -->
+  <text x="84" y="585" font-size="9">× = ToF node, offset s_off inboard of door plane (s_off TBD; must satisfy s_off ≥ d_line − F/2, see node_design.md)</text>
+  <line x1="159" y1="502" x2="140" y2="578" stroke="#666" stroke-width="0.7"/>
+
+  <!-- footer -->
+  <text x="30" y="604" font-size="9" fill="#444">Virtual line sits inside the vestibule, not across the aperture: kerbside threshold positions fall outside depth range;</text>
+  <text x="30" y="618" font-size="9" fill="#444">all 25/25 boarding/alighting trajectories cross the in-cabin band (Finding C, experiments/log.md 2026-08-10).</text>
+</svg>
