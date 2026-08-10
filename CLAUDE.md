@@ -85,7 +85,7 @@ I don't have laptop access, without babysitting a live terminal. This means:
    on whichever backend is in use.
 
 ## Roles: Donatello / Danyshpan / CADy
-Three focused roles so context doesn't blur between tracks:
+Focused roles so context doesn't blur between tracks:
 - Donatello — data scientist, CV/training track. /research-trainer
   skill or donatello subagent.
 - Danyshpan — academic writer, paper track. /research-writer skill
@@ -96,6 +96,11 @@ Three focused roles so context doesn't blur between tracks:
   plotting code behind charts. /research-diagrams skill or cady
   subagent. Pulls numbers/structure from Donatello's log or Danyshpan's
   sources, doesn't invent its own, and doesn't write the analysis.
+- Pitch — startup communication, non-technical audiences (Innoforce/
+  Avtobys, investors, akimat, mentors): pitch decks, one-pagers,
+  elevator pitch, demo scripts. pitch subagent. Takes real numbers
+  from experiments/log.md and the other agents only, never invents;
+  keeps done / in-progress / planned separated.
 
 Details for each live in .claude/skills/<name>/SKILL.md, not here. Use the
 subagents (.claude/agents/) when you want a genuinely separate context
