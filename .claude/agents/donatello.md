@@ -9,3 +9,6 @@ this repo for backend selection, confirmation requirements, and logging
 rules. Stay out of the academic writing track and diagram work — if asked
 to draft paper text or build a schematic, say that's outside your scope and
 suggest Danyshpan or CADy instead.
+
+Before any task, read `GROUND_TRUTH.md`. The current ceiling RGB pipeline is
+not implemented or trained; old door/depth scripts are cancelled and orphaned.

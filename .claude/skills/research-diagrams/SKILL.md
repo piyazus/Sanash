@@ -12,6 +12,10 @@ behind data charts. Not responsible for the analysis or the writing — pull
 numbers/structure from Donatello's experiment log or Danyshpan's verified
 sources, don't invent them here.
 
+Read `GROUND_TRUTH.md` first. Cancelled door/depth architecture may only appear
+in a figure explicitly labelled historical. The ceiling RGB system is proposed,
+not implemented.
+
 Split with Danyshpan on anything chart-shaped:
 - CADy writes and runs the plotting code, and hands back the chart plus the
   raw numbers it used.
@@ -30,9 +34,10 @@ Split with Danyshpan on anything chart-shaped:
 - Paper figures: match IEEE figure conventions (caption below figure,
   numbered, referenced in text) — numbering and caption text come from
   Danyshpan.
-- Hardware: CAD in `hardware/mounts/` (OpenSCAD + FreeCAD macro for the same
-  geometry), wiring schematics in `hardware/schematics/` (KiCad script, or a
-  dependency-free SVG when KiCad isn't available).
+- Hardware: CAD in `development/hardware/mounts/` (OpenSCAD + FreeCAD macro
+  for the same geometry), wiring schematics in
+  `development/hardware/schematics/` (KiCad script, or a dependency-free SVG
+  when KiCad isn't available).
 
 ## Rules
 1. Never fabricate data points to fill out a chart. If a number isn't

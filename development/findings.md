@@ -1,5 +1,9 @@
 # Sanas — findings so far
 
+> **ИСТОРИЯ, НЕ CURRENT SPEC.** Этот файл фиксирует измерения архитектур до
+> пивота 2026-08-25. Door/depth выводы не являются результатами текущей
+> потолочной RGB-системы. Актуальное состояние: [`../GROUND_TRUTH.md`](../GROUND_TRUTH.md).
+
 Everything here is measured or cited. Numbers without a source are not in this
 document. Where something is a guess or an untuned default it says so.
 
@@ -188,8 +192,18 @@ corrected 1,204 file extensions after magic-byte sniff
 Both histograms sum to 1,289. The subset tops out at three occupants — the 22
 four-occupant frames in the full dataset did not survive stride-10 sampling.
 
-**218 zeros in `count_view` against 120 in `count_cabin` means 98 frames, 7.6%,
-contain someone the front-left camera cannot see.** That is a measured cost of
+**Corrected 2026-08-10 (see `../experiments/log.md`, entry "two-phase plan
+recorded"). The subtraction `218 - 120 = 98` is wrong** — it under-reports,
+because 4 frames have `view > 0` while `cabin == 0` (pseudo-label
+disagreement), so the zero-sets are not nested. Measured directly:
+
+- `view == 0` and `cabin > 0`: **102 frames (7.9%)** — the camera sees nobody
+  at all while someone is aboard.
+- `view < cabin` (any undercount): **181 frames (14.0%)**. `view > cabin`:
+  7 frames (0.5%).
+
+14.0% is the operative figure. A weak-label scheme binding cabin-level counts
+to a single view inherits that, not 7.6%. Either way it is a measured cost of
 single-camera occlusion, not an estimate.
 
 ### `sanas-depth-occupancy` — COMPLETE (third attempt)

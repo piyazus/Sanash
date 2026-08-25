@@ -1,5 +1,10 @@
 # External datasets
 
+> **PROVENANCE, НЕ СПИСОК РАЗРЕШЁННЫХ TRAINING DATA.** Этот файл подтверждает,
+> что скачано и измерено. Текущая применимость, domain gap и legal blockers
+> определены в [`../GROUND_TRUTH.md`](../GROUND_TRUTH.md). Полный Gorelik
+> archive не скачан; локально есть только прежняя APC-выборка и ZIP index.
+
 Provenance record for pretraining data pulled into `data/external/`.
 `data/` is gitignored, so the archives themselves are not in git. This file is
 the tracked record of what was fetched, from where, under what licence, and

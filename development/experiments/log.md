@@ -683,3 +683,268 @@ selection (2,215 frames, 0.427 GB, episode cross-check CLEAN),
 `build_kernels.py --check` up to date, `sanas` imports resolve, ruff
 check/format status unchanged from the pre-move baseline (152 pre-existing
 lint errors, 4 generated kernels unformatted — same as before).
+
+## 2026-08-25 — documentation reconciled; STATE.md added; one stale number corrected
+
+Not an experiment run. No code logic changed, no kernel touched, no GPU, no
+fetch. Recorded here because this log is the place that says where things
+live, same as the reorganisation entry above.
+
+### Problem
+
+Three documents each claimed authority and disagreed with each other and
+with this log on the two questions that matter most — what the sensor is
+and whether a model is involved:
+
+| Document | Said | Actual (this log, 2026-08-10) |
+|---|---|---|
+| `SANASH_Master_Document.md` §3/§5/§7 (v1.0, 6 Aug) | Jetson Orin Nano Super + P2PNet + Hikvision RGB, ~$3,457 procurement | 64-zone ToF (VL53L7CX class) + ESP32-S3; P2PNet licence-excluded; no trained model in Phase 1 |
+| `development/sanas_cv_track_conclusions.md` §8 (10 Aug) | "final decision": Jetson + 2× RealSense D435i | superseded the same day by the ToF decision |
+| same, §5 | "4-camera hypothesis, test not run" | test ran; refuted — 28.8% coverage at spec range |
+
+The master document's own 23 Aug note pointed readers at
+`sanas_cv_track_conclusions.md` §8 as the current answer — i.e. one stale
+document forwarding to another.
+
+### Changes
+
+1. **`STATE.md` added at repo root.** Current-state map: architecture in
+   force, measured results with their caveats, what was rejected and on what
+   evidence, a document-authority table, and the open items ranked by
+   blocking power. Carries no numbers of its own — every figure cites the
+   file it came from. States the conflict rule explicitly: this log wins.
+2. **Staleness banners** added to `SANASH_Master_Document.md` and
+   `development/sanas_cv_track_conclusions.md`, each naming the specific
+   sections not to trust and the specific sections still worth reading.
+   Neither document was deleted or rewritten — the still-valid parts are
+   substantial (research question, novelty argument, 43 sourced references,
+   the outreach template; the dataset analysis and the two-phase framing).
+3. **`README.md`** gains a "Start here" block pointing at `STATE.md` and
+   stating the conflict rule.
+4. **`development/findings.md` §5 — stale number corrected.** It read
+   "98 frames, 7.6%" for single-camera occlusion. The entry
+   "two-phase plan recorded" above had already corrected this by direct
+   measurement but findings.md was never updated. Now reads: `view == 0 and
+   cabin > 0` is **102 frames (7.9%)**; the operative figure is any
+   undercount, `view < cabin`, at **181 frames (14.0%)**; `view > cabin` is
+   7 frames (0.5%). The subtraction under-reports because the zero-sets are
+   not nested.
+5. **Two PDFs moved**, `Methodology.pdf` and
+   `Methodology for emp. papers.pdf`, from the repo root into
+   `research/coursework/`. `research/coursework/README.md` already listed
+   both in its contents table while they sat at root; the files are
+   gitignored either way, so history is unaffected.
+
+No source file under `development/src/` or `development/scripts/` was
+touched, so no kernel regeneration was needed and no result can have moved.
+
+## 2026-08-25 — ARCHITECTURE PIVOT: door APC + RGB-cabin design abandoned, ceiling device to replace both phases
+
+**STATUS: deletion recorded, not a result. Nothing below was measured today
+— this entry documents what was removed and why, per Diyas's explicit
+instruction in-session. Reason for the pivot was not stated beyond "будем
+создавать свой отдельный девайс для потолка" — not filled in further here
+to avoid inventing a justification that wasn't given.**
+
+- commit at time of deletion: a9712795bb516fa604f16f700c124d8832eec6dc
+
+### Decision
+
+Both prior phases are cancelled, not just Phase 1:
+- Phase 1 (door-mounted 64-zone ToF APC counter, VL53L7CX class, geometric
+  count, no model) — cancelled.
+- Phase 2 (RGB cabin classification, DINOv2/ConvNeXt + CORN ordinal head,
+  dormant) — cancelled, not merely left dormant.
+
+New direction: a single ceiling-mounted device, replacing both. Sensor
+modality, exact placement, and CV method are **open** — not specified yet,
+to be decided fresh rather than carried over from the trade study or
+backbone literature that supported the door/cabin design.
+
+### What was deleted this session
+
+- `development/src/sanas/*` — all 11 modules (`door_apc.py`, `corn.py`,
+  `models.py`, `depth_occupancy.py`, `depth_kernel.py`, `config.py`,
+  `data.py`, `labels.py`, `selection.py`, `fetch.py`, `ziprange.py`,
+  `__init__.py`)
+- `development/hardware/*` — all 4 docs + 4 SVGs (door-node design, wiring,
+  BOM, system architecture)
+- `development/notebooks/{depth_occupancy,depth_occupancy_multizone,
+  extract_subset,train_corn}/` — all 4 kernel scaffolds
+- `research/paper/sanas_apc.tex`, `related_work_notes.md`, `figures.md`,
+  `figures/` (Fig. 1-7), `results/apc_validation.{json,md}` — the entire
+  Phase-1 paper draft
+- `research/trade_study.md` — sensor modality trade study (depth vs mmWave/
+  CO2/Wi-Fi/thermal), tied to the door/cabin decision
+- `research/refs/{tof-apc,density-estimation,backbone-methods,
+  alternative-modalities}/` — 49 papers total + `graph.json`,
+  `REFGRAPH_REPORT.md`, `graph_view.html` (all untracked, not in git
+  history either way)
+- `research/download_links.md`, `research/master_bibliography.md`,
+  `research/paper/related_work_density_estimation.md`,
+  `research/scripts/` (refgraph.py tooling for the deleted corpus)
+
+**Kept, deliberately:** `research/refs/rtci-supporting/` and the RTCI
+causal-experiment literature — separate paper track (does real-time
+crowding info change boarding decisions), not part of the device design
+being replaced. `business/*` (deck, one-pager, demo video/stills) — not
+touched, flagged to Diyas as referencing the old door-counter demo, no
+deletion instruction given for that track yet. `STATE.md`,
+`development/findings.md`, `development/sanas_cv_track_conclusions.md` —
+left as historical record of what was measured on the abandoned design;
+not rewritten in this entry, will need a pass once the ceiling device's
+own architecture exists to describe.
+
+All deletions were via `git rm` (tracked files, recoverable from history)
+or plain delete (untracked refs/lit, not recoverable — were gitignored per
+`CLAUDE.md`'s "PDFs too large for history" rule). Nothing was committed;
+working tree only.
+
+## 2026-08-25 — NEW STACK DECISION: ceiling device, full-frame RGB, single phase (nothing trained yet)
+
+**STATUS: decision only, dictated by Diyas in-session. No kernel run, no
+GPU spent, no code written yet for this stack — that's next.**
+
+### Hardware
+
+- **Jetson Orin Nano Super Dev Kit** — onboard compute, TensorRT for
+  ViT/attention architectures
+- **Waveshare IMX219-160** camera (IR variant IMX219-160IR for night)
+- NVMe SSD — storage
+- USB-C PD power bank (65W+, 15V via trigger cable) — standalone, not
+  wired into bus electrical system
+
+### CV model, MVP
+
+**CSRNet + PFCASA** (Rostamza et al., arXiv:2605.18349, JKU Linz) —
+parameter-free attention, effective at low crowd density (<40 people),
+matches bus-cabin conditions. This is the paper filed as `rostamza2026` in
+the now-deleted `research/refs/density-estimation/` corpus (see the
+architecture-pivot entry above) — full text was already read and
+synthesized once; the PDF itself needs re-fetching if it's going to be
+cited or re-verified.
+
+### Architecture
+
+Single phase only — what was previously called Phase 2. Full-frame RGB
+classification of the whole cabin. One shared backbone, separate head.
+Output: 5 ordinal density levels (empty -> crush load) + continuous 0-1
+score.
+
+Baseline / previous CV stack, not used in MVP: frozen **DINOv2 ViT-S/14 +
+CORN ordinal head** + band/strip pooling + conformal prediction;
+**ConvNeXt-Tiny + CORN** as the edge-deployable comparison. Both backbones'
+source papers (`oquab2023`, `shi2023`) were in the deleted
+`backbone-methods/` corpus — same re-fetch note as above applies if this
+baseline gets built out.
+
+### Datasets
+
+1. Multi-View In-Cabin Monitoring System (Gorelik, Karrow, Sivrikaya,
+   Albayrak / GT-ARC, TU Berlin + Baumann / MAN Truck & Bus SE) — 9,136
+   synced RGB+depth samples, 4 cabin cameras + LiDAR, German urban bus,
+   nuScenes format. (This is `gorelik2026`, already in `research/refs/`
+   pre-pivot — file itself untouched by the deletion pass, wasn't inside
+   the four deleted subfolders.)
+2. RPEE-HEADS — **field_natural subset only**, `lab_capped` excluded.
+   License caution carried over from prior review: CC BY-SA 4.0,
+   ShareAlike applies to derived weights — not resolved for a shipped
+   product, was previously scoped "paper-track only". Needs a decision
+   now that this is the MVP path, not just the paper.
+3. DISCO — for pretraining.
+
+### Training backend
+
+Kaggle CLI (`kaggle kernels push/status/output`) — stand-in until a
+dedicated GPU server exists. Same backend as before the pivot.
+
+### Software integration
+
+Avtobys (Innoforce) displays the continuous 0-1 score as a green-to-red
+gradient.
+
+### Decision: PCDS dropped from the stack
+
+Was scoped for door-zone validation, which is cancelled. Format (RGB-D
+directly over a door) doesn't fit full-frame cabin classification. License
+was already NC-restricted (paper-track only) and the archive (Baidu) was
+already flagged as practically unfetchable (anti-automation, 150-800GB
+size estimate, 5x spread). Both the use case and the access path are gone
+— removed rather than kept as unused baggage.
+
+### Open, not decided in this entry
+
+- RPEE-HEADS ShareAlike-on-weights question (above)
+- `business/*` (deck, one-pager, demo video) still shows the cancelled
+  door counter — no instruction yet on whether to update or leave
+- `STATE.md` still describes the cancelled two-phase door/cabin
+  architecture — needs a full rewrite pass once this stack is confirmed
+  stable, not touched in this entry
+
+## 2026-08-25 — business/ pitch materials for the door counter deleted
+
+Diyas instruction: "удаляй все что связано с дверным проходом" (delete
+everything related to the doorway). Checked each file in `business/` for
+door-counter content before deleting — all five `.md` files were entirely
+built around the door sensor pitch (Phase 1 as primary solution, RGB
+cabin camera only mentioned as a dotted-line future Phase 2), not mixed
+content, so deleted whole rather than editing sections:
+
+- `business/akimat_note.md`, `avtobys_deck.md`, `demo_script.md`,
+  `elevator_pitch.md`, `one_pager.md`
+- `business/demo/` entire folder — `make_demo_animation.py`,
+  `sanas_demo.mp4`, `stills/still_{01_sensor_view,02_boarding,
+  03_alighting,04_final_card}.png` — animation was literally the 8x8
+  door-sensor readout + boarding/alighting counter, no part of it
+  transfers to a ceiling device
+
+**Not touched:** `business/outreach/*` — the researcher contact lists
+mention "APC" only in describing *other academics'* published work
+(Pronello's field APC comparison, Qian's crowdsourced-fullness-vs-APC
+validation), not our own hardware. Different track, left alone.
+
+`business/` now contains only `outreach/`. No pitch deck, one-pager, demo
+script, or demo video exists for the ceiling device yet — new versions
+need writing once the stack is stable enough to pitch (currently still
+open: RPEE-HEADS license question, and this stack itself is one message
+old, untested).
+
+## 2026-08-26 — RESEARCH SCOPE DECISION: RTCI behaviour is the core study
+
+**STATUS: research-scope decision only. No field experiment, survey response,
+device run or causal result is recorded here.**
+
+Diyas clarified that the central research question is the extent to which
+real-time bus occupancy information changes Almaty commuters' boarding
+decisions. The ceiling occupancy device is therefore a measurement/enabling
+system for RTCI, not the scientific endpoint by itself.
+
+Planned evidence sequence:
+
+1. audit and scale the existing stated-preference survey;
+2. build a reproducible RTCI literature review;
+3. validate occupancy measurement in silent mode;
+4. run a limited Avtobys field experiment comparing boarding now vs waiting.
+
+The initial idea of one baseline week followed by one city-wide information
+week is not fixed methodology. It is vulnerable to time confounding and will
+be compared against app-level randomized A/B or cluster crossover on a selected
+high-frequency route. Current working protocol:
+`research/RTCI_RESEARCH_CHARTER.md`.
+
+## 2026-08-26 — PUBLICATION TARGET: Transportation Research Part C
+
+**STATUS: publication strategy decision, not a submission or acceptance.**
+
+Diyas selected *Transportation Research Part C: Emerging Technologies* as the
+target journal. This raises the required contribution above a survey or device
+benchmark. The working paper must connect:
+
+1. measured occupancy technology and information quality;
+2. causal boarding/waiting behaviour in the field;
+3. a behaviour-aware choice model;
+4. implications for waiting, load distribution and service reliability.
+
+Journal-fit rationale and relevant TR-C precedents were added to
+`research/RTCI_RESEARCH_CHARTER.md`. No claim is made that the current project
+already meets this threshold.

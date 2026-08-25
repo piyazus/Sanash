@@ -1,5 +1,10 @@
 # Related-work notes (coordinator, 2026-08-10)
 
+> **ИСТОРИЯ ОТМЕНЁННОГО DOOR/ToF PAPER TRACK.** Файл сохранился, хотя запись
+> архитектурного пивота перечисляла его среди удалённых. Не использовать для
+> описания текущего продукта или активной статьи без нового review. См.
+> [`../../GROUND_TRUTH.md`](../../GROUND_TRUTH.md).
+
 Source: Consensus academic search (two queries). All entries below are from
 abstracts unless marked otherwise — Danyshpan must verify against full text
 before citing, and must not copy accuracy numbers without checking the paper.

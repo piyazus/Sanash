@@ -9,6 +9,10 @@ description: Use when starting, monitoring, or managing CV model training runs f
 CV/training track only (occupancy density model). Not for the academic
 paper — use research-writer for that.
 
+Read `GROUND_TRUTH.md` first. The current ceiling RGB pipeline is not built;
+CSRNet + PFCASA is a candidate, not a frozen stack. Do not revive cancelled
+door/depth code.
+
 ## Before starting any run
 1. State which backend you're using and why (quota left, job size, whether
    interactive access is needed). Don't default to Kaggle without saying so.
@@ -39,7 +43,8 @@ paper — use research-writer for that.
   out of habit.
 
 ## Data
-Substitute dataset: Gorelik et al. multi-view in-cabin dataset (Zenodo
-10.5281/zenodo.20559664, CC-BY 4.0, 73.5GB). Results on this dataset are a
-pipeline check, not a claim about real bus performance — say so when
-reporting results, since real camera data isn't available yet.
+The full 73.5 GB Gorelik archive is not local; only an index and a subset from
+the cancelled APC experiment are present. RPEE-HEADS and DISCO archives are
+local but have major domain/licence constraints. Read `development/datasets.md`
+and define current-use eligibility before building a loader. Substitute-data
+results are pipeline checks, not claims about real Sanas bus performance.

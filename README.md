@@ -1,52 +1,61 @@
-# Setup
+# Sanas
 
-1. Unzip this as your project root and `cd` into it. Run `git init` if you
-   want version control (recommended — CLAUDE.md rules assume commits).
-2. `pip install kaggle --break-system-packages`
-3. Get `kaggle.json` from kaggle.com/settings → API → Create New Token,
-   place it yourself at `~/.kaggle/kaggle.json` (chmod 600). Do this
-   outside Claude Code — don't paste the token into chat.
-4. Open the project in Claude Code (`claude` in this directory, or through
-   the mobile app for remote sessions).
-5. Run `bash development/scripts/kaggle_setup.sh` to confirm auth works.
+Sanas исследует, как real-time crowding information в Avtobys причинно меняет
+решение пассажира Алматы: сесть в первый автобус или ждать следующий.
+Потолочная RGB-система является измерительным слоем для этого RTCI field
+experiment и должна выдавать пять уровней + непрерывный score `0..1`.
 
-## What's here
-- `CLAUDE.md` — project context and rules, loads automatically every session
-- `.claude/skills/research-writer/` — academic writing rules (IEEE, citations)
-- `.claude/skills/research-trainer/` — training/backend rules
-- `.claude/skills/research-diagrams/` — diagram, schematic and chart-code
-  rules (diagrams-as-code, hardware CAD, no fabricated data points)
-- `.claude/agents/danyshpan.md`, `.claude/agents/donatello.md`,
-  `.claude/agents/cady.md` — subagents with isolated context for each track
-- `.claude/settings.json` — permission rules (safe reads auto-allowed,
-  destructive/costly actions ask or deny)
-- `research/` — paper track (Danyshpan): `paper/` (tex, figures, results),
-  `trade_study.md`, `refs/`
-- `development/` — build track (Donatello + CADy): `src/`, `scripts/`
-  (Kaggle setup/download/push helpers), `notebooks/`, `hardware/`,
-  `findings.md`, `datasets.md`, and `experiments/log.md` — the append-only
-  run log, source of truth for what was tried and what worked
-- `business/` — pitch track: deck, one-pager, elevator pitch, akimat note,
-  demo script and demo assets
-- `data/`, `outputs/` — gitignored, stay at repo root
+## Начать здесь
 
-## Day to day
-- For paper work: `/research-writer` then describe the task, or just start
-  writing about the paper and Claude will pick the skill up automatically.
-- For training work: `/research-trainer` then describe the task.
-- For diagrams, hardware and chart code: `/research-diagrams` then describe
-  the task.
-- For a genuinely separate context, name the subagent (e.g. train in
-  background while writing in the main session):
-  - "use donatello to start a training run on a 5% subset" — CV/training
-    track, runs with its own context window.
-  - "use danyshpan to draft the intro section" — paper track, no training
-    context bleeding into it. Paper figures are his too: he specifies and
-    numbers them and interprets the data, CADy builds them.
-  - "use cady to diagram the edge inference pipeline" — architecture and
-    data-flow diagrams, hardware CAD and wiring schematics, and the plotting
-    code behind charts. Built from Donatello's log or Danyshpan's verified
-    sources rather than invented on the spot.
-- Checking on a long job from your phone: ask "what's the status of the
-  training run" — the donatello role is set up to make this answerable
-  without reconstructing context.
+1. Прочитать [`GROUND_TRUTH.md`](GROUND_TRUTH.md). Это единственный источник
+   истины о текущем продукте, фактах, гипотезах и блокерах.
+2. Выполнить `git status --short --branch`. Текущий архитектурный пивот пока
+   находится поверх коммита `a971279` и не зафиксирован как воспроизводимый
+   baseline.
+3. Для истории запусков и решений читать
+   [`development/experiments/log.md`](development/experiments/log.md). Это
+   хронология, а не current-state spec.
+
+## Честный статус
+
+Текущая потолочная RGB-архитектура ещё не реализована и не обучалась.
+`development/src/` и `development/notebooks/` пусты. Оставшиеся door/depth
+скрипты относятся к отменённой архитектуре и сейчас неработоспособны из-за
+удалённых модулей.
+
+На диске есть внешние crowd-датасеты и выборка прежнего APC-эксперимента.
+Полный 73.5 GB Gorelik archive не скачан. Ограничения и точный инвентарь
+зафиксированы в Ground Truth и
+[`development/datasets.md`](development/datasets.md).
+
+## Карта репозитория
+
+- `GROUND_TRUTH.md`: текущие решения, проверенные факты, открытые вопросы и
+  порядок действий.
+- `CLAUDE.md`: правила работы агентов в этом репозитории.
+- `development/experiments/log.md`: append-only история экспериментов и
+  архитектурных решений.
+- `development/datasets.md`: provenance, hashes, лицензии и измеренный состав
+  локальных датасетов.
+- `development/TECH_DATA_OPTIONS.md`: проверенные public datasets, model
+  candidates, prototype architecture и месячные engineering gates.
+- `research/RTCI_RESEARCH_CHARTER.md`: research question, hypotheses,
+  survey-to-field methodology, outcomes и operational requirements.
+- `research/FIELD_EXPERIMENT_PROTOCOL.md`: preregistration draft, event schema,
+  estimands, randomization и analysis contract.
+- `research/TRC_PAPER_BLUEPRINT.md`: структура и evidence gates статьи Part C.
+- `business/INNOFORCE_RTCI_PILOT_BRIEF.md`: вопросы и требования к пилоту с
+  Innoforce/Avtobys.
+- `development/findings.md` и `development/sanas_cv_track_conclusions.md`:
+  исторические выводы прежних архитектур; не current spec.
+- `research/refs/rtci-supporting/`: литература основного RTCI research track.
+- `research/coursework/`: отдельные учебные материалы.
+- `business/outreach/`: контакты; актуальных pitch-материалов под новую
+  архитектуру пока нет.
+- `data/`, `outputs/`: локальные, gitignored данные и артефакты.
+
+## Правило конфликтов
+
+Если документ, чат, vault или агент противоречит `GROUND_TRUTH.md`, действие
+не продолжается по памяти. Сначала проверяется первичный артефакт. После нового
+решения обновляются одновременно append-only log и Ground Truth.

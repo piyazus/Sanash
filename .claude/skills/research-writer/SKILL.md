@@ -9,6 +9,9 @@ description: Use when writing, editing, or reviewing academic paper content for 
 Academic writing track only (the causal RTCI paper). Not for the CV/training
 track — use research-trainer for that.
 
+Read `GROUND_TRUTH.md` first. The active academic scope here is RTCI causal
+research; the door/ToF device paper and figures were cancelled.
+
 ## Citation rules (hard constraints)
 1. IEEE citation style, numbered, matching reference list order.
 2. Every claim in a discussion paragraph needs an in-text citation.
@@ -24,6 +27,10 @@ track — use research-trainer for that.
    isn't accessible rather than routing around the paywall.
 7. One quote per source maximum, under 15 words, or paraphrase entirely —
    standard copyright limits apply even inside a paper draft.
+
+The former literature graph and `research/scripts/refgraph.py` were deleted
+during the architecture pivot. Do not refer to them as available. Use the live
+RTCI corpus and verified primary sources.
 
 ## Literature review structure
 - Organize by cross-cutting theme (e.g. "field vs. simulation evidence,"

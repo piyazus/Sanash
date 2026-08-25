@@ -3,15 +3,24 @@ outputs/
 *.zip
 # Reference papers kept on disk, too large for history
 /*.pdf
-research/refs/
+research/refs/*
+# ...but keep the refgraph index and topic synthesis notes (small, structured)
+!research/refs/graph.json
+!research/refs/REFGRAPH_REPORT.md
+!research/refs/*/
+research/refs/*/*
+!research/refs/*/README.md
 # Course/outreach material dropped into the repo, large and not project source
 research/coursework/*
 # ...but keep the write-ups: notes, transcripts, and the directory README
 !research/coursework/README.md
 !research/coursework/course_notes.md
+!research/coursework/RESEARCH_METHOD_GROUNDING.md
 !research/coursework/transcripts/
 business/outreach/
 .kaggle/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+tmp/
+.vscode/
