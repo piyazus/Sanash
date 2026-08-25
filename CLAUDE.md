@@ -21,7 +21,7 @@ like at the time. When starting a modeling task:
    on: accuracy for ordinal density estimation, inference latency on edge
    hardware, robustness to low light, license.
 2. Propose 2-3 candidates with tradeoffs before committing to a training run.
-3. Log the choice + reasoning in experiments/log.md, not in this file —
+3. Log the choice + reasoning in development/experiments/log.md, not in this file —
    this file is context, not a frozen spec.
 4. Re-open the choice once real camera data arrives; substitute-data results
    may not transfer.
@@ -48,7 +48,7 @@ based on cost, quota left, and job length. Concretely:
 - **Experiment tracking** — needs a connector once training starts for real
   (W&B or MLflow) so runs are comparable, not just logged as text.
 - **Reproducibility** — pin dependency versions, log commit hash + data
-  version + config per run in experiments/log.md.
+  version + config per run in development/experiments/log.md.
 - **Statistical/causal methods** — for the field-experiment paper track:
   power analysis, randomization design, standard causal inference checks.
 - **Citation formatting** — IEEE style for the academic paper track.
@@ -79,7 +79,7 @@ I don't have laptop access, without babysitting a live terminal. This means:
 2. Confirm before anything that spends GPU quota, costs money, or pushes
    data externally (kernel push, cloud instance launch, publishing anything).
 3. Log every experiment run (config, commit hash, backend/kernel id, result
-   metrics) to `experiments/log.md` — append, never overwrite.
+   metrics) to `development/experiments/log.md` — append, never overwrite.
 4. Don't fabricate dataset statistics, benchmark numbers, or citations.
 5. Prefer a small smoke-test run (1 epoch, data subset) before a full run,
    on whichever backend is in use.
@@ -99,7 +99,7 @@ Focused roles so context doesn't blur between tracks:
 - Pitch — startup communication, non-technical audiences (Innoforce/
   Avtobys, investors, akimat, mentors): pitch decks, one-pagers,
   elevator pitch, demo scripts. pitch subagent. Takes real numbers
-  from experiments/log.md and the other agents only, never invents;
+  from development/experiments/log.md and the other agents only, never invents;
   keeps done / in-progress / planned separated.
 
 Details for each live in .claude/skills/<name>/SKILL.md, not here. Use the
@@ -109,12 +109,34 @@ Danyshpan drafts the intro in the main session); use the skill/slash-command
 form when you just want this same session to focus on one track.
 
 ## Directory layout
-- `data/` — raw/processed data (gitignored, too large for git)
-- `scripts/` — backend setup/run scripts (Kaggle today, add others as used)
-- `src/` — model code, data loaders, training loop
-- `notebooks/` — kernel/notebook sources actually pushed to a backend
-- `experiments/log.md` — append-only run log, source of truth for model
-  choices and results (not this file)
+Three top-level tracks, one per role group. Put new work in the track that
+owns it; don't create a fourth top-level folder without a reason.
+
+- `research/` — Danyshpan (paper track)
+  - `research/paper/` — `sanas_apc.tex`, `figures.md` (figure spec),
+    `figures/` (PDF/SVG + the plotting code), `results/` (validation
+    artifacts the figures and the paper read from),
+    `related_work_notes.md`
+  - `research/trade_study.md` — sensing-modality trade study
+  - `research/refs/` — reference PDFs (gitignored, too large for history)
+- `development/` — Donatello (CV/training) and CADy (hardware, diagrams)
+  - `development/src/` — model code, data loaders, training loop
+  - `development/scripts/` — backend setup/run scripts (Kaggle today, add
+    others as used)
+  - `development/notebooks/` — kernel sources pushed to a backend,
+    generated from `development/src/` by `development/scripts/build_kernels.py`
+  - `development/hardware/` — node design, wiring, BOM, `figures/` (SVG
+    sources for paper Figs. 4-7)
+  - `development/diagrams/` — architecture and data-flow diagrams (CADy),
+    source form first, not just a rendered image
+  - `development/experiments/log.md` — append-only run log, source of truth
+    for model choices and results (not this file)
+  - `development/findings.md`, `development/datasets.md` — measured facts
+    and dataset provenance
+- `business/` — Pitch (Innoforce/Avtobys, investors, akimat, mentors):
+  decks, one-pager, elevator pitch, akimat note, demo script and `demo/`
+- `data/`, `outputs/` — raw/processed data and run artifacts, stay at repo
+  root (gitignored, too large to move around)
 
 ## Style
 - Short, direct, objective. Say if something's not possible.

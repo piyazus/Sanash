@@ -32,6 +32,19 @@
       "Read(**/kaggle.json)"
     ]
   },
+  "hooks": {
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\User\\OneDrive\\Desktop\\me\\Sanash\\.claude\\hooks\\sanash-capture.ps1\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  },
   "env": {
     "PYTHONUNBUFFERED": "1"
   }

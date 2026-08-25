@@ -1,0 +1,376 @@
+# video1168216779  lang=en  duration=1577s
+
+[00:07] All right, you're free to take a five minute break.
+[00:11] Let me just quickly join everyone.
+[00:14] And then we're going to come back in and finish the session.
+[00:51] All right, everyone, feel free to take a break.
+[00:53] I'll be back soon.
+[00:56] Five minutes.
+[00:57] All right, everyone, join back in.
+[06:13] Let us get started.
+[06:42] Is everyone here?
+[06:44] Can anyone tell me if they're back here?
+[06:47] Yes.
+[06:48] Awesome.
+[06:49] Yep.
+[06:50] Awesome, awesome.
+[06:51] It's just another half your camera is on,
+[06:53] so I can't tell if it's back in or not.
+[07:01] All right, so now we've reached what I think
+[07:03] is one of the most important parts of the introduction,
+[07:05] the research gap.
+[07:08] Many students misunderstand what a research gap actually is.
+[07:11] They think a research gap means nobody has ever
+[07:13] studied the topic before.
+[07:15] That's almost number two.
+[07:16] Instead, a research gap means that something important
+[07:19] has not been fully explored.
+[07:23] Researchers may have studied the general topic,
+[07:25] but perhaps they haven't studied a particular population,
+[07:27] country, method, or question.
+[07:29] That's exactly what this slide is emphasizing.
+[07:32] For example, imagine you're interested in AI and education.
+[07:35] There are already thousands of papers on that topic.
+[07:38] Does that mean you can study it?
+[07:40] Of course not.
+[07:41] Instead, ask questions like, has this
+[07:43] been studied before among high school students?
+[07:47] Has it been studied in Uzbekistan or Central Asia
+[07:49] or any other part of the world?
+[07:52] Has anyone examined long-term effects
+[07:54] instead of short-term effects?
+[07:56] Has anyone compared different AI tools?
+[08:00] Those are all examples of research gaps.
+[08:03] Notice that a research gap must be supported with evidence.
+[08:06] You cannot simply write, there's little research blank.
+[08:11] You need to demonstrate that by referring to the literature
+[08:13] you've reviewed.
+[08:15] A useful sentence starter is, although previous studies
+[08:20] have examined limited research that
+[08:22] is investigated or existing research
+[08:27] I merely focus on while comparatively
+[08:30] the little attention has been given to.
+[08:32] Those phrases immediately show readers
+[08:34] why your paper is necessary.
+[08:36] Remember, your goal is not to criticize previous researchers.
+[08:42] Their work provides the foundation of your own.
+[08:44] You are simply identifying the next logical question that
+[08:46] still deserves an investigation.
+[09:03] So this slide provides several examples of research gaps.
+[09:07] Notice that each one is specific.
+[09:09] The first example says that previous studies mainly
+[09:11] focus on university students.
+[09:13] That's a population gap.
+[09:15] The second point points out a limited research
+[09:19] on high school students.
+[09:22] Again, that's narrowing the focus.
+[09:29] The third highlights developing countries.
+[09:32] That's a geographical gap.
+[09:34] This illustrates an important lesson.
+[09:36] Research gaps can come from many different places.
+[09:39] They might involve a different age group, a different culture,
+[09:41] a different research method, a different theoretical
+[09:44] perspective, or even changes in technology over time.
+[09:48] One mistake students make often is claiming a gap that
+[09:52] isn't really a gap.
+[09:53] For example, nobody has studied artificial intelligence.
+[09:57] Obviously, that isn't true.
+[09:58] Instead, be careful and be precise.
+[10:02] The slide reminds us that a research gap does not mean
+[10:05] the research topic has never been studied.
+[10:07] It means rather than an important aspect
+[10:09] remains underexplored.
+[10:11] That's much more realistic and much more persuasive.
+[10:13] When you're searching the literature for your own paper,
+[10:16] always ask yourself, what do these studies have in common?
+[10:20] Often the answer reveals the gap.
+[10:22] If every paper studies university students, perhaps
+[10:25] nobody has examined younger learners.
+[10:28] If every study uses surveys, perhaps qualitative interviews
+[10:31] are missing, those observations become justifications
+[10:34] for your research.
+[10:46] Already, the purpose statement.
+[10:50] After we've introduced a background,
+[10:52] explain the problem and identified the research gap,
+[10:56] we're finally ready to tell readers exactly what
+[10:58] our paper will do.
+[11:00] This is called the purpose statement.
+[11:02] The purpose statement is one of the clearest sentences
+[11:04] in the entire paper.
+[11:06] There should be no ambiguity.
+[11:08] Readers should immediately understand
+[11:09] what they're about to read.
+[11:11] I want to stick examples on the slide.
+[11:13] The paper examines how AI assist in writing tools,
+[11:16] influence academic productivity among high school students.
+[11:19] That's an empirical paper.
+[11:23] The second example begins this literature review,
+[11:25] and now, sorry, analyzes existing research.
+[11:31] Immediately we know it's a literature review
+[11:32] rather than an empirical study.
+[11:34] The slide also provides useful advice.
+[11:36] It should identify the topic.
+[11:38] It should identify the population context.
+[11:40] And it should indicate.
+[11:42] What do you know about the slides?
+[11:44] Oh, you cannot see the slides.
+[11:46] Hold on just a moment.
+[11:48] Oh, wait a minute.
+[11:52] Let me quickly stop and share again.
+[12:09] Oh, yeah.
+[12:10] Can you see the slides now?
+[12:14] Yeah.
+[12:15] All right, awesome.
+[12:17] So imagine that someone reads only your purpose statement.
+[12:19] Would they understand what your paper is about?
+[12:21] If the answer is yes, you've probably written
+[12:23] a strong purpose statement.
+[12:24] If not, make it more specific.
+[12:29] I like to spend another minute talking about purpose statement
+[12:32] because students often make them too broad.
+[12:34] For example, the paper discusses education.
+[12:37] Now, you can see that's far too vague.
+[12:39] What aspect of education?
+[12:40] Which students?
+[12:41] Which country?
+[12:41] Which issue?
+[12:42] Instead, compare that with this paper exam
+[12:46] the relationship between AI assisted writing tools
+[12:48] and academically productive productivity
+[12:50] among grade 11 students in Toshkent.
+[12:53] Now, we know exactly what study investigates.
+[12:55] Notice how much confidence that gives the reader.
+[12:58] Whenever possible, include the topic, the population,
+[13:01] and the context.
+[13:02] Avoid dramatic language like dis-revolutionary study
+[13:05] completely changes our understanding.
+[13:08] Academic writing values precision much more than exaggeration.
+[13:11] Simple direct language is usually the strongest.
+[13:25] So now we're moving on to this huge chunk.
+[13:37] So now let's examine the longer example
+[13:39] provided in the presentation.
+[13:40] Rather than reading every sentence individually,
+[13:43] I would like you to notice the structure.
+[13:45] The introduction begins broadly
+[13:46] by discussing education and economic growth.
+[13:49] Next, a narrowest toward a smaller educational institution.
+[13:54] Then it identifies the problem that these institutions
+[13:56] relatively little have received relatively little scholarly
+[14:01] attention despite their potential importance
+[14:04] in Uzbekistan.
+[14:06] After that, the writer explains that the research gap
+[14:08] is by pointing out that there is limited evidence
+[14:12] about how investment in these situations, sorry,
+[14:14] in these institutions affect broader economic outcomes.
+[14:18] Finally, the introduction ends with a clear purpose
+[14:20] statement describing exactly what
+[14:22] the study intends to investigate.
+[14:24] Notice how smoothly each paragraph builds on the previous one.
+[14:29] Every paragraph prepares the readers for the next one.
+[14:31] When you're writing your own introduction,
+[14:33] don't worry about making it sound complicated.
+[14:36] Instead, focus on making it logical.
+[14:38] If your reader can easily follow your reasoning,
+[14:40] you're making an effective introduction.
+[14:42] So with that, I'll give you guys just a minute
+[14:44] to read over for yourselves, but just be noting
+[14:46] the highlighted parts and just note the structure
+[14:50] mainly.
+[14:51] You don't have to read every single part of it.
+[15:38] Let me know when you guys are done reading.
+[16:31] All right.
+[16:33] I guess we can move forward.
+[16:36] Hope you guys finished reading it.
+[16:54] Here, this slide summarizes everything
+[16:57] we've discussed so far.
+[16:59] It presents the introduction as a visual sequence.
+[17:01] We began with the broad topic, then
+[17:04] identified the specific problem.
+[17:06] Next comes the research gap.
+[17:08] Finally, we present the paper's purpose.
+[17:11] Think of this as your checklist whenever you
+[17:12] write an introduction.
+[17:14] Before moving on to your literature review,
+[17:15] ask yourself, have I introduced the topic?
+[17:17] Have I explained why it matters?
+[17:19] Have I clearly described the problem?
+[17:21] Have I justified the research gap?
+[17:23] Have I told readers exactly what my paper will do?
+[17:26] If you can answer yes to all five questions,
+[17:29] oh, jeez, there's a fly.
+[17:35] If you can answer yes to all five questions,
+[17:38] your introduction is probably complete.
+[17:40] This visual formula is especially useful while planning.
+[17:44] Before writing full paragraphs,
+[17:45] you can simply make notes under each heading.
+[17:48] Later, those notes become your introduction.
+[17:51] That's often much easier than starting at a blank page
+[17:53] and wondering how to begin.
+[17:55] With our introduction complete, we're
+[17:56] now ready to move on to another essential academic writing
+[17:59] skills, using sources effectively
+[18:01] through quoting, paraphrasing, and proper citation.
+[18:16] Now that we learned how to write a strong introduction,
+[18:18] let's discuss another essential skill
+[18:20] in academic writing, using sources correctly.
+[18:24] One of the biggest differences between academic writing
+[18:27] and personal writing is that academic writing is built
+[18:29] on evidence.
+[18:30] Very few research papers contain only the author's own ideas.
+[18:34] Instead, researchers build on a work
+[18:36] that has already been published.
+[18:37] However, using sources correctly is
+[18:39] about much more than about information.
+[18:42] It's about integrating the ideas of what
+[18:44] the researchers and the own audience.
+[18:46] There are two main ways to do this, quoting and paraphrasing.
+[18:51] A quote uses the author's exact words
+[18:53] and places them inside quotation marks.
+[18:56] Because you're using someone else's wording,
+[18:58] it shouldn't only be done when those exact words are
+[19:01] especially memorable, precise, or important.
+[19:04] Also, the time however, researchers paraphrase.
+[19:07] Paraphrasing means expressing the same idea
+[19:09] using your own words and sentence structure
+[19:11] while keeping the original meaning.
+[19:13] This demonstrates that you don't understand the research
+[19:15] rather than simply copying it.
+[19:17] One misconception is that paraphrasing
+[19:19] means changing a few words with synonyms.
+[19:21] It doesn't.
+[19:23] A true paraphrase reorganizes the sentence
+[19:25] while preserving the author's idea.
+[19:28] As a general rule, you should paraphrase far more
+[19:30] often than you quote.
+[19:32] Your paper should sound like your own academic voice
+[19:34] rather than support my evidence from the literature.
+[19:38] So the examples on the slide show the difference
+[19:40] between copying and paraphrasing.
+[19:43] Suppose an article states that frequent social media uses
+[19:48] associated with increased anxiety among adolescents.
+[19:51] A weak paraphrase might simply replace frequent
+[19:55] with regular and associated with linked.
+[19:58] That is still too close to the original wording.
+[20:00] A stronger paraphrase changes both the sentence structure
+[20:08] and vocabulary while keeping the original meaning.
+[20:11] For example, research suggests that adolescents
+[20:13] who spend considerable amount of time on social media
+[20:15] tend to report higher levels of anxiety.
+[20:21] Or like students who frequently encounter
+[20:24] political material online tend to express
+[20:26] more polarized political views.
+[20:30] Whenever you paraphrase, remember that you must cite
+[20:34] all sources.
+[20:36] You must cite the original source.
+[20:39] The idea belongs to the original author,
+[20:41] even though the wording is yours.
+[20:44] Here is another useful question to ask yourself.
+[20:46] After reading the source, can I close the article
+[20:50] and explain the idea from memory?
+[20:51] If you can, you're much more likely to produce
+[20:53] a genuine paraphrase rather than accidental copying.
+[20:57] A good paraphrasing also helps your paper flow naturally
+[21:00] because it allows you to connect multiple papers
+[21:02] to a single discussion instead of presenting isolated questions.
+[21:07] Now we're moving into IEEE referencing.
+[21:10] We're about to be done, guys, just a few more slides.
+[21:14] Now let's turn our attention to referencing.
+[21:17] So the presentation introduces the IEEE referencing style,
+[21:20] which is commonly used in engineering, computer science,
+[21:23] information technology, and related disciplines.
+[21:25] Unlike APA or MLA, IEEE does not use the author's name
+[21:35] in the citation itself.
+[21:36] Instead, it uses numbers in closed and square brackets.
+[21:39] For example, the first source you cite becomes one.
+[21:42] The second source becomes two, and so on.
+[21:45] If you refer to this first source again later in the paper,
+[21:48] it remains one.
+[21:50] The numbering never changes.
+[21:54] This system keeps the text clean and concise,
+[21:56] especially in technical writing, where many references
+[21:59] may appear within a single paragraph.
+[22:01] It's also important to remember that the reference list
+[22:04] is organized according to the order in which sources first
+[22:07] appear in the paper, not alphabetically.
+[22:10] Whatever referencing style your own structure requires,
+[22:14] the key principle is consistency.
+[22:17] One of the easiest ways to lose marks on the research
+[22:20] paper is through inconsistent citations.
+[22:23] Always check that every intact citation
+[22:25] appears in the reference list and that every reference listed
+[22:28] has been cited somewhere in the paper.
+[22:37] Outline, creating an outline for a literature review.
+[22:41] That's what we're going to focus on.
+[22:51] So now let's return to organization.
+[22:53] This slide presents an example outline for a literature review.
+[22:57] Notice that the paper isn't organized by the author.
+[23:00] Instead, it's organized by themes.
+[23:03] This is exactly how an effective literature review should
+[23:05] work.
+[23:06] Imagine you've read 20 art journal articles.
+[23:08] You want to write one paragraph about article one,
+[23:10] another paragraph about article two,
+[23:12] and continue that pattern until the end.
+[23:14] Instead, you identify major ideas that
+[23:17] appear across many studies.
+[23:19] For example, if you're reviewing AI and education,
+[23:21] one section might examine academic benefits,
+[23:23] another ethical concerns, another student perceptions,
+[23:26] and another future challenges.
+[23:28] Well then, each theme, you compare
+[23:31] what different researchers found.
+[23:33] Ask questions like, which studies agree,
+[23:36] which studies disagree, why there
+[23:39] findings be different, which patterns emerge
+[23:44] across the literature.
+[23:45] Those comparisons demonstrate critical thinking,
+[23:47] which is one of the main goals for a literature review.
+[23:49] An outline also helps you identify weak areas
+[23:52] before you begin writing.
+[23:54] If one section contains 10 studies,
+[23:55] well another contains only one,
+[23:57] you may need to search for additional literature
+[23:59] or reconsider your organization.
+[24:02] We're nearly there.
+[24:03] Folks, oh, where is this the last one?
+[24:09] Oh, okay.
+[24:12] All right.
+[24:15] We've covered a great deal of materials today,
+[24:17] so let's finish by reviewing the most important ideas.
+[24:19] Every strong research paper begins
+[24:21] with a clear structure.
+[24:22] Before writing paragraphs create a blueprint.
+[24:25] Religio introduction might move me
+[24:26] from the background to the problem,
+[24:28] then the research gap,
+[24:29] and finally your purpose statement.
+[24:31] Use sources responsibly by paraphrasing accurately
+[24:33] and citing them correctly.
+[24:35] Organize your literature review around themes
+[24:38] rather than individual authors.
+[24:40] Finally, develop a logical outline
+[24:43] before drafting the paper itself.
+[24:45] Your homework is to begin applying these ideas
+[24:46] to your own research project.
+[24:48] Start by creating a simple outline.
+[24:51] Then draft your own introduction
+[24:53] using the four parts structure we discussed today.
+[24:56] Don't worry about making it perfect on the first attempt.
+[24:58] Writing is a process of revision.
+[25:00] Every even experienced researchers
+[25:02] rarely produce excellent first drafts.
+[25:04] They revise, reorganize,
+[25:07] and improve their work many times before submission.
+[25:10] So next class we'll continue developing these skills
+[25:14] and begin turning our outline
+[25:15] into complete sections of a research paper.
+[25:18] But before we finish,
+[25:18] are there any questions about today's lecture
+[25:21] about your upcoming assignment?
+[25:23] Your homework will be waiting for you
+[25:25] in the Google classroom.
+[25:45] Any questions there, guys?
+[25:54] Alrighty, you're free to go for everyone then
+[25:56] if you don't have any questions.
+[26:03] Thank you for joining today's session.
+[26:13] Take care, bye.

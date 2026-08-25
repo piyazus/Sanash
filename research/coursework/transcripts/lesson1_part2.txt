@@ -1,0 +1,391 @@
+# lesson1_part2  lang=en  duration=1140s
+
+[00:00] Okay, we were at the point in which we were looking at different sources.
+[00:08] As I'm sure you all heard, Matthew has a very different stance on the use of AI compared to
+[00:13] me.
+[00:14] He is much more pro AI than I am.
+[00:16] I personally, I disagree with him.
+[00:18] I think Google Scholar is amazing.
+[00:20] But once again, you can use AI if you want to to find sources, but do not.
+[00:24] I will say this 20 times trust me, you will hear me say this nonstop.
+[00:27] Do not use AI to write your work.
+[00:30] Especially because we ask mentors, we love giving you feedback on your work.
+[00:35] With the home makes that you send in, you will see that I will always be typing, this
+[00:38] could be roofraises, blah, blah, blah, blah.
+[00:39] You should add this, you should add that.
+[00:41] I love doing that.
+[00:42] I love looking at people's work and seeing what they've written.
+[00:44] But to me, there is no point of marking someone's work if all they've written is AI.
+[00:48] Like I don't want to be my marking AI.
+[00:50] I'm going to be writing human work, you know.
+[00:52] But on that note, you should be using these resources to help you find your evidence
+[00:56] and information.
+[00:57] First of all, Google Scholar.
+[00:58] I love Google Scholar.
+[01:00] I think it's the best thing ever.
+[01:01] It's so simple to use.
+[01:02] You can basically find everything on there.
+[01:05] And it's great for all subjects.
+[01:07] They have every topic that you possibly want to research on Google Scholar.
+[01:13] On the other hand, you also have JSTOR.
+[01:15] JSTOR is a bit different to Google Scholar because JSTOR specifically has journals and
+[01:20] academic articles.
+[01:21] They don't have like newspapers.
+[01:23] They don't have like random website articles.
+[01:25] They mainly have academically sourced, you know, research papers.
+[01:30] PubMed and ScienceDirect are going to be more useful for those who are conducting science
+[01:35] and STEM topics.
+[01:36] So PubMed is very good for those who have an interest in medicine.
+[01:39] But also things like biology and chemistry can be found on PubMed.
+[01:44] ScienceDirect is generally good for all sciences and math as well.
+[01:48] And another thing that you can use, although you should try to avoid this when you can,
+[01:52] is just using Google to like research random topics and papers.
+[01:55] But you have to be very careful with this because in comparison to Google Scholar,
+[01:59] regular Google will not fill to rounds like false, uncredible, you know, papers.
+[02:04] They will just give you everything.
+[02:05] So it will then be down to you to make sure that your papers are credible and you kind
+[02:08] of have to sort through them and look at them and kind of make the decision for
+[02:12] yourself as to whether you think it's credible or not.
+[02:15] This is a bit of advice from one of your other mentors, but she has mentioned
+[02:22] that when it comes to trying to identify credible data, you should try to look
+[02:27] for websites that say .org instead of www because .org tends to be, you know,
+[02:32] from an organization that is respectable.
+[02:34] So those tend to be a bit more credible.
+[02:36] So if you are struggling to recognize if your paper is credible or not,
+[02:39] look out for whether it's .org or www.
+[02:43] Right on to the next slide.
+[02:45] OK, this is a bit more of a strategy as to how you can find your resources
+[02:49] and how you can make sure it's credible.
+[02:51] So first thing, this is very specific to Google Scholar, but you should be
+[02:55] researching kind of like keywords without quotation marks.
+[03:00] Or you can do with quotation marks if you're looking for a specific,
+[03:04] like specific word in a specific journal, use quotation marks.
+[03:07] But if you're looking for like a more general idea, don't use question mark.
+[03:11] Let's go. Speech marks.
+[03:15] So that is how you use speech marks.
+[03:18] Next thing is using arrows in your research study.
+[03:22] For example, you could say political polarization and social media.
+[03:25] So if you type out that in Google Scholar, it will present those two subjects together.
+[03:31] And that will obviously help you find the sources on these topics.
+[03:36] Another thing you can do is filter by year.
+[03:38] We really recommend that you do this for my frozen.
+[03:42] OK, there we go.
+[03:44] We recommend that you do filter by year because we want your sources
+[03:47] to be up to date.
+[03:49] You shouldn't be using a source that was like created like 1999
+[03:52] or like something that was like created in the 1800s.
+[03:55] Those aren't relevant and they're not going to be a proper reflection of like current trends.
+[03:59] What we do recommend is that you don't pick any sources that are any late in 2020.
+[04:04] We say 2020 and forwards.
+[04:05] Those are the kind of sources that you should be looking at.
+[04:08] Unfortunately, we know that it can be hard at times to find,
+[04:12] you know, sources within this time period.
+[04:15] My rule is that you can have one or two sources that might be out of date,
+[04:19] but one or two max, try not to go over that.
+[04:21] You want to make sure that most of the resources that you use are no late in 2020.
+[04:26] And as you can see in the image here, they will literally show you
+[04:29] a little time when you can pick, you know, since 2026, since 2025,
+[04:33] whatever, pick your dates, pick your timeframe, whatever works for you.
+[04:36] But please make sure that your resources are no longer, you know,
+[04:40] no later than 2020.
+[04:42] Right, moving on.
+[04:44] Kind of mentioned this already, but how do we know a source is reliable?
+[04:47] Credible and reliable are two separate things.
+[04:50] Credible could basically mean that it just comes from like a verify source.
+[04:54] It's from like an academic professor.
+[04:56] It comes from a university that's highly respectable,
+[04:59] but reliable is something else.
+[05:01] Reliable means that, you know, what they're saying is correct.
+[05:05] You know, a professor from Harvard can publish something.
+[05:08] You know, that can be a credible source, but they might not be reliable
+[05:10] because what they're saying isn't necessarily correct.
+[05:12] But we obviously can check if it's reliable using the CRAP method.
+[05:16] Bit of a funny name, but I will tell you why we've named this.
+[05:19] So CRAP stands for currency, sorry, CRAP stands for Criteria,
+[05:27] currency, relevance, authority, accuracy and purpose.
+[05:31] So what we mean by currency is, is this information recent enough?
+[05:35] So as I've mentioned, you want to make sure that, you know,
+[05:38] your sources are no later than 2020.
+[05:40] If that's, you know, if it's between 2020 to 2026, then, yeah,
+[05:43] it's current. Next thing is relevance.
+[05:45] Does it relate to your topic?
+[05:47] There is no point of including a random paper
+[05:50] if it's about like, as an AI and your topic is about like dementia.
+[05:53] There is no relevance.
+[05:55] They have no connection.
+[05:56] You must ensure that your sources are relevant to your topic.
+[06:00] Next thing you want to be looking out for is authority.
+[06:02] Who published it or who wrote it?
+[06:04] So a lot of the times if it's a university professor
+[06:08] or like, as an organization like who or the UN,
+[06:12] those tend to be very, you know, credible sources with high authority.
+[06:18] Something like a weak authority would be like a random blogger,
+[06:20] like a random person on the internet or like Reddit.
+[06:23] That's not credible. Do not use that.
+[06:25] Also, do not use Wikipedia either, because that is not very credible.
+[06:30] And another thing that you will be looking at is accuracy.
+[06:32] Is the evidence trustworthy and can it support what you're looking at?
+[06:35] You should be looking for citation, statistics, data, you know,
+[06:39] is there references?
+[06:40] Has this paper been peer reviewed?
+[06:42] If yes, if it means all these criteria, then yes, your, you know,
+[06:46] source that you've chosen is trustworthy and can it can support your paper?
+[06:50] However, if there is things like you find a research paper that has no evidence,
+[06:54] it has emotional language, it has random claims are very extreme.
+[06:58] Don't use it. It's not accurate.
+[07:00] It will not be useful for the paper.
+[07:03] And another thing is the purpose.
+[07:05] You need to be thinking about why was this paper created?
+[07:08] Was this paper created to educate people?
+[07:10] Was it to inform people?
+[07:12] Was it to present an advertisement or to persuade people?
+[07:16] Those are kind of warning signs.
+[07:17] Those are warning signs that you should not be using the paper.
+[07:20] If you find that it tends to be very swayed towards one side of the argument
+[07:23] without presenting a balance argument, you might not want to use those papers
+[07:27] because it might be useful persuasion rather than informing and educating people.
+[07:33] Ideally, you should be always looking for research papers
+[07:36] that are trying to inform people instead of like company advertisements
+[07:39] that may be very biased.
+[07:41] And the reason why I'm telling you all of this information,
+[07:44] which is a lot right now I understand, is that you'll be asked to produce
+[07:47] an annotated bibliography in which you have to kind of use the crap method
+[07:51] to talk about the sources that you've used.
+[07:53] I can show you guys an example of this if needed.
+[07:58] But I think it's quite self-explanatory.
+[08:01] One thing to keep in mind is that every single source has a perspective.
+[08:04] They all have their own opinions.
+[08:05] They all have a goal that they are trying to achieve.
+[08:10] What you have to do is identify what is the goal?
+[08:12] What is the writer trying to convey with their source?
+[08:15] And you kind of have to summarize that into your own words.
+[08:19] Let's see if there's anything else I have to mention.
+[08:22] I've pretty much gone through all of this.
+[08:23] So yeah, just a summary, please use the crap method.
+[08:26] Very funny name, but it comes so much in handy.
+[08:30] Right. OK.
+[08:32] As I was saying, you'll be asked to write an annotated bibliography
+[08:36] for your work.
+[08:38] Some of you might be familiar with this, some of you might not be.
+[08:43] The difference between an annotated bibliography
+[08:44] and all the bibliography is that with an annotated bibliography,
+[08:47] you've got to kind of talk about your sources.
+[08:49] You have to explain why they're credible, why they use them,
+[08:52] and you have to give a quick summary of what have they said.
+[08:56] A bibliography tends to be just normal bibliography,
+[09:00] tends to be just, you know, the source, the citation where it's from,
+[09:03] for example, how to stop me from writing, locking in the chat
+[09:07] from terror academic press 26.
+[09:11] But the annotated part would be this little extra part of writing at the end.
+[09:15] So it would be something along the lines of this book presents
+[09:21] emotional and physical struggles, students' experience while
+[09:25] seeing the terror research mentor pressuring them to focus on work.
+[09:29] This surely includes deep sleep deprivation, excessive catfiend consumption
+[09:33] and last minute panic, but all that is well known is a well known student's
+[09:37] nightmare and a form of sin at Hellware High School.
+[09:40] This source maybe would be useful for research and why students stress
+[09:44] when seeing the name Nickname Kamenev.
+[09:46] Very funny joke that he's included here, but it serves a good purpose.
+[09:50] It shows you kind of how your annotated bibliography should use.
+[09:53] This has three main points here, which is very identifiable at Bible.
+[09:57] The first structure point that this has is that it gives you a quick summary
+[10:01] of what the source is.
+[10:02] So it tells you as a physical struggle, the emotional struggle, whatever.
+[10:06] Next thing it has is that it shows you the credibility of the source.
+[10:08] It tells you where the author studied.
+[10:10] It tells you why the author is respectable.
+[10:13] And then lastly, it tells you why it's specific to research.
+[10:17] It tells you specifically that this source is useful because blah, blah, blah, stress.
+[10:22] Those are the three main things that you have to focus on.
+[10:25] Summary, credibility and specificity.
+[10:29] Sorry, I can't speak now.
+[10:30] God, I've been talking for too long.
+[10:32] Right.
+[10:33] Kind of basically said this.
+[10:36] But once again, quick summary.
+[10:37] This will always be on the slide.
+[10:38] So you guys don't renounce on what I'm saying.
+[10:40] You can come back and look at these.
+[10:42] So it must have a summary of the source.
+[10:44] It must have its relevance, why is it credible, why it's useful,
+[10:47] and its relevance, why is it specifically helpful to your topic?
+[10:52] Right.
+[10:53] What we're going to be looking at is your homework.
+[10:56] So I know I've been talking for quite a long time now.
+[10:59] I do apologize for that.
+[11:01] But this is a last slide.
+[11:02] I promise you this is basically your homework for this week.
+[11:05] This will also be posted on Google classrooms.
+[11:07] So you can look at this as well.
+[11:09] And once again, you have the slides and you'll have this recording as well.
+[11:11] So first thing you want to be doing is looking at a research topic that interests you.
+[11:16] It can be genuinely anything.
+[11:18] It could be social media, it could be mental health,
+[11:21] AI education, political science, medicine, climate change,
+[11:24] whatever you want it to be, you have the freedom to choose your topic.
+[11:29] Next thing I'm going to be thinking about is a research question
+[11:32] using the formula that we have given you.
+[11:34] If you remember earlier in this lesson, I gave you a kind of chart
+[11:38] as to how you should narrow down your question.
+[11:40] And I recommend that you use these to kind of create a basic research question.
+[11:45] Of course, as you start writing your paper, you might think,
+[11:47] hmm, I want to change my research question a bit.
+[11:50] I think it should be focusing on this and that.
+[11:52] That's completely fine.
+[11:53] But what we want to see with your homework is just a very basic
+[11:56] or research question that you may want to follow.
+[11:58] You don't have to follow it.
+[11:59] You can change it later on.
+[12:00] But this is what we're asking for you.
+[12:02] Very important as well.
+[12:03] Your research question should be no longer than, you know, 10 to 15 words.
+[12:07] It has to be sure and snappy and get the point.
+[12:09] I have had the nightmare of reading research questions,
+[12:12] which are like two or three sentences long.
+[12:13] And I'm just like, you don't need all that.
+[12:15] You can summarize what you want to say into like 10 words and that's fine.
+[12:18] And the next thing what you're going to be doing is starting to look at sources.
+[12:23] So use Google Scholar, JSTOR, other academic databases,
+[12:27] and you want to find roughly 15 academic sources that are relevant to your topic.
+[12:32] Once again, please make sure that they were published within the last,
+[12:35] you know, 10 years or so from 2020 up to now.
+[12:39] And then what you're going to be doing is using the crap method
+[12:41] that I just showed you to write sort of like the credibility
+[12:45] of everything, every single source.
+[12:47] So you want to be writing about the context, the relevance,
+[12:50] the academic, you know, purpose of this.
+[12:53] And you kind of want to lie out because once you've used crap method,
+[12:57] it is so simple to write an annotated bibliography.
+[13:00] The main reason why we ask you to use crap method
+[13:02] is that it literally becomes the most easiest thing ever
+[13:05] to write your annotated bibliography.
+[13:06] Literally, you can copy and paste parts from a crap method
+[13:08] into the next section, which will be, as I've said,
+[13:11] your annotated bibliography, which includes your short summary,
+[13:14] the credibility and the usefulness to your topic.
+[13:18] So, yes, go ahead.
+[13:22] Excuse me, is it fine to use like old research papers with formulas
+[13:26] that most people in my field refer to?
+[13:31] I would say you have to be very careful.
+[13:34] It is always best to make sure that your sources are relevant.
+[13:37] If you have to, like you have no other choice,
+[13:39] like you have to include it and fine include it.
+[13:41] But I would say no more than like one or two outdated sources,
+[13:44] because if your paper is full of outdated sources,
+[13:47] then it tends not to be very favorably looked upon by professors.
+[13:52] So when possible, choose relevant sources.
+[13:55] If you have to, then find that's okay.
+[13:57] But do try to keep it as relevant as possible.
+[14:01] I hope that won't worry.
+[14:04] Let me just check. This should be my last slide.
+[14:05] Yeah, okay, but it is.
+[14:07] So this is your homework, guys. This is my last slide.
+[14:09] I know I've been talking your ASL for ages.
+[14:11] If you have any questions,
+[14:13] whether that be in regards to what we've discussed today
+[14:16] or anything specific to your topic,
+[14:17] you now have the opportunity to ask me whatever you want.
+[14:25] Of course, if you have no questions, that's okay as well.
+[14:28] I'll push it.
+[14:31] Yeah.
+[14:34] Should we include the mini annotated bibliography
+[14:37] like you show it?
+[14:39] Shall I go back and show it?
+[14:41] Like you show it in the last presentation, right?
+[14:44] Yeah.
+[14:46] Like this we should do?
+[14:47] Yes.
+[14:49] I will also on the chat, once the session is over,
+[14:52] I will send you an example that I've previously
+[14:55] has written as to what it may look like.
+[14:57] This is obviously using fake information,
+[14:59] but you have to make sure that you include
+[15:02] a summary of the source.
+[15:04] You have to talk about why it's credible
+[15:05] and you also have to discuss their relevance to your paper.
+[15:08] Those are the three main things that you have to include
+[15:10] in your annotated bibliography.
+[15:13] Thank you.
+[15:14] No worries. There was a quick question in the chat.
+[15:16] I will answer that quickly.
+[15:19] What do you mean by like a reflection?
+[15:23] Are you talking in regards to the annotated bibliography?
+[15:31] Yeah. Okay.
+[15:32] So it kind of is a reflection, but it isn't quite that.
+[15:37] Of course, the reflection part will be in this summary.
+[15:40] That is what you're reflecting on.
+[15:41] You're reflecting on the key points.
+[15:43] Let me mention this.
+[15:44] You don't have to talk about everything that the paper said,
+[15:46] just the key points.
+[15:47] And then you have to talk about the credibility
+[15:49] and the usefulness to you.
+[15:50] So in a way it is a reflection,
+[15:52] but it's just a bit more of a detailed reflection.
+[15:57] I hope that answers your question.
+[15:59] I think there was someone else who had a question.
+[16:00] They were trying to speak.
+[16:01] You're more than welcome to go ahead now.
+[16:03] I had a question.
+[16:04] My question was, when is the homework due?
+[16:07] Or will that be posted so that we know when to submit it?
+[16:10] Yeah.
+[16:12] I do not know the due date off the top of my head,
+[16:14] but we tend to give you a few days to do it.
+[16:17] I think
+[16:18] Mahmoud will definitely post it today with the due date.
+[16:22] But you should have a couple days to do it.
+[16:24] Plus this homework task isn't very long.
+[16:26] It's just a bit of reading and a bit of summarizing.
+[16:28] So it shouldn't hopefully take you too long.
+[16:31] And yeah, I already had a question.
+[16:33] And in the annotated bibliography,
+[16:37] do we have worth limit or do we have like total freedom to write?
+[16:41] Total freedom.
+[16:42] Of course you want to keep it as short and snappy as possible,
+[16:44] but you definitely don't have a limit.
+[16:47] Thank you.
+[16:48] No worries.
+[16:49] And there was just one more question in the chat.
+[16:51] Should we read them before writing the bibliography?
+[16:53] Yes.
+[16:54] Please read your sources before writing the bibliography.
+[16:56] Otherwise, what will you be writing?
+[16:58] You're not going to know what to write if you don't read the sources.
+[17:00] I thought that was a bit straightforward, but that's OK.
+[17:03] Was there any other questions?
+[17:05] I will give you just a second.
+[17:15] If you think of any questions later as an all-you-mourn,
+[17:17] welcome to ask myself or any of the mentors.
+[17:20] If you're on the main group chat, or you can DM me directly.
+[17:23] Once again, I don't sleep, so I will be up and ready to answer your questions.
+[17:31] But if there is no questions right now,
+[17:34] just a reminder, this is your homework.
+[17:36] This will be posted on both Google Classroom,
+[17:38] and you will have the slides and the recordings,
+[17:40] so you can come back and look at this.
+[17:42] I will also send you an example of what we're asking you to do.
+[17:47] In that case, I will stop sharing my screen for now.
+[17:51] And if you have any last-minute questions,
+[17:54] this is now your opportunity to ask me those.
+[17:57] Did you get the line next class?
+[17:59] Sorry?
+[18:01] The next class?
+[18:03] Yeah, the next class.
+[18:05] Oh, the deadline.
+[18:08] There's assignments.
+[18:10] I'm assuming, I don't know off the top of my head,
+[18:12] what math might give you as the deadline,
+[18:14] but I'm assuming it will be maybe like
+[18:16] till Thursday or next week, one of those.
+[18:20] You will probably get the deadline today,
+[18:22] because you'll assign the homework today.
+[18:26] So I'm very sorry that I can't give you the specifics on that question,
+[18:28] but you will probably get those in like a couple of minutes.
+[18:30] Once the homework is posted.
+[18:32] But once again, this homework isn't that long.
+[18:34] It can be done within like maybe an hour or two
+[18:36] if you kind of sit down and you know, put in the work.
+[18:40] But yeah, did anyone have any other questions?
+[18:42] If not, I will stop recording
+[18:44] as they stop recording.

@@ -23,7 +23,7 @@ Split with Danyshpan on anything chart-shaped:
 ## Tools/format
 - System/architecture/flow diagrams: Mermaid or diagrams-as-code (Python
   `diagrams` lib, Graphviz) checked into the repo as source, not just a
-  rendered image — so they're editable later. Keep them in `docs/diagrams/`.
+  rendered image — so they're editable later. Keep them in `development/diagrams/`.
 - Data charts (metrics, comparisons, valuation multipliers): generate with
   real code (matplotlib/plotly) against real numbers, never a mockup
   presented as data.

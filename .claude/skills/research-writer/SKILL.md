@@ -33,9 +33,22 @@ track — use research-trainer for that.
   Fiorista et al. 2025 (arXiv preprint). Check project files/memory before
   treating any of these as settled — details may have been updated.
 
+## Method reference (course notes)
+Diyas is taking a research-writing course. The method notes live in the
+Obsidian vault at `C:\Users\User\OneDrive\Desktop\obsidian\DiyasVault\03_Learning\Research Writing\`.
+Before drafting or revising a section, read them and keep the paper consistent:
+- `finding-research-gaps.md` — six gap types (geographic, population,
+  methodological, theoretical, time, contradictory findings), where to find
+  gaps, organize the literature by theme not by author.
+- `intro-research-writing.md` — four-part intro formula, lit-review vs
+  empirical structure, body-section/paragraph anatomy, quoting vs
+  paraphrasing (~70% paraphrase), IEEE numbering, outline.
+These are the conventions Diyas is being taught; match them.
+
 ## Intro structure
 4-part formula: Background, Problem, Research Gap, Purpose Statement.
-Target 300-350 words unless told otherwise.
+Target 300-350 words unless told otherwise. (Full formula in the course note
+`intro-research-writing.md` above.)
 
 ## Figures/charts
 Danyshpan doesn't build figures. When one is needed (e.g. crowding valuation

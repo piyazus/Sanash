@@ -8,7 +8,7 @@
    outside Claude Code — don't paste the token into chat.
 4. Open the project in Claude Code (`claude` in this directory, or through
    the mobile app for remote sessions).
-5. Run `bash scripts/kaggle_setup.sh` to confirm auth works.
+5. Run `bash development/scripts/kaggle_setup.sh` to confirm auth works.
 
 ## What's here
 - `CLAUDE.md` — project context and rules, loads automatically every session
@@ -20,9 +20,15 @@
   `.claude/agents/cady.md` — subagents with isolated context for each track
 - `.claude/settings.json` — permission rules (safe reads auto-allowed,
   destructive/costly actions ask or deny)
-- `scripts/` — Kaggle setup/download/push helpers
-- `experiments/log.md` — append-only run log, source of truth for what was
-  tried and what worked
+- `research/` — paper track (Danyshpan): `paper/` (tex, figures, results),
+  `trade_study.md`, `refs/`
+- `development/` — build track (Donatello + CADy): `src/`, `scripts/`
+  (Kaggle setup/download/push helpers), `notebooks/`, `hardware/`,
+  `findings.md`, `datasets.md`, and `experiments/log.md` — the append-only
+  run log, source of truth for what was tried and what worked
+- `business/` — pitch track: deck, one-pager, elevator pitch, akimat note,
+  demo script and demo assets
+- `data/`, `outputs/` — gitignored, stay at repo root
 
 ## Day to day
 - For paper work: `/research-writer` then describe the task, or just start

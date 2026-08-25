@@ -3,6 +3,14 @@ outputs/
 *.zip
 # Reference papers kept on disk, too large for history
 /*.pdf
+research/refs/
+# Course/outreach material dropped into the repo, large and not project source
+research/coursework/*
+# ...but keep the write-ups: notes, transcripts, and the directory README
+!research/coursework/README.md
+!research/coursework/course_notes.md
+!research/coursework/transcripts/
+business/outreach/
 .kaggle/
 __pycache__/
 *.pyc

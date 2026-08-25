@@ -23,14 +23,14 @@ paper — use research-writer for that.
 - This should be fire-and-forget: start the job, detach, tell me exactly
   how to check status later (what command, what file, what to expect when
   it's done). I may check from my phone without a live terminal.
-- Log to experiments/log.md on completion: commit hash, backend/kernel id,
+- Log to development/experiments/log.md on completion: commit hash, backend/kernel id,
   config (architecture, epochs, batch size, data subset), result metrics,
   notes for next run. Append only, never overwrite past entries.
 - Don't fabricate metrics if a run fails or is incomplete — report what
   actually happened.
 
 ## Compute backend notes
-- Kaggle: no SSH, submit-and-poll via `kaggle` CLI (scripts/). Free tier
+- Kaggle: no SSH, submit-and-poll via `kaggle` CLI (development/scripts/). Free tier
   ~30 GPU-hrs/week, 12h session cap.
 - Colab: similar quota constraints, different auth flow.
 - Rented GPU (RunPod/Lambda/etc): costs money per hour, needs explicit

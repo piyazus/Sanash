@@ -1,0 +1,389 @@
+# lesson1_part1  lang=en  duration=2097s
+
+[00:00] recording and I'm done. Okay, in a minute you should be able to see my slides.
+[00:15] Could someone please let me know if you can see those? Yeah. Perfect. Okay. So hi all, this will
+[00:24] be your first lesson and we're going to be going through the research foundations, you know,
+[00:28] research question creation and analyzing and finding papers. This seems like a lot,
+[00:33] but do not worry, we will go slowly, we will make sure that you understand everything. And
+[00:37] of course if you have any questions feel free to ask them. Right. Okay, so a bit of an interactive
+[00:44] start. When you guys hear the word research, what comes to your mind? You can either, you know,
+[00:52] type something or speak out loud up to you guys. Would anyone like to share?
+[01:02] Can I? Sorry. Hello. Hello. So for me when someone mentions research is something about
+[01:10] active process of looking for information. Yeah, fantastic. Amazing. Would anyone else like to
+[01:18] share what they think? Yeah, can I? Of course. Yeah, first thing that comes to my mind is
+[01:26] finding information and collecting them and learning new things and like when you break
+[01:32] through. Fantastic. Amazing. Would anyone else like to share their ideas or shall we move
+[01:39] forward? Oh, I think that's something in the chat. Let me see what that says. Something academic
+[01:47] paper related to specific field includes interest and facts. Yep. Absolutely fantastic. Well, all
+[01:52] you guys are correct in some extent. But let's see kind of what it means. So when we mean
+[01:58] academic research, as you guys have kind of already said, which is spot on fantastic,
+[02:03] it refers to a systematic process of generating new knowledge and answering questions or
+[02:08] investigating problems using evidence and critical thinking. This is very important. And I
+[02:13] say evidence very important. You cannot just write for the sake of writing. You have to be able to
+[02:18] prove your thoughts and your arguments with evidence, which obviously with time, don't worry,
+[02:23] you will get to know and you'll be very familiar with. It should not be biased or touched by
+[02:27] any of your own moods or experiences. This is, you know, goes without saying you cannot
+[02:32] write a biased paper. You may think, oh, if I'm presenting my arguments, won't it be biased
+[02:37] anyways? No, there is a difference between a biased paper and sharing your own opinions and arguments.
+[02:43] You can share your own arguments without being biased. Obviously, this may seem a bit confusing
+[02:49] right now, but don't worry, when you start writing, it will come to you naturally. For example,
+[02:55] we tend to find that humanities students have this issue. But what we try to recommend with
+[03:01] them is that don't try to bring your own political ideas. Don't be overly negative,
+[03:05] overly positive. You have to be as unbiased as you can. You have to present the facts
+[03:10] and the arguments without trying to, you know, sway it with your feelings.
+[03:14] Might seem a bit hard, but do not worry, you will get the hang of it.
+[03:18] And a few other key characteristics of an academic research is something that's systematic.
+[03:22] It's something that's evidence-based, something that's objective, transparent,
+[03:26] and reproducible. By reproducible, we mean specifically those who are conducting
+[03:30] empirical papers. I will explain what this means later. If someone rang in person
+[03:35] or said, read, do, or study, they should be able to find the same exact results that you had,
+[03:39] you know, got by using your same methodology. Okay, I think a few x-reval have joined.
+[03:47] Hello to all who have just joined. I am recording this, so if you have missed anything,
+[03:52] you can come back and see what has happened. Right, on to the next slide.
+[03:58] There are a few things that research is not, and you have to be very careful with these,
+[04:02] because a lot of people tend to fall into these traps. The first thing is copying information.
+[04:07] You're not copying information. You can read information, you can analyze it,
+[04:10] present your own arguments, but you're not copying it word for word. If Dr. A has said,
+[04:15] I don't know, we found that there is a 10% increase in the production of steel,
+[04:20] you can't copy that word for word. You have to be able to present his argument and other
+[04:24] people's arguments in your own word and link it to your own thoughts. Another thing is that
+[04:29] you should not be using random websites. You can't be using Wikipedia, you can't be using like
+[04:34] random sketchy websites online. You have to be using very credible evidence from credible sources.
+[04:39] And later on within this lesson, I will go through a few examples of where you can get
+[04:43] these information from. Another thing kind of links the first point, but you shouldn't be
+[04:49] don't just, you know, copy worth word what someone else has said, you should be able to
+[04:53] create arguments. Did someone have a question?
+[04:57] I don't know if that's a question. I will mute.
+[05:09] I think someone just forgot to mute their microphone so you can just continue.
+[05:14] Thank you so much. That's okay. I've muted them for now. Thank you so much for letting me know.
+[05:19] Okay, I will continue from where I was. So yeah, you shouldn't be repeating opinions.
+[05:22] You should be able to build your own arguments. Right now, obviously, might seem a lot, but you
+[05:27] should be able to, you know, gather information from other resources, link them together, show their
+[05:32] strengths, their weaknesses, their similarities and differences, and then present your own
+[05:36] opinions. Another thing, what you should not be using is using chat to be to
+[05:40] summarize everything. All the tutors have different opinions on using AI. I am very
+[05:46] anti AI. I don't really like using in any capacity. I know he's a bit more flexible
+[05:52] with it. He allows students to use a bit more AI, but with me, I'm typically not that kind of person.
+[05:58] Of course, there may be points in which we will advise you to use AI, but as it stands, you shouldn't
+[06:04] be really using AI at any point with independent investigation. Everything should be in your own
+[06:09] words, in your own opinions, and not AI's. And the last thing is that you shouldn't be using
+[06:15] words like I think. We have faced quite a few issues with this in which students say,
+[06:21] I think we found it is very clear to us. Do not in any way use personal pronouns. So no AI,
+[06:29] no you, no we, no us, you should be using things like evidence suggests. You should be speaking in
+[06:34] the third person because that is no academic and formal language. But of course, research isn't
+[06:40] just collecting facts. You have to understand a paper. You have to stand its voice. Every paper
+[06:46] has its own opinion. It's not just about the facts that they use. And what you'll be doing
+[06:51] is understanding what their arguments are, what is their voice, what is the main message that they're
+[06:55] trying to tell you. But with that, let's continue. Okay, so a lot of writing here, but I will break
+[07:02] this down. This is a very simplified image of the research process. So right now, we're here at
+[07:08] the first stage of looking at your question. So what you're going to be doing as a researcher
+[07:13] is you're going to identify a specific problem or an issue that you want to investigate.
+[07:18] So at this point, some of you may have ideas about what you might want to write about. Some of
+[07:21] you might not. That is completely okay. You're only at the start of the process. So you have a lot
+[07:26] of time to go through and start organizing your thoughts. So after this week, once you've got
+[07:31] your research question, you know, prepared and finalized, you will then be moving onto your
+[07:36] introduction. And this is kind of what it says on the tin. It's a very short piece of
+[07:42] writing that explains what your topic is and why it's important. And it presents any research
+[07:46] gaps. I think we've discussed the term research gaps in the previous lesson. But for a bit of a
+[07:52] reminder, a research gap is basically a bit of like missing research, missing research in a field
+[07:58] that you're trying to fill in, whether that be because it hasn't been conducting specific
+[08:03] country, or whether it's just, you know, not being looked at enough by researchers,
+[08:07] you have to identify a research gap and kind of shape your paper around that gap. And then
+[08:13] what you're going to be doing is writing a literature review in which you examine previous
+[08:17] studies that have already been discussed about your topic. So people tend to find the literature
+[08:23] review very hard. But don't worry, it's not that hard. It just seems very scary initially. But
+[08:28] trust me, it's not. What it basically is, is that with any topic that you're looking at,
+[08:32] there is always a conversation going on in the background between other researchers
+[08:36] and other, you know, critics and doctors in which they all have their own opinions.
+[08:41] And what your role in the literature review is to look at those opinions and say, okay,
+[08:44] I agree with this aspect. I disagree with this aspect. And, you know, my opinion is x, y, z,
+[08:50] because of my research gap. So you're basically just summarizing, well, not summarizing, you're
+[08:55] analyzing other people's, you know, opinions and their own research, and you're presenting,
+[09:00] you know, their strengths, their weaknesses, their similarities, their differences, and kind
+[09:04] of presenting your thoughts on it. And then you're going to be moving on to your method,
+[09:11] which will look a bit different for empirical papers and literature review papers, which
+[09:15] don't worry, once you start writing your methodology, we will explain you what this
+[09:18] difference is. But as a very quick introduction, it's basically just where you outline how
+[09:23] you received your research. So if you're writing an empirical paper in which you're,
+[09:28] you are conducting your own research, you have to talk about how you found your sample,
+[09:32] how did you, you know, test variables, did you give them questionnaires, was this a lab
+[09:37] study, was this an observation, and you basically just have to outline very, very simple and clear
+[09:42] way how you conducted your research. So once you've done that, you will then go on to the results
+[09:48] in which you present your findings. Very simple, very easy. If you found there was a 10%
+[09:53] increase, you literally just say there was a 10% increase. And then you go on to the
+[09:57] analysis slash discussion. At this point, you're able to identify, you know, important trends
+[10:02] and patterns and key findings. And this is when you explain them, you have to say why they
+[10:06] significant, why they not significant, what's the show about your specific topic, what does this reveal,
+[10:12] what can you gather from this information that you found. And then you will come to a conclusion
+[10:17] and then a publication. Of course, very simple publication is just when you know,
+[10:23] you share your work through, you know, journals, conferences and academic platforms.
+[10:27] Obviously, our goal is that all of you guys will be able to produce publicable
+[10:31] papers. We will obviously support you in that process. And this is a very
+[10:36] exciting thing. I think recently, one of our groups, we have had a student who's published their work
+[10:43] with a Harvard professor and an Oxford professor. So we have very high aspirations for you guys as
+[10:47] well. But let's move on. So a good day starts with coffee, just like how a good research paper
+[10:55] starts with a good question. Once again, some of you might have might have already started
+[11:02] thinking about your question. If not, this is the perfect opportunity for you to start, you know,
+[11:05] thinking about what you might want to have as your question. So research topic versus question.
+[11:12] These are two different things. Your research topic is very broad. It can be a subject area.
+[11:18] It could be a very general idea that you have, for example, climate change, social media,
+[11:23] artificial intelligence, or education inequality. These are all topics that people have written,
+[11:27] you know, papers on previously. But these are not research questions. What a research question is,
+[11:33] however, is a very specific thing that you're going to be investigating the whole time. For
+[11:38] example, it may be something like, how does TikTok political content influence political
+[11:43] polarization amongst teenagers? Or it could be something like, how has AI changed classroom
+[11:49] learning in high schools? I will, in the next slide, I will explain why these are good
+[11:55] questions and what bad questions look like. But just as a very simple understanding, a research
+[12:01] question has to be specific. It has to be, you know, something that, A, you like, you know,
+[12:06] you're interested in. It has to be something that's very relevant to what's currently going on within
+[12:10] the world. Right. So how do we turn these research topics into a question? So once you've
+[12:19] decided on the topic that you're interested in, whether that be medicine, law, AI, education,
+[12:26] inequality, whatever it may be, you then have to look at, you know, what might a question look like.
+[12:33] So what you've got here is a very weak question. How does social media affect people? This is a
+[12:40] really weak question. And if you present this to me, I will tell you, hey, that's not great.
+[12:44] You've got to restructure it. The reason why it's not great is because, first of all,
+[12:48] it's too broad and too vague. Social media is a very broad concept. Social media has so many
+[12:54] different forms, whether that be Instagram, TikTok, or even, you know, like news agencies
+[12:59] and Facebook. It is a very broad topic. And it's frankly, it's impossible. It's impossible to,
+[13:05] you know, study every single impact of social media on people. There are literally billions
+[13:10] of people in this world. You cannot realistically study the impact of social media on every
+[13:15] single person. You know, there are so many different things that will make it impossible. For example,
+[13:21] you know, you're going to end up losing sleep, you're going to spend loads of money, you know,
+[13:24] you'll have really bad eyesight if you, you know, cannot do this question. There are so many
+[13:28] different variables that you really can't study all of them. So what a better question
+[13:33] might be is how does TikTok political content influence political polarization amongst
+[13:38] teenagers in the US? A reason why this question is better than the first question is that
+[13:44] it's specific. It has a specific platform that's mentioned to TikTok. It looks at a specific impact,
+[13:51] which is the political polarization. And it looks at a specific group of people within a specific
+[13:55] country. You'll see that I've repeated the word specific a lot of times. And that's a very
+[13:59] keyword. It has to be a very specific question. You cannot research everything. You cannot be
+[14:04] very generalized. You have to make it as narrow as possible. It helps both yourself and the
+[14:09] readers when they're going through your work. And another thing that makes it so great is that
+[14:16] it's researchable. It's something that you can realistically do. And that's what we want you to
+[14:20] do, obviously. So moving on. This is quite a simple formula as to how to formulate your
+[14:28] research questions, which I do recommend that you use. Once again, these slides will be sent
+[14:32] to you. So when you come back and start, you know, finalizing your research questions,
+[14:36] please do use this. So the first thing you want to be thinking about is what fact are you looking
+[14:41] at? What is the outcome? And what group are you trying to study? The fact it could be, I don't
+[14:47] know, sleep deprivation, depression, it could be anything. It just has to be specific. Then
+[14:52] you have to look at an outcome. What effect are you looking at? Are you looking at
+[14:57] the effect of therapy or depression? Are you looking at the impact of war on small children? It has to
+[15:07] be as specific as you can be. For example, is a couple more examples. We're going to go through
+[15:13] a ton of examples just so you that you get a really good understanding of what to do. It could
+[15:18] be something like how does sleep deprivation affect academic performance amongst high school
+[15:22] students? This question is great because it has three main things. It has a specific factor,
+[15:26] sleep deprivation, it has a specific outcome, academic performance, and it has a specific group
+[15:30] which is high school students. Same thing again in this next example. Why do young voters trust
+[15:36] social media and news sources? Specific group, young voters, a specific factor, social media,
+[15:42] and then your specific outcome is, you know, trust. And then the third example,
+[15:46] how does AI assisted learning influence student productivity? Once again, very specific and
+[15:51] very clear. So what characteristics must you have? These are, it has to be focused,
+[15:58] can't be too broad, it has to be very clear and understandable. We have had students in the
+[16:03] past who have presented us with research questions which are for like three sentences long. That
+[16:08] is just not okay. That's way too long, it's way too complicated, short and simple is best.
+[16:15] We also want your questions to be researchable, you know, you should be able to find evidence
+[16:19] that you can collect and use in your work. They have to be specific. Once again, I love that word
+[16:24] specific. It has to be specific. It has to have a very defined group and variable. And it has to
+[16:30] be significant. Of course, we've never really had this problem in the past. Usually we always have
+[16:36] students who present, you know, very, you know, significant and, you know, topics which are
+[16:41] of matter. So this goes without saying, you know, you can't pick a topic that no one cares
+[16:46] about. It has to be relevant. It has to be things that people will actually want to read.
+[16:50] And once again, we've got the other comparison, weak questions versus strong questions. Your weak
+[16:58] questions would be something like, is social media bad? What is climate change? Why is education
+[17:02] important? Boo, bad questions. They're opinion based. They're too descriptive. They're too broad.
+[17:08] On the other hand, a great question would be something like, how does Instagram usage
+[17:12] affect self esteem amongst teenagers? How do urban heat waves impact public health and
+[17:16] Tashkent? How do AR use influence student writing habits? These are specific and measurable. They
+[17:22] are specific. They have specific content and they have clear variables. In this slide, it's much
+[17:28] more easier to see the difference between a weak question and a strong question. But this is very
+[17:34] much common sense. I'm sure it will come to you guys very naturally. Right, moving on.
+[17:39] We've obviously been talking about bad research questions. And these are just a few more flags,
+[17:46] you know, over bad question. Obviously, once again, a lot of these things come to you naturally.
+[17:51] You're very smart individuals. I trust that. So when you are thinking about research questions,
+[17:55] you know, obviously will not be that hard for you guys. But if you are struggling,
+[17:59] and you can't tell whether your question is bad or good, a bad question typically has
+[18:05] things that are, you know, too broad, you can't measure it, you know, it's purely opinion
+[18:09] based, it's too emotional, and it requires inaccessible data, which I'm basically, we don't have access
+[18:16] to NASA labs. You have to be able to access your evidence through the internet. If you do have
+[18:21] access to like labs and I don't know, experimental resources and by all means go ahead and use them.
+[18:29] But we cannot give you access to these, you know, fantastic labs. This has to be what use,
+[18:34] you know, realistically can use and can do. Once again, another bad example, I know I've
+[18:39] given you a ton of examples, but this is just so you really understand what I'm talking about.
+[18:44] You can't say things like capitalism is bad or capitalism is evil. It's opinion based.
+[18:49] It's not academic. And some people like capitalism, like in the US. So you have to be, you know,
+[18:55] very objective in your questions, you cannot be guided by your own opinions, as I have mentioned
+[19:00] earlier on. So let's move on. Right. Okay. The next slide is about the two different types of papers.
+[19:08] I will take a pause here. We've kind of looked at research questions, looked at a lot of different
+[19:13] examples. Does anyone have any questions at this moment in time? You're more than welcome to.
+[19:22] Excuse me. Can I ask a question? Not related to the presentation, but about the third
+[19:26] research itself. Yeah, of course. Can we already reach out to our mentors to ask about our research
+[19:34] questions if we have one? Of course you can. We are here for you 24 seven. I think Mathemodes
+[19:40] mentioned the other day. We don't sleep. We are literally awake 24 seven. You could send us
+[19:45] a message at like 2am and we will get back to you as soon as possible. So you're more than
+[19:50] welcome to send us a message at any points. Thank you so much. No worries. Did anyone else have
+[19:55] any questions? Yeah, I have a question. And what is the right on the topic? And it turns out
+[20:02] to be that there is another research after we've done it. What happened? So like,
+[20:08] well, we've never really had that issue before. What we do recommend before you start writing
+[20:13] at all before even finalize a research question is that you look at existing research.
+[20:18] You look at all the, you know, publication that's already been produced regarding your
+[20:22] topic. That way you can have a better grasp of what you might want to do. Of course, if that
+[20:28] situation does happen, that is quite unfortunate and we can't want to do anything about it. So to
+[20:33] avoid that, we do recommend that before you start writing, before you even start writing,
+[20:36] you know, introduction or anything, you do have a good, you know, read of existing studies.
+[20:44] Thank you. No worries. Right, there has been a few questions in the chat. I will look at
+[20:49] those. Is it an answer question? Of course, go ahead. So in terms of the research question and
+[20:58] the topic, I know you said we should do something for which there exists interest,
+[21:04] so maybe we can find data online. Should we go for something just for me to set things clear
+[21:11] that has not been researched before in that specific combination of variables or elements? Is
+[21:18] this what we're going for or? Yes, perfectly spot on. As you said very clearly, you want to be looking
+[21:25] at something that's irrelevant and intrestable, but you have to also be looking at things that
+[21:30] has a research gap, you know. Nobody wants to read the same research topic and they're saying,
+[21:35] you know, ideas 20 times. Personally, I've read loads of research papers and I hate when,
+[21:39] you know, writers, you know, repeat the same ideas as other people. So perfectly, as you said,
+[21:44] you want to be identifying something that is very interesting, something that people will
+[21:48] want to read, but also something that has a research gap in it. So fantastically said,
+[21:53] and that is spot on. Okay, there was one question in the chat. I will just read this quickly.
+[22:00] Is it okay to use literature review and empirical paper together? I would say,
+[22:09] typically no, we recommend that you use one or the other. However, there may be instances
+[22:15] in which you can kind of combine elements, but that is very rare. To be honest, regardless of
+[22:22] whether you're doing an empirical paper and literature review paper, they are very similar
+[22:25] in terms of structure. The only difference is that with an empirical paper, you're conducting
+[22:29] your own research. So it really comes down to whether you want to conduct your own research
+[22:33] or whether you want to be analyzing the work of other people. So typically no, we
+[22:39] suggest that you don't use them together. But if you happen to have a very unique,
+[22:44] case in which you can combine elements, definitely talk to the mentors first before you do anything of
+[22:49] that sort. Yeah, Freya? Right, and I just wanted to follow up on that question. But in order to do
+[22:58] the research, like empirical research and collect data of our own, we have to still do the
+[23:04] SLR, scientific literature reviews, just so that we know what was done before,
+[23:10] so that we don't repeat it again. Perfect. As you said, well done, that's spot on. So all the papers,
+[23:18] no matter what you're studying, will have a literature review in which you have to analyze
+[23:22] existing research, as you said. And then if you're doing an empirical paper, you then move on to
+[23:26] your methodology and your results and your analysis. But that is perfectly said, well done.
+[23:34] And also, if you want to do a scientific literature review, then it has to follow the
+[23:40] in red structure, right? And it's different than the empirical research, right?
+[23:49] Yes, spot on. The next slide actually goes into the differences. So well done. You've got a great
+[23:54] transitions in my next slides. But before I move on, does anyone have any other questions
+[23:58] regarding research questions? That's okay. You can either, I don't know, text it, chat it,
+[24:09] whatever, speak out loud. If anything comes to you at the end of the lesson, don't worry,
+[24:13] we will answer questions then as well. Right. So I'm now going to be looking at,
+[24:19] as Rae has been very beautiful, you said, we're going to look at the differences between a
+[24:23] literature review paper and an empirical paper. So it's very important that you know the
+[24:28] distinction and you learn it because you will ultimately be deciding for yourself what type
+[24:32] of paper that you want to write. We will obviously guide you as to what kind of paper
+[24:36] we think will be best for your topic. But at the end of the day, it always comes down to you
+[24:40] and what you want to do with your paper. So a literature review paper compares and analyzes
+[24:45] existing research. So you're not doing any of your own research. You are comparing existing
+[24:50] research that's being conducted by other people. So you're going to be looking at books and journals
+[24:55] and articles. And what you want to do is understand what research is. No. And you want
+[25:00] to, you know, compare those ideas and present your own ideas. You will not be creating any,
+[25:06] you know, original data. You won't be collecting any of that. You will just be
+[25:08] comparing and analyzing existing research. However, if you're doing an empirical paper,
+[25:14] it is rather different. What you're going to be doing is collecting and analyzing your own
+[25:18] data. For example, you can be conducting surveys, interviews, experiments, observations,
+[25:24] and then you will collect the data from this and present new evidence and new findings.
+[25:29] For example, with the paper that I wrote, it was on the, it was on the Declaration of
+[25:35] Human Rights and just one second. Sorry. Let's continue. On my paper, it was on the Human Rights
+[25:45] Declaration and I was conducting a literature review paper. So I was comparing, you know,
+[25:50] the existing, you know, research that's been conducted in four different scenarios that I
+[25:54] was looking at. And I kind of compared, you know, the success and the limitations of the UDH
+[25:59] and its strengths. So I wasn't creating any original data. I was just looking at what
+[26:03] was already existing. In our previous cohorts, we have had people who have conducted empirical
+[26:08] papers looking at the effects of reading on dementia and the effects of confidence training on
+[26:15] young teenagers. So that is just a few examples of what you can be doing. Of course,
+[26:20] this guy's a limit. You can, you know, create a study on anything that you want
+[26:24] and you will be here to support you. So that is a very brief summary. Once again,
+[26:30] empirical paper, you can do a research, you collect data, literature paper, you do not.
+[26:35] So there is a question, the chat. Okay, let me just read this question.
+[26:41] Which is easier to finish earlier or publish because our time is not long
+[26:45] and their importance, please. Well, there's not really one that you can finish earlier. It
+[26:52] really comes down to you. We have had people who have, you know, published their papers
+[26:56] regardless of what type it was very quickly, but then we've also had people who have taken
+[26:59] a bit longer. It really comes down to you and your work ethic. If you're really engaged, if you're,
+[27:05] you know, really dedicated to your paper, you can literally get it done within our time frame.
+[27:09] However, if you're not so dedicated, it will obviously take you longer.
+[27:12] What we do say though, is that with empirical paper, it will take you a bit longer because
+[27:17] you are conducting your own study rather than just reading existing, you know, evidence.
+[27:22] But once again, as I've said, it will take as long as you want it to take. If you're
+[27:27] dedicated, if you work fast and it won't take that long, but if you are the kind of person who
+[27:31] works a bit more slowly, then of course it will take more time. And their importance,
+[27:35] well, they're both equally important. We typically love when people conduct empirical
+[27:42] papers because it's something that's very unique, something that's out there,
+[27:44] something that people are interested to read. However, regardless of which one you choose,
+[27:48] they are both equally important. Okay, there was another question. If we do a literature review,
+[27:53] isn't it less attractive universities or professors than empirical? It really depends on
+[28:00] what university you're applying to and kind of what you're trying to get out of your paper.
+[28:06] You are quite right in saying that professors do tend to like empirical papers,
+[28:10] but realistically, not everyone can be able to do empirical paper because it will not fit your
+[28:15] topic. For example, with the humanities topics, it's not always, you know, right to do an
+[28:22] empirical paper. For example, we have had people who have looked at US history in the past
+[28:27] or political science topics in the past, and for them it didn't make sense to do a
+[28:32] empirical paper because you can't really create an empirical paper on history. In those scenarios,
+[28:36] you have to do a literature review paper. So as I've said, we love empirical papers,
+[28:41] we would recommend that you do do one if you can, but if you can't, a literature review
+[28:45] paper is fine as well. And there was another question. For beginners, I think literature
+[28:51] review is most suitable. Well, it really depends on you, you know, once I've been saying this a
+[28:57] lot, but it really depends on you and your preference. We will support you no matter what
+[29:01] you choose. If you want to be ambitious and go ahead and do an empirical review paper, great,
+[29:05] we will support you. We love to see that. But if you want to do a literature review paper,
+[29:09] that's great as well. It really doesn't matter. It's really down to you and what you want to
+[29:13] do. And you also have to be mindful of what is, you know, what's right for you. If you're
+[29:18] doing a topic that's maybe scientific, maybe it's about like, as my computer science or AI,
+[29:24] and you have the resources to conduct an empirical paper, do it, go ahead. But if you
+[29:29] find that your topic can't do an empirical paper, that is okay as well. If there are no other
+[29:35] questions at this moment in time, I will continue with my slides. No worries. I have one slide
+[29:40] question. Sorry. So does that mean that the empirical paper is basically tied? I'm just asking
+[29:48] to the geographical location where you're at since you're, I don't know, I don't know exactly how that's
+[29:55] happening, but how you're aggregating the data, but since you're tied to a location,
+[30:00] does that mean that the title and the outcome of the paper are tied to that location?
+[30:06] No, I wouldn't say that. It tends to be that students find it easier to do that. However,
+[30:12] if you want to do it on a different country or wherever you can do it,
+[30:17] it will just be a bit more harder. For example, for those who do conduct empirical papers,
+[30:24] a lot of them, as you've said, they do tend to do in the country that they are in because that is what
+[30:27] they have accessible to them. However, that you shouldn't be limited to that. If you find a way
+[30:32] to conduct as many research in the US or research in Australia, go ahead and do it. It's really
+[30:37] down to what you find you're able to do and what you have the capabilities to do.
+[30:42] If you are limited, unfortunately, that's very unfortunate, but we're not limiting you. You can
+[30:50] only limit yourself, if that makes sense. I hope that makes sense. Once again, if you do have any
+[30:59] questions, you're more than welcome to pop them in the chat now or later on, and I will be more
+[31:04] than happy to answer them. But for now, let me continue with the slides. Okay, so scope
+[31:10] is very important when you're doing your research. This kind of ties into the
+[31:14] homework that will be set you later, but for now, I will just be explaining how you should
+[31:19] kind of be looking at scope and research. So everything you're trying to research has to
+[31:25] have a narrow scope. Initially, we always have students who are trying to research everything,
+[31:30] and frankly, this is not possible. We've had people who've come up to us and been like,
+[31:34] is the effects of technology on society a good question? No, it's not a good question.
+[31:39] It is impossible to execute. It's too broad. You have no limitations. It's just way too big,
+[31:46] and it's really hard to study every single impact of technology on society.
+[31:52] Instead, what we recommend you do is use this table below, which I hope you can see,
+[31:56] as to narrow down your research topic and your research question. So when you've got
+[32:01] your research topic, the kind of things that you should be thinking about is the time period.
+[32:04] So what time period are you focusing on? Within my paper, it was the 21st century, so from 2000 up
+[32:11] to 2026. But for other people, it might be only 2020 to 2025, whatever scope that you have completely
+[32:18] fine, just make sure it's not like a thousand years, make it realistic. The next thing you
+[32:23] want to be thinking about is places. It could be specific like Uzbekistan. We currently have
+[32:29] a student who's looking at the economic impacts of small businesses on Malaysia. You could look at
+[32:36] the USA. You could look at anywhere, frankly, it just has to be a specific place. And then you
+[32:40] can also, you also want to be making sure that you're focusing on a specific population, so
+[32:45] whether that be teenagers, whether that be elderly people, babies, infants, whatever it may be,
+[32:49] it just has to be specific. And then you also want to be looking at a platform if necessary,
+[32:55] so TikTok, Instagram, but it could also be something like therapy, businesses, education,
+[33:06] something like that. It just has to be a very specific topic and specific platform that you're
+[33:11] looking at. And then you also want to narrow down your research question by looking at a variable.
+[33:16] So that could be political polarization. It could be economic growth. It could be something
+[33:21] like, I'm not sure, something like dementia. It just has to be as specific as possible.
+[33:29] And another thing, please be realistic. This goes without saying, but you cannot solve climate
+[33:34] change. You can't try to interview Trump and Putin. Realistically, that's not something possible.
+[33:39] You have to be able to choose your research questions wisely and make sure that it is
+[33:43] something that you can execute. Okay. I have just got a notification that our meeting is about
+[33:51] to time out in one minute. So I will wrap up this slide very quickly. And then this call is going
+[33:57] to end. I'm going to send you guys another link so that you can join the second half of the meeting.
+[34:02] But I will do that in just a second. I will just explain this slide first. So
+[34:05] as I said earlier, you have to make sure that your data and all the evidence that you
+[34:09] collect is academic and it is credible. So you have to be looking at scholarly databases.
+[34:16] And these are a few examples. Google Scholar is the first one there because I
+[34:20] frankly love Google Scholar. It is, in my opinion, the best platform that you can use to get evidence.
+[34:26] It is so simple to use. If you want me to show you how to use it, that's something that I can do
+[34:32] afterwards. But literally, it's literally Google you type in a specific word, a specific topic
+[34:38] or research, and it will show you everything that is related to that topic. Okay, guys,
+[34:43] I'm so sorry. I'm about to time out. I'm going to stop the meeting here.
+[34:47] And I will send you another link via Telegram in just one second.

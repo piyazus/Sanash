@@ -1,0 +1,498 @@
+# video1101430871  lang=en  duration=2763s
+
+[00:00] recorded and let's get started. Okay. So in a second, hopefully you will be able to
+[00:11] see my screen. Right. Can someone give me like a thumbs up if you can see that yet?
+[00:22] Yeah. Amazing. So as I mentioned, today we're going to be going over the methodology
+[00:29] and specifically the methodology for lit review papers, especially because I know that a lot of
+[00:34] you are writing lit review papers. So without any time wasted, let's get started. So in the previous
+[00:41] classes, we have discussed, you know, what is generally necessary for methodology, what it might
+[00:46] look like. And today we're going to be doing more like a deeper dive into exactly what are the
+[00:50] features, what you need to include, what kinds of things do you need to make sure that your
+[00:55] paper has. So what unlike a empirical paper, when you're writing a lit review paper, you're not
+[01:04] collecting research from specific people, you're not collecting data from like 20 people, you're
+[01:10] collecting papers, you are forming a collection of research papers, which you are going to be
+[01:16] examining and looking at. So in the same way that an empirical paper looks at, you know,
+[01:22] people and participants, your lit review for, sorry, not the review, your methodology for a
+[01:28] lit review paper will be looking at papers. So what you're going to be doing and really
+[01:32] making sure is that if anyone ever wants to repeat your study, they can. If a reader can't
+[01:39] look at your study and say, Oh, I can repeat that, then your methodology isn't clear enough.
+[01:43] You want to be outlining, you know, all the articles that you've used and exactly how you've
+[01:47] used them. So if, if anyone for any reason ever wants to repeat your study, they can.
+[01:53] Otherwise, if they can't do that, your methodology has failed. So let's go into the five
+[01:59] components of a methodology. I'm going to give you guys a lot of detail here. So please, you know,
+[02:05] take notes that as always, these slides will be sent to you. The recording will also be sent to you.
+[02:09] So don't worry if you miss something and we can go back at any points.
+[02:14] Right. So a complete lit review methodology has five main features. First thing is going to be
+[02:19] your research design. So this is going to be looking at what type of review are you doing.
+[02:24] How did you like generally analyze your papers? Then we start looking at the more specific, you
+[02:31] know, details of that design. So what databases did you use? How did you find your sources? Where
+[02:37] were they? And then from that, very, you know, closely links, you look at your search strategy.
+[02:42] So how did you, you know, find them from those websites? What did you search for? Did
+[02:48] you search for a keyword or maybe a key sentence? And then what we also look at is the
+[02:53] eligibility criteria. So as much as it is great to talk about all the sources that you included,
+[02:58] you also have to mention the sources that you've excluded and explain why you haven't used those,
+[03:03] because it's very valuable for any of you to understand, okay, why was this not used? Why was
+[03:08] that not used instead of, you know, using XYZ? It helps people to understand your thinking a
+[03:13] bit more. And then finally, you want to be, you know, explaining your analysis strategy. So,
+[03:19] you know, what was the selection of the studies? How are they analyzed? How did you break
+[03:22] them down and find your key themes? And then sometimes not always, papers may have a sixth
+[03:30] component, which will be the screen process. So it shows, you know, the records, you know, that you
+[03:35] went through, how many, you know, survived. We will cover this as well. And this is something
+[03:40] that, you know, can look a bit more professional. But once again, we will be focusing on just
+[03:44] these main five features. So let's go into the first components naming your review type. So
+[03:52] what we tend to find a lot of paper, a lot of papers and a lot of students, what they tend to do is
+[03:56] they will just write that I employed a lit review study or a lit review methodology, which is,
+[04:01] which is technically correct, but it is too vague. You have to mention the specific type
+[04:07] of review that you went through because each has different components, you know,
+[04:11] writing, you know, a lit review methodology, it's just way too broad, you know, it tells me
+[04:15] basically nothing. So what we do recommend you do instead is, you know, pick one of the more
+[04:19] specific names. So you can say things like a narrative review. By saying this, you know,
+[04:25] it tells the reader, okay, your review was kind of broad, it was flexible, there was not like
+[04:29] a really like strict protocol, it's just whatever was accessible to you. So this might be, you
+[04:34] know, suitable if you find that your sources are from like a crazy different amount of places,
+[04:39] you know, you just kind of pick them randomly. But you know, you still want to present them in a
+[04:44] nice academic way. So you might, you know, call your review system a narrative review.
+[04:50] What we also have is a systematic review, which is quite the opposite of a narrative review in
+[04:55] which you have a strict protocol. I would hope that all of you have, you know,
+[04:59] somewhat had a, you know, systematic review, you know, I hope that you all have, you know,
+[05:04] searched quite a bit, you know, you had to, you know, have an assessment of what sources were,
+[05:09] you know, good and what and what not good. And you know, you had to like,
+[05:12] follow like a very strict pattern, which ideally you all should have done.
+[05:17] Alternatively, we also have the scoping review. So this is when you kind of map out
+[05:23] the fields in general, when you pick, for example, the topic of law and you think,
+[05:26] okay, what are all the different aspects of law? What are all the different gaps? What
+[05:30] are all the different, you know, research things that are available? And this is obviously,
+[05:36] you know, best for those who are conducting a meta analysis, you know, because it has, you know,
+[05:41] great, you know, statistical strengths as well as, you know, it can, you know,
+[05:45] show really good like comparable data. But once again, this is best if you're conducting
+[05:50] a bit of a more like broad study. And then finally, we also have the integrative review,
+[05:56] which kind of combines different types of studies, you know, you look at both qualitative and
+[06:00] quantitative data together, you've kind of combined that in your research. Of course,
+[06:07] it is down to you. It's down to you how you want to describe your review time. It's down to you
+[06:12] as to what you think is best. For example, what we think is much better to say in your work
+[06:17] is something along the lines of this study employs a scoping review methodology to map the
+[06:22] existing research on the impacts of artificial intelligence on educational outcomes. So by naming
+[06:28] the type of review that you've used, it protects you, you know, no one can demand that you do x, y, z.
+[06:34] No one can say, oh, why haven't you done this and that's because you've said explicitly,
+[06:38] I have done this, you've announced that you've said it's, you know, no one can question you,
+[06:42] no one can like try undermine your work. So that's the first thing most important thing,
+[06:47] pick the type of review that you're going to be doing. Next thing is the databases. This by now
+[06:54] should be very familiar to you guys. So it's basically looking at places like Google scholar,
+[06:59] PubMed, Eric, Jason, whatever you may have used, and you have to say, why did you use it?
+[07:05] The really specific thing, the main thing in your methodology is answering the why people
+[07:11] want to understand why you did the things that you did. So you have to say, okay,
+[07:15] I chose Google scholar because it's broad, it's easy to use, you know, there are more accessible
+[07:20] resources to me, or you might say, okay, I chose PubMed because my paper is on medicine. So there
+[07:25] was more detail about, you know, medicine and science or alternatively, it could be something
+[07:30] like Jsor, you could say, oh, I chose Jsor to find my sources, because, you know, they had,
+[07:35] you know, a specific highlight on humanities and social science papers. But, you know,
+[07:40] the same thing for all of them, you doesn't matter what database you use, you just have
+[07:43] to explain why it is that you chose that one. And of course, you can, you know, if you've used
+[07:49] multiple, mentioned multiple, you just have to once again explain why have you chosen them.
+[07:54] So the two things that you have to say, as I've kind of said, alongside the name is why
+[08:00] have you chosen them, I've kind of repeat myself. But you might write this an example of,
+[08:04] for example, Eric was selected because the research question concerns classroom learning
+[08:11] outcomes. As simple as that, you've named the database and you've said why you've used it.
+[08:17] For a lot of you, what you may have found, I know what are some of the messages I've received,
+[08:21] is that you have had access limits. So you might have not been able to access resources
+[08:25] because they're behind a paywall. You can mention that. You know, of course, we want you to
+[08:31] say, oh, like I've used freely accessible texts. But if you if you find that I only chose
+[08:35] these sources because I could, you know, they were most accessible, say that, you know,
+[08:40] be as clear and be, you know, as expansive as you can be.
+[08:45] Okay, let's move on to the third component of the research strategy. So once you've kind of
+[08:52] outlined, I use, you know, JSTOR, I used Google Scholar, whatever, you then need to, you know,
+[08:58] outline how did you separate your paper from like this massive pile, you know, how did you
+[09:04] pick papers out of like the massive search log that Google Scholar would give you.
+[09:09] So you need to report things like your keywords. What did you search for? Did you search for things
+[09:14] like artificial intelligence, education, student learning, academic performance, name these, if
+[09:20] you have used a specific keyword to find your paper, outline this. And then you can further go
+[09:26] and report the actual, you know, string of findings that you found. Because ultimately,
+[09:33] there are almost no student papers who include just, you know, a very now narrow scope. They only
+[09:38] use like maybe one term. No one does that. They use a variety of key terms. Sometimes they use even
+[09:44] synonyms. And sometimes your databases will automatically find synonyms for the keywords
+[09:49] that you're using. So if you've noticed that, hey, I've used Google Scholar, I couldn't find a
+[09:54] paper that was related to my keywords, but I found something similar, mention that. Because at
+[09:59] the end of the day, whatever's helped you to find your paper, you have to make sure you outline that.
+[10:05] And also sometimes when it comes to Googling, you know, things on Google Scholar and JSTOR,
+[10:10] you have to be very cautious about, you know, the search databases that use question marks or
+[10:15] that use exact phrases, if they use asterisks, all these little details that you should be
+[10:21] somewhat familiar by now, because I'm sure you have looked at sources, you've used these
+[10:24] databases, you've Googled things, just mention it. Whatever you use, however you search it,
+[10:29] mention it. For example, you could outline, I use things like artificial intelligence or
+[10:36] machine learning and education or student learning. It's just like, as you can see in this
+[10:42] example, you have to outline the keywords that you use and how you use it, whether that was in
+[10:46] quotation marks, whether that was in combination with other words, whether that was with synonyms.
+[10:52] You know, you just have to report the type of language limits that you had, as well as
+[10:58] publication limits, data types, so anything that you've kind of used to narrow down your papers,
+[11:03] this is when you include it. Right, let's move on. So you want to then build on your key word lists.
+[11:12] So students, you know, they usually search for two or three very obvious words and stop there,
+[11:16] but ultimately, you know, how researchers actually build their term list is not that simple.
+[11:22] What you want to be doing, first of all, is break your research question into its components.
+[11:26] So for example, with my paper, my question was on the Declaration of Human Rights in the 21st
+[11:33] century. So what I did was I broke it down into like the most simplest key components. I
+[11:38] broke it down into like human rights declaration 21st century and Google those things individually.
+[11:44] You can, you know, if it's even simpler, break it down into your topic, your population, your
+[11:48] outcome, and by doing this, you will find, you know, papers that are much more related to your
+[11:53] topic. And then from each of these components list every synonym that, you know, could possibly arise.
+[12:00] For example, AI could appear as artificial intelligence or machine learning or generative
+[12:05] AI or language models or chat GBT, you just have to be aware that a lot of the times there
+[12:10] are synonyms, there are so many synonyms for what you're trying to find. So it's always a
+[12:14] good idea to look through those as well. And then what you want to be doing is join up these
+[12:18] synonyms with the or or the and, and then you want to sort of like, look at the papers you've got,
+[12:24] look at the keywords and look at their titles that you might have missed. You want to check for
+[12:28] controlled, you know, vocabulary. For example, PubMed users, mesh terms, you know,
+[12:34] Eric users, descriptors, you know, every website is a bit different, you just have to be aware
+[12:39] of what their system is. You know, they all, you know, they catch onto papers and phrases a bit
+[12:44] differently from how you might. So this is kind of what I've said already, you have to
+[12:51] build a key list, but you have to show in your methodology, what were the words that you
+[12:55] searched for? What was the combination of words? What synonyms might you looked at?
+[13:00] How do these databases work in your favor? And if you're a bit unsure if you've got this
+[13:06] right, you know, your search returns will be somewhere between like 100 to 800 records. That
+[13:11] means it's a bit too broad. That means whatever term you're using to search for your papers,
+[13:15] it's a bit too broad. If you've got 12 results, that's a bit too narrow. And like 9,000 as well,
+[13:23] way too broad. I, I, if you ask different mentors, they will give you a different amount of how
+[13:30] many papers you should find with your searches. For example, Matthew, he said 100 to 800 is
+[13:35] fine. I think if anything, 100 to 400 might be fine. It's really depending on your topic and the
+[13:41] keywords that you use. But what you have to be careful no matter what is that you are being
+[13:45] specific, you are making sure that whatever you search, no matter what keywords you use,
+[13:50] are related to your topic. So that was a little information there, but let's move on.
+[13:55] So the fourth component is the eligibility criteria. So this kind of outlines the rules
+[14:01] that you have when you decide if you want to use a paper or not. So before you even start writing
+[14:06] about these papers, before you even start looking at them, you have to screen them, you know,
+[14:11] you have to do this before because otherwise you may find that bias kind of creeps into your
+[14:16] writing. And this is not what we want you to do, you know, you will unconsciously keep getting
+[14:20] papers that agree with you. And what you have to do is you have to show a diversity of opinions,
+[14:25] you have to show opinions that agree with your opinion, and papers that don't agree with your
+[14:29] opinion. So what we suggest you do is that you have an inclusion criteria and an exclusion criteria.
+[14:37] So it's very simple, but the inclusion criteria is basically what a study must have, whether that
+[14:43] be a keyword, a key topic, a key date, those are things that you want your papers to have.
+[14:50] Your exclusion criteria will be what disqualifies them. For example, is the paper out of date?
+[14:55] Is it biased because it's been written by a, you know, independent company rather than a
+[15:01] respective research body? Things like this is something that you have to take note of.
+[15:06] And they're not really opposites, you know, inclusion defines the target. Exclusion will
+[15:11] remove the specific problems that you actually run into. So you kind of have to use them in
+[15:17] combination to build across these dimensions. So things that you want to perhaps be
+[15:25] considering is, you know, your topic relevance. Is this paper tied to your specific question,
+[15:30] or is it like a general area? What about the population? You know, is this the population
+[15:35] that you are studying? For example, is it secondary school students or is it university
+[15:40] students? What is the study type, you know, was an empirical paper, review paper, what was
+[15:44] the publication window, the language, what was the peer review status, the full text availability,
+[15:49] all these things are factors that you're going to have to consider when it comes to
+[15:52] eligibility criteria. So to give you a bit of example from what we've had from previous cohort,
+[15:59] what they've kind of done is obviously they've outlined, okay, I used JSTOR,
+[16:03] I search for these key words, but then they went on to say, I included papers that were written
+[16:08] in this timeframe from these authors from this publication window on this topic because
+[16:15] they were relevant and they explained why, they explained why they use these papers and why they
+[16:20] were suitable for them. And then what they also did alongside this is that they named
+[16:24] papers that they didn't include. They said, okay, these papers were maybe relevant, but I couldn't
+[16:29] include them because they were out of date, or because the language was not specific to my paper,
+[16:35] or maybe because it wasn't peer reviewed. You just have to be very explicit in what you're
+[16:40] doing and why. So let's move on. So this is a worked criteria set, you know. So this
+[16:49] is an example of what you might kind of be writing. So you could say, okay, I've included
+[16:55] something that is peer reviewed, which is empirical, you know, and was published from 2020-2025.
+[17:01] It examined AI tools in K-12 or secondary education, reporting, learning or performance
+[17:08] outcomes published in English with available full text. So this for someone might be why they've
+[17:13] included the paper. Of course, when it comes to actually writing your methodology, you will
+[17:17] write this much nicer. You will write this in full sentences with a binal explanation.
+[17:21] But this is obviously an example. And so an example of what you might exclude is studies that aren't
+[17:27] related to education. They might be studies on university students or learners or whatever group
+[17:33] that's not your group. It may be a duplicate. They may have duplicates of databases. It might
+[17:38] be very opinionated. And the editorials might not be scholarly. Or they could have studies that
+[17:45] were in full text, that were not in full text and could not be accessed. So once again, these are
+[17:51] things that you'll be thinking of. It'll be very specific to your paper and what you need.
+[17:57] And a bit of a secret, you can present these in the table.
+[18:02] Up to you. If you want to write it out in full sentences, go ahead. But equally,
+[18:06] it might be easy to write it into like two very neat tables. And it will kind of look much
+[18:11] neater. And it will be much easier for you to write. But once again, your paper, you can decide
+[18:15] how you want to write it. Okay, so criteria that actually work. So what we generally find is that
+[18:24] there are four main rules to separating usable criteria from the most decorative ones. So first
+[18:30] thing, make them testable. A criteria should always answer a yes or no, you know, from an
+[18:36] abstract learning. You should be able to look at an abstract and say, okay, the answer is yes,
+[18:40] or their answer is no, it should be that clear. If it's something like, oh, a high quality study,
+[18:47] it's not tested, you know, doesn't mean it's tested. But if you have a paper that says it is
+[18:54] pay reviewed and it's empirical study, then you know, that's a kind of green flag, you know,
+[18:57] you know that it is tested, it is legit, you know, it is up to standard. And it's
+[19:02] something that you can use. Another thing that you will be considering is that there will be
+[19:08] a tie to every, you know, criteria of a reset paper. If you can't explain why a rule exists,
+[19:17] delete it, you know, you should only include the ones that you can explain. There is no
+[19:22] point of including arbitrary rules to look like you are, you know, fishing for just extra words.
+[19:28] If you can't explain something, there is no point of including it. For example,
+[19:31] if I said, I looked for papers that were published by women, but I can't explain
+[19:36] why I specifically look for those papers, there's no point of saying that, you know,
+[19:39] you should only be writing things in which you can explain. And something else that you want to
+[19:44] consider is you want to justify the really like tight ones. If you excluded like every single paper
+[19:51] before 2020, and you say why in just one sentence, that's really not enough, you have to be
+[19:57] a bit more expansive, you have to really explain these restrictions, so you don't look like you
+[20:02] are hiding some kind of like evidence, because you have to have like kind of like full transparency
+[20:06] when it comes to your work. And something else that you have to like think about is applying
+[20:12] your rules consistently. If you include one study from a specific university, you can't keep
+[20:18] another one if you said that the reason why you've excluded is because it comes from
+[20:24] university. You can't have inconsistencies, you have to be very consistent with your work,
+[20:28] you know, you have to make sure that your rules are the same for all papers.
+[20:34] And you have to, I find that students tend to like get into this habit really badly in which
+[20:39] they will only choose papers because they like something about it, or because they like the
+[20:43] findings or like something like very small, which isn't like necessarily academic or necessarily
+[20:48] testable, and they can't explain it. So try as much as you can to explain things from an
+[20:54] academic and from a scientific standpoint. But let's move on. So once you've kind of looked
+[21:02] at that first screening process in which you're looking at, you know, keywords, you know,
+[21:06] publication days, authorship, stuff like that, you're then going to go through a second stage
+[21:12] of screening. So it's really important that you don't have one stage, but you have two
+[21:17] stages, because you know, screening something once is not a decision. It's, you know,
+[21:23] it just saves you time and a second layer of screening, you know, really make sure that your,
+[21:29] you know, work is legit. So when you first screen your research papers, whatever papers that you're
+[21:35] looking at, you'll be looking at the title, the abstract, and this is going to be something
+[21:39] that's fast. You might skim read it, and you'll only be asking the questions,
+[21:43] could this possibly meet my criteria? If you're unsure, keep it for now. You can always,
+[21:48] you know, take it out later, but be generous here. You know, you can be generous here, you know,
+[21:54] have loads of papers go through your first layer of screening, and then you can be,
+[21:58] you know, a bit more selective in what you choose. Because of course, being generous later is
+[22:05] going to be expensive in terms of like time, you will end up spending so much time,
+[22:09] you know, going over through things later. And so in your second layer of screening,
+[22:14] once you've kind of looked at the title, the abstract, you're then going to read the
+[22:18] paper in full. And this is basically the way I'm explaining it to you is kind of how you have to
+[22:22] write it down. You have to write it down as if, you know, you'll explain to someone step by step
+[22:28] how they could repeat your study. It may be tedious, it may kind of like be really annoying to do it,
+[22:33] but trust me, this is the best way to make sure that readers really understand what you're
+[22:36] doing. So your second layer of, you know, screening will be looking at the full text.
+[22:41] You're going to read it properly, you're going to add every small criteria that I've already
+[22:44] described very strictly. And that's really important. This is where most of your exclusions will happen.
+[22:51] You will hear decide, okay, this paper doesn't work for me, it's not suitable for my paper.
+[22:55] And keep a note of why, because this is something that you can explain in your methodology.
+[23:01] And this is where also you can find things that the abstract has hidden.
+[23:05] As you guys know, abstracts are very short. They don't give a lot of description. And you
+[23:09] may find that as you read the paper, there are details like the abstract and initially,
+[23:12] you know, touch on which are very, you know, big red flags or green flags for your paper.
+[23:18] So, you know, these are, you know, great practical habits that hopefully you will, you know, adopt.
+[23:25] And as I said, this can be formed as like a Google Doc, you can have like a spreadsheet,
+[23:30] but you should be able to log a reason for every single text inclusion and exclusion.
+[23:35] You need those as well to write your methodology. So remove duplicates first, you know,
+[23:40] if an article is appearing on Google Scholar and Eric for, you know, one record or not two,
+[23:46] forgetting this may inflate the number of papers that you look at, you know,
+[23:50] and you want to make sure that whatever numbers you have, whatever, if you say, oh,
+[23:54] I've used 20 papers, you have to make sure that as honest as it can be. So make sure that you
+[23:59] haven't got duplicates in your, you know, number of papers that you're looking at.
+[24:03] And track everything from day one, have a spreadsheet, have the name of the paper,
+[24:08] have the data was published. And then you can literally have a little column next to it that
+[24:13] says inclusion, exclusion, inclusion, whatever, and another column that explains why you've decided
+[24:18] that. When you, you know, when you try to keep this record, and when you try to make this
+[24:25] record after you've written the paper, it's hard. It's hard because your memory, unfortunately,
+[24:29] will not be fresh as it is, you know, as you're actively reading it. So if you haven't
+[24:33] started doing it already, from now, I would really recommend have a spreadsheet in which you're
+[24:38] looking at all the papers that you're looking at. And you're outlining if you can use them
+[24:42] or if you cannot. Right. So reporting your numbers, I will tell you this, as a person who
+[24:51] reads loads of research papers, I love to see numbers. Although I'm a very like humanities
+[24:56] person, I'm a very like social science person, I love to see numbers, because it shows almost
+[25:00] in a way that you're being very systematic. And that is always a great thing. So, you know,
+[25:06] it's generally the best way to kind of like upgrade your paper. So report the final, you know,
+[25:13] record the amount of total records that you've returned, you know, record the
+[25:19] amount of papers after you've taken out duplicates, record the titles, the abstracts,
+[25:24] all that's been screened, the full text that have been assessed, you know, all the studies
+[25:28] that were finally included, keep a number of this, for example, you may write something
+[25:33] along the lines of the initial screen returned 340 records after removing 45 duplicates, 295
+[25:40] titles and abstracts for screens, of which 58 underwent, you know, a full text review, a final
+[25:47] set of 22 studies met the eligible criteria and were included in the review.
+[25:52] What is so great about this example? First thing is numbers. I can see exactly
+[25:57] how many papers you went through. I can see what your criteria was. I can see, you know,
+[26:02] how, you know, intensely you narrow down your research papers. And that is what people like to
+[26:06] see. They like to see the fact that you've been working hard and you've been working in a very,
+[26:10] like, professional manner. So writing something like this is fantastic. And I hope that all of
+[26:14] you will be, you know, writing things like this. And what you even could do is you can have
+[26:21] a prison flow diagram. So this is kind of like a very much like simple like box and arrow kind
+[26:26] of chart that shows, you know, the systematic process that you went through to like look
+[26:31] at every single paper. And frankly, it makes your papers look great. It makes it look publishable.
+[26:37] And it makes it look, you know, just much more neater. If you do want to have a look at an example,
+[26:42] I can show you one later or you can, you know, just Google one yourself. For example, I think
+[26:48] like Word document and, you know, Google docs have the option for you to just like
+[26:52] insert a prism, you know, flow diagram itself. So if you do decide that you want one,
+[26:57] it's very easy to add. Right. Let's look at the fifth component, which is your analysis strategy.
+[27:05] So once you've said, okay, I have selected my papers, I have looked at Google scholar,
+[27:10] whatever I've looked at these, what keywords have gone to this criteria to include my
+[27:15] paper or exclude my paper, you now need to outline how did you make sense of these papers
+[27:20] once you actually had them all together. So name your approach. It was it a thematic,
+[27:25] you know, synthesis. Did you group findings and find themes, whether you know, common analysis in your,
+[27:32] you know, papers, or it could be a narrative synthesis. Did you describe the patterns, you
+[27:38] know, with systematic without systematic pooling, or maybe it's a chronological analysis.
+[27:44] Perhaps if you're looking at something like a bit more historical, you might want to be able
+[27:48] to trace a field and how you know, changes have happened over time. Or you might have a
+[27:52] comparative analysis in which you're contrasting, you know, populations, regions, methods.
+[27:59] This method also works if you're doing a bit of a science paper in which you're kind of like
+[28:04] comparing like two different materials, or if you're comparing two different strategies for
+[28:08] like a machine or something like that, we've had students who have written papers like that in
+[28:12] the past, in which they've compared different materials for like robots and stuff like that.
+[28:16] So a comparative analysis might be suitable for you if that's the kind of thing that your
+[28:19] paper is looking at. And then so what you also want to say is what you have extracted from each
+[28:26] of these papers. So the typical offer, the year, the country, this, the study design, the sample,
+[28:33] the method, the main findings, these are the kind of things that you can mention, you know,
+[28:37] if you have kept an extraction table and say, okay, something along the lines of the following
+[28:43] source criteria, the articles were analyzed, analyzed thematically to identify recurring
+[28:48] themes and major debates and research captain in the field. This kind of thing is fantastic.
+[28:52] You have outlined what it is that you have done with these papers. And this is what people want
+[28:57] to do. They want to see the methods and the kind of like process that you have gone through to
+[29:01] really like analyze these, you know, sources. So I will talk a bit about AI because it is
+[29:09] always a recurring thing. Once again, all the mentors have different opinions on AI and
+[29:13] a bit like if you I don't mind using AI, if you use it correctly. So if you decide that you do
+[29:20] maybe want to make this process simpler for yourself and you might want to use AI, this is
+[29:24] how we would recommend you use it. But once again, you must use it carefully and you cannot use it
+[29:29] to write your actual work. So once you have kind of, you know, read a guide on lit review
+[29:36] methods, you then want to kind of like understand your options. So you might want to send
+[29:41] the draft of your introduction and your lit review to chat, you might ask it, you know,
+[29:45] analyze what type of paper, what type of review you might have, you know, appear to have conducted.
+[29:51] Of course, it might not be correct, but it can give you a great indication of what kind of
+[29:55] review you have used. And then you want to kind of ask it and show you the standard
+[30:01] structure of a methodology for that, you know, review type within the example. But what's
+[30:06] key here is don't copy what it gives you words. This is an example for you to look out and
+[30:10] kind of get ideas from. But all of your writing should be in your own words.
+[30:15] And then you might want to look at the example that chat GPC has given you and you might want
+[30:19] to study it, you know, how it organizes the sequences and components. But once again,
+[30:23] very clear, guys, please don't copy it worth words, use it, the structure as an idea,
+[30:27] use it to maybe inspire you and give you some feedback a little bit, but do not use it to
+[30:33] actually write. You know, your methodology should really describe the search that you
+[30:39] actually run through. So try to keep it running long whilst you're researching. And then for a lot
+[30:43] of you, you're kind of coming to the end of your research process in which like you've already looked
+[30:47] at all your papers. If you haven't reached that process yet, it's fine, you know, but what's
+[30:51] really key is that you keep a log, you know, you outline the databases, the string of
+[30:56] searches, the number of hits that you got. Because when it comes to writing your methodology,
+[31:01] it will become much more easier. And so you can answer, you know, any questions.
+[31:09] For a lot of you, I know you have already received, you know, messages about from professors and
+[31:14] PhD students. And what a lot of the times they will ask you when you have your meetings is
+[31:19] how did you find your papers? What was the method that you went through? And if you know
+[31:23] your methodology really well, and if you can keep a log of every kind of system that you've gone
+[31:27] through, it will be like really good, you know, so they can very easily see, you know, that
+[31:33] you have gone through your process in a very like academic and professional way. Right.
+[31:40] Oh, okay, this is not loading. Don't know why. Okay, so your homework will be set shortly. I'm
+[31:49] not sure when I think Matthew will be setting it later. And your methodology should land around
+[31:56] 600 to 700 words. Of course, if you go a little bit over, that's fine. If you go a little bit
+[32:01] under that's fine. But this is kind of, you know, what your paper should have in general as a
+[32:05] word limit. So as a bit of a guide, you know, your research design and rationale might be like
+[32:12] 90 to 100 words, your databases and why you've chosen them might be 90 to 100 words. And your
+[32:19] research strategy, your keywords, your strings, your filters, that will kind of be the more
+[32:24] heavier selection of your lit review that was sorry, of your methodology. That will be where
+[32:28] you might want to spend kind of 150 to 180 words, the same with your eligibility criteria,
+[32:34] your inclusion, your exclusions, that will also be a bigger section. So you might want to include
+[32:39] 150 to 180 words. And then your screening process and the numbers that might be
+[32:45] 90 to 100 words. And then your final analysis strategy and data extraction will be
+[32:50] a bit bigger as well. And that might be 100 to 120 words. So as you can see, the research
+[32:57] strategy and the eligibility criteria together admit basically take up half of the section.
+[33:03] And that's kind of how it should be because these are the most two important sections, you know,
+[33:07] they are what make your paper replicable. They are the exact two components that, you know,
+[33:11] students tend to underwrite. So this is why we're really emphasizing to you that this is kind of
+[33:15] where the bulk of your writing should be. So of course, your homework will have all this detail
+[33:21] as well. But that is my slides. I know that I have gone through a lot of information here
+[33:29] and it might have been a bit confusing for you guys. So if you have any questions, I am more than
+[33:35] happy to answer any of them now. Whether you want to put your hands up or text in the chat or comments
+[33:41] any questions, if not, that's fine. But of course now would be like the best time whilst I'm here
+[34:02] to answer your questions directly, whether this be a question relation to your work or in general
+[34:07] about writing your lit review methodology. Okay, I can't see any questions right now. But what I will
+[34:18] do is I am going to show you an example of what a methodology section might look like. So I will
+[34:24] temporarily stop sharing my screen. Please give me a minute. I'm going to find you guys a really
+[34:37] great example from one of our previous students on writing a methodology. In the meantime,
+[34:55] if you guys think of any questions, you know, you can type them out or send them to me. Okay,
+[35:06] please bear with me. I'm just finding this example quickly. I will be sharing this with you in just
+[35:27] a second. It's loading up. Let me share my screen again. You might be able to see my screen and
+[36:08] someone give me like a thumbs up if you can see this document. Amazing. Okay, so this was a
+[36:15] paper from one of our previous students. And I'm just going to go down to the methodology
+[36:20] because they have written absolutely amazing methodology here. And I will kind of outline
+[36:24] what's so great about it, you know, what kind of features they included, and kind of what you
+[36:28] can learn from this. So first thing first, which they did is they outlined the study
+[36:33] design. So they said, okay, I use a scoping review for this approach. I analyze the current
+[36:39] literature from different, you know, patient perspectives and you know, the general
+[36:42] population of, you know, surgeons regarding AI use and very simply, they explained the type of
+[36:49] review that you use and most importantly, why they use it, you know, they said, this scoping
+[36:53] review was carried out according to the prison's criteria, you know, it was used because this,
+[36:58] you know, study was the most appropriate in our case for its broadness and variety of
+[37:02] available literature and the nature of research questions proposed. So once again, very simply,
+[37:08] but in great language, and this is well written, they've said, they're study design
+[37:12] and why. And if we move on, we go into the search strategy. And this is kind of what I was
+[37:18] saying about the key words and the searching, just putting some more like a nice formal, you
+[37:23] know, few sentences. So they said, a systematic, you know, literature research was conducted
+[37:29] on four major electronic databases, and then they named their databases, they said Google
+[37:33] Scholar, PubMed, JSTOR, ScienceDirect. And then they said this study, the search was
+[37:38] limited between the years 2022 to 2026 to ensure the relevancy of findings. Once again,
+[37:45] they have told you the criteria of their search, but they've most importantly explained why that
+[37:49] was important for them. If we go on, they have said that the search was conducted using keywords
+[37:57] such as, you know, robotic assisted surgery, AI assisted robotic surgery, and they've kind of
+[38:02] just like listed all the key words that they ended up using. So then we go into the
+[38:09] eligibility criteria. So this is when they talk about why they use studies and why they did not use
+[38:15] studies. So they've said that the studies were selected based on predefined criteria, which
+[38:21] included inclusion and exclusion criteria. And then they explained what these criteria were.
+[38:26] They say if a study was included because it met the criteria of being written English from this,
+[38:32] you know, time periods, having this perspective or this topic. And then they also say
+[38:36] papers were excluded because maybe they only concentrated in one aspect. Maybe they were
+[38:42] done before 2022. Maybe they didn't have, you know, full, you know, detailed or defined, you know,
+[38:47] non-surgical perspectives. Very simply, they have kind of told you what their criteria was.
+[38:53] And they've also explained why. I will, I cannot stress this enough, you have to answer the
+[38:57] why you have to be able to explain to someone why you have chosen decisions that you have,
+[39:01] you know, done. And then if we go on, we have the study selection. So then say, okay, all these
+[39:09] reports were put through a database. They were filtered for eligibility. They talk about the
+[39:15] two stages. They talk about how they first read the titles and abstracts. And then they talk about
+[39:18] the second stage in which they look at the actual full paper. And then if we move further
+[39:24] on, they talk about data extraction, they say, okay, before I even conducted these, you know,
+[39:29] screenings, I looked at the datasheet though that was developing and I used the first paper to
+[39:34] outline, you know, three included studies, you know, they go on to talk how their data was
+[39:40] extracted and how it was done independently and how they did different dimensions to it.
+[39:45] And of course, this will be very different to what your paper's write, depending on what your
+[39:48] topic is, but it will kind of follow the same structure. And then they talk about synthesis
+[39:54] findings. They talk about, okay, from all of the papers that I've read, I found the themes of X, Y, Z
+[40:00] and they kind of like outlined what these main kind of findings were. Of course, later on in your
+[40:06] discussion, that's when you kind of like delve into these findings, you say, okay, you give your
+[40:10] opinion and you explain what it means. And what was not on the slides, but I think it's very
+[40:16] good that this person has included its limitations. They've said, okay, as much as I have done
+[40:22] all this great, you know, criteria work and all this great selection and all this great,
+[40:26] like filtering, there were some limitations to their work. For example, it could be the fact
+[40:31] that they only use English papers, which means that they might not have been able to find
+[40:36] different perspectives from different countries. This is something that tends to be quite
+[40:39] common. So you might feel like you can also use the same limitation. They also said that,
+[40:45] you know, there was no pre-registration protocol that was done before conducting the scope,
+[40:49] which was a limitation to their work. And there may have also been evidence over that between,
+[40:54] you know, two reviews, which was also a limitation to their work. So it is, I think it's such a
+[41:00] great way to show that you're being critical of yourself and the fact that you're being
+[41:03] analytical. The fact that you can say, okay, I've got this like great process of finding my
+[41:09] sources and analyzing them and selecting them, but you can still recognize that there might
+[41:13] be some limitations to your work. And that's what I think is so great about this example.
+[41:19] So if I go back quickly, you can see they have the main components, they have outlined very much
+[41:23] like step by step, the process that they went to to find their sources, to analyze their sources,
+[41:27] to decide whether to include them or not. And then they finish things off very nicely by just
+[41:31] adding a very small limitation section to outline kind of like why they might have
+[41:36] faced some problems. So once again, I have gone through a lot of information here. Do you
+[41:42] guys have any questions regarding anything to do with the methodology? If not, that's also okay,
+[41:54] but this would be like a great time to kind of like go through those questions if you have any.
+[42:06] If not, oh, that's a question. Could you play something? Of course I can. I will send you
+[42:12] this so you can also have a look over it. Is there any other questions that you guys might
+[42:17] have? Can I ask one question please? Of course, go ahead. So yeah, I noticed there were two
+[42:24] like parts of limitations rates in this example. Yeah. How are they different? Well, it kind of,
+[42:32] well, I think what is very key to understand here is that the limitations in this paper will
+[42:36] not be the exact limitations that you may choose. Because you might obviously, you don't
+[42:40] have the same paper as them, but what they've done here is that they've kind of
+[42:44] outlined the issue with the like language. They've outlined, you know, a lot of these papers were in
+[42:51] English, you know, which is kind of like a systematic problem in which, you know, they
+[42:57] unfortunately couldn't use papers that well in English. And they explained why this was a
+[43:00] limitation. They said, okay, this is a limitation because x, y, z, you know, it meant that I
+[43:04] couldn't understand different perspectives. And then the second part of this limitation
+[43:08] was talking about the actual content of the paper. So what they actually said. So whilst one side of
+[43:15] limitations was like the more systematic side, the second side of limitations was more like the
+[43:20] actual words of the paper. Does that make sense? Yep. Yeah. Thank you. No worries. There were
+[43:28] a few questions in the chat. I will go through these. Okay. How many articles or research
+[43:33] papers should we read and look up to write a good methodology? It really depends on your paper.
+[43:42] I kind of say that like 20 to 30 tends to be a good amount. 20 being kind of like the minimum. I
+[43:49] know that we have asked you to look at 15 papers. So if you can literally find five more than that,
+[43:54] it's fine. If you find that you can only have five, find 15 papers, that's fine as well.
+[43:58] But you'll have to explain very specifically why these 15 papers were so relevant to your
+[44:02] paper and why you had to exclude other papers. Okay. If I answer the next question,
+[44:10] should we use referencing in the methodology? Yes. You should always use referencing when possible
+[44:16] and when necessary. So if you find that you have to reference something, reference it. It's fine.
+[44:20] You won't get penalized. No one will look at your paper in a bad way because they see that you've
+[44:24] used references. Is it okay to use them for empirical papers because empirical papers are
+[44:29] also analyzed articles for the review? Ideally, if you're conducting an empirical paper, you should
+[44:37] kind of be collecting your own data. So you will kind of be focusing more on like your data
+[44:45] collection with an empirical paper. You know, I understand that you will be analyzing papers
+[44:54] as well. But the way you'll have to write your empirical papers, you might have to split
+[44:58] into two sections. So your first section will be kind of like the same here in which you talk about
+[45:02] how you found your sources and whatever. And then your second section of your methodology may be
+[45:08] discussing the actual like data collection depending on what your paper is. If this is a
+[45:15] very specific question to your paper, you can message me after the class. I will kind of
+[45:19] give you more like specific detail about how the methodology will look for your paper.
+[45:24] But I hope that someone answered your question. Does anyone have any other questions regarding
+[45:30] anything? If not, that is okay as well. In that case, since I don't see any more questions coming
+[45:44] in, I will stop sharing my screen. Thank you guys so much for joining today's lesson. It has
+[45:50] been a pleasure as always. And I hope you guys have a good rest of your day. I will
+[45:55] send you these recordings, the examples and all the slides. Thank you all. Thank you so much.

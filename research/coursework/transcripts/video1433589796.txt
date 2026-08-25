@@ -1,0 +1,392 @@
+# video1433589796  lang=en  duration=3236s
+
+[00:00] And there we go. Okay, welcome everyone. Today we're gonna have session on literature review
+[00:11] slash drafting literature review. So before we start let me introduce what is literature review.
+[00:20] It's an analysis of existing research connected to your topic and research question. It's not
+[00:28] a book report or it's not a list of summaries of existing research. It's more of a map of your field.
+[00:38] So very strong literature review does five specific jobs. The first one is showing
+[00:47] what researches already know about your topic or your research question. And it introduced
+[00:55] the established agreed upon findings. The second one is it identifies the disagreements within this
+[01:06] findings. And it's basically introducing disagreements create credible studies that
+[01:15] contradict each other that you are kind of understanding that you are telling the reader that
+[01:25] you do understand that there are some disagreements. And that's that's that kind of creates a
+[01:33] credible convincing paper because you're not just leaning towards one side and you're not
+[01:42] just like taking the strong position of agreeing. So the third one is it identifies the trends.
+[01:51] And it basically it's the direction of the field where it's moving over time
+[01:59] for it identifies the gaps that questions and no one has answered yet. This is an
+[02:07] interesting part because from the previous session where you were brainstorming on the ideas and
+[02:17] talking about the research gaps that's where you could actually have an idea for your
+[02:23] further projects or like even changing your current research question as you read through some of the
+[02:32] papers you'll get like more deep understanding of the current research what's out there and then
+[02:39] a kind of shifting your research question based on your interest. But again this this is why we
+[02:48] advise you all after finding a paper you would like to site on your paper basically the
+[02:58] research project you're working on. We advise you to carefully read because carefully reading like
+[03:05] literature review or the discussion part gives you an idea of oh actually this is something you
+[03:13] could be working on as well. So yeah and then the last job it does is it justifies your own
+[03:23] research showing exactly where your study fits and in terms of like wordings literally if you
+[03:32] should be a minimum or like around 600 words fewer than that means you're not analyzing enough
+[03:43] the information that you are introducing. You might be just like stating or giving a summary or like
+[03:50] listing sources but that's not what literature review does. So okay one thing you could think of
+[04:01] literature review as is a conversation. Picture five researchers in a room debating about AI
+[04:10] in education and each one of them contributes a different point of view as an example
+[04:18] researcher A says AI improves learning giving points to better out giving the points where
+[04:27] AI gives a better outcomes and engagement. Researcher B states that AI improves productivity
+[04:37] and like students finish tasks faster with AI tools is their supporting point
+[04:45] and researcher C states that AI can reduce critical thinking and again they talk about
+[04:53] how it kind of decreases your critical thinking or like overreliance on it on making like autonomous
+[05:02] decisions. Researcher D talks about the effects that depend on age and then gives points on that
+[05:11] where adults may help not children so what helps adults may not help children. Researcher E states
+[05:23] that more research is needed that there is not evidence that is 100% settled yet so your job
+[05:33] in this conversation or like in this debate is to explain the whole conversation not just one voice
+[05:43] as you can see as you may notice there are already themes grouped so you what you do is
+[05:53] you basically group the things themes and then give a detailed explanation supporting arguments
+[06:03] from several different research papers so what that's what literature review is just the second I see
+[06:11] some questions in the chat okay it's about attendance I guess okay I guess we could continue the
+[06:30] session okay can everyone turn on their cameras because I'm having troubles with my camera
+[06:42] otherwise we I would need to kick you out of the zoom that's what is one of the co-founders
+[06:49] telling me to do so everyone turn on their cameras and then we will continue sorry I wasn't
+[06:57] aware of that policy okay okay let's continue okay a typical review structure of literature review is
+[07:14] first it follows this like sample I guess template the formula so it let's say there are three
+[07:26] themes introduced theme one talks about the field backed by several studies idea of the field and
+[07:35] everything the theme two is gonna talk about the related or contrasting ideas theme three is gonna
+[07:45] talk about a third standard of the conversation and all after all these themes we discussed
+[07:51] there is gonna be a research gap discussion so research gap is gonna talk or like introduce the
+[08:02] unanswered questions your study targets and then there's gonna be conclusion where it puts the
+[08:09] threads together and point forward so the main thing in here is just do not open paragraphs with names
+[08:23] for example there are there might be some papers who that do not have experience and they might just
+[08:31] like write Smith 2021 paper says that Johnson or like says or Lee says all those things are
+[08:43] listing it's and it's not a review what we are trying to do and then again these like points
+[08:54] they lead with the idea and surely they bring in the researchers as a support so after like each
+[09:03] that theme was introduced after you state the points of this specific theme you're gonna have
+[09:12] several resources that supports this argument so that's what review structure is like
+[09:20] um so yeah again it shouldn't be listing I mean anyone can do a listing but only if you can do
+[09:28] a good analysis of or like good review of the paper so yeah okay what good structure looks like
+[09:40] we're gonna have an example on that so let's say our theme is the benefits of AI in education
+[09:49] um so this is our paragraph let me read it out loud researchers broadly agree that AI improves
+[09:58] accessibility and learning efficiency uh Smith found gains in student productivity while Johnson
+[10:07] reported more personalized learning experiences similarly Lee observed that AI tools helped
+[10:15] students complete tasks more efficiently reinforcing the earlier findings so this is an example of review
+[10:24] on one theme but again in here this is a small paragraph and this is an example paragraph it
+[10:32] doesn't um quite well state um the um the detailed analysis of each paper but yeah so this is one of the
+[10:44] uh good examples because it presents the idea first the paragraph options opens with the claim
+[10:52] not a name um but again um opening a paragraph with a name it kind of makes the user confused
+[11:02] because you're like oh what they are trying to reach with this cited resource right um that's
+[11:10] something that may make the users um get confused um so again present the idea or like present
+[11:18] the point first and then um it leads um through the um cited like sources credit sources you're
+[11:27] gonna cite later on um again then after ideas well idea was introduced first um you're gonna
+[11:36] introduce the studies there should be at least three sources that support one point together
+[11:44] um so the third uh thing you could um notice from this example is it connect there is like a lot
+[11:52] of connective words like linking words like while similarly reinforcing um to link them all together
+[12:01] and then there is also um again a clear theme and every sources that were cited is related to
+[12:08] the theme that was introduced in this paragraph so everything here is about benefits and nothing
+[12:16] uh drifts um so this is an example of what you might be expecting while writing your
+[12:24] literature reviews um okay again don't summarize you should synthesize the information
+[12:34] synthesize means like uh like gathering all these ideas and points into one
+[12:41] um theme are like under one idea or under one um theme so you shouldn't be summarizing you should
+[12:48] be some synthesizing the information um the points um okay one thing you should
+[12:57] take into account while writing literature review is again um it's not about summary
+[13:05] it's about what did one source say as an example smith found that ai improves student productivity
+[13:14] one voice is an isolation useful but this one alone is not a review again
+[13:22] just like stating this is not a review it's just like you're just like dropping some
+[13:29] points or like dropping some sources without ideas introduced first um
+[13:35] and then like sources um um following so yeah again um synthesizing means um like you have multiple
+[13:47] sources that tells the same story the same idea that supports the same story or the same idea
+[13:53] all together for example several studies suggest that ai improves productivity and learning
+[14:00] efficiency of the researchers disagree on its um long-term effects on critical thinking
+[14:07] and then citing smith um is this is a point that um or this is a finding that was uh
+[14:15] mentioned in this paper um okay many again um many voices go into one side this includes
+[14:25] where they agree and disagree and this is a real goal of what you are what you should be doing in
+[14:32] the literature review um okay but let's move on how to build each paragraph um okay this is again
+[14:45] our formula from like terrarium researchers um terrarium students terramentes use um so
+[14:52] um you should have first a topic sentence that states the main idea of the paragraph in your own
+[15:00] words there should be evidence following after topics topic sentence and it brings in the
+[15:08] studies that support this idea and then at and there there there goes analysis of these
+[15:16] evidences where you get to explain the patterns agreements and disagreements and then it goes into
+[15:24] transitioning into uh an x theme um worked example is given here what it says is researcher
+[15:35] research suggests ai improves student productivity um okay smith found ai assisted tools um cut task
+[15:47] completion time by 20 and johnson reports greater efficiency among high school students on ai
+[15:55] platforms to gather this finding show ai might lift academic productivity questions remain
+[16:03] about its long-term effect on learning outcomes okay as you may notice this is our topic sentence
+[16:12] okay um and then after the topic sentence was introduced the theme itself was introduced
+[16:20] there is two sources that supports this topic sentence later on it analyzes what does both of
+[16:30] the um papers say what's the pattern what's the agreement or what's the disagreement in these
+[16:38] papers and then it transitions into the next theme it says oh this this this like paragraph
+[16:47] or this theme talked about the benefits right and the next paragraph is going to potentially
+[16:52] talk about the long-term effects that might be negative in terms of performance or skill
+[17:00] improvements um so yeah this is something this is a great um formula you would use you don't
+[17:09] you would prefer to use while writing each paragraph and again it helps you um kind of
+[17:17] um group the themes and then supporting sources into one paragraph and then it makes um your
+[17:29] paragraph sound more convincing and like credible than pure summary of some paper that was related
+[17:40] to your project um so yeah again after like topics and there should be evidence again with this too
+[17:48] your topic or your paragraph will still be weak because analysis is an important part and transition
+[17:55] is something that makes um your ideas or like themes go um through smoothly um so yeah okay
+[18:06] why you should be um citing sources there are um several reasons for that and then there are several
+[18:16] ways you could do so citing avoids plagiarism and gives credit to people um who'd work you
+[18:25] build on it also lets readers trace your evidence by citing every single time you use a direct quote
+[18:36] a paragraph someone's um paraphrase someone's ideas refer to a specific study use statistics or
+[18:45] data and um you do not cite common knowledge meaning facts a general um reader already accepts
+[18:55] as true and could find in countless places if you had to look it up in a specific source um
+[19:02] then you should cite it um if everyone already knows it then usually then you usually do not
+[19:07] cite it as an example water freezes at zero degree Celsius you do not need to cite that um fact because
+[19:17] it's a common knowledge but you would need a citation for something that sounds um like a 2024 study
+[19:26] found AI use increased student productivity again you should be stating um citing this um
+[19:33] statement because without it it doesn't um sound more credible or it might just sound like as an
+[19:41] opinion not fact or something that was already analyzed by other researchers and something that
+[19:49] was already proved um so I see some questions in the chat um yeah it's literature review okay um
+[20:01] again at terra we use IEE citation style I think um there was a video shared in the chat that
+[20:12] introduced what is IEE citation style it's something similar to like other citation styles it's just
+[20:19] like it it just uses a different um style of citing in um in text style of citing
+[20:26] in the references list that goes um by the papers cited like by the list basically is
+[20:38] based on the um papers cited on the on the um on your paper basically but in some other
+[20:48] other citing styles the references list is based on alphabetical order and everything um so yeah
+[20:56] okay um okay so another important um subsection that we has already mentioned when we were
+[21:11] introducing literature review is um you should be comparing and contrasting sources because that
+[21:16] makes your literature review not boring and then again this is something all researchers
+[21:24] or like all research papers tries to follow um and explanation on what what we mean by comparing
+[21:34] contrasting sources is uh by synthesis um it really comes alive when sources has some
+[21:42] disagreeing points your job is not to pick a winner but to map the disagreement clearly
+[21:49] so the reader sees the whole debate um some useful moves you could follow or use is
+[21:58] first a point of agreement you say most studies agree that AI was short term productivity
+[22:05] and there is a point of tension that is introduced that says but they did divert sharply
+[22:12] on its effect over a full um school year and then uh there it goes the grouping you cluster sources
+[22:22] that share a finding then contrast that cluster with another and then you start to name the reasons
+[22:30] explain why they differ first it might be because of the different age groups that they might
+[22:38] derive a different results because of the age because of the like um human like mental or
+[22:45] physical development and then it might be because of the subject or the measures
+[22:51] an example is introduced here it says while Smith and Lee report clear productivity gains
+[23:00] both studied university students Chan working with primary school's children
+[23:07] found no such effect that is agreement made their war reflect age rather than a true conflict in
+[23:14] the evidence as you might see there were three sources cited first two sources that if be that
+[23:23] there is a positive effect of AI usage let's say on universities on university students but again
+[23:32] the third source says it's there was no such effect from the primary school children and then
+[23:41] it explains the reason because of the like age differences as you might say this is something
+[23:51] that was clearly like analyzed because of the like trends and yeah and again you should be
+[24:02] doing a great job using linking words such as incontrast however similarly building on
+[24:10] this but comparison all this um linking words helps you first introduce the point and then a show
+[24:21] whether it supports or contrasts your previous points so yeah that's something you would want to
+[24:30] use okay common mistakes to avoid is you shouldn't be again listing he said she said lists they suck
+[24:43] because they don't give a clear analysis of what is being analyzed whether it supports or again
+[24:51] disagrees the theme that is discussed in that paragraph and then again one source per sentence
+[25:01] no connection between them you should try to avoid that and try to cluster group them and then link
+[25:10] them based on that again another thing you would want to avoid is the pure summary retelling
+[25:19] each study without analyzing it is bad after you introduce the source you should always try to ask
+[25:32] a question such as so what like what's after that evidence so one of from my experience I had a
+[25:43] paper on quantified self in i think 2021 or 2022 where I was working with Princeton University
+[25:52] professor under a pioneer academics um so that's when everything started to be digitalized and
+[26:01] how like devices uh started to be widely used in on a daily basis um so quantified self is like
+[26:10] you trying to keep track of your lifestyle uh using such devices like smartwatch or like a phone
+[26:19] an app a software um so some uh some of the things that I discussed on my literature review was um like
+[26:30] um my my myself um I I kept track of my screen time and mood but um I had to discuss other
+[26:39] quantified self projects of other people right um so some people um some papers some projects
+[26:47] they used um to monitor their glucose levels and that helped them um make um informed decisions
+[26:59] about their life so in that in my literature review I talked what they used to let's say um keep like
+[27:07] quantified their glucose levels um and I just didn't state oh this is a some project that was
+[27:14] previously done I also stated some findings based on that and then I tried to analyze and connect
+[27:21] how uh connected to my um point that was like um that was like proving of how quantified self
+[27:29] helps us to make more informed decisions um so what I did is I just didn't mention that they used this
+[27:39] like an app or like a device to keep track of their glucose levels I also stated their findings
+[27:46] the positive findings or like some experiences of people because it was a case study that was
+[27:52] mostly quoted um from interviewing them um the people or like this um group of people who was
+[28:02] participating actively in this study um so again pure summary is not what we are trying to do
+[28:09] you should always have so what um after each um like themes after each summary you have just like
+[28:19] summarized um you've just like written down um so next is no clear themes sources dumped in
+[28:29] random order um this is again um this is because like like you know when you are searching for
+[28:37] some sources or when you are planning out your paper there are a lot of points a lot of different
+[28:44] points you find from um reading each papers right and all of those are they kind of look
+[28:52] not organized so what you're trying to do a tip for me let's say is you bullet point each um
+[29:00] finding and then what you try to do is you group each finding uh based on um the themes that they
+[29:09] you might want to include in your paper but what is good for you is to have first um like a couple
+[29:18] of themes um and then trying to find sources for those but like that's a bad thing to do because
+[29:26] you're kind of first stating the um the you know the point the argument and then trying to find a
+[29:34] supporting um like study for that but in research you should be what you should be doing is like
+[29:42] reading all those papers and then there are some uh points several points there are some
+[29:47] several trends that agrees on the same thing or there are some several trends that introduce
+[29:53] this tension um what you're trying to do is after you read through all those papers you list them out
+[30:00] you list the points out and then you try to group them group the positive ones together group the
+[30:06] negative ones together and then again after you group them out you kind of see all these themes
+[30:13] you're like oh these three sources could be one theme and this other positive three sources could
+[30:20] be another theme um so yeah that's how you kind of group cluster them out um again all those
+[30:30] papers have a clear themes if you have read through some of the articles there are always
+[30:38] sorry okay sorry um so if you read through or like skip through some of the papers
+[30:51] um in your current um like research process then you for sure notice that literature review is always
+[30:59] divided into some um subsections into some um themes and that's what you should be doing as well
+[31:08] um and again usually all those themes have their kind of um topic and you kind of bullet
+[31:17] point not bullet point but like um show them involved um the topic first and then have a following
+[31:26] paragraph and then that that's how like each theme is discussed like it kind of looks
+[31:34] a subsection of literature review um so yeah um and um another thing you would want to avoid is
+[31:43] dropping quotes without an explanation or no lead in that's a really bad thing to do because um yeah
+[31:53] sometimes um we think just like putting all those quotes is um a right thing to do because
+[32:02] everything is kind of looks clear but again it looks clear for you because you have spent so much
+[32:08] time um researching this topic and then um just like dropping that quote would make sense to a
+[32:17] reader who has done the same level of research or like the same level of use great use of search
+[32:25] engines as you do so what you try to do is after like some dropping some quotes you try to explain
+[32:32] and give meanings to those and again before you drop such quotes you should introduce the idea
+[32:39] and then the quote is um basically a source and then you kind of analyze it and then um and then
+[32:48] that's pretty much it um what should be done with quotes um another thing is missing citations
+[32:59] uh many like um students at terra um did that before um we explained them um why it's a bad thing
+[33:11] because like like every time everything every um like fact like um statements should be cited
+[33:21] everything you say let's say AI improves like performance or like AI improves learning outcomes
+[33:30] that's a huge statement and that statement should for sure have a um for sure have a supporting source
+[33:40] that explains why and that explains like it's something that was already approved by some
+[33:47] other researchers because just like purely mentioning that kind of makes you makes your
+[33:54] paper look weak because it feels like you are just like naming these things it it looks more of
+[34:05] an opinion like thing but research is not about opinion opinion like things right research is
+[34:11] about something that is well analyzed that has supporting points that um every single statement
+[34:19] that is on it is something credible something um worth trusting right uh by missing citations
+[34:29] kind of destroys that um credibility that could give you something um so yeah um also
+[34:39] another like final thing what we try to avoid is the blind spots where you are leaning only on
+[34:46] old studies like in today's world i feel like um there are a lot of things that are changing that
+[34:56] are not the same as i was like 50 years ago so leaning on old studies kind of uh makes your
+[35:06] paper again look a little odd or like a little weak because you're not relying on recent friends
+[35:13] it's not something that um it's not something like that has the same effect as now because
+[35:22] you're only relying on old studies how to fix fix it is just like try to find a newer work
+[35:30] newer credible works from like universities or like credible professors and move it to the conversation
+[35:40] so um your homework would be to write a draft of literature review of your paper that is
+[35:50] 600 words minimum and follow the structure from this and the previous classes
+[35:58] uh but again now i'd like to go back and um ask you guys if you have any questions about anything
+[36:08] this is an amazing opportunity for you to ask any questions
+[36:12] unrelated to literature review if you are confused about something um or like in general about
+[36:20] let's say my paper my literature review of my previous papers let's say uh so yeah
+[36:27] i'm sorry adran i had actually an example to talk about i'm sorry for inter um predating you
+[36:35] are you okay if i do a screen sharing quickly and just um you got like like 15 minutes uh
+[36:41] we're just gonna finish up right the class okay um you right you're not living in the
+[36:46] meeting because if you do leave i think it's get um it's gonna get eliminated right um i think so
+[36:52] yeah i could stay yeah actually okay let's just like wrap up i have something quick to just go
+[36:57] through and then you can just like um wrap up the session okay i have sent a request i hope
+[37:04] everyone is doing great guys i was not supposed to teach today but i have something really important
+[37:10] to cover um it's a great example to look at i just like i want to go through this okay
+[37:17] and i adran if you have any like anything to add up to this one it would be great okay
+[37:22] all right now so this is one of the papers that um our mentee basically wrote she called
+[37:29] this paper with um a phd from botts university she published this paper in a great um medical
+[37:36] journal central asian medical journal and what i like about this paper is i feel like this is the
+[37:43] greatest and the best example of a literary paper for stem majors i will definitely send it after the
+[37:50] class and i adran could probably agree i don't you remember edmachlanue yes her paper was great
+[37:56] i think she worked with you a lot right so her paper was great and i really like it so every
+[38:01] time i do have something to you know teach in terms of practical stuff i do really like to go back
+[38:07] and show them now really important thing first of all you guys can see that it's organized by themes
+[38:14] this is exactly what i guys told you last class i said hey look if you go with authors it's
+[38:20] going to be like such a messy thing you can never organize anything by authors it should
+[38:25] be always by themes you can look at it here any single paper that you pull out from a journal
+[38:30] or from any other publication like service whatever they always have sub topics sub themes
+[38:38] because literature view itself is not you know it's not that narrow to cover all the themes
+[38:43] because inside the literature view you have so many topics to talk about so many themes
+[38:48] and it's always trust me it's such an easy thing to go with themes for example now you can easily
+[38:54] point out structure with your own eyes right the section splits into the 2.1 AI
+[38:59] in surgical practice problems and resistance and 2.2 patient perspectives right and 2.2 itself
+[39:06] it moves to misunderstanding anxiety and trust covering more things and then it's not the full
+[39:14] paper it's not the full literature you decide there is also like 2.3 2.4 2.5 so the thing
+[39:20] i wanted to just tell is that this is the best way to do it it's always organized by topics
+[39:26] now you're gonna ask me why what is the reason for me doing that first of all right you should be
+[39:32] doing that because as you guys can see here for example right here it says uh usually the case
+[39:39] for artificial intelligence in robotic surgery is very compelling right so the first thing that
+[39:44] she does is she opens the idea she opens the paragraph with an idea right you can see it
+[39:50] with your own eyes she does not do it with a with dropping names you know name dropping
+[39:55] dropping the authors she gives that topic sentence that ia john talked about right you
+[40:00] guys cover topic sentence right i don't really right ia john um yeah we did you cover guys that
+[40:05] thing and you're given the topic sentence so this is the thing that she's doing you never
+[40:11] start with name dropping right and then she goes with nine claims this ia e citation so the
+[40:18] reader would understand who is that like number nine who is uh writing that which affiliation and stuff
+[40:25] so that author claims the increasing contribution of AI in prayer operative during the procedure
+[40:31] and post-operative periods will you consistently superior surgical result this is the first thing
+[40:37] now okay so then she goes into number 10 author and she says address this problem in their
+[40:43] early research arguing that the surgical culture was not yet ready for AI technology
+[40:49] an issue that number eight still see as open right so in number nine they claim okay there is a
+[40:58] possibility of robots basically okay interventing in into medical operation surgeries and doing
+[41:06] some work actually there but then in the same exact thing in the same exact paragraph basically
+[41:11] subtopic she gives a counter argument she says okay number 10 number 10 basically uh things
+[41:17] this robots are not ready yet to be implemented into this and she says yes number eight also supports
+[41:24] what number 10 said right so you guys see that scientific conversation through the lens of this
+[41:30] paper can you right it's perfectly seen so what i'm trying to say is that in a single paragraph
+[41:37] it's not a must to have all agreements all all those agreements it's just that you have that topic
+[41:43] and we talked about this before i said this during the brainstorming class i said go give that and
+[41:48] here is the perfect example now next next thing right um here she says uh in number 10 she says
+[41:58] not 2.2 right from the perspective of the of the patient trust and confidence appear to be
+[42:03] key variables in determining acceptance this fear was highlighted by 10 who found by 11 who found that
+[42:11] patients resistant to AI and medicine does not stem from skepticism about its precision right
+[42:17] so here again she gives that topic sentence and then she supports that claim using real evidence
+[42:23] right and there there's a lot of real evidence for example here what i really like about this
+[42:28] paper is that she says in fact this anxiety is special common when it comes to robotic
+[42:32] surgery in a scoping review of 30 31 independent studies 12 that author reported between 60 to 100
+[42:40] percent of the population failed to understand how ras functions and tended to overestimate
+[42:47] the robot's ability to operate autonomously while underestimating the influence of the
+[42:52] surgeons so she gives real evidence okay this is what i'm craving to see in your guys's paper
+[42:58] okay i want to see that i want to see real evidence whether it's in data whether it's in maps
+[43:05] whether it's in uh graphs doesn't matter give me real data support your arguments okay this is
+[43:10] everything i'm trying to say and the last point is this is the greatest probably moment to
+[43:14] tie directly to number uh six slide i remember you guys talked about it so if you look at the
+[43:19] subtopic 2.1 it does not report one single topic right one single uh author whatever you
+[43:26] literally have nine ten eight and seven saying totally different things totally different thing
+[43:32] right uh and the thing is number seven says that this author sees that the human acceptance factor
+[43:40] as the main challenge and not the technological ones so she creates that complicated you know
+[43:46] scientific conversation where she says number ten says that there is a problem and that the
+[43:52] culture is not ready in AI in usage of AI right and that that uh issue is still open but then uh
+[44:00] number set number seven says you know it touches a different lens it says okay so the fact that the
+[44:06] culture doesn't accept does not mean that technology is not ready it's solely the problem
+[44:11] of the people nothing to do with AI nothing to do with the robots they are good to be going
+[44:16] but the people themselves they cannot accept the right so there is a very complicated like i would
+[44:22] say conversation going in that paragraph so this is something i want to see in your guys's paper is
+[44:27] it clear all good everyone there's everyone gets it okay if you do just um have any questions you can
+[44:34] go and ask okay but this is everything i wanted to say i hope it's all clear and i will send
+[44:40] these examples too uh i generally can wrap up okay i'm sorry to deserve yeah all good i think that
+[44:45] was a great example on what i was trying to explain what the subsections of literature review
+[44:51] paper are um and yeah any questions um so there is a question i see when doing i.e citations do we put
+[45:04] a list at the end of the work um you do there is like a references list and the list um is based on
+[45:12] the uh paper cited so like the numbers are like the first um like number one means the first
+[45:21] paper you have ever cited in your um project or like paper um let's say if there are some
+[45:28] points you um kind of have to cite in introduction then that's going to be like the first paper you
+[45:37] would um put on your references list um yeah thank you okay any other questions i'm confident this
+[45:50] theme is squeeze points right like they're not same thing right um yeah they are kind of so theme is
+[45:58] like in general one uh point you're trying to um have sources to that support and theme is like yeah
+[46:09] they are kind of the same thing but again like theme is like one thing you would discuss in the
+[46:16] paragraph but points are like at different points from different sources that support the same thing
+[46:23] so they are kind of similar but they're not the same uh yeah points can be in a one paragraph right
+[46:33] points yeah there there might be multiple points in one theme if that makes sense
+[46:40] um yes we do write literature review after introduction section any other questions
+[47:02] um one thing i hope uh muhammad mentioned in previous brainstorming like research gaps
+[47:10] session um if you are struggling with like um selecting your research topic or research question
+[47:18] what i do is um probably you will roughly have and research concentration you'd like to work on
+[47:26] let's say if it's a medical related or like computer science related right um what you
+[47:31] try what you you can do is like read a couple of uh papers specifically the discussion part
+[47:39] in that discussion part there is like a limitation section um some of the limitations of the
+[47:46] paper or like the project that could give you a rough idea on what could be um what you could work on
+[47:56] usually when i'm struggling with finding a research topic that i'm actually interested in
+[48:03] what i do is i do go through the discussion section of the articles and like go through
+[48:10] the limitations and see what kind of limits this project had that i could potentially um get it
+[48:18] as an idea for my own project so that's something you could do um if you're struggling with yeah research
+[48:26] choice research question choice um so yeah have a question um so while choosing your
+[48:35] research question uh we like i want to focus on central asia especially pexel but when we are
+[48:41] planning a professor will it affect right i mean they will be interested or or i only can't
+[48:49] let the professor from the exam um i would say it doesn't it shouldn't affect but if the
+[48:59] professor is from central asia um you would like make most out of your professor like on what he can
+[49:08] help you with because they are from central asia they probably know more on where you could get
+[49:15] some data and everything so they might be useful on that but again experience wise i'm not sure
+[49:22] if central asian professors are into like research publications um but yeah but again like cold
+[49:30] emailing and having several papers to go through your draft and get feedback on your draft would
+[49:38] for sure give you some insights on changing some subsections of your paper um so yeah
+[49:46] but it shouldn't usually affect like the location but again central asian professors might be useful
+[49:52] in terms of finding a right uh people to connect with if you are um kind of in need of gathering
+[50:00] this information and everything um so yeah thank you any other questions okay um what process of
+[50:22] research um writing are you guys and like did you finish your introduction or you're still working
+[50:29] on it? Should we be finished with the assignments? To finish introduction yeah now we are actually
+[50:47] alriting research gaps okay okay that's that's yeah great um and again another thing with
+[50:56] research gaps is like that's kind of what literature review itself is about you're kind of introducing
+[51:04] the research topic and then the research gaps and then by mentioning research gaps you're telling
+[51:10] them oh you're gonna be the one who's gonna address all those gaps and that's kind of gives
+[51:17] why um your research is something other people should read and it kind of gives like
+[51:26] um and um a reason or like not not a reason but like an importance into your paper
+[51:33] on why others should be reading your paper and everything um so yeah I see there are some people
+[51:41] who are still working on the introduction and there are some who finished um that's great
+[51:48] a fun part is again literature review where you get to see what's out there and and um
+[51:55] research like in in search engines basically what's out there you get to read you get to
+[52:03] see some findings um I would say that's a fun part um and then it again kind of um improves your
+[52:11] knowledge about your field and then kind of shows you what um could be done for further
+[52:19] project after this one because I feel like after I finished my first uh paper with pioneer academics
+[52:27] I already had an idea on my second project and that's where um I that's like basically what I
+[52:35] was talking about in um in in my um RSI like research science institute application um so yeah
+[52:46] like you for sure have some ideas on further um research after you finish your um current one
+[52:55] so yeah okay I guess we could wrap up this session but if you have any questions
+[53:03] feel free to ask them now or like DM me on telegram um um good luck with writing your
+[53:11] literature review that's like a fun part and then after that methodology is even more fun because
+[53:17] you get to plan out your um paper um so yeah okay feel free to uh leave because that's that's the
+[53:28] end of the session but if you have any questions you can ask them now um I'll stay for like another
+[53:34] next like five minutes feel better mm-hmm I'm
