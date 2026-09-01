@@ -16,6 +16,7 @@ research/coursework/*
 !research/coursework/README.md
 !research/coursework/course_notes.md
 !research/coursework/RESEARCH_METHOD_GROUNDING.md
+!research/coursework/results_section_draft.md
 !research/coursework/transcripts/
 business/outreach/
 .kaggle/
@@ -24,3 +25,13 @@ __pycache__/
 .ipynb_checkpoints/
 tmp/
 .vscode/
+
+# Survey track: the stated-preference data is anonymous (timestamp plus closed
+# answers only) and is tracked so the published estimates are reproducible.
+!research/survey/data/
+!research/survey/data/**
+!research/survey/outputs/
+!research/survey/outputs/**
+# Meeting recordings and screenshots dropped into the repo root
+/*.mp4
+/*.png

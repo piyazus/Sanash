@@ -1,0 +1,102 @@
+{
+ "1": [
+  {
+   "bus_a": "packed",
+   "bus_b": "seated",
+   "wait": 2,
+   "peak": 0
+  },
+  {
+   "bus_a": "packed",
+   "bus_b": "standing",
+   "wait": 2,
+   "peak": 1
+  },
+  {
+   "bus_a": "packed",
+   "bus_b": "standing",
+   "wait": 5,
+   "peak": 0
+  },
+  {
+   "bus_a": "packed",
+   "bus_b": "seated",
+   "wait": 5,
+   "peak": 1
+  },
+  {
+   "bus_a": "standing",
+   "bus_b": "seated",
+   "wait": 8,
+   "peak": 0
+  },
+  {
+   "bus_a": "standing",
+   "bus_b": "seated",
+   "wait": 8,
+   "peak": 1
+  },
+  {
+   "bus_a": "packed",
+   "bus_b": "seated",
+   "wait": 12,
+   "peak": 0
+  },
+  {
+   "bus_a": "packed",
+   "bus_b": "standing",
+   "wait": 12,
+   "peak": 1
+  }
+ ],
+ "2": [
+  {
+   "bus_a": "standing",
+   "bus_b": "seated",
+   "wait": 2,
+   "peak": 0
+  },
+  {
+   "bus_a": "standing",
+   "bus_b": "seated",
+   "wait": 2,
+   "peak": 1
+  },
+  {
+   "bus_a": "packed",
+   "bus_b": "seated",
+   "wait": 5,
+   "peak": 0
+  },
+  {
+   "bus_a": "packed",
+   "bus_b": "standing",
+   "wait": 5,
+   "peak": 1
+  },
+  {
+   "bus_a": "packed",
+   "bus_b": "standing",
+   "wait": 8,
+   "peak": 0
+  },
+  {
+   "bus_a": "packed",
+   "bus_b": "seated",
+   "wait": 8,
+   "peak": 1
+  },
+  {
+   "bus_a": "standing",
+   "bus_b": "seated",
+   "wait": 12,
+   "peak": 0
+  },
+  {
+   "bus_a": "standing",
+   "bus_b": "seated",
+   "wait": 12,
+   "peak": 1
+  }
+ ]
+}

@@ -110,7 +110,15 @@ cancelled architecture merely because its own prompt mentions one.
 - `development/datasets.md`: dataset provenance.
 - `development/findings.md`, `development/sanas_cv_track_conclusions.md`:
   historical findings, not current architecture.
+- `research/survey/`: stated-preference survey. Raw export, rebuilt analysis
+  dataset, fitted model and outputs. The raw file is the authority on what was
+  asked; do not trust the superseded survey docs on `origin/main`.
 - `research/refs/rtci-supporting/`: live RTCI literature only.
+- `research/wiki/`: agent-maintained research wiki over external sources.
+  Read `research/wiki/WIKI_SCHEMA.md` before writing there. It never
+  overrides `GROUND_TRUTH.md`.
+- `research/EXPERT_CONSULTATIONS.md`: append-only external expert opinions.
+  An expert opinion is evidence, not a project decision.
 - `research/paper/related_work_notes.md`: retained door/APC history, not a
   current paper draft.
 - `research/coursework/`: separate coursework.

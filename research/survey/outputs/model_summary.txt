@@ -1,0 +1,19 @@
+profiles: 6  parameters: 4  rank: 4
+
+===== MAIN: all respondents =====
+respondents: 209  observations: 1247
+           coefficient  std_error       z  p_value  ci_low  ci_high
+const           0.9331     0.1673  5.5760   0.0000  0.6051   1.2611
+wait_time      -0.1386     0.0241 -5.7609   0.0000 -0.1857  -0.0914
+packed          1.1027     0.1515  7.2787   0.0000  0.8058   1.3997
+is_peak        -0.5172     0.1111 -4.6569   0.0000 -0.7349  -0.2995
+WTW(packed vs standing) = 7.96 min  95% bootstrap CI [5.89, 11.09]  (reps kept: 1000)
+
+===== SENSITIVITY: excludes non-users and <1/week =====
+respondents: 204  observations: 1217
+           coefficient  std_error       z  p_value  ci_low  ci_high
+const           0.9977     0.1717  5.8110   0.0000  0.6612   1.3342
+wait_time      -0.1459     0.0247 -5.9002   0.0000 -0.1943  -0.0974
+packed          1.1200     0.1536  7.2896   0.0000  0.8189   1.4211
+is_peak        -0.5198     0.1139 -4.5625   0.0000 -0.7431  -0.2965
+WTW(packed vs standing) = 7.68 min  95% bootstrap CI [5.64, 10.55]  (reps kept: 1000)

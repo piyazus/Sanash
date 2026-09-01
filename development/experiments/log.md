@@ -948,3 +948,154 @@ benchmark. The working paper must connect:
 Journal-fit rationale and relevant TR-C precedents were added to
 `research/RTCI_RESEARCH_CHARTER.md`. No claim is made that the current project
 already meets this threshold.
+
+## 2026-08-31 — HARDWARE DECISION: four-part ceiling prototype BOM
+
+**STATUS: procurement/architecture decision only. Nothing purchased, assembled,
+powered or benchmarked. No measurement in this entry.**
+
+- commit: a8b7055192e54acce121bfdef98c2aba972f2045
+- branch: `restructure-ground-truth` (dirty working tree)
+- result: none
+
+### Decision
+
+Diyas fixed the prototype hardware list as four items:
+
+1. Jetson Orin Nano Super Developer Kit — edge inference compute.
+2. Waveshare IMX219-160 — single ceiling RGB camera, CSI, full-cabin view.
+3. NVMe SSD — local storage.
+4. USB-C PD power bank, 65 W or higher — autonomous power.
+
+Item 4 is a new decision. It supersedes the earlier open question of powering
+from the bus 24 V electrical system: the prototype is deliberately decoupled
+from vehicle wiring, so no DC-DC converter, fuse or vehicle harness is part of
+the current build. This removes an installation-permission dependency and
+removes load-dump/crank-transient risk, at the cost of bounded runtime and a
+manual recharge cycle.
+
+Item 2 is a single-camera decision. Two-camera coverage is not part of this
+BOM and is only reopened if the FOV gate fails.
+
+### Consequences that remain open
+
+- **PD-to-barrel path is unresolved and required.** The dev kit USB-C port is a
+  data/recovery port; power enters the DC barrel jack, carrier-board input
+  range 9-20 V (NVIDIA carrier board spec). A 65 W power bank therefore cannot
+  drive the kit over USB-C alone. The build needs a USB-C PD trigger/decoy
+  module fixed at 12 V or 15 V plus a matching barrel plug. Not selected, not
+  bench-tested. Until this is chosen the four-item list is not buildable.
+- **Runtime is unmeasured.** Power-bank capacity (Wh) is unspecified, so
+  continuous operating hours cannot be stated. Draw depends on Super-mode power
+  profile, NVMe write load and software H.264 encode (Orin Nano has no NVENC).
+- **Flashing host is unresolved.** Diyas runs Windows 11; the kit's NVMe boot
+  path requires an NVIDIA-supported Linux flashing host or SD-card bring-up.
+- **Camera geometry gate unchanged.** 160 deg is a diagonal fisheye figure. One
+  camera covering a whole Almaty bus cabin is an assumption, not a measurement.
+- **Thermal envelope unchanged.** Carrier-board operating ambient 0-35 C. No
+  enclosure or cooling decision exists.
+- Mount, CSI cable length, night/IR path and network transport remain
+  undecided and are outside this BOM.
+
+### Ground Truth effect
+
+`GROUND_TRUTH.md` section 4 updated in the same change: power bank moves from
+"candidate, configuration undefined" to "decided for prototype, not verified";
+bus-electrical-system powering marked out of scope for the prototype; PD
+trigger added as an open required part.
+
+## 2026-09-01 — SURVEY DATA LOCATED, REBUILT AND RE-ESTIMATED
+
+**STATUS: measurement. Stated-preference survey only. No field experiment, no
+device run, no causal result.**
+
+- commit: a8b7055192e54acce121bfdef98c2aba972f2045
+- branch: `restructure-ground-truth` (dirty working tree)
+- data version: `research/survey/data/raw/responses.csv`,
+  md5 `7f81731ab526613883c21d021de56f00`, 215 responses,
+  collected 2026-02-04 to 2026-02-23
+- backend: local CPU, statsmodels 0.14.6, pandas 2.3.2, numpy 2.3.2
+- artifacts: `research/survey/outputs/model_coefficients.csv`,
+  `wtw.csv`, `model_summary.txt`, `descriptives.txt`
+
+### What was found
+
+The stated-preference survey referred to in the 2026-08-26 research-scope entry
+exists and has been collected. It was never in this repository. The raw Google
+Forms export was located outside the repo at
+`OneDrive/Desktop/experience/sanash first work/sana/survey/data/`, in three
+byte-identical copies. It has been copied to `research/survey/data/raw/`.
+
+`origin/main` and `restructure-ground-truth` share no common ancestor; the
+repository was re-initialised at some point. The survey material was therefore
+copied rather than merged.
+
+### Retractions
+
+The following claims, still published on `origin/main` in `survey/README.md`
+and `docs/RESEARCH_GUIDE.md`, are false and are retracted:
+
+- "n = 167 respondents" — the collected sample is 215. 167 is the default
+  argument of `generate_synthetic_data` in the analysis script on that branch,
+  and coincides with the count of respondents in the 14-24 age band.
+- "Google Forms, March 2025" — collection ran 2026-02-04 to 2026-02-23.
+- Three crowding levels and a 15-minute wait level — the fielded instrument has
+  two crowding levels (packed, standing room) and waits of 2, 3, 5, 7, 10 min.
+- `survey/instrument/survey_questions_{en,ru,kz}.md` describe a questionnaire
+  that was never administered, including a gender question that was not asked.
+  They were not copied into `research/survey/`; the instrument is reconstructed
+  from the export by `analysis/build_instrument.py`.
+
+`responses_prepared.csv` in the external folder also applied undocumented
+recodes: the 14-24 age band relabelled 18-24, non-users of public buses folded
+into "1-2/week", a maximum-wait question relabelled as a 1-5 importance scale,
+blanks imputed to modal categories, and 43 blank or free-text scenario answers
+coded as "board". It was discarded and the analysis dataset rebuilt from raw by
+`analysis/rebuild_survey.py`.
+
+### Re-estimation
+
+Prior fit (`model_coefficients_v2.csv`, external folder) reported standard
+errors of ~1.9e6 and p ~ 1.0 on the intercept and both crowding dummies. Cause:
+the six fielded profiles give a design matrix of rank 4, and the model fitted 6
+parameters including two crowding dummies for a two-level attribute. Its
+reported WTW of 7.19 min was not identified.
+
+Respecified: binary logit on intercept, wait time, packed indicator and peak
+indicator; standard errors clustered by respondent; rank checked before fitting.
+1247 of 1290 choice observations from 209 respondents.
+
+| Term | Coefficient | Clustered SE | p |
+|---|---|---|---|
+| const | 0.9331 | 0.1673 | <0.001 |
+| wait_time | -0.1386 | 0.0241 | <0.001 |
+| packed | 1.1027 | 0.1515 | <0.001 |
+| is_peak | -0.5172 | 0.1111 | <0.001 |
+
+Willingness to wait to avoid packed rather than standing-room conditions:
+**7.96 min, 95% bootstrap CI [5.89, 11.09]**, 1000 replications resampling
+respondents. Sensitivity excluding the 11 respondents riding less than weekly
+or not at all: 7.68 min, CI [5.64, 10.55]. Acceptance criteria for the run were
+rank check passing, no standard error above 10, no p near 1 and a finite
+bootstrap interval; all were met. A 20-respondent smoke test was run first.
+
+This measures packed versus standing room, not versus a seated trip, because no
+scenario offered a seated arriving bus.
+
+### Limitations recorded with the result
+
+77.7% of respondents are in the 14-24 age band and 73.5% are students, so the
+estimate describes young frequent riders rather than Almaty commuters in
+general. The age band as fielded begins at 14, so minors may be included, which
+also contradicts the "age >= 18" inclusion criterion asserted in the retracted
+README. Gender was not collected. Stated preference measures intention, not
+behaviour.
+
+### Drafts produced
+
+`research/coursework/results_section_draft.md` (course assignment, four-part
+results structure) and `research/paper/manuscript/02_survey_results.md`
+(manuscript section). Same numbers, separate deliverables, per hard rule 8.
+
+`GROUND_TRUTH.md` section 3.1 updated in the same change: the stated-preference
+survey moves from planned to collected and analysed.
