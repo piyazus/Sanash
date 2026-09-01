@@ -87,3 +87,47 @@ Pi 2018, Zhang-Kennedy 2023) and are already filed under
 Nothing has been deleted. This report is the list for review before any
 `rm`. All 56 files currently sit in `tmp/refgraph_batch_2026-08-26/`
 (gitignored, not committed).
+
+## Verification pass 2026-08-26 (later same day)
+
+Все 44 PDF, оставшиеся в `research/refs/cv-hardware-corpus/`, повторно
+извлечены `extract_pdf_metadata.py` и сверены с вердиктами выше. Строки
+таблицы не переписывались; исправления добавлены здесь.
+
+### Что подтвердилось
+
+Заголовок, авторы и предмет совпали с причиной вердикта у всех 44 файлов.
+Отдельно проверены утверждения, содержащие конкретику сверх заголовка:
+
+| Проверяемое утверждение | Результат |
+|---|---|
+| `1.3455989.pdf`, "99%/97% accuracy" | подтверждено дословно в abstract: "counting accuracy of 99% and 97% on two large realistic data sets" |
+| `1804.04339v2.pdf`, "bus doors, PCDS dataset" | подтверждено: "first real-world RGB-D People Counting DataSet (PCDS) containing over 4,500 videos recorded at the entrance doors of buses" |
+| `2508.03749v1.pdf`, "WMATA, YOLOv11/RT-DETRv2/APGCC/Crowd-ViT/DeepLabV3" | подтверждено: соавторы с адресами @wmata.com, все пять методов названы в abstract |
+| `2403.20173v1.pdf`, "embedded deployment" | подтверждено: "feasibility of deploying MCNet on the embedded metro platform". Jetson в статье не упоминается, отчёт этого и не утверждал |
+| `TSP_CMC_35974.pdf`, "NPU" | подтверждено заголовком: "System Implementation on Neural Processing Unit Platform" |
+| `2111.08851v5.pdf`, "CORN" | подтверждено: Shi, Cao, Raschka, "Deep Neural Networks for Rank-Consistent Ordinal Regression Based On Conditional Probabilities" |
+| `2605.18349v1.pdf`, "PFCASA поверх CSRNet" | подтверждено заголовком: "Optimising CSRNet with parameter-free attention mechanisms for crowd counting in public transport" |
+
+### Исправления
+
+1. **Арифметика Summary неверна.** Написано "Keep: 42". Фактически в таблице
+   44 строки с вердиктом keep (включая `2304.07193v2.pdf`, помеченный
+   "borderline / keep"), 8 duplicate и 4 reject, итого 56. В корпусе лежат
+   ровно эти 44 файла. Верное распределение: **keep 44, duplicate 8,
+   reject 4**.
+2. **Раздел "Not deleted yet" устарел.** 44 keep-файла перенесены в
+   `research/refs/cv-hardware-corpus/`, 8 дубликатов и 4 reject на диске
+   отсутствуют. `tmp/refgraph_batch_2026-08-26/` пуст.
+3. **`zhao2021.pdf` больше не borderline.** Прежний статус: "metadata only,
+   title unreliable". Извлечённый заголовок: Zhao, Lei, Li, Zhao, Han, Hou,
+   "Detection of crowdedness in bus compartments based on ResNet algorithm
+   and video images", Multimedia Tools and Applications, 2021. Это прямо
+   по теме: классификация уровня заполненности салона автобуса по видео.
+   Вердикт keep подтверждён, статус повышен до verified from extracted text.
+
+### Что этой проверкой не сделано
+
+Сверялись заголовок, авторы, площадка и предмет. Методы, выборки и метрики
+внутри статей не перепроверялись. Планка для цитирования в тексте статьи
+остаётся прежней: полнотекстовая проверка по правилам research-writer.
