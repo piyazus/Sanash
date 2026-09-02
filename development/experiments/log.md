@@ -1099,3 +1099,59 @@ results structure) and `research/paper/manuscript/02_survey_results.md`
 
 `GROUND_TRUTH.md` section 3.1 updated in the same change: the stated-preference
 survey moves from planned to collected and analysed.
+
+---
+
+## 2026-09-02 — SANASH reference base moved into the repository
+
+Commit before this change: `fc43b91a`. Not a model run; a decision that changes
+current state, recorded here per hard rule 7.
+
+### What changed
+
+The verified SANASH outreach reference list, 146 papers checked against live
+pages during an earlier verification pass, is now tracked at
+`research/refs/base/`:
+
+- `references.md`, the source of truth, one row per paper with a stable
+  citation key in `surname_year_word` form, the DOI or URL as verified, and a
+  status of `CITED`, `LISTED` or `READ`.
+- `references.bib`, generated from it, keys matching one to one. Fields a
+  journal would require but the verified list does not carry are omitted rather
+  than guessed, and those entries carry `note = {UNVERIFIED FIELDS}`.
+- `validate.py`, standard library only, exits non-zero when the two files
+  disagree, a key is duplicated or malformed, a DOI repeats, an entry has
+  neither DOI nor URL without saying so, or a status is not one of the three
+  legal values.
+
+First run: 146 references, 146 bib entries, 44 `CITED`, 102 `LISTED`, 0 `READ`,
+exit 0. Two entries have neither DOI nor URL and are reported by name:
+`drabicki_nodate_bunching` and `larson_1981_urbanops`. Two warnings are for
+rows sharing a URL, which is expected: `fujiyama_2021_density` and
+`luangboriboon_nodate_density` are the same UCL record, kept as two rows
+because both were in the verified source.
+
+`CLAUDE.md` gained an "Outreach and citations" section with four standing
+rules, citation discipline, salutation form, no overselling and status
+discipline, plus the seven attribution corrections that an earlier round of
+emails got wrong. `business/outreach/template.md` replaces
+`email_template.md`, which asked for collaboration and used a first-name
+salutation; the old file is kept and marked superseded.
+
+`.gitignore` gained narrow exceptions. `research/refs/*` and
+`business/outreach/` were fully ignored, so the reference base and the template
+would not have been tracked at all. Contact lists carrying personal email
+addresses and the reference PDFs stay ignored, verified with
+`git check-ignore`.
+
+### Not done
+
+The wave 2 and wave 3 contact lists named in the original task were not on
+disk. `contacts/wave2.md`, `contacts/wave3.md` and `contacts/contacted.md` do
+not exist, so the duplicate-email check in `validate.py` reports a warning
+instead of running. The existing lists in `business/outreach/` were left
+untouched and untracked.
+
+The reference content was reproduced from the verified list supplied in the
+session, not re-verified. No DOI was re-checked against a live page in this
+change, and none was altered.

@@ -10,6 +10,10 @@ research/refs/*
 !research/refs/*/
 research/refs/*/*
 !research/refs/*/README.md
+# ...and the verified reference base: markdown, bibtex and its validator only
+!research/refs/base/references.md
+!research/refs/base/references.bib
+!research/refs/base/validate.py
 # Course/outreach material dropped into the repo, large and not project source
 research/coursework/*
 # ...but keep the write-ups: notes, transcripts, and the directory README
@@ -18,7 +22,11 @@ research/coursework/*
 !research/coursework/RESEARCH_METHOD_GROUNDING.md
 !research/coursework/results_section_draft.md
 !research/coursework/transcripts/
-business/outreach/
+# Outreach: contact lists carry personal email addresses and stay untracked.
+business/outreach/*
+# ...but the cold email template and style rules carry no personal data
+!business/outreach/template.md
+!business/outreach/email_template.md
 .kaggle/
 __pycache__/
 *.pyc

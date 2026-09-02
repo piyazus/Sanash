@@ -101,6 +101,58 @@ Agent role files can become stale. This file and every role defer to
 `GROUND_TRUTH.md`. A role must not use a missing script, deleted graph or
 cancelled architecture merely because its own prompt mentions one.
 
+## Outreach and citations
+
+SANASH is the outreach and reference track of this project. It is a field study
+in Almaty testing whether showing bus passengers a five level real time crowding
+level before boarding changes whether they board the bus at the stop or wait for
+the next one. Diyas cold emails academics and each email cites one specific
+paper by that person. In an earlier round the citations were written from memory
+and fourteen of sixty were wrong: a finding stated backwards, papers credited to
+co-authors instead of first authors, a research topic invented for someone with
+no publications. The reference base under `research/refs/base/` is the repaired
+result, checked against live pages. The four rules below exist so that it is
+never reconstructed from memory again.
+
+**Rule 1, citations.** Never cite a paper in an outreach email unless it is a
+row in `research/refs/base/references.md`. Never state a finding from a paper
+unless the finding is recorded there or you have read the paper in this session.
+If a paper is missing, search for it, verify it against a live page, and add it
+with its DOI and a citation key before using it. Recalling a paper from memory
+is the specific failure this project has already suffered.
+
+**Rule 2, salutation.** Emails to academics open `Dear Professor [Surname],` or
+`Dear Dr [Surname],`. Never `Hi [first name]`, not in a first email, not in a
+reply, not when the person signed with their first name. For a PhD student with
+no doctorate, `Dear [Full Name],`. Never guess gender and never use a pronoun
+for the recipient.
+
+**Rule 3, no overselling.** An email must not promise a Transportation Research
+Part C submission, a launch across 25 cities, or any working device. Say what is
+true today: a field study of real time bus crowding information in Almaty, run
+with the city bus operator.
+
+**Rule 4, status discipline.** `CITED` means the paper was named in an email
+that was sent. `LISTED` means it only sits behind a contact's name. `READ` means
+Diyas actually read it, and only Diyas marks `READ`. Whenever you draft an email
+citing a paper, flip that row to `CITED (Surname)` in the same commit.
+
+### Corrections that must never be reintroduced
+
+- Xiaopeng Hong is the third author of Bayesian Loss, not its originator.
+- The personalised crowding information paper is Jenelius, not Antoniou.
+- Daniel Graham uses difference in differences and synthetic control, not
+  staggered adoption.
+- Ali Jadbabaie works on non-Bayesian social learning, not information cascades.
+- GEM is about controllability and depth output, not physical plausibility.
+- The train carriage density paper is by Tyler's UCL group but not by Tyler
+  himself.
+- Allcott and Rogers found that the effect persists. It does not decay after
+  novelty.
+
+Run `python research/refs/base/validate.py` after any change to the reference
+base. It must exit 0.
+
 ## Current directory meaning
 
 - `development/src/`, `development/notebooks/`: empty placeholders for the
@@ -123,6 +175,12 @@ cancelled architecture merely because its own prompt mentions one.
   current paper draft.
 - `research/coursework/`: separate coursework.
 - `business/outreach/`: contacts; current ceiling-device pitch is absent.
+  `template.md` is the current cold email template and style rules.
+  `email_template.md` is superseded and kept for history only.
+- `research/refs/base/`: the verified SANASH reference base.
+  `references.md` is the source of truth, `references.bib` is generated from
+  it, `validate.py` checks that the two agree and that no row lost its key,
+  link or status.
 - `data/`, `outputs/`: local gitignored data and artifacts.
 
 Do not create a new top-level folder unless the current structure genuinely
