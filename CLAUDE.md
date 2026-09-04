@@ -160,6 +160,10 @@ base. It must exit 0.
 - `development/scripts/`: mixed legacy/support scripts; inspect before use.
 - `development/experiments/log.md`: append-only history.
 - `development/datasets.md`: dataset provenance.
+- `SEPTEMBER_PLAN.md`: the working schedule to 2026-09-30, both the paper and
+  the uplink track, with gates and the decisions owed by Diyas. It supersedes
+  `research/PAPER_SPRINT_30D.md` and charter §11. It is a work plan, not a
+  product decision or a research protocol.
 - `ARCHIVE.md`: dead documents merged into one file on 2026-09-03. Holds the
   former master document, the pre-pivot findings and CV-track conclusions, the
   door/APC related-work notes and the superseded email template. History only,

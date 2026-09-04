@@ -5,8 +5,18 @@ following the four-part results structure. All numbers come from
 `research/survey/outputs/`; the analysis is reproducible from
 `research/survey/analysis/`.
 
-Research question: to what extent does live bus occupancy information change
-the boarding decisions of Almaty commuters?
+Research question: to what extent is the displayed crowding level of an
+arriving bus associated with the stated choice to wait for the next bus among
+the young, frequent bus riders surveyed in Almaty?
+
+> Revised 2026-09-04 under `WRITING_RULES.md`. R41 and charter §5 forbid the
+> causal verb "change" over stated-preference data, so the question is stated as
+> an association. R27 restricts the population to who was actually sampled, so
+> "Almaty commuters" is replaced by the sampled group described in §5.1. Both
+> changes enforce rules the repository already held; neither is a new research
+> decision. The wording of the question in
+> `research/RTCI_RESEARCH_CHARTER.md` §1 is unchanged and still causal, which is
+> the open R5 against C1 collision.
 
 ---
 
@@ -80,8 +90,13 @@ wait at all chose to wait in 26.4% of cases, those naming 1-2 minutes in
 54.7%, those naming 3-5 minutes in 67.0%, those naming 6-10 minutes in 87.6%
 and those naming more than 10 minutes in 82.6%.
 
-Because the research question concerns whether occupancy information changes
-boarding decisions, the gap between frequent and occasional riders is directly
-relevant: the respondents who ride most often were also the respondents whose
-choices differed most between the two crowding levels, by 31.5 percentage
-points against 2.6 percentage points.
+The respondents who ride most often were also the respondents whose choices
+differed most between the two crowding levels, by 31.5 percentage points
+against 2.6 percentage points.
+
+> Revised 2026-09-04. The removed opening clause said the finding was "directly
+> relevant". R37 bans stating that a finding is important or interesting inside
+> the results section; R42 requires every results sentence to tie back to the
+> research question. The two rules collide here and the audit left the collision
+> open. The safer reading was taken: the number is kept, the claim about its
+> relevance moves to the discussion.

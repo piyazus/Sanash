@@ -4,10 +4,15 @@ Compiled 2026-09-03 by one agent from the primary sources, audited 2026-09-04
 by a second agent that re-checked every quote and attacked every conclusion.
 Landed in the repository 2026-09-04.
 
-Status: **operational rule set for the paper track, proposed not ratified.** It
-is subordinate to `GROUND_TRUTH.md` and to `research/RTCI_RESEARCH_CHARTER.md`.
-Where a rule here conflicts with either, they win and the conflict is fixed in
-the same change.
+Status: **ratified by Diyas on 2026-09-04. Binding on all paper prose in this
+repository.** It is subordinate to `GROUND_TRUTH.md` and to
+`research/RTCI_RESEARCH_CHARTER.md`. Where a rule here conflicts with either,
+they win and the conflict is fixed in the same change.
+
+Ratification does not settle the two unresolved collisions the audit recorded.
+R5 against C1 on whether the research question stays causal, and R37 against
+R42 on whether a results paragraph may state that a finding is relevant to the
+research question, both remain open and are marked in place.
 
 It supersedes `research/coursework/RESEARCH_METHOD_GROUNDING.md`, which covered
 the same material and is now section 6 of `ARCHIVE.md`. That supersession is
