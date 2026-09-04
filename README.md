@@ -46,8 +46,9 @@ experiment и должна выдавать пять уровней + непре
 - `research/TRC_PAPER_BLUEPRINT.md`: структура и evidence gates статьи Part C.
 - `business/INNOFORCE_RTCI_PILOT_BRIEF.md`: вопросы и требования к пилоту с
   Innoforce/Avtobys.
-- `development/findings.md` и `development/sanas_cv_track_conclusions.md`:
-  исторические выводы прежних архитектур; не current spec.
+- `ARCHIVE.md`: мёртвые документы, сведённые в один файл 2026-09-03. Прежний
+  мастер-документ, findings и выводы по CV-треку до пивота, related-work
+  заметки door/APC и отменённый шаблон письма. Только история, не current spec.
 - `research/refs/rtci-supporting/`: литература основного RTCI research track.
 - `research/coursework/`: отдельные учебные материалы.
 - `business/outreach/`: контакты; актуальных pitch-материалов под новую

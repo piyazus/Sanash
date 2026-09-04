@@ -1,5 +1,11 @@
 # Terra research course — full notes
 
+> **Reference conspectus, not the operational rules.** The rules to follow when
+> writing are in [`WRITING_RULES.md`](WRITING_RULES.md). This file is the full
+> lesson-by-lesson record and stays as the source that file was checked
+> against. It predates the 2026-09-01 results-section class and contains no
+> results-section rules.
+
 Compiled 2026-08-20 from every lesson recording and presentation in
 `research/coursework/`. Source material:
 

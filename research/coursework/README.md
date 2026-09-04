@@ -4,8 +4,12 @@ Lesson recordings, slide decks, and one worked student paper from the Terra
 academic research course. Background material for the paper track (Danyshpan);
 the course teaches paper structure, literature review, and methodology.
 
-**Start with [`course_notes.md`](course_notes.md)** — everything below,
-transcribed, read, and written up in one document (~11.8k words, 16 sections).
+**Start with [`WRITING_RULES.md`](WRITING_RULES.md)** — the rules to follow
+when writing, 62 of them, each with a verbatim quote and a source. Every quote
+was re-checked against the transcripts and decks in a second pass.
+
+[`course_notes.md`](course_notes.md) is the full lesson-by-lesson conspectus
+behind it (~11.8k words, 16 sections). Read it when a rule needs its context.
 The raw files are kept for verification and re-reading, not for routine use.
 
 ## What's here

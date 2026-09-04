@@ -160,8 +160,10 @@ base. It must exit 0.
 - `development/scripts/`: mixed legacy/support scripts; inspect before use.
 - `development/experiments/log.md`: append-only history.
 - `development/datasets.md`: dataset provenance.
-- `development/findings.md`, `development/sanas_cv_track_conclusions.md`:
-  historical findings, not current architecture.
+- `ARCHIVE.md`: dead documents merged into one file on 2026-09-03. Holds the
+  former master document, the pre-pivot findings and CV-track conclusions, the
+  door/APC related-work notes and the superseded email template. History only,
+  never a current spec.
 - `research/survey/`: stated-preference survey. Raw export, rebuilt analysis
   dataset, fitted model and outputs. The raw file is the authority on what was
   asked; do not trust the superseded survey docs on `origin/main`.
@@ -171,12 +173,19 @@ base. It must exit 0.
   overrides `GROUND_TRUTH.md`.
 - `research/EXPERT_CONSULTATIONS.md`: append-only external expert opinions.
   An expert opinion is evidence, not a project decision.
-- `research/paper/related_work_notes.md`: retained door/APC history, not a
-  current paper draft.
-- `research/coursework/`: separate coursework.
+- `research/coursework/`: separate coursework. `WRITING_RULES.md` is the
+  operational rule set for paper prose, extracted from the course transcripts
+  and decks and quote-audited; proposed, not ratified. `course_notes.md` is the
+  full conspectus behind it.
 - `business/outreach/`: contacts; current ceiling-device pitch is absent.
-  `template.md` is the current cold email template and style rules.
-  `email_template.md` is superseded and kept for history only.
+  `template.md` is the current cold email template and style rules. The
+  superseded `email_template.md` is in `ARCHIVE.md` section 5.
+- `research/refs/LITERATURE_DISCOVERY_LOG.md`: ResearchRabbit session log and
+  the topic evidence map, merged 2026-09-03. Discovery record, not a citation
+  authority; its relevance judgements were made without project context.
+- `research/refs/academic_writing_conventions.md`: external deep-research report
+  on academic writing conventions. Not verified against primary sources and not
+  our rules.
 - `research/refs/base/`: the verified SANASH reference base.
   `references.md` is the source of truth, `references.bib` is generated from
   it, `validate.py` checks that the two agree and that no row lost its key,

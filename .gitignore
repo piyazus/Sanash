@@ -7,6 +7,8 @@ research/refs/*
 # ...but keep the refgraph index and topic synthesis notes (small, structured)
 !research/refs/graph.json
 !research/refs/REFGRAPH_REPORT.md
+!research/refs/LITERATURE_DISCOVERY_LOG.md
+!research/refs/academic_writing_conventions.md
 !research/refs/*/
 research/refs/*/*
 !research/refs/*/README.md
@@ -19,14 +21,14 @@ research/coursework/*
 # ...but keep the write-ups: notes, transcripts, and the directory README
 !research/coursework/README.md
 !research/coursework/course_notes.md
-!research/coursework/RESEARCH_METHOD_GROUNDING.md
+!research/coursework/WRITING_RULES.md
+!research/coursework/HW_lit_review_submission.md
 !research/coursework/results_section_draft.md
 !research/coursework/transcripts/
 # Outreach: contact lists carry personal email addresses and stay untracked.
 business/outreach/*
 # ...but the cold email template and style rules carry no personal data
 !business/outreach/template.md
-!business/outreach/email_template.md
 .kaggle/
 __pycache__/
 *.pyc

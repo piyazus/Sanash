@@ -1,7 +1,8 @@
 # SANASH cold email template
 
 Supersedes `email_template.md`, which asked for collaboration and used a
-first-name salutation. Both are now forbidden. That file is kept for history.
+first-name salutation. Both are now forbidden. That file is kept for history in
+`ARCHIVE.md` section 5.
 
 Every paper named in an email must already be a row in
 `research/refs/base/references.md`. If it is not there, stop, verify it against
