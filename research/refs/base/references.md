@@ -27,8 +27,8 @@ The core literature. If SANASH has a related-work section, it starts here.
 | Key | Citation | DOI / URL | Status |
 |---|---|---|---|
 | pan_2025_itinerary | Pan, L., Waygood, O., & Patterson, Z. (2025). Bus user itinerary choice: Can crowding information help shift riders? *Case Studies on Transport Policy*, 19, 101375. | [10.1016/j.cstp.2025.101375](https://doi.org/10.1016/j.cstp.2025.101375) | CITED (Waygood) |
-| kucharski_2023_willingness | Kucharski, R., et al. (2023). Should I stay or should I board? Willingness to wait with real-time crowding information in urban public transport. *Research in Transportation Business & Management*. | [10.1016/j.rtbm.2023.100963](https://doi.org/10.1016/j.rtbm.2023.100963) | LISTED |
-| drabicki_nodate_bunching | Drabicki, A., Kucharski, R., & Cats, O. Mitigating bus bunching with real-time crowding information. | — | LISTED — flagged by verification as the single closest paper to SANASH's question |
+| drabicki_2023_willingness | Drabicki, A., Cats, O., Kucharski, R., Fonzone, A., & Szarata, A. (2023). Should I stay or should I board? Willingness to wait with real-time crowding information in urban public transport. *Research in Transportation Business & Management*, 47, 100963. | [10.1016/j.rtbm.2023.100963](https://doi.org/10.1016/j.rtbm.2023.100963) | LISTED — outreach contact is Kucharski, who is **third author**, not first |
+| drabicki_2023_bunching | Drabicki, A., Kucharski, R., & Cats, O. (2023). Mitigating bus bunching with real-time crowding information. *Transportation*, 50(3), 1003-1030. | [10.1007/s11116-022-10270-3](https://doi.org/10.1007/s11116-022-10270-3) | LISTED — flagged by verification as the single closest paper to SANASH's question |
 | kapatsila_2025_crowding | Kapatsila, B., Grisé, E., & van Lierop, D. (2025). The effect of crowding level information provision on the revealed route choice of transit riders. *Transportation*. | [10.1007/s11116-025-10585-x](https://link.springer.com/article/10.1007/s11116-025-10585-x) | LISTED |
 | zhangkennedy_2023_visualizations | Zhang-Kennedy, L., Mäkelä, V., et al. (2023). Passenger Perceptions, Information Preferences, and Usability of Crowding Visualizations on Public Displays in Transit Stations and Vehicles. *CHI*. | [10.1145/3544548.3581241](https://doi.org/10.1145/3544548.3581241) | LISTED |
 | preston_2019_occupancy | Preston, J., et al. (2019). Investigating the effect of train occupancy information. | [eprints.soton.ac.uk/455237](https://eprints.soton.ac.uk/455237/) | LISTED |
@@ -37,12 +37,18 @@ The core literature. If SANASH has a related-work section, it starts here.
 | kaparias_2015_countdown | Kaparias, I., et al. (2015). Effects of Countdown Displays in Public Transport Route Choice Under Severe Overcrowding. *Networks and Spatial Economics*. | [10.1007/s11067-013-9207-5](https://link.springer.com/article/10.1007/s11067-013-9207-5) | LISTED |
 | gentile_2005_routechoice | Gentile, G., et al. (2005). Route Choice on Transit Networks with Online Information at Stops. *Transportation Science*. | [10.1287/trsc.1040.0109](https://doi.org/10.1287/trsc.1040.0109) | LISTED |
 | jenelius_2020_personalized | Jenelius, E. (2020). Personalized predictive public transport crowding information. *Transportation Research Part C*, 117. | [trid.trb.org/View/1717207](https://trid.trb.org/View/1717207) | LISTED — **do not attribute to Antoniou**, a verification pass caught this |
+| drabicki_2020_modelling | Drabicki, A., Kucharski, R., Cats, O., & Szarata, A. (2020). Modelling the effects of real-time crowding information in urban public transport systems. *Transportmetrica A: Transport Science*, 17(4), 675-713. | [10.1080/23249935.2020.1809547](https://doi.org/10.1080/23249935.2020.1809547) | LISTED — added 2026-09-03 from an OpenAlex run, verified against Crossref |
+| drabicki_2025_covid | Drabicki, A., Cats, O., & Kucharski, R. (2025). Has the COVID-19 pandemic affected travellers' willingness to wait with real-time crowding information? *Travel Behaviour and Society*, 38, 100895. | [10.1016/j.tbs.2024.100895](https://doi.org/10.1016/j.tbs.2024.100895) | LISTED — added 2026-09-03. **Template for a replication**: the same team re-ran their own WTW design in a changed context |
+| wang_2021_buscrowding | Wang, P., Chen, X., Zheng, Y., Cheng, L., Wang, Y., & Lei, D. (2021). Providing real-time bus crowding information for passengers: A novel policy to promote high-frequency transit performance. *Transportation Research Part A*, 148, 316-329. | [10.1016/j.tra.2021.04.007](https://doi.org/10.1016/j.tra.2021.04.007) | LISTED — added 2026-09-03. One of the few RTCI papers on **buses** rather than rail |
+| peftitsi_2022_distribution | Peftitsi, S., Jenelius, E., & Cats, O. (2022). Modeling the effect of real-time crowding information (RTCI) on passenger distribution in trains. *Transportation Research Part A*, 166, 354-368. | [10.1016/j.tra.2022.10.011](https://doi.org/10.1016/j.tra.2022.10.011) | LISTED — added 2026-09-03 |
+| prabhakar_2024_skipping | Prabhakar, A., Grison, E., Morgagni, S., Nollenburg, M., & Gyselinck, V. (2024). Skipping the Crowds: Cognitive Impact of Real-Time On-Board Crowding Information in Mass Transit Smartphone Mobility Apps. *SSRN preprint*. | [10.2139/ssrn.4914658](https://doi.org/10.2139/ssrn.4914658) | LISTED — added 2026-09-03. Archana Prabhakar, **not** the Balaji Prabhakar of `prabhakar_2013_insinc` |
+| prabhakar_2025_dualprocess | Prabhakar, A., Grison, E., Morgagni, S., Nollenburg, M., & Gyselinck, V. (2025). Passenger decision-making in mass transit systems: Insights from dual-process theories. *Applied Cognitive Psychology*, 39(5). | [10.1002/acp.70112](https://doi.org/10.1002/acp.70112) | LISTED — added 2026-09-03 |
 
 ## 2. Crowding cost, discomfort and valuation
 
 | Key | Citation | DOI / URL | Status |
 |---|---|---|---|
-| agarwal_2024_valuation | Agarwal, A., et al. (2024). A systematic review on crowding valuation in public transport. *Public Transport*. | [10.1007/s12469-024-00363-w](https://link.springer.com/article/10.1007/s12469-024-00363-w) | LISTED |
+| fedujwar_2024_valuation | Fedujwar, R., & Agarwal, A. (2024). A systematic review on crowding valuation in public transport. *Public Transport*, 16(3). | [10.1007/s12469-024-00363-w](https://link.springer.com/article/10.1007/s12469-024-00363-w) | LISTED — outreach contact is Agarwal, who is **second author**, not first |
 | hurtubia_2017_discomfort | Hurtubia, R., Dekker, T., et al. (2017). Estimation of crowding discomfort in public transport: Results from Santiago de Chile. *Transportation Research Part A*. | [10.1016/j.tra.2017.06.008](https://doi.org/10.1016/j.tra.2017.06.008) | LISTED |
 | raveau_2014_routechoice | Raveau, S., et al. (2014). A behavioural comparison of route choice on metro networks: Time, transfers, crowding, topology and socio-demographics. | [worldtransitresearch.info/research/5268](https://www.worldtransitresearch.info/research/5268/) | LISTED |
 | shao_2022_timevalue | Shao, M., et al. (2022). Influence of in-vehicle crowding on passenger travel time value: Insights from bus transit in Shanghai. | [trid.trb.org/view/1880651](https://trid.trb.org/view/1880651) | LISTED — one of the few crowding-cost studies on buses |
@@ -95,6 +101,7 @@ The core literature. If SANASH has a related-work section, it starts here.
 | prabhakar_2013_insinc | Prabhakar, B., et al. (2013). INSINC: A Platform for Managing Peak Demand in Public Transit. | [stanford.edu PDF](https://web.stanford.edu/~balaji/papers/13INSINC.pdf) | LISTED |
 | allcott_2014_shortrun | Allcott, H., & Rogers, T. (2014). The Short-Run and Long-Run Effects of Behavioral Interventions. *AER*. NBER w18492. | [nber.org/papers/w18492](https://www.nber.org/papers/w18492) | CITED (Allcott) — **the email first stated this backwards and was corrected**; the finding is that response persists |
 | simaiakis_2014_pushback | Simaiakis, I., Balakrishnan, H., et al. (2014). Demonstration of Reduced Airport Congestion Through Pushback Rate Control. *TR Part A*, 66. | [dspace.mit.edu](https://dspace.mit.edu/bitstream/handle/1721.1/96873/Balakrishnan_A%20decision.pdf) | CITED (Balakrishnan) |
+| zhang_2016_stockholm | Zhang, Y., Jenelius, E., & Kottenhoff, K. (2016). Impact of real-time crowding information: a Stockholm metro pilot study. *Public Transport*, 9(3), 483-499. | [10.1007/s12469-016-0150-y](https://doi.org/10.1007/s12469-016-0150-y) | LISTED — added 2026-09-03. **The closest field precedent SANASH has**: RTCI shown to real passengers, measured behaviour. The charter referred to it only through a TRID link and it had no row here |
 
 ## 5. Choice modelling and behaviour
 
@@ -251,8 +258,21 @@ These were named in emails already sent. Listed so nothing is orphaned.
 - Page numbers and volume numbers are missing on perhaps a third of entries.
   Fine for tracking, not fine for a journal submission. Those entries carry
   `note = {UNVERIFIED FIELDS}` in `references.bib`.
-- Three entries have no DOI: Larson & Odoni (1981 book), the Drabicki bunching
-  paper, and Tyler's boarding chapter. Larson & Odoni and Drabicki have no URL
-  either and are the two entries `validate.py` reports as unlinkable.
+- Two entries have no DOI: Larson & Odoni (1981 book) and Tyler's boarding
+  chapter. Larson & Odoni has no URL either and is the entry `validate.py`
+  reports as unlinkable. The Drabicki bunching paper was resolved on
+  2026-09-02 to 10.1007/s11116-022-10270-3 and is no longer unlinkable.
+- **Author-order corrections made 2026-09-02**, each verified against the
+  Crossref record for the DOI, not from memory. Two rows led with the surname
+  of the outreach contact rather than the first author, which is the same
+  failure class as the Bayesian Loss and Jenelius corrections in `CLAUDE.md`:
+  - `kucharski_2023_willingness` became `drabicki_2023_willingness`. First
+    author is Drabicki; Kucharski is third.
+  - `agarwal_2024_valuation` became `fedujwar_2024_valuation`. First author is
+    Fedujwar; Agarwal is second.
+  - `drabicki_nodate_bunching` became `drabicki_2023_bunching` once the DOI was
+    found.
+  Neither paper had been named in a sent email, so no outreach correction is
+  owed. Had they been `CITED`, they would have been.
 - `fujiyama_2021_density` and `luangboriboon_nodate_density` point at the same
   UCL record. Both rows were in the verified source list and neither was removed.

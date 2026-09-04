@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#333"/></marker></defs>
+<rect width="1000" height="720" fill="#ffffff"/>
+<text x="30" y="32" font-family="DejaVu Sans, Verdana, sans-serif" font-size="18" font-weight="bold" fill="#111">Sanas: схема подключения прототипа (proposed)</text>
+<text x="30" y="50" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#555">Источник цепи: GROUND_TRUTH.md раздел 4. Ни один узел не куплен и не проверен на стенде.</text>
+<text x="970" y="32" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" text-anchor="end" fill="#555">2026-09-03</text>
+<polyline points="240,108 290,108" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="265.0" y="100.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" text-anchor="middle" fill="#111">USB-C, PD</text>
+<polyline points="490,108 540,108" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="515.0" y="100.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" text-anchor="middle" fill="#111">DC 12/15 V</text>
+<polyline points="720,108 790,108 790,250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="755.0" y="100.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" text-anchor="middle" fill="#111">DC barrel jack</text>
+<text x="755.0" y="124.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="10.5" text-anchor="middle" fill="#a83a3a">9-20 V, полярность и размер штекера не проверены</text>
+<polyline points="280,298 640,298" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="460.0" y="290.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" text-anchor="middle" fill="#111">CSI-2, шлейф FFC</text>
+<text x="460.0" y="314.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="10.5" text-anchor="middle" fill="#a83a3a">число контактов и шаг не сверены</text>
+<polyline points="280,438 460,438 460,390 640,390" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="460.0" y="406.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" text-anchor="middle" fill="#111">M.2 Key M</text>
+<text x="460.0" y="430.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="10.5" text-anchor="middle" fill="#a83a3a">ключ и длина 2280 не сверены</text>
+<polyline points="280,578 520,578 520,440 640,440" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="520.0" y="501.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" text-anchor="middle" fill="#111">USB-C, только данные</text>
+<text x="520.0" y="525.0" font-family="DejaVu Sans, Verdana, sans-serif" font-size="10.5" text-anchor="middle" fill="#a83a3a">питание сюда не подавать</text>
+<rect x="30" y="60" width="210" height="96" rx="6" fill="#e8eef7" stroke="#3c5a86" stroke-width="1.6"/>
+<text x="42" y="84" font-family="DejaVu Sans, Verdana, sans-serif" font-size="14" font-weight="bold" fill="#111">USB-C PD power bank</text>
+<text x="228" y="84" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11" text-anchor="end" fill="#3c5a86">решено</text>
+<text x="42" y="104" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">65 W+, модель не выбрана</text>
+<text x="42" y="120" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">ёмкость Wh не выбрана</text>
+<rect x="290" y="60" width="200" height="96" rx="6" fill="#fbe3e3" stroke="#a83a3a" stroke-width="1.6"/>
+<text x="302" y="84" font-family="DejaVu Sans, Verdana, sans-serif" font-size="14" font-weight="bold" fill="#111">USB-C PD trigger</text>
+<text x="478" y="84" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11" text-anchor="end" fill="#a83a3a">открыто</text>
+<text x="302" y="104" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">12 V или 15 V, не выбрано</text>
+<text x="302" y="120" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">+ ответный barrel plug</text>
+<rect x="540" y="60" width="180" height="96" rx="6" fill="#fdf3d8" stroke="#a8842a" stroke-width="1.6"/>
+<text x="552" y="84" font-family="DejaVu Sans, Verdana, sans-serif" font-size="14" font-weight="bold" fill="#111">Ваттметр в разрыв</text>
+<text x="708" y="84" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11" text-anchor="end" fill="#a8842a">кандидат</text>
+<text x="552" y="104" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">только на стенде</text>
+<text x="552" y="120" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">нужен для бюджета питания</text>
+<rect x="640" y="250" width="300" height="210" rx="6" fill="#e8eef7" stroke="#3c5a86" stroke-width="1.6"/>
+<text x="652" y="274" font-family="DejaVu Sans, Verdana, sans-serif" font-size="14" font-weight="bold" fill="#111">Jetson Orin Nano Super Dev Kit</text>
+<text x="928" y="274" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11" text-anchor="end" fill="#3c5a86">решено</text>
+<text x="652" y="294" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">DC barrel jack, вход 9-20 V (проверено)</text>
+<text x="652" y="310" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">USB-C: данные и recovery, НЕ питание</text>
+<text x="652" y="326" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">CSI CAM0 / CAM1</text>
+<text x="652" y="342" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">M.2 Key M под NVMe</text>
+<text x="652" y="358" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">ambient 0-35 C (проверено)</text>
+<text x="652" y="374" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">NVENC отсутствует (проверено)</text>
+<rect x="30" y="250" width="250" height="96" rx="6" fill="#fdf3d8" stroke="#a8842a" stroke-width="1.6"/>
+<text x="42" y="274" font-family="DejaVu Sans, Verdana, sans-serif" font-size="14" font-weight="bold" fill="#111">Waveshare IMX219-160</text>
+<text x="268" y="274" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11" text-anchor="end" fill="#a8842a">кандидат</text>
+<text x="42" y="294" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">8 MP, 160 град по диагонали</text>
+<text x="42" y="310" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">драйвер и FPS на Orin не проверены</text>
+<rect x="30" y="390" width="250" height="96" rx="6" fill="#fbe3e3" stroke="#a83a3a" stroke-width="1.6"/>
+<text x="42" y="414" font-family="DejaVu Sans, Verdana, sans-serif" font-size="14" font-weight="bold" fill="#111">NVMe SSD</text>
+<text x="268" y="414" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11" text-anchor="end" fill="#a83a3a">открыто</text>
+<text x="42" y="434" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">модель, объём, ресурс записи</text>
+<text x="42" y="450" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">и retention не выбраны</text>
+<rect x="30" y="530" width="250" height="96" rx="6" fill="#fbe3e3" stroke="#a83a3a" stroke-width="1.6"/>
+<text x="42" y="554" font-family="DejaVu Sans, Verdana, sans-serif" font-size="14" font-weight="bold" fill="#111">Хост для прошивки</text>
+<text x="268" y="554" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11" text-anchor="end" fill="#a83a3a">открыто</text>
+<text x="42" y="574" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">рабочая машина под Windows 11</text>
+<text x="42" y="590" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#333">SDK Manager требует Linux</text>
+<rect x="30" y="643" width="16" height="16" rx="3" fill="#dff0d8" stroke="#4a7a3a"/>
+<text x="54" y="656" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" fill="#333">проверено</text>
+<rect x="200" y="643" width="16" height="16" rx="3" fill="#e8eef7" stroke="#3c5a86"/>
+<text x="224" y="656" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" fill="#333">решено</text>
+<rect x="370" y="643" width="16" height="16" rx="3" fill="#fdf3d8" stroke="#a8842a"/>
+<text x="394" y="656" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" fill="#333">кандидат</text>
+<rect x="540" y="643" width="16" height="16" rx="3" fill="#fbe3e3" stroke="#a83a3a"/>
+<text x="564" y="656" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" fill="#333">открыто</text>
+<text x="30" y="680" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#a83a3a">Открытый блокер: USB-C на dev kit это порт данных и recovery. Питание идёт только в barrel jack,</text>
+<text x="30" y="695" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#a83a3a">поэтому power bank не питает кит напрямую и PD trigger обязателен (GROUND_TRUTH.md раздел 4).</text>
+</svg>

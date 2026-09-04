@@ -1155,3 +1155,339 @@ untouched and untracked.
 The reference content was reproduced from the verified list supplied in the
 session, not re-verified. No DOI was re-checked against a live page in this
 change, and none was altered.
+
+---
+
+## 2026-09-02 23:43 — Ceiling RGB track: first baseline scaffold, CPU smoke test
+
+First code of the current ceiling RGB direction. Before this entry
+`development/src/` held only `.gitkeep` and no model of this architecture had
+ever been run (`GROUND_TRUTH.md` section 6). This is a **wiring check**, not a
+model result.
+
+- commit: `38d39dccf45e253475ffbe2f17e274ae92acc2f8` (branch
+  `restructure-ground-truth`, working tree dirty, scaffold itself uncommitted)
+- backend: local CPU, no GPU present. torch 2.13.0+cpu, torchvision 0.29.0+cpu,
+  Python 3.13.3, Windows 11. `torch.cuda.is_available()` is False.
+- quota/cost: none. No Kaggle kernel, no cloud, no paid backend, no upload.
+- run id: `smoke-20260902`
+- code: `development/src/sanas_baseline/` (config, prepare, data, model,
+  metrics, train, evaluate), documented in `development/src/README.md`
+
+### Data version
+
+DISCO, CC BY 4.0, the copy already on disk:
+`data/external/disco_images.zip` 2,186,215,586 bytes and
+`data/external/disco_density_maps.zip` 122,132,558 bytes, both with checksums
+recorded in `development/datasets.md`. RPEE-HEADS was deliberately not touched:
+its CC BY-SA ShareAlike clause is still an open legal blocker
+(`GROUND_TRUTH.md` section 10 item 4).
+
+Splits are the ones shipped inside the density archive, train 1,435 / val 200 /
+test 300, read from the archive rather than invented. `sanas_baseline.prepare`
+pulled 16 / 8 / 8 of them out of the zips by member name, without unpacking the
+2.1 GB archive, into `data/interim/disco_baseline/` (gitignored). Subset
+manifest `subset_sha256`
+`d9a1db9d827be2e15acac68a71825750c9a4bc4d053df2b4b77660c1afe73a35`, selection
+seed 2026, so the subset is reproducible from the flags.
+
+### Config
+
+Image 216x384 (the exact 1920x1080 aspect ratio, divisible by the trunk stride),
+density target 27x48, ResNet-18 trunk truncated at stride 8 with `weights=None`
+so no pretrained checkpoint and no third party weight licence is involved, two
+layer density head, Adam, lr 1e-4, batch size 2, 2 epochs, seed 2026, MSE on the
+density map, `density_scale` 1.0. Target is the per image person count, the sum
+of the DISCO density map, kept as the raw float because the rounding policy is
+still open (`development/datasets.md`).
+
+### Result
+
+```
+train 16 / val 8 images
+train mean count: 104.22
+epoch 1: loss 0.1961  val MAE 104.19 vs constant 89.12
+epoch 2: loss 0.1928  val MAE 94.24 vs constant 89.12
+wall time: 5.6s
+```
+
+Held-out check on the 8 extracted test images: model MAE 140.41, RMSE 183.94;
+`ConstantPredictor` MAE 109.82, RMSE 152.45.
+
+**The trained model loses to the constant predictor on both val and test.**
+That is the expected outcome of 16 images and 2 epochs and it is reported as
+is. The numbers measure that the pipeline runs, not that the model counts.
+A rerun with the same seed reproduced both epochs exactly.
+
+Artifacts: `outputs/baseline/smoke-20260902/checkpoint.pt` and `results.json`
+(gitignored), the latter carrying commit, backend, config and data manifest.
+
+### Notes
+
+The one real implementation decision is the density resize. A DISCO density map
+is people per pixel, so the label is its sum. Resizing it like an image divides
+that sum by the area ratio: at this geometry a plain area resize turned a count
+of 112.0 into 0.070, silently destroying the target.
+`data.resize_density_preserving_sum` area-aggregates and then renormalises the
+total, verified at 112.0 -> 112.00002.
+
+`metrics.level_accuracy` exists but takes its thresholds as an argument and is
+called nowhere with product values, because the five level boundaries and the
+meaning of the `0..1` score are still open (`GROUND_TRUTH.md` section 3.2).
+
+This does not select an architecture, does not close any blocker in section 10,
+and does not transfer to a bus cabin: DISCO is outdoor crowd from an 8 to 15 m
+oblique view and there is still no own in-cabin footage. `GROUND_TRUTH.md`
+section 6 stays accurate on substance, with the one correction that the current
+direction now has running scaffold code, uncommitted, and one CPU smoke run.
+
+---
+
+## 2026-09-03 — Планировочный заход без железа: спецификация, геометрия, разметка, лицензии, обзор
+
+- commit: 38d39dcc (рабочее дерево грязное, ничего не закоммичено)
+- backend: локальный, ничего не запускалось кроме `camera_geometry.py` и
+  `validate.py`
+- result: семь новых документов и одна правка проверенной базы ссылок
+
+**Это запись решений и расчётов, а не эксперимента.** Ни одна модель не
+обучалась в рамках этого захода, кроме отдельно залогированного smoke test
+выше.
+
+### Контекст
+
+Железа нет, доступа к автобусу нет, собственных кадров нет. Проверено, что
+блокеры 1-4 из `GROUND_TRUTH.md` раздел 10 не требуют ни того, ни другого, и
+закрыты настолько, насколько это возможно на бумаге.
+
+### Созданные документы
+
+- `PRODUCT_SPEC.md` v0.1: разбор четырёх вариантов целевой величины с
+  рекомендацией, семантика и кандидатные пороги пяти уровней, определение
+  скора `0..1`, временное поведение, таксономия `unknown`, черновик схемы
+  сообщения для Avtobys, предлагаемые критерии приёмки, восемь открытых
+  решений с указанием, кто их принимает.
+- `development/CAMERA_GEOMETRY.md` и `development/scripts/camera_geometry.py`.
+- `development/LABELING_GUIDE.md` v0.1 и `development/DATASET_CARD.md` шаблон.
+- `development/LICENSE_DECISION.md`: разбор ShareAlike у RPEE-HEADS.
+- `business/INNOFORCE_QUESTIONS.md` и
+  `business/FILMING_PERMISSION_REQUEST.md`, оба черновики, ничего не отправлено.
+- `research/LIT_REVIEW_PROTOCOL.md` и
+  `research/lit_review/evidence_matrix_template.csv`.
+
+### Расчёт геометрии камеры
+
+Единственный численный результат захода. Модель equidistant fisheye, входные
+данные это опубликованные 160° по диагонали и сенсор 3280x2464. Размеры салона
+приняты как предположения и не измерены.
+
+```
+horizontal FoV        127.9 deg (derived)
+vertical FoV           96.1 deg (derived)
+angular resolution     25.6 px/deg
+
+Straight-down mount, coverage at each head plane (ceiling 2.30 m assumed):
+  floor            drop 2.30 m   9.42 m along bus   2.50 m across
+  seated heads     drop 1.05 m   4.30 m along bus   2.34 m across
+  standing heads   drop 0.60 m   2.46 m along bus   1.34 m across
+
+Cameras needed for an assumed 11.5 m cabin, lower bound without overlap:
+  seated heads    6
+  standing heads  10
+```
+
+Два вывода:
+
+1. Наивная прямолинейная формула для 160° завышает покрытие в 2.77 раза
+   (11.34 м против 4.09 м на метр высоты). Если это число где-то использовалось
+   при выборе схемы, его надо найти.
+2. Одна камера, смотрящая строго вниз, видит около 2.5 м длины салона на уровне
+   голов стоящих. Схема «одна камера, надир, счёт по всему салону»
+   геометрически не работает при принятых предположениях. Решение от
+   2026-08-31 о единственной камере остаётся в силе как решение о закупке, но
+   угол установки перестаёт быть деталью монтажа и становится тем, что
+   определяет достижимый target.
+
+Это расчёт, а не измерение. FOV-тест в реальном салоне отменяет любое число
+выше.
+
+### Правка проверенной базы ссылок
+
+Найдено при подготовке протокола обзора, каждое подтверждено по записи Crossref
+для DOI, не по памяти:
+
+- `kucharski_2023_willingness` -> `drabicki_2023_willingness`. Первый автор
+  Drabicki, Kucharski третий. Ключ вёл фамилией адресата outreach.
+- `agarwal_2024_valuation` -> `fedujwar_2024_valuation`. Первый автор Fedujwar,
+  Agarwal второй.
+- `drabicki_nodate_bunching` -> `drabicki_2023_bunching`. Найден DOI
+  10.1007/s11116-022-10270-3, *Transportation* 50(3), 1003-1030, онлайн
+  2022-03-04, печатный выпуск 2023-06. Запись перестала быть unlinkable.
+
+Обе переименованные работы имели статус `LISTED`, то есть ни одна не была
+названа в отправленном письме. Исправлений в адрес получателей не требуется.
+Это тот же класс ошибки, что зафиксирован в `CLAUDE.md` для Bayesian Loss и
+Jenelius: ведущей ставилась фамилия контакта, а не первого автора.
+
+`python research/refs/base/validate.py` после правки выходит с кодом 0,
+146 записей сохранены, число unlinkable снизилось с 2 до 1.
+
+Не исправлено: `fujiyama_2021_density` и `luangboriboon_nodate_density`
+указывают на одну запись UCL. Обе строки были в проверенном списке источников,
+удаление требует отдельного решения.
+
+### Что этот заход НЕ сделал
+
+- Не закрыл ни одного блокера окончательно. Все семь документов содержат
+  открытые пункты, которые требуют решения Дияса, ответа Innoforce или
+  измерения.
+- Не выбрал целевую величину. Дана рекомендация, решение за Диясом.
+- Не зафиксировал пороги пяти уровней. Значения 2 и 4 человека на квадратный
+  метр взяты как рабочие круглые числа, а не из проверенного источника.
+- Не измерил ничего в реальном автобусе.
+- Ничего не отправил наружу. Оба письма черновики.
+- Не запускал ни одного поиска по литературе. Все счётчики PRISMA пустые.
+
+---
+
+## 2026-09-03 — Разведочный поиск по литературе, семь работ добавлено в базу
+
+- commit: 38d39dcc (рабочее дерево грязное)
+- backend: OpenAlex REST API и Crossref REST API, локально, без ключей
+- result: подтверждён кандидатный gap, найден единственный полевой прецедент,
+  база ссылок выросла со 146 до 153 записей
+
+### Что запускалось
+
+Три запроса в OpenAlex по `title_and_abstract.search`, точные строки и число
+результатов записаны в `research/lit_review/search_log.md`. Это разведка, а не
+систематический обзор по протоколу: PRISMA-счётчики остаются пустыми.
+
+### Главный результат
+
+По запросу «crowding information» вместе с полевым экспериментом, рандомизацией
+или пилотом OpenAlex возвращает 7 работ. К общественному транспорту относятся
+две, и только одна является пилотом с реальными пассажирами:
+
+Zhang, Y., Jenelius, E., & Kottenhoff, K. (2016). Impact of real-time crowding
+information: a Stockholm metro pilot study. *Public Transport*, 9(3), 483-499.
+DOI 10.1007/s12469-016-0150-y.
+
+Эта работа была известна чартеру только через ссылку TRID и **не имела строки в
+проверенной базе ссылок**. Единственный ближайший прецедент всего проекта
+отсутствовал в базе.
+
+Второе наблюдение: RTCI-литература почти вся рельсовая. Работ по автобусам мало.
+
+Статус вывода: **кандидат**. Один источник, поиск только по title и abstract,
+узкий набор синонимов, сортировка по цитируемости. Это делает gap из чартера
+правдоподобнее и не доказывает его.
+
+### Добавлено в базу, каждое проверено по Crossref
+
+`zhang_2016_stockholm`, `drabicki_2020_modelling`, `drabicki_2025_covid`,
+`wang_2021_buscrowding`, `peftitsi_2022_distribution`, `prabhakar_2024_skipping`,
+`prabhakar_2025_dualprocess`. Все со статусом `LISTED`, ни одна не прочитана.
+
+`validate.py` выходит 0, 153 записи в обоих файлах.
+
+Отмечено в базе, чтобы не повторилась ошибка авторства: Archana Prabhakar из
+двух новых записей не является Balaji Prabhakar из `prabhakar_2013_insinc`.
+
+### Открытый доступ
+
+Пять из шести ключевых работ открытого доступа. Практическое следствие:
+отсутствие подтверждённого доступа к Scopus и Web of Science не блокирует
+чтение найденного. Оно блокирует систематичность поиска, а не доступ.
+`wang_2021_buscrowding` закрыта, запросить у авторов.
+
+### Следствие для стратегии
+
+Создан `research/REPLICATION_TARGET.md`: предложение позиционировать Study A как
+повторение дизайна Drabicki, а Study C как продолжение стокгольмского пилота в
+автобусном контексте. Список из четырёх конкретных работ к прочтению.
+
+**Ни одна работа не прочитана.** Всё в этой записи основано на названии,
+авторстве, площадке и метаданных, а не на содержании.
+
+### Не сделано
+
+Совет о повторении чужого дизайна приписывается участнику встречи по имени
+Махмуд, запись `Zoom Meeting 2026-09-01 17-34-06.mp4` (6.7 ГБ) не расшифрована,
+консультации нет в `research/EXPERT_CONSULTATIONS.md`. Стратегический совет
+существует только в пересказе. Расшифровка требует часов CPU и разрешения.
+
+---
+
+## 2026-09-03 — Оснастка, схема питания, аппаратные таблицы, график покрытия
+
+- commit: 38d39dcc (рабочее дерево грязное)
+- backend: локально, OpenSCAD и KiCad в окружении отсутствуют
+- result: проектная документация под FOV-тест, ни одна деталь не изготовлена
+
+### Что создано
+
+- `development/cad/camera_test_rig.scad` — параметрическая испытательная
+  оснастка;
+- `development/cad/wiring_diagram.md`, `.py`, `.svg` — схема соединений;
+- `development/HARDWARE_TABLES.md` — BOM на 16 позиций, бюджет питания,
+  тепловой режим, разъёмы, чек-лист стенда;
+- `development/scripts/coverage_vs_tilt.py`, вывод в
+  `outputs/camera_geometry/` (gitignored);
+- `development/PIPELINE_STATES.md` — конвейер и переходы состояний.
+
+### Почему оснастка, а не крепление
+
+Угол установки не выбран и не может быть выбран без съёмки в салоне. Поэтому
+первый физический артефакт это оснастка с дискретной фиксацией 0/30/45/60°,
+крепление к поручню без сверления, ось наклона проходит через входной зрачок
+объектива, чтобы все четыре угла снимались из одной точки. Высота потолка в
+модели не фигурирует: она измеряется рулеткой и пишется в протокол.
+
+### Новый численный результат
+
+`coverage_vs_tilt.py` переиспользует оптику из `camera_geometry.py`, своей
+математики не содержит. Проверено независимо по выгруженному CSV:
+
+| Высота потолка | Угол насыщения покрытия | Пикселей на голову на дальнем конце |
+|---|---|---|
+| 2.10 м | 24.5° | 25.5 |
+| 2.30 м | 23.5° | 25.5 |
+| 2.50 м | 22.5° | 25.5 |
+
+Покрытие насыщается около 23°, а не 30°, как предполагалось в
+`CAMERA_GEOMETRY.md` раздел 5. Пиксели на дальнем конце от угла выше этой
+точки **не зависят вообще**, потому что дальний край упирается в
+предполагаемую длину салона, а не в оптику.
+
+Следствие: выбор между 30, 45 и 60 градусами определяется **исключительно
+окклюзией**. Ни покрытие, ни разрешение его не решают. Поэтому съёмка полного
+салона под несколькими углами является не желательной, а единственной
+процедурой, способной закрыть этот вопрос.
+
+Оговорка: 11.5 м это предположение о длине салона, а не измерение. Точка
+насыщения смещается на 2° при изменении высоты потолка на 20 см.
+
+### Ограничения
+
+- `.scad` не отрендерен, OpenSCAD в окружении нет. Проверен разбором, не сборкой.
+- Размеры платы IMX219-160, положение входного зрачка, ширина шлейфа и
+  допустимый радиус изгиба это предположения по типовому форм-фактору камеры
+  Raspberry Pi, не подтверждённые механическим чертежом Waveshare.
+- Диаметр поручня не измерен, заложен диапазон 20-45 мм.
+- KiCad отсутствует, SVG сгенерирован собственным скриптом. Это схема
+  соединений модулей, не схемотехника.
+- Ни одно число в бюджете питания не измерено. Таблица автономности это
+  арифметика над сценариями 10/15/20/25 Вт при предполагаемом КПД 0.85.
+- Столбец цен в BOM пуст целиком: проверенных цен нет.
+- Окклюзия не моделируется нигде.
+
+### Проверить до заказа
+
+Три дешёвые проверки, каждая способна сломать график поставки:
+
+1. число контактов и шаг разъёма CSI на Orin Nano Developer Kit против шлейфа
+   камеры;
+2. размер и полярность барельного штекера питания;
+3. механический чертёж платы Waveshare IMX219-160, от него зависит вся
+   посадочная геометрия оснастки.
