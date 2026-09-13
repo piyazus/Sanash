@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SANASH — разметка кадров</title>
+<style>
+:root{font:16px system-ui;color:#182a28;background:#f4f2eb}*{box-sizing:border-box}body{margin:0}header{padding:24px 32px;border-bottom:1px solid #d9ded5;background:#fffefa}h1{font-size:26px;margin:4px 0}.eyebrow{letter-spacing:.14em;font-size:11px;font-weight:700;color:#55766b}p{line-height:1.5}header p{margin:8px 0 0;max-width:950px;color:#586861}.layout{display:grid;grid-template-columns:270px minmax(0,1fr);min-height:75vh}aside{padding:24px;background:#e9eee5}main{padding:24px 32px;min-width:0}label{display:block;font-size:13px;font-weight:600;margin:12px 0 6px}input,select,textarea{width:100%;font:inherit;padding:9px;border:1px solid #b8c7bc;border-radius:7px;background:#fff}button,.file-button{font:inherit;cursor:pointer;border:1px solid #b8c7bc;border-radius:7px;padding:9px 12px;background:white;color:#183c31}button:disabled{opacity:.45;cursor:default}button.primary{background:#1d5b43;color:white;border-color:#1d5b43}.wide{width:100%;margin-top:10px}.frame-list{display:grid;gap:8px;margin-top:18px}.frame-list button{text-align:left}.frame-list button[aria-current=true]{border:2px solid #1d5b43;background:#f9fff9}.small{font-size:12px;color:#5b6962}.notice{padding:10px 14px;background:#fff0c9;border-radius:8px;font-size:14px}.toolbar{display:flex;gap:12px;align-items:end;flex-wrap:wrap}.toolbar>div{flex:1;min-width:140px}.toolbar label{margin-top:4px}.canvas-wrap{position:relative;margin-top:18px;background:#13201d;line-height:0;max-width:1100px}#picture{display:block;width:100%;height:auto}#overlay{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}.bottom{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px}#counter{margin-right:auto;font-weight:700}.review{display:flex;align-items:center;gap:9px;font-size:15px}.review input{width:auto}.status{min-height:22px;font-size:13px;color:#456253}#notes{min-height:58px}input[type=file]{font-size:12px}.help{font-size:13px;color:#586861;max-width:950px}#frameTitle{font-size:21px;margin:0 0 12px}#pointsSummary{font-size:13px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #d49b32;outline-offset:2px}@media(max-width:760px){.layout{grid-template-columns:1fr}aside{padding:16px}.frame-list{grid-template-columns:repeat(3,1fr)}main,header{padding:20px}.toolbar>div{min-width:120px}}
+</style></head><body>
+<header><div class="eyebrow">SANASH / ДАННЫЕ САЛОНА</div><h1>Один человек — одна отметка</h1>
+<p>Отметьте центр видимой части головы. Если голова скрыта, но человек однозначно виден по другим признакам, выберите «По другим признакам» и отметьте видимый признак. Полностью скрытых людей не добавляйте.</p></header>
+<div class="layout"><aside>
+<div id="origin" class="notice"></div>
+<label for="rater">Ваш ID разметчика</label><input id="rater" placeholder="Например R1" maxlength="64" autocomplete="off">
+<button id="begin" class="primary wide">Начать / продолжить</button>
+<p class="small">Каждый разметчик работает отдельно, до просмотра чужих отметок и счёта наблюдателя.</p>
+<div id="frames" class="frame-list"></div>
+<button id="export" class="primary wide" disabled>Скачать разметку JSON</button>
+<label for="import">Продолжить из JSON</label><input id="import" type="file" accept="application/json,.json" disabled>
+<p class="small">Черновик сохраняется в этом браузере. Скачайте JSON, чтобы передать работу или сохранить отдельную копию.</p>
+<p id="saveStatus" class="status" aria-live="polite"></p>
+<a href="review.html">← Обзор видео</a>
+</aside><main>
+<h2 id="frameTitle"></h2><div id="message" class="status" role="status" aria-live="polite">Введите ID и нажмите «Начать / продолжить».</div>
+<div class="toolbar">
+<div><label for="zone">Зона следующей отметки</label><select id="zone"><option value="unclear">Не определена</option><option value="front">Передняя часть</option><option value="middle">Средняя часть</option><option value="rear">Задняя часть</option><option value="door">Дверь</option></select></div>
+<div><label for="posture">Поза</label><select id="posture"><option value="unclear">Неясно</option><option value="seated">Сидит</option><option value="standing">Стоит</option></select></div>
+<div><label for="visibility">Видимость</label><select id="visibility"><option value="full">Голова видна</option><option value="partial">Голова видна частично</option><option value="inferred">По другим признакам</option></select></div>
+</div>
+<div class="canvas-wrap"><img id="picture" alt="Кадр для разметки"><svg id="overlay" aria-label="Отметки людей на кадре"></svg></div>
+<div class="bottom"><span id="counter">Отмечено: 0</span><button id="undo" disabled>Отменить последнюю</button><button id="previous">← Назад</button><button id="next">Далее →</button></div>
+<div id="pointsSummary"></div>
+<label for="notes">Слепые зоны, блики и другие замечания</label><textarea id="notes" disabled placeholder="Например: задние сиденья закрыты стоящими людьми"></textarea>
+<label class="review"><input type="checkbox" id="reviewed" disabled>Кадр проверен; количество отметок подтверждаю</label>
+<p class="help">Ноль считается разметкой только после подтверждения кадра. Новая отметка, отмена или правка замечаний снимает подтверждение. Отметки включают людей, различимых по другим признакам; они отмечены отдельно. Точки не объединяются между камерами.</p>
+</main></div>
+<script id="project" type="application/json">__SANASH_PROJECT_JSON__</script>
+<script>
+'use strict';
+const project=JSON.parse(document.getElementById('project').textContent);
+const $=id=>document.getElementById(id);
+const zones=['front','middle','rear','door','unclear'];
+const postures=['seated','standing','unclear'];
+const visibility=['full','partial','inferred'];
+let state=null,index=0,dirty=false;
+function blank(rater){return {schema_version:1,type:'sanash_point_annotations',project_key:project.project_key,source_sha256:project.source_sha256,origin:project.origin,session_id:project.session_id,vehicle_id:project.vehicle_id,channel_id:project.channel_id,rater_id:rater,frames:project.frames.map(f=>({frame_id:f.frame_id,image_sha256:f.image_sha256,actual_offset_s:f.actual_offset_s,reviewed:false,points:[],notes:''}))};}
+function key(rater){return 'sanash-annotations:'+project.project_key+':'+rater;}
+function validate(data,rater){
+ if(!data||data.schema_version!==1||data.type!=='sanash_point_annotations'||data.project_key!==project.project_key||data.source_sha256!==project.source_sha256||data.origin!==project.origin||data.session_id!==project.session_id||data.vehicle_id!==project.vehicle_id||data.channel_id!==project.channel_id||data.rater_id!==rater)throw Error('Файл относится к другому проекту или разметчику.');
+ if(!Array.isArray(data.frames)||data.frames.length!==project.frames.length)throw Error('Набор кадров не совпадает.');
+ data.frames.forEach((f,i)=>{let p=project.frames[i];if(f.frame_id!==p.frame_id||f.image_sha256!==p.image_sha256||f.actual_offset_s!==p.actual_offset_s||typeof f.reviewed!=='boolean'||typeof f.notes!=='string'||!Array.isArray(f.points))throw Error('Повреждены сведения о кадре.');
+ f.points.forEach(point=>{if(!point||!Number.isFinite(point.x)||!Number.isFinite(point.y)||point.x<0||point.x>1||point.y<0||point.y>1||!zones.includes(point.zone)||!postures.includes(point.posture)||!visibility.includes(point.visibility))throw Error('Некорректная отметка.');});});
+ return data;
+}
+function save(){if(!state)return;dirty=true;try{localStorage.setItem(key(state.rater_id),JSON.stringify(state));$('saveStatus').textContent='Черновик сохранён в браузере. Скачайте JSON.';}catch(e){$('saveStatus').textContent='Хранилище браузера недоступно. Скачайте JSON перед закрытием.';}}
+function update(){if(!state)return;state.frames[index].reviewed=false;save();render();}
+function render(){
+ const frame=project.frames[index],record=state&&state.frames[index];
+ $('frameTitle').textContent=`Кадр ${index+1} / ${project.frames.length} · ${frame.actual_offset_s} с · ${project.channel_id}`;
+ if($('picture').getAttribute('src')!==frame.image_file)$('picture').src=frame.image_file;
+ const count=record?record.points.length:0;
+ $('counter').textContent=`Отмечено: ${count}`;
+ $('pointsSummary').textContent=record?`По другим признакам: ${record.points.filter(p=>p.visibility==='inferred').length}. Зона не определена: ${record.points.filter(p=>p.zone==='unclear').length}.`:'';
+ $('notes').value=record?record.notes:'';$('reviewed').checked=!!(record&&record.reviewed);
+ for(const id of ['notes','reviewed','export','import'])$(id).disabled=!state;
+ $('undo').disabled=!count;$('previous').disabled=index===0;$('next').disabled=index===project.frames.length-1;
+ $('overlay').replaceChildren();
+ if(record)record.points.forEach((p,i)=>{const mark=document.createElementNS('http://www.w3.org/2000/svg','svg');mark.setAttribute('x',`${p.x*100}%`);mark.setAttribute('y',`${p.y*100}%`);mark.setAttribute('overflow','visible');
+ const circle=document.createElementNS('http://www.w3.org/2000/svg','circle');circle.setAttribute('r','12');circle.setAttribute('fill',p.visibility==='inferred'?'#da9829':'#1d7855');circle.setAttribute('stroke','white');circle.setAttribute('stroke-width','2');
+ const number=document.createElementNS('http://www.w3.org/2000/svg','text');number.textContent=i+1;number.setAttribute('text-anchor','middle');number.setAttribute('dy','4');number.setAttribute('fill','white');number.setAttribute('font-size','12');mark.append(circle,number);$('overlay').append(mark);});
+ $('frames').replaceChildren();project.frames.forEach((f,i)=>{let b=document.createElement('button');b.textContent=`${i+1}. ${f.actual_offset_s} с${state&&state.frames[i].reviewed?' · ✓':''}`;b.setAttribute('aria-current',String(index===i));b.onclick=()=>{index=i;render();};$('frames').append(b);});
+}
+$('begin').onclick=()=>{const rater=$('rater').value.trim();if(!/^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$/.test(rater)){$('message').textContent='ID: латинские буквы, цифры, дефис или подчёркивание.';return;}
+ if(state&&state.rater_id===rater){$('message').textContent=`Продолжайте разметку: ${rater}.`;render();return;}
+ if(state&&state.rater_id!==rater&&dirty){$('message').textContent='Сначала скачайте текущую разметку JSON перед сменой ID.';return;}
+ try{let stored=null;try{stored=localStorage.getItem(key(rater));}catch(e){}state=stored?validate(JSON.parse(stored),rater):blank(rater);dirty=false;$('message').textContent=`Разметчик ${rater}. Кликните по человеку, чтобы добавить отметку.`;render();}catch(e){$('message').textContent=e.message;}};
+$('overlay').onclick=e=>{if(!state){$('message').textContent='Сначала начните разметку с вашим ID.';return;}if(!$('picture').complete||!$('picture').naturalWidth){$('message').textContent='Изображение ещё не загружено.';return;}
+ const rect=$('overlay').getBoundingClientRect();const x=(e.clientX-rect.left)/rect.width,y=(e.clientY-rect.top)/rect.height;
+ if(x<0||x>1||y<0||y>1)return;state.frames[index].points.push({x,y,zone:$('zone').value,posture:$('posture').value,visibility:$('visibility').value});update();};
+$('undo').onclick=()=>{if(state&&state.frames[index].points.length){state.frames[index].points.pop();update();}};
+$('notes').oninput=()=>{if(state){state.frames[index].notes=$('notes').value;state.frames[index].reviewed=false;$('reviewed').checked=false;save();}};
+$('reviewed').onchange=()=>{if(state){state.frames[index].reviewed=$('reviewed').checked;save();render();}};
+$('previous').onclick=()=>{if(index>0){index--;render();}};$('next').onclick=()=>{if(index<project.frames.length-1){index++;render();}};
+$('export').onclick=()=>{if(!state)return;validate(state,state.rater_id);const result={...state,exported_at_utc:new Date().toISOString()};const blob=new Blob([JSON.stringify(result,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`${project.session_id}_${project.channel_id}_${state.rater_id}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);dirty=false;$('saveStatus').textContent='JSON подготовлен к скачиванию. Проверьте файл в загрузках.';};
+$('import').onchange=async()=>{const file=$('import').files[0];if(!file||!state)return;if(dirty){$('message').textContent='Скачайте текущий JSON перед загрузкой другой версии.';$('import').value='';return;}try{const imported=validate(JSON.parse(await file.text()),state.rater_id);state=imported;save();render();$('message').textContent='Разметка восстановлена из JSON.';}catch(e){$('message').textContent=e.message;}finally{$('import').value='';}};
+$('picture').onerror=()=>{$('message').textContent='Кадр не найден. Храните страницу рядом с папкой frames.';};
+window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
+$('origin').textContent=project.origin==='synthetic'?'Искусственный тест. Пассажирских данных нет.':`Источник: ${project.origin}. Разметка вручную.`;
+render();
+</script></body></html>

@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "status": "frames_ready_for_manual_review",
+  "origin": "synthetic",
+  "created_at_utc": "2026-09-12T14:58:22.821640+00:00",
+  "source_name": "synthetic-60s.mp4",
+  "source_bytes": 3257242,
+  "source_sha256": "fc26bbd418feb060b783a34b8a7d6848d2904e6ba9ebbcfc3c35c422cde1ea8e",
+  "session_id": "SYNTHETIC20260912",
+  "vehicle_id": null,
+  "channel_id": "CH01",
+  "requested_offsets_s": [
+    10.0,
+    30.0,
+    50.0
+  ],
+  "timestamp_basis": "container timeline shifted to zero by ffmpeg -copyts -start_at_zero; not capture UTC",
+  "probe": {
+    "format": {
+      "filename": "C:\\Users\\User\\OneDrive\\Desktop\\me\\Sanash\\outputs\\video-intake\\synthetic-60s.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "60.000000",
+      "size": "3257242",
+      "bit_rate": "434298",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.12.102"
+      }
+    },
+    "video_stream": {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+      "profile": "High",
+      "codec_type": "video",
+      "codec_tag_string": "avc1",
+      "codec_tag": "0x31637661",
+      "mime_codec_string": "avc1.640016",
+      "width": 640,
+      "height": 360,
+      "coded_width": 640,
+      "coded_height": 360,
+      "has_b_frames": 2,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "16:9",
+      "pix_fmt": "yuv420p",
+      "level": 22,
+      "chroma_location": "left",
+      "field_order": "progressive",
+      "is_avc": "true",
+      "nal_length_size": "4",
+      "id": "0x1",
+      "r_frame_rate": "10/1",
+      "avg_frame_rate": "10/1",
+      "time_base": "1/10240",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 614400,
+      "duration": "60.000000",
+      "bit_rate": "433405",
+      "bits_per_raw_sample": "8",
+      "nb_frames": "600",
+      "extradata_size": 47,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0,
+        "multilayer": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "VideoHandler",
+        "encoder": "Lavc62.28.102 libx264"
+      }
+    },
+    "video_stream_count": 1,
+    "selected_stream": "0:v:0"
+  },
+  "frames": [
+    {
+      "frame_id": "SYNTHETIC20260912_CH01_001",
+      "requested_offset_s": 10.0,
+      "actual_offset_s": 10.0,
+      "image_file": "frames/SYNTHETIC20260912_CH01_001.png",
+      "image_sha256": "f7e2b28dfcc7e02335a5eae46097fffdf8353d3cf6d5bb352437f7d81492259b"
+    },
+    {
+      "frame_id": "SYNTHETIC20260912_CH01_002",
+      "requested_offset_s": 30.0,
+      "actual_offset_s": 30.0,
+      "image_file": "frames/SYNTHETIC20260912_CH01_002.png",
+      "image_sha256": "eac4774631975274e5b23958e95c28c0a1b91fb27f39602e11cdf51cfccb70dd"
+    },
+    {
+      "frame_id": "SYNTHETIC20260912_CH01_003",
+      "requested_offset_s": 50.0,
+      "actual_offset_s": 50.0,
+      "image_file": "frames/SYNTHETIC20260912_CH01_003.png",
+      "image_sha256": "f6e6d5f5c1c56398edd2d3efd8cb23c910cf40b7e3230894a5714742a7c7f454"
+    }
+  ],
+  "limitations": [
+    "No passenger inference or occupancy levels.",
+    "No cross-camera deduplication.",
+    "Camera/bus IDs and origin are supplied by the operator, not inferred.",
+    "Selected frames are diagnostics, not independent train/test observations."
+  ],
+  "tools": {
+    "ffmpeg": "ffmpeg version 8.1.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers"
+  }
+}

@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "SANASH")(type "KiCad")(uri "${KIPRJMOD}/SANASH.kicad_sym")(options "")(descr "SANASH external module interfaces")))

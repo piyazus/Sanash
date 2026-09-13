@@ -1,0 +1,40 @@
+{
+  "revision": "A0",
+  "purpose": "Bench enclosure and interconnect for candidate Jetson gateway; not vehicle-qualified",
+  "units": "mm",
+  "nvidia_reference": {
+    "carrier": "P3768 A04",
+    "board_width": 100.0,
+    "board_depth": 79.0,
+    "board_thickness": 1.57,
+    "board_thickness_tolerance": 0.16,
+    "bottom_component_max": 4.3,
+    "complete_kit_envelope": [103.0, 90.5, 34.77],
+    "complete_kit_tolerance": [0.2, 0.2, 1.09],
+    "layout_outline_xy": [-4.0, -17.0, 96.0, 62.0],
+    "selected_layout_holes_xy": [[0.0, 0.0], [86.0, 0.0], [0.0, 58.0], [86.0, 58.0]],
+    "hole_diameter": 2.75,
+    "hole_source": "P3768_A04.brd.alg, MEC5, NTH_275P; coordinates translated +4,+17 to board origin"
+  },
+  "design_choices": {
+    "outer_width": 128.0,
+    "outer_depth": 118.0,
+    "base_height": 55.0,
+    "wall": 3.0,
+    "lid_thickness": 3.0,
+    "board_origin_x": 14.0,
+    "board_origin_y": 24.0,
+    "standoff_height": 8.0,
+    "standoff_od": 5.0,
+    "board_screw_clearance": 2.8,
+    "upper_keepout_height": 35.86,
+    "front_opening": [10.0, -1.0, 7.0, 108.0, 5.0, 32.0],
+    "lid_screw_clearance": 3.4,
+    "lid_nut_af": 5.7,
+    "lid_nut_depth": 2.6,
+    "lid_screw_centers": [[7.0, 7.0], [121.0, 7.0], [7.0, 111.0], [121.0, 111.0]],
+    "external_mount_holes": [[-6.0, 25.0], [134.0, 25.0], [-6.0, 93.0], [134.0, 93.0]],
+    "external_mount_clearance": 4.5,
+    "candidate_material": "PETG for supervised bench fit prototype; thermal suitability unvalidated"
+  }
+}

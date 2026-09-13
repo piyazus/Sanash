@@ -2,7 +2,7 @@
 
 Usage from `development/src`:
 
-    python -m sanas_baseline.evaluate --checkpoint ../../outputs/baseline/<run>/checkpoint.pt --split val
+    python -m sanas_baseline.evaluate --checkpoint ../experiments/artifacts/baseline/<run>/checkpoint.pt --split val
 
 The comparison against `ConstantPredictor` is the point of the script. An MAE
 on its own says nothing; an MAE next to the MAE of "always answer the train

@@ -1,0 +1,49 @@
+episode cross-check vs log 2026-08-10: CLEAN {'episodes': 25, 'board': 12, 'alight': 13, 'enter_frames': 377, 'exit_frames': 436}
+selection: 2,215 frames (21 episode chunks, 6 negative chunks, 48 background frames, 439 at full 15 Hz for the spot check)
+selected compressed bytes: 0.427 GB  (hard cap 0.5 GB)
+rig: center_left_depth 848x480 fx=426.6 origin=[-1.335, 0.398, 1.988]
+background frames: 48
+C:\Users\User\OneDrive\Desktop\me\Sanash\scripts\..\src\sanas\door_apc.py:176: RuntimeWarning: All-NaN slice encountered
+  bg = np.nanmedian(masked, axis=0)
+C:\Users\User\OneDrive\Desktop\me\Sanash\scripts\..\src\sanas\door_apc.py:282: RuntimeWarning: All-NaN slice encountered
+  bg = np.nanmedian(masked, axis=0)
+processed 2,167 frames x 3 variants in 88.2 s
+
+=== full ===
+  detected 19/25 (rate 0.76, 95% CI [0.57, 0.89])
+  direction correct: 19/19
+  duplicates in windows: 1  stray in episode chunks: 0
+  FPs on 63 s negatives: 0 (0.00/min, CI [0.00, 3.49])
+  N_t MAE vs door truth 1.45 CI [1.08, 1.91]  final -3
+  N_t MAE vs line truth 2.83 CI [2.07, 3.60]  final -4  (includes non-door line crossings in unprocessed gaps)
+
+=== mz8 ===
+  detected 24/25 (rate 0.96, 95% CI [0.80, 0.99])
+  direction correct: 24/24
+  duplicates in windows: 0  stray in episode chunks: 0
+  FPs on 63 s negatives: 0 (0.00/min, CI [0.00, 3.49])
+  N_t MAE vs door truth 0.17 CI [0.11, 0.26]  final +1
+  N_t MAE vs line truth 1.53 CI [0.94, 2.17]  final +0  (includes non-door line crossings in unprocessed gaps)
+
+=== mz4 ===
+  detected 21/25 (rate 0.84, 95% CI [0.65, 0.94])
+  direction correct: 18/21
+  duplicates in windows: 5  stray in episode chunks: 0
+  FPs on 63 s negatives: 0 (0.00/min, CI [0.00, 3.49])
+  N_t MAE vs door truth 1.92 CI [1.47, 2.37]  final +3
+  N_t MAE vs line truth 0.93 CI [0.69, 1.19]  final +2  (includes non-door line crossings in unprocessed gaps)
+
+counting-band ablation (full-res path, zone |x - x_line| <= w):
+  w=1.00 m: detected 19/25, direction 19/19, FPs 0, duplicates 1
+  w=0.70 m: detected 20/25, direction 20/20, FPs 0, duplicates 1
+  w=0.50 m: detected 19/25, direction 19/19, FPs 0, duplicates 0
+  w=0.35 m: detected 19/25, direction 19/19, FPs 0, duplicates 0
+  w=0.25 m: detected 16/25, direction 15/16, FPs 0, duplicates 1
+  caveat: band narrowed in base_link on an OBLIQUE view; a ceiling-mounted sensor's floor footprint narrows differently.
+
+rate spot check (15 Hz vs 7.7 Hz, full-res path): True, True, True
+
+FRAGILE: n=25 events total; one person (pid 1) contributes 8 of 25; a single miscount moves detection rate by 4 percentage points.
+FRAGILE: oblique across-the-aisle viewpoint, not APC top-down; single door; staged actors; stationary bus; pseudo-label ground truth.
+
+wrote C:\Users\User\OneDrive\Desktop\me\Sanash\scripts\..\paper\results\apc_validation.json

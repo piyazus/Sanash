@@ -1,0 +1,22 @@
+[
+  {
+    "File": ".\\development\\src\\sanas_video\\annotations.py",
+    "Hash": "1E835FFF81A7BCE445E70E7AFD52697216E50C2E763C1CD73C0811DD3AB8440E"
+  },
+  {
+    "File": ".\\development\\src\\sanas_video\\annotator.html",
+    "Hash": "545E60443874B757293C1C9BB869AAAAAA593B277FA4F932BD64A358E22F4834"
+  },
+  {
+    "File": ".\\development\\src\\sanas_video\\verify_browser.cjs",
+    "Hash": "F9FD1D9CFA88702D24D6F2A29AE70A71C9B8F9DAA08E4A7893CE8ABD7C67A510"
+  },
+  {
+    "File": ".\\development\\src\\tests\\test_video_annotations.py",
+    "Hash": "2EC4559784347EE1FCE9F355448E73047BCFC0E2CC96281A37F99641E27358E2"
+  },
+  {
+    "File": ".\\development\\src\\sanas_video\\intake.py",
+    "Hash": "C7152ED055718A0A1864BD31373AAF4D46D67984E4D0AF2FB3A3080C3EE71007"
+  }
+]

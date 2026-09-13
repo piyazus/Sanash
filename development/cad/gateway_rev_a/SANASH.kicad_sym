@@ -1,0 +1,21 @@
+(kicad_symbol_lib (version 20250114) (generator "kicad_symbol_editor") (symbol "KitDC"
+      (pin_names (offset 1)) (in_bom yes) (on_board no)
+      (property "Reference" "A" (at 0.0 17.78 0) (effects (font (size 1.27 1.27)) )) (property "Value" "JETSON / J16 DC INPUT" (at 0.0 15.24 0) (effects (font (size 1.27 1.27)) ))
+      (property "Footprint" "" (at 0.0 0.0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (symbol "KitDC_0_1" (rectangle (start -22.86 12.7) (end 22.86 -12.7) (stroke (width .254) (type default)) (fill (type background))))
+      (symbol "KitDC_1_1" (pin power_in line (at -27.94 5.08 0) (length 5.08) (name "+DC" (effects (font (size 1.1 1.1)) )) (number "CENTER" (effects (font (size 0.9 0.9)) )))(pin power_in line (at -27.94 -5.08 0) (length 5.08) (name "RETURN" (effects (font (size 1.1 1.1)) )) (number "SLEEVE" (effects (font (size 0.9 0.9)) )))))(symbol "KitLAN"
+      (pin_names (offset 1)) (in_bom yes) (on_board no)
+      (property "Reference" "A" (at 0.0 15.24 0) (effects (font (size 1.27 1.27)) )) (property "Value" "JETSON / J15 ETHERNET" (at 0.0 11.43 0) (effects (font (size 1.27 1.27)) ))
+      (property "Footprint" "" (at 0.0 0.0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (symbol "KitLAN_0_1" (rectangle (start -22.86 10.16) (end 22.86 -10.16) (stroke (width .254) (type default)) (fill (type background))))
+      (symbol "KitLAN_1_1" (pin passive line (at -27.94 0.0 0) (length 5.08) (name "RJ45 port" (effects (font (size 1.1 1.1)) )) (number "PORT" (effects (font (size 0.9 0.9)) )))))(symbol "KitPSU"
+      (pin_names (offset 1)) (in_bom yes) (on_board no)
+      (property "Reference" "PS" (at 0.0 17.78 0) (effects (font (size 1.27 1.27)) )) (property "Value" "INCLUDED NVIDIA ADAPTER" (at 0.0 15.24 0) (effects (font (size 1.27 1.27)) ))
+      (property "Footprint" "" (at 0.0 0.0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (symbol "KitPSU_0_1" (rectangle (start -22.86 12.7) (end 22.86 -12.7) (stroke (width .254) (type default)) (fill (type background))))
+      (symbol "KitPSU_1_1" (pin power_out line (at 27.94 5.08 180) (length 5.08) (name "+19V" (effects (font (size 1.1 1.1)) )) (number "CENTER" (effects (font (size 0.9 0.9)) )))(pin power_out line (at 27.94 -5.08 180) (length 5.08) (name "RETURN" (effects (font (size 1.1 1.1)) )) (number "SLEEVE" (effects (font (size 0.9 0.9)) )))))(symbol "VideoLAN"
+      (pin_names (offset 1)) (in_bom yes) (on_board no)
+      (property "Reference" "X" (at 0.0 15.24 0) (effects (font (size 1.27 1.27)) )) (property "Value" "AUTHORISED VIDEO NETWORK" (at 0.0 11.43 0) (effects (font (size 1.27 1.27)) ))
+      (property "Footprint" "" (at 0.0 0.0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (symbol "VideoLAN_0_1" (rectangle (start -22.86 10.16) (end 22.86 -10.16) (stroke (width .254) (type default)) (fill (type background))))
+      (symbol "VideoLAN_1_1" (pin passive line (at 27.94 0.0 180) (length 5.08) (name "RJ45 port" (effects (font (size 1.1 1.1)) )) (number "PORT" (effects (font (size 0.9 0.9)) ))))))

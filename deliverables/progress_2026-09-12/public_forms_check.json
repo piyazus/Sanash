@@ -1,0 +1,137 @@
+{
+  "scope": "Public GET only; submission, acceptance of responses, source mapping and master trigger are not verified.",
+  "results": [
+    {
+      "language": "RU",
+      "variant": "Block 1 — Order A",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfFdxwdpMIYsddowjk4gZkj6Ef9pn8YKCZEXi5iB08V_nD8yQ/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.552Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSfFdxwdpMIYsddowjk4gZkj6Ef9pn8YKCZEXi5iB08V_nD8yQ/viewform",
+      "title": "Опрос: как вы выбираете автобус в Алматы",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "RU",
+      "variant": "Block 1 — Order B",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScxnWX9TGQp61Q0SDI1klxgUBnsuJAezuh00GMoQq19OO2zAA/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.611Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScxnWX9TGQp61Q0SDI1klxgUBnsuJAezuh00GMoQq19OO2zAA/viewform",
+      "title": "Опрос: как вы выбираете автобус в Алматы",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "RU",
+      "variant": "Block 2 — Order A",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdVrTu3PmuebOYWlDrfnUvYLgSqJ-rzO2Hldkz8Aa5Xe4nnVg/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.613Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSdVrTu3PmuebOYWlDrfnUvYLgSqJ-rzO2Hldkz8Aa5Xe4nnVg/viewform",
+      "title": "Опрос: как вы выбираете автобус в Алматы",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "RU",
+      "variant": "Block 2 — Order B",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScYVsySA0FlAb4uZmUqmcIxK1evR-tZjI4LWblB-GWIKDKaeQ/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.614Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScYVsySA0FlAb4uZmUqmcIxK1evR-tZjI4LWblB-GWIKDKaeQ/viewform",
+      "title": "Опрос: как вы выбираете автобус в Алматы",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "KK",
+      "variant": "Block 1 — Order A",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSebDxjwmSm-GY2gBJJNfiln0L0Pk0t1jGBDMBrIrrO7apUe5g/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.615Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSebDxjwmSm-GY2gBJJNfiln0L0Pk0t1jGBDMBrIrrO7apUe5g/viewform",
+      "title": "Сауалнама: Алматыда автобусты қалай таңдайсыз",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "KK",
+      "variant": "Block 1 — Order B",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSduEmf_kkOrTDQZ7Ge4HsE6YTRaB7dSeHagtIzx3Ulvubvz4g/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.616Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSduEmf_kkOrTDQZ7Ge4HsE6YTRaB7dSeHagtIzx3Ulvubvz4g/viewform",
+      "title": "Сауалнама: Алматыда автобусты қалай таңдайсыз",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "KK",
+      "variant": "Block 2 — Order A",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdf_h7qJFJNor0PzTEU1O3KwBoJkZP3rN_AqaaqZ2AMapHpqQ/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.618Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSdf_h7qJFJNor0PzTEU1O3KwBoJkZP3rN_AqaaqZ2AMapHpqQ/viewform",
+      "title": "Сауалнама: Алматыда автобусты қалай таңдайсыз",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "KK",
+      "variant": "Block 2 — Order B",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdmW0HwXIwnJiYU_qf9G0xDIyvuuSrxf9YlZuduMd1R5j8WWg/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.619Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSdmW0HwXIwnJiYU_qf9G0xDIyvuuSrxf9YlZuduMd1R5j8WWg/viewform",
+      "title": "Сауалнама: Алматыда автобусты қалай таңдайсыз",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "EN",
+      "variant": "Block 1 — Order A",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSftxvc2Pe1a5_nAlH_UwLb5-PNnXGLDUrDrLUTK6iAp9DubyA/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.620Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSftxvc2Pe1a5_nAlH_UwLb5-PNnXGLDUrDrLUTK6iAp9DubyA/viewform",
+      "title": "Survey: how you choose between buses in Almaty",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "EN",
+      "variant": "Block 1 — Order B",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScSm7Oh_L8Op4rknSlp4l9kWIcj2bgadR5Tq74ogBbgv4F0Sg/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.621Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScSm7Oh_L8Op4rknSlp4l9kWIcj2bgadR5Tq74ogBbgv4F0Sg/viewform",
+      "title": "Survey: how you choose between buses in Almaty",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "EN",
+      "variant": "Block 2 — Order A",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSd7wjLwirEhg78rXJuKhahXc9mQ8MEUkqX_8v4PErZZO205FA/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.622Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSd7wjLwirEhg78rXJuKhahXc9mQ8MEUkqX_8v4PErZZO205FA/viewform",
+      "title": "Survey: how you choose between buses in Almaty",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    },
+    {
+      "language": "EN",
+      "variant": "Block 2 — Order B",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdQnTTOcQk-KK5zAn42dMjTL2LJHHd8p4M-aergytXbwQAcEA/viewform",
+      "checked_at_utc": "2026-09-12T14:45:04.623Z",
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSdQnTTOcQk-KK5zAn42dMjTL2LJHHd8p4M-aergytXbwQAcEA/viewform",
+      "title": "Survey: how you choose between buses in Almaty",
+      "form_payload_present": true,
+      "availability": "FORM_PAGE_RECEIVED"
+    }
+  ]
+}

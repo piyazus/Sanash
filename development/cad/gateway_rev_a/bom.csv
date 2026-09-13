@@ -1,0 +1,14 @@
+Item,Quantity,Specification,Purpose,Status
+A1,1,NVIDIA Jetson Orin Nano Super developer kit with P3768 carrier,Compute candidate only; original heatsink and fan retained,Not owned; final compute selection pending real video benchmark
+PS1,1,Original NVIDIA kit power adapter and factory barrel cable,Bench supply to J16 centre positive; nominal 19 V per specification,Included with candidate kit; actual adapter label must be checked
+W2,1,Factory Cat 6 Ethernet patch cable with 8P8C plugs,Authorised recorder network to Jetson J15,Length and actual network source pending
+SD1,1,Compatible microSD card,Initial local OS and test storage,Capacity and current image requirements to be selected before purchase
+M1,1,sanash_base.stl,Prototype enclosure base,Designed; print and fit not performed
+M2,1,sanash_lid.stl,Prototype enclosure lid,Designed; print and fit not performed
+F1,4,M2.5 x 18 mm machine screws,Through PCB plus 8 mm stand plus 3 mm floor,Provisional; check board contact zones and thread engagement
+F2,4,M2.5 nuts,Retain board screws below floor,Provisional; check supplied hardware before replacement
+F3,8,M2.5 insulating flat washers approximately 0.5 mm thick,Board and underside load distribution,Provisional OD must fit clear zone
+F4,4,M3 x 10 mm machine screws,Fasten lid,Design choice; check print fit
+F5,4,M3 hex nuts nominal AF 5.5 mm,Fit AF 5.7 mm open-top captive pockets,Design choice; actual nut dimensions must be checked
+F6,4,Adhesive bench feet at least 5 mm high,Clear underside board nuts and bolt ends,To select; not included in body dimensions or printed models
+F7,4,Fixture bolts fitting 4.5 mm clearance holes,Secure mounting ears to bench fixture,Length depends on fixture; no bus mounting released

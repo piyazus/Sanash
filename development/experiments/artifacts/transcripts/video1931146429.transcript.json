@@ -1,0 +1,2472 @@
+{
+  "language": "en",
+  "language_probability": 0.9973089694976807,
+  "duration": 3073.536,
+  "segments": [
+    {
+      "start": 1.84,
+      "end": 15.06,
+      "text": "Okay, perfect. Right. Just this. So, as I said, we're going to be going through our abstracts today, so"
+    },
+    {
+      "start": 16.02,
+      "end": 23.38,
+      "text": "the cherry on the cake, the final section of your paper. So, I'm going to kind of outline to you the"
+    },
+    {
+      "start": 23.38,
+      "end": 27.14,
+      "text": "very quick foundations, like very quick structure, the very quick things that you'll want to include"
+    },
+    {
+      "start": 27.14,
+      "end": 30.34,
+      "text": "in your abstract. And of course, as always, we will go into more detail and more depth and"
+    },
+    {
+      "start": 30.34,
+      "end": 34.98,
+      "text": "discuss exactly kind of what those, you know, structures and what those little, you know,"
+    },
+    {
+      "start": 34.98,
+      "end": 42.34,
+      "text": "sub parts look in, you know, greater detail. So, the abstract is basically your whole paper,"
+    },
+    {
+      "start": 42.34,
+      "end": 49.14,
+      "text": "just summarized into like one paragraph is very short. Was there a message in the chat? Sorry."
+    },
+    {
+      "start": 51.38,
+      "end": 60.53,
+      "text": "So, it is very short. It is, so sorry, keep getting messages from the chat. It's very short."
+    },
+    {
+      "start": 60.53,
+      "end": 66.61,
+      "text": "It's basically a really good summary of your paper, condensed into like a couple paragraphs,"
+    },
+    {
+      "start": 66.61,
+      "end": 72.05,
+      "text": "two at most, one ideally. So, there's going to be six main components. So, your research objectives,"
+    },
+    {
+      "start": 72.05,
+      "end": 76.53,
+      "text": "your design, your methodology, your research findings, the contributions, the practical"
+    },
+    {
+      "start": 76.53,
+      "end": 82.53,
+      "text": "implications and the limitations with future research. Sorry, it should be limitations"
+    },
+    {
+      "start": 82.53,
+      "end": 88.61,
+      "text": "and future research. So, those are your kinds of main things. You may find, as you're looking"
+    },
+    {
+      "start": 88.69,
+      "end": 93.17,
+      "text": "at this, it's kind of very similar to what your conclusion is like, but there is a difference."
+    },
+    {
+      "start": 93.81,
+      "end": 98.13,
+      "text": "The main difference being your abstract is much shorter than your conclusion. It is much more"
+    },
+    {
+      "start": 98.13,
+      "end": 102.77,
+      "text": "condensed. I'm sure that you guys, of course, as you're reading, you know, research for your paper,"
+    },
+    {
+      "start": 102.77,
+      "end": 107.09,
+      "text": "as you're reading other papers, the first thing that you would have to read is the abstract. So,"
+    },
+    {
+      "start": 107.09,
+      "end": 110.93,
+      "text": "it kind of, you know, you already have an idea of what it is, kind of what the purpose is."
+    },
+    {
+      "start": 110.93,
+      "end": 115.17,
+      "text": "It is very much a very short, you know, summarized version of your paper."
+    },
+    {
+      "start": 116.13,
+      "end": 122.05,
+      "text": "So, of course, writing an abstract and identifying a very good one is very easy. It's not, you know,"
+    },
+    {
+      "start": 122.05,
+      "end": 126.29,
+      "text": "a hard task to see an abstract and say, oh, it's very bad or very good. It's quite, you know,"
+    },
+    {
+      "start": 126.29,
+      "end": 131.09,
+      "text": "easy to identify a very good one. But obviously, building one from scratch under a bit of time"
+    },
+    {
+      "start": 131.09,
+      "end": 135.89,
+      "text": "pressure is not very easy. It's quite a skill that hopefully you guys will be able to learn."
+    },
+    {
+      "start": 137.49,
+      "end": 141.01,
+      "text": "Of course, if you're doing an empirical paper, there is a bit of a difference"
+    },
+    {
+      "start": 141.65,
+      "end": 147.41,
+      "text": "when you compare your abstract to a lit review paper, but it's not significant. The main difference"
+    },
+    {
+      "start": 147.41,
+      "end": 151.33,
+      "text": "is that with the lit review paper, you're not going to have any samples, there's no data collection,"
+    },
+    {
+      "start": 151.33,
+      "end": 155.25,
+      "text": "there's no percentages. So, you don't really mention these things, but of course, if you're"
+    },
+    {
+      "start": 155.25,
+      "end": 159.49,
+      "text": "doing an empirical paper where you've conducted a survey, you will have, you know, things like"
+    },
+    {
+      "start": 159.49,
+      "end": 165.33,
+      "text": "this that you must discuss. So, you can kind of treat them as like two separate types of"
+    },
+    {
+      "start": 165.33,
+      "end": 168.93,
+      "text": "abstracts in a way, although they are very similar. They are a bit different."
+    },
+    {
+      "start": 170.53,
+      "end": 178.05,
+      "text": "So, let's move on. Okay, so let's go through the first components. Your research objective."
+    },
+    {
+      "start": 178.05,
+      "end": 181.97,
+      "text": "One thing I will say before I go through these components is that when I say components,"
+    },
+    {
+      "start": 181.97,
+      "end": 185.89,
+      "text": "it's literally only a few sentences. You only have to spend like maybe"
+    },
+    {
+      "start": 185.89,
+      "end": 189.41,
+      "text": "two to three sentences discussing each component, because keep in mind,"
+    },
+    {
+      "start": 189.41,
+      "end": 193.49,
+      "text": "your abstract is very short. Most cases, it's just a paragraph. Sometimes,"
+    },
+    {
+      "start": 193.49,
+      "end": 197.09,
+      "text": "if you really need to, you can split it into two smaller paragraphs, but ideally,"
+    },
+    {
+      "start": 197.09,
+      "end": 205.09,
+      "text": "it is just one paragraph. So, with that being said, oh, so the first thing you want to do"
+    },
+    {
+      "start": 205.09,
+      "end": 208.93,
+      "text": "is outline your research objective. So, this is the opening. The main thing,"
+    },
+    {
+      "start": 208.93,
+      "end": 212.53,
+      "text": "no matter what type of paper you're writing, the reader has to know the topic and they"
+    },
+    {
+      "start": 212.53,
+      "end": 216.05,
+      "text": "have to know the problem that you are trying to, you know, fix and resolve and find solutions"
+    },
+    {
+      "start": 216.05,
+      "end": 222.61,
+      "text": "from in the very first few sentences. It can be so simple. You don't need to do much here,"
+    },
+    {
+      "start": 222.61,
+      "end": 226.53,
+      "text": "you know, it's nothing crazy. For example, if you're writing an empirical paper, it can"
+    },
+    {
+      "start": 226.53,
+      "end": 232.21,
+      "text": "literally just be this study examines blank, whatever you're looking at, among, you know,"
+    },
+    {
+      "start": 232.21,
+      "end": 237.01,
+      "text": "your population in this country. So, if you literally follow that formula, it is literally a"
+    },
+    {
+      "start": 237.01,
+      "end": 241.49,
+      "text": "sentence. All you need is maybe a sentence or two just to outline what your paper is,"
+    },
+    {
+      "start": 241.49,
+      "end": 245.73,
+      "text": "what it's looking at, who it's looking at and where. So, it's kind of, in a way,"
+    },
+    {
+      "start": 245.73,
+      "end": 249.73,
+      "text": "rephrasing a research question into a sentence to tell the readers what exactly"
+    },
+    {
+      "start": 249.73,
+      "end": 255.01,
+      "text": "your paper is on. So, the verb here, you know, when you say examines, tests,"
+    },
+    {
+      "start": 255.01,
+      "end": 260.69,
+      "text": "investigates, it tells the reader automatically what kind of paper this is, what kind of method"
+    },
+    {
+      "start": 260.69,
+      "end": 267.09,
+      "text": "did you use, you know, if you use, like, this study, examed or this study reviewed. It kind"
+    },
+    {
+      "start": 267.09,
+      "end": 272.13,
+      "text": "of gives the reader from, like, a very onset, it gives the idea that perhaps your paper is"
+    },
+    {
+      "start": 272.13,
+      "end": 275.57,
+      "text": "a little bit of paper. Obviously, you will state this, but from the very first sentence,"
+    },
+    {
+      "start": 275.57,
+      "end": 279.41,
+      "text": "they can identify what type of paper you're writing. However, if your first"
+    },
+    {
+      "start": 279.49,
+      "end": 285.33,
+      "text": "verb is this study tests, it, once again, it gives the idea that you're writing an empirical paper."
+    },
+    {
+      "start": 285.33,
+      "end": 289.57,
+      "text": "So, the verb is very important. So, make sure you pick it very specifically and make sure it"
+    },
+    {
+      "start": 289.57,
+      "end": 295.57,
+      "text": "aligns with the type of paper that you're writing. And then also the relationship or the"
+    },
+    {
+      "start": 295.57,
+      "end": 298.77,
+      "text": "phenomenon, you know, whatever you're studying in your paper, it should almost be,"
+    },
+    {
+      "start": 298.77,
+      "end": 302.13,
+      "text": "like a research question, should be almost the same, just in a statement format."
+    },
+    {
+      "start": 303.33,
+      "end": 307.09,
+      "text": "The population, of course, will be a bit more specific. Don't just say people,"
+    },
+    {
+      "start": 307.17,
+      "end": 311.65,
+      "text": "don't just say, you know, I don't know, everyone, you have to be specific,"
+    },
+    {
+      "start": 311.65,
+      "end": 316.05,
+      "text": "say commuters, say high school students, say business owners, be specific. Of course,"
+    },
+    {
+      "start": 316.05,
+      "end": 319.33,
+      "text": "it's going to come very simple to you guys, because it's basically a research question"
+    },
+    {
+      "start": 319.33,
+      "end": 325.97,
+      "text": "just rewired the bit. So, it is very simple. And if we look at a very good opening sentence,"
+    },
+    {
+      "start": 325.97,
+      "end": 329.73,
+      "text": "it could be something along the lines of, this study investigates the extent to which"
+    },
+    {
+      "start": 329.73,
+      "end": 334.53,
+      "text": "life was occupancy, information effects, bordering decisions of commuters,"
+    },
+    {
+      "start": 334.53,
+      "end": 339.01,
+      "text": "sorry, commuters and alati. Very good, very simple and literally only takes a sentence."
+    },
+    {
+      "start": 339.01,
+      "end": 343.25,
+      "text": "You outline the verb, you know, you say investigates, which tells me already that you're writing some"
+    },
+    {
+      "start": 343.25,
+      "end": 347.17,
+      "text": "kinds of, you know, maybe lit review paper. And then you say the facts that you're looking at,"
+    },
+    {
+      "start": 347.17,
+      "end": 351.65,
+      "text": "so bus time occupancy. And then you also tell me where and who you're looking at. So, very great."
+    },
+    {
+      "start": 352.29,
+      "end": 356.93,
+      "text": "So, very similar for lit review papers is the opening, be very clear, you know,"
+    },
+    {
+      "start": 356.93,
+      "end": 362.29,
+      "text": "outline what you're doing. But there is a slight difference. So, what you might do instead"
+    },
+    {
+      "start": 362.29,
+      "end": 367.89,
+      "text": "is you might write something like this paper of examine synthesizers, analyzers. And then you have"
+    },
+    {
+      "start": 367.89,
+      "end": 375.17,
+      "text": "to say whatever your topic is in order to, and this is where you insert the purpose. So, discuss,"
+    },
+    {
+      "start": 375.17,
+      "end": 380.21,
+      "text": "are you identifying patterns? Are you trying to clarify something? Are you trying to explain"
+    },
+    {
+      "start": 380.21,
+      "end": 385.17,
+      "text": "something? Are you trying to answer a question? And then regarding whatever your topic is."
+    },
+    {
+      "start": 385.73,
+      "end": 389.73,
+      "text": "So, a really good example of this could be this review synthesizers,"
+    },
+    {
+      "start": 389.81,
+      "end": 393.89,
+      "text": "existing scholarship on a small state's foreign policy behavior in order to explain"
+    },
+    {
+      "start": 393.89,
+      "end": 399.81,
+      "text": "why is Bekazan pursued a multi-debted foreign economic policy after 2017. Very simple here."
+    },
+    {
+      "start": 399.81,
+      "end": 403.97,
+      "text": "It uses a verb which signals the type of paper that you're looking at. It signals the fact"
+    },
+    {
+      "start": 403.97,
+      "end": 407.41,
+      "text": "that you're looking at existing research and that you're not conducting any of your own."
+    },
+    {
+      "start": 407.97,
+      "end": 410.93,
+      "text": "And then when we move on, of course, it talks about the body. It talks about what"
+    },
+    {
+      "start": 410.93,
+      "end": 414.53,
+      "text": "topic you're looking at. And it tells you the purpose. It tells you what it's trying to"
+    },
+    {
+      "start": 414.53,
+      "end": 419.25,
+      "text": "do. What is the purpose of this paper? You know, why have you written it? And then once again,"
+    },
+    {
+      "start": 419.25,
+      "end": 424.29,
+      "text": "it tells you the smaller focus of the paper. So, you know, with the verb, pick what you think"
+    },
+    {
+      "start": 424.29,
+      "end": 429.65,
+      "text": "matches your paper. Obviously, you may find that one verb works better for your verb,"
+    },
+    {
+      "start": 429.65,
+      "end": 434.05,
+      "text": "for your paper than another, completely down to you. Use your own judgment to, you know,"
+    },
+    {
+      "start": 434.05,
+      "end": 438.45,
+      "text": "kind of craft your first opening sentence, however you think is best. But of course,"
+    },
+    {
+      "start": 438.45,
+      "end": 442.77,
+      "text": "make sure it fits the purpose of outlining the topic very generally. It doesn't have"
+    },
+    {
+      "start": 442.77,
+      "end": 446.61,
+      "text": "to be complex. It can be one sentence. You just have to make sure that the reader"
+    },
+    {
+      "start": 446.61,
+      "end": 452.45,
+      "text": "automatically knows what you're talking about. So, let's move on to component two."
+    },
+    {
+      "start": 452.45,
+      "end": 459.25,
+      "text": "Once again, this can literally be a couple sentences. This is, of course, where the main"
+    },
+    {
+      "start": 459.25,
+      "end": 464.05,
+      "text": "differences in the empirical paper and literary papers for the abstracts really do come, because"
+    },
+    {
+      "start": 464.05,
+      "end": 468.13,
+      "text": "I'm sure you can see with component one, with the opening, it's kind of similar, you know,"
+    },
+    {
+      "start": 468.13,
+      "end": 470.77,
+      "text": "you're kind of doing the same things. Of course, you're writing about different things,"
+    },
+    {
+      "start": 470.77,
+      "end": 474.93,
+      "text": "but your structure is pretty much the same. Component two, of course, is where you"
+    },
+    {
+      "start": 474.93,
+      "end": 481.65,
+      "text": "will discuss almost completely two separate things. So, once again, it should be very tight."
+    },
+    {
+      "start": 481.65,
+      "end": 485.57,
+      "text": "Two to three sentences is more than enough, you know, don't try waffle on for ages."
+    },
+    {
+      "start": 486.13,
+      "end": 489.73,
+      "text": "Trust me, if the readers like your paper, they will continue your paper and they will find"
+    },
+    {
+      "start": 489.73,
+      "end": 495.25,
+      "text": "the results. You don't have to give them crazy amount of detail. So, a general structure"
+    },
+    {
+      "start": 495.25,
+      "end": 498.77,
+      "text": "that I would say if you're writing an empirical paper is first of all, name your site, name"
+    },
+    {
+      "start": 498.77,
+      "end": 502.93,
+      "text": "the size of your population. Give a number. Tell me if you're looking at 20 people,"
+    },
+    {
+      "start": 502.93,
+      "end": 508.21,
+      "text": "if you're looking at 2,000 people, and then look at the method. Were you serving them? Were you"
+    },
+    {
+      "start": 508.21,
+      "end": 515.17,
+      "text": "interviewing them? Were you, you know, setting them questionnaires? Outline that. And then also"
+    },
+    {
+      "start": 515.17,
+      "end": 520.29,
+      "text": "outline how they were analysed. So, did you, you know, use descriptive statistics? Did you"
+    },
+    {
+      "start": 520.29,
+      "end": 525.89,
+      "text": "create graphs? What were you doing? So, three main things. The size of your population,"
+    },
+    {
+      "start": 525.89,
+      "end": 531.25,
+      "text": "the method you use to collect your data, data collection details as well that goes alongside,"
+    },
+    {
+      "start": 531.25,
+      "end": 536.85,
+      "text": "you know, the method, and then your analysis method. So, one thing that's very important is that"
+    },
+    {
+      "start": 536.85,
+      "end": 542.37,
+      "text": "you have to say your population size, you know, whether it's 20 people or 2,000, it kind of gives,"
+    },
+    {
+      "start": 542.37,
+      "end": 546.53,
+      "text": "you know, different levels of trust. If I can see your paper from the very onset and I can see that"
+    },
+    {
+      "start": 546.53,
+      "end": 551.41,
+      "text": "you've had a great, you know, sample size, that is a green flag. That shows me automatically"
+    },
+    {
+      "start": 551.41,
+      "end": 555.73,
+      "text": "that I can trust your paper. I want to continue reading your paper. So, it's a very good thing"
+    },
+    {
+      "start": 555.73,
+      "end": 562.45,
+      "text": "to have very early on. Hence why we're asking you to do it in your abstracts. The analysis method"
+    },
+    {
+      "start": 562.45,
+      "end": 566.61,
+      "text": "should match whatever you actually use to analyse this very, you know, plain forward. Whatever you"
+    },
+    {
+      "start": 566.61,
+      "end": 572.61,
+      "text": "use to analyse your data, just insert it here. So, if we were to fill in these example,"
+    },
+    {
+      "start": 572.61,
+      "end": 576.29,
+      "text": "and if I was to give you a very good example of what you could write, I would say something"
+    },
+    {
+      "start": 576.29,
+      "end": 581.81,
+      "text": "along the lines of 214 commuters completed an in-person survey at major bus stops across"
+    },
+    {
+      "start": 581.81,
+      "end": 588.61,
+      "text": "Almaty. The responses were analysed using the scripted statistics and across that one word is"
+    },
+    {
+      "start": 589.25,
+      "end": 594.69,
+      "text": "I can't see that one word at the end because of my screen is hiding it. Okay, but you get the"
+    },
+    {
+      "start": 594.69,
+      "end": 599.89,
+      "text": "general idea. So, it tells you how many people are looking at. It tells you how they were"
+    },
+    {
+      "start": 599.89,
+      "end": 603.97,
+      "text": "studied. It tells you how the responses were collected and it tells you how the,"
+    },
+    {
+      "start": 603.97,
+      "end": 607.25,
+      "text": "you know, data that was collected was analysed. Three main things."
+    },
+    {
+      "start": 607.97,
+      "end": 616.85,
+      "text": "So, that is your empirical paper. Your little review paper is, of course, very different."
+    },
+    {
+      "start": 617.49,
+      "end": 621.97,
+      "text": "As always, keep it concise. Keep it tight. So, you don't need to talk about, you know, your methodology"
+    },
+    {
+      "start": 621.97,
+      "end": 631.17,
+      "text": "for ages. Two to three sentences is, you know, plenty. So, the structure here kind of does"
+    },
+    {
+      "start": 631.17,
+      "end": 635.41,
+      "text": "differ. So, the first thing I'm going to be wanting to do is mention the type of review."
+    },
+    {
+      "start": 635.41,
+      "end": 640.13,
+      "text": "Was it systematic? Was it narrative? Was it chronological? And then you should"
+    },
+    {
+      "start": 640.13,
+      "end": 646.45,
+      "text": "outline the type of sources you use. So, give a number. Was it, I don't know, 15 pay reviewed"
+    },
+    {
+      "start": 646.45,
+      "end": 653.97,
+      "text": "sources? Was it 20 policy reports? Give a bit of more specific detail about how many papers"
+    },
+    {
+      "start": 653.97,
+      "end": 658.93,
+      "text": "and what type of, you know, papers, resources you were looking at. Also, give me a time range."
+    },
+    {
+      "start": 658.93,
+      "end": 665.09,
+      "text": "So, I looked at my papers from 2015 to, I don't know, 2019. Give that kind of detail."
+    },
+    {
+      "start": 665.09,
+      "end": 670.69,
+      "text": "And then once again, give your method. Was it a thematic analysis? Was it a chronological analysis?"
+    },
+    {
+      "start": 670.69,
+      "end": 676.13,
+      "text": "That kind of detail. When, you know, when you include these kind of details from the very"
+    },
+    {
+      "start": 676.13,
+      "end": 680.61,
+      "text": "onset, it tells the readers that your research progress was like, it was rigorous. You went"
+    },
+    {
+      "start": 680.61,
+      "end": 684.53,
+      "text": "through it systematically. You had all the protocols. You went through all the, you know,"
+    },
+    {
+      "start": 684.53,
+      "end": 688.53,
+      "text": "necessary processes. And it's kind of, once again, a very good green flag because it"
+    },
+    {
+      "start": 688.53,
+      "end": 693.89,
+      "text": "shows that your paper is trustworthy. You really do need the number of sources that we're"
+    },
+    {
+      "start": 693.89,
+      "end": 698.13,
+      "text": "using. Once again, because it gives a sense of a scope. It tells the reader, you know, how"
+    },
+    {
+      "start": 698.13,
+      "end": 703.33,
+      "text": "broad is this paper? How many different ideas have they looked at? Equally with the range of the,"
+    },
+    {
+      "start": 703.33,
+      "end": 707.49,
+      "text": "you know, year that you're looking at. Once again, it tells you the time sensitive words."
+    },
+    {
+      "start": 707.49,
+      "end": 712.05,
+      "text": "It tells you what papers, what papers were you looking at? You know, what was the story?"
+    },
+    {
+      "start": 712.05,
+      "end": 716.05,
+      "text": "What was the perspective you're kind of taking on? So, all this detail is very important"
+    },
+    {
+      "start": 716.05,
+      "end": 720.13,
+      "text": "because it gives the reader a lot of information. Although you may not think it does,"
+    },
+    {
+      "start": 720.13,
+      "end": 724.37,
+      "text": "it really does. It tells them, you know, how you treated this paper tells them, you know,"
+    },
+    {
+      "start": 724.37,
+      "end": 728.61,
+      "text": "were you rigorous? Were you very delicate with it? Did you have a load of, you know,"
+    },
+    {
+      "start": 728.61,
+      "end": 733.65,
+      "text": "resources that, you know, you can rely upon? So it's very essential that you have these kinds"
+    },
+    {
+      "start": 733.65,
+      "end": 739.09,
+      "text": "of details. So if I was to write my lit review, you know, abstract, I would say something along"
+    },
+    {
+      "start": 739.09,
+      "end": 743.57,
+      "text": "the lines of, you know, an additive review of 32 peer reviewed articles and policy reports"
+    },
+    {
+      "start": 743.57,
+      "end": 749.81,
+      "text": "published between 2010 to 2024 was conducted using thematic analysis. So simple. You can see"
+    },
+    {
+      "start": 749.81,
+      "end": 755.57,
+      "text": "it's literally one sentence. You can have two or three if you want up to you, but it can be so"
+    },
+    {
+      "start": 755.57,
+      "end": 759.41,
+      "text": "simple as that. You know, you're telling the type of review. You're telling how many papers you"
+    },
+    {
+      "start": 759.41,
+      "end": 763.57,
+      "text": "reviewed. What type of papers were you looking at? What was the year that you were looking at?"
+    },
+    {
+      "start": 763.57,
+      "end": 770.77,
+      "text": "And how did you analyze them? Very simple. One thing I will say, a very common mistake"
+    },
+    {
+      "start": 770.77,
+      "end": 777.33,
+      "text": "that I do tend to see a lot is that students will try to, you know, turn all of these into"
+    },
+    {
+      "start": 777.33,
+      "end": 781.73,
+      "text": "like a defense. You know, they try to show that, you know, they're justifying their method,"
+    },
+    {
+      "start": 781.73,
+      "end": 785.33,
+      "text": "but that's not what you're doing. You're not, you're not trying to justify a method. You're not"
+    },
+    {
+      "start": 785.33,
+      "end": 789.57,
+      "text": "trying to, you know, prove and explain why you did your method the way that you did it."
+    },
+    {
+      "start": 789.57,
+      "end": 793.97,
+      "text": "You're just stating it. You just, you're just saying, I did this and that's on move on,"
+    },
+    {
+      "start": 793.97,
+      "end": 800.61,
+      "text": "you know, you don't have to have crazy detail. So components three, once again,"
+    },
+    {
+      "start": 800.69,
+      "end": 807.97,
+      "text": "a few sentences, all the research findings. Actually, I will, I will comment on this later."
+    },
+    {
+      "start": 808.93,
+      "end": 813.01,
+      "text": "It should be changed to most research findings instead of all, but I will explain why in a minute."
+    },
+    {
+      "start": 813.81,
+      "end": 821.49,
+      "text": "So this is kind of the heart of the abstract. This will deserve the most space, but once again,"
+    },
+    {
+      "start": 821.49,
+      "end": 826.37,
+      "text": "no more than like two to three sentences. It doesn't have to be long. Pick maybe two to"
+    },
+    {
+      "start": 826.37,
+      "end": 831.33,
+      "text": "three findings and directly go, answer the research question and report exactly what you found."
+    },
+    {
+      "start": 831.97,
+      "end": 837.25,
+      "text": "The reason why I said you shouldn't put all your research findings is that sometimes I'm sure you"
+    },
+    {
+      "start": 837.25,
+      "end": 841.65,
+      "text": "may have noticed by this point is that not all of the findings that you receive answer your research"
+    },
+    {
+      "start": 841.65,
+      "end": 846.05,
+      "text": "question. You might have found other very interesting ideas and other interesting facts,"
+    },
+    {
+      "start": 846.05,
+      "end": 849.73,
+      "text": "but if they're not related to your research question, there is no point of putting in"
+    },
+    {
+      "start": 849.73,
+      "end": 853.33,
+      "text": "your abstract because inevitably you're not going to discuss it in your paper."
+    },
+    {
+      "start": 853.33,
+      "end": 859.49,
+      "text": "There's no point of discussing in your abstract. So with that being said, when you're writing your"
+    },
+    {
+      "start": 859.49,
+      "end": 863.65,
+      "text": "empirical paper, the things that you want to do first of all is outline, you know,"
+    },
+    {
+      "start": 863.65,
+      "end": 868.53,
+      "text": "observe outline. What is your findings showing? Is it indicating? Is it showing? Is it revealing?"
+    },
+    {
+      "start": 868.53,
+      "end": 873.09,
+      "text": "This is very important because it will show you how strong the evidence is. It will imply"
+    },
+    {
+      "start": 873.09,
+      "end": 877.41,
+      "text": "whether something's been uncovered, whether it has been, you know, just indicated slightly or"
+    },
+    {
+      "start": 877.41,
+      "end": 884.05,
+      "text": "whether it's been, you know, completely found like this new idea. It's very important what"
+    },
+    {
+      "start": 884.05,
+      "end": 888.45,
+      "text": "verb you pick. And the next thing you want to be doing is outline your first finding."
+    },
+    {
+      "start": 889.17,
+      "end": 895.41,
+      "text": "So this could be a comparison, a pattern, and then you want to have like some kind of connector."
+    },
+    {
+      "start": 895.41,
+      "end": 900.45,
+      "text": "So you can say, although, you know, you found this pattern, you also found this alongside"
+    },
+    {
+      "start": 900.45,
+      "end": 905.57,
+      "text": "it, or although, you know, you found this pattern, you found this other pattern which"
+    },
+    {
+      "start": 905.57,
+      "end": 910.21,
+      "text": "this group of it. So it's very simple. It can kind of, you know, this is a bit more flexible"
+    },
+    {
+      "start": 910.21,
+      "end": 915.17,
+      "text": "because you can talk about your findings in a bit more of a less structured way. So you can just"
+    },
+    {
+      "start": 916.61,
+      "end": 921.01,
+      "text": "mention one, you know, link into the other, or you can talk about one main idea in a bit more"
+    },
+    {
+      "start": 921.01,
+      "end": 927.17,
+      "text": "depth. But very please keep in mind, do not just list it. Don't just list every single result."
+    },
+    {
+      "start": 927.17,
+      "end": 932.85,
+      "text": "You have to try to link them together a little bit. So an example of what you could do here"
+    },
+    {
+      "start": 932.85,
+      "end": 937.57,
+      "text": "is you could say something like, the findings indicate that frequent commuters were considerably"
+    },
+    {
+      "start": 937.57,
+      "end": 942.53,
+      "text": "more likely than occasional commuters to say, occupancy information would affect their boarding"
+    },
+    {
+      "start": 942.53,
+      "end": 949.57,
+      "text": "decisions. And, oh, the bottom of the screen is hidden from me again. But I can't say the"
+    },
+    {
+      "start": 949.57,
+      "end": 954.29,
+      "text": "last sentence, but I'm sure you guys can see the last sentence. So something, something higher"
+    },
+    {
+      "start": 954.29,
+      "end": 963.65,
+      "text": "value, this is being very annoying today, sorry, higher value on that information. So you can see,"
+    },
+    {
+      "start": 964.29,
+      "end": 968.93,
+      "text": "it tells you, you know, it has the verb to indicate how strong the evidence is. And here"
+    },
+    {
+      "start": 968.93,
+      "end": 973.73,
+      "text": "they've chosen the verb indicates. And then they go on to tell you their first finding. So, you"
+    },
+    {
+      "start": 973.73,
+      "end": 978.53,
+      "text": "know, the fact that occasional commuters, you know, say that occupancy frequency would affect"
+    },
+    {
+      "start": 978.53,
+      "end": 983.65,
+      "text": "their boarding decisions, you know, less than, you know, the frequent commuters first idea."
+    },
+    {
+      "start": 983.65,
+      "end": 990.13,
+      "text": "And then it links onto a second, you know, headlining idea. So the connecting word is doing"
+    },
+    {
+      "start": 990.13,
+      "end": 994.53,
+      "text": "a lot of work here, although it might not seem it's, you know, it is addressing the tension is"
+    },
+    {
+      "start": 994.53,
+      "end": 999.41,
+      "text": "addressing a contrast or perhaps even a similarity between your findings. It is kind of, you know,"
+    },
+    {
+      "start": 999.41,
+      "end": 1003.41,
+      "text": "bringing them together and it shows that, you know, your second finding is almost"
+    },
+    {
+      "start": 1003.41,
+      "end": 1008.21,
+      "text": "complimenting your first, if they're tied together and some, you know, idea. Obviously,"
+    },
+    {
+      "start": 1008.21,
+      "end": 1011.41,
+      "text": "how they're tied together will be down to you, it's going to differ based on your paper"
+    },
+    {
+      "start": 1011.41,
+      "end": 1016.37,
+      "text": "and your topic. But the very, very key important thing is, and this is a really smart way to actually"
+    },
+    {
+      "start": 1016.37,
+      "end": 1021.57,
+      "text": "sort of outline two findings without going into like crazy detail and, you know, writing too much,"
+    },
+    {
+      "start": 1021.57,
+      "end": 1024.85,
+      "text": "is that you link them together. When you link them together, you end up writing less,"
+    },
+    {
+      "start": 1024.85,
+      "end": 1028.53,
+      "text": "you end up being more concise, but you still, you're still very direct and forward."
+    },
+    {
+      "start": 1030.13,
+      "end": 1035.76,
+      "text": "So let's continue. Same thing for your let review paper."
+    },
+    {
+      "start": 1036.96,
+      "end": 1042.96,
+      "text": "Two to three sentences, your results are very important. But once again, do not go"
+    },
+    {
+      "start": 1042.96,
+      "end": 1047.68,
+      "text": "listing everything. Only choose the ones which directly answer your research question and"
+    },
+    {
+      "start": 1047.68,
+      "end": 1052.8,
+      "text": "outline them very simply. So the structure and formula that you're going to want to follow"
+    },
+    {
+      "start": 1052.8,
+      "end": 1056.16,
+      "text": "is, you know, say something along the lines of like this review reveals that"
+    },
+    {
+      "start": 1056.96,
+      "end": 1063.36,
+      "text": "wherever you are looking at, whether that be, I don't know a specific book or specific,"
+    },
+    {
+      "start": 1063.36,
+      "end": 1068.08,
+      "text": "you know, general topic is divided between theme one and theme two, or it is connected"
+    },
+    {
+      "start": 1068.08,
+      "end": 1072.4,
+      "text": "between that theme one and two, theme two, whatever it may be. And then you want to have a"
+    },
+    {
+      "start": 1072.4,
+      "end": 1078.0,
+      "text": "connector which outlines the tension between these. So I will give you an example first,"
+    },
+    {
+      "start": 1078.0,
+      "end": 1082.08,
+      "text": "and I'm going to kind of explain what I mean by this. So you could write something along"
+    },
+    {
+      "start": 1082.08,
+      "end": 1086.8,
+      "text": "the lines of the review reveals that existing scholarship converges on economic necessities"
+    },
+    {
+      "start": 1086.8,
+      "end": 1091.92,
+      "text": "as the dominant explanation for multiplexer policy, or the role of domestic political"
+    },
+    {
+      "start": 1091.92,
+      "end": 1099.52,
+      "text": "competition remains comparatively unexamined. So what this example does here is that it outlines"
+    },
+    {
+      "start": 1099.52,
+      "end": 1106.08,
+      "text": "two different themes within the general idea of, you know, multiplexer policy, but it kind of"
+    },
+    {
+      "start": 1106.08,
+      "end": 1111.44,
+      "text": "puts them in the posing, you know, I aspect, so they kind of aligns a bit of a difference"
+    },
+    {
+      "start": 1111.44,
+      "end": 1118.96,
+      "text": "between them. It shows that they're a bit, you know, divided. So what is very important to"
+    },
+    {
+      "start": 1119.04,
+      "end": 1123.36,
+      "text": "it? What I would recommend is that you pick two themes, which are kind of the opposite,"
+    },
+    {
+      "start": 1123.36,
+      "end": 1126.72,
+      "text": "which you can kind of talk about more. Obviously, make sure that they're things that you actually"
+    },
+    {
+      "start": 1126.72,
+      "end": 1131.92,
+      "text": "frowns. But with most papers, you will find that you do have papers that are perhaps a little bit"
+    },
+    {
+      "start": 1131.92,
+      "end": 1138.08,
+      "text": "different. So, you know, name your themes, they could be explanations, they could be schools"
+    },
+    {
+      "start": 1138.08,
+      "end": 1141.76,
+      "text": "of thought, they could be frankly anything just you have to name them very clearly."
+    },
+    {
+      "start": 1142.48,
+      "end": 1146.16,
+      "text": "The gap in the tension is going to be wherever, you know, elevates from this summary."
+    },
+    {
+      "start": 1146.16,
+      "end": 1151.76,
+      "text": "What is the contribution? What has your papers contributed? What was these like themes and findings"
+    },
+    {
+      "start": 1151.76,
+      "end": 1157.52,
+      "text": "contributed, which perhaps make them a little bit different to one another? So this is obviously"
+    },
+    {
+      "start": 1157.52,
+      "end": 1161.44,
+      "text": "great because the reader can see your synthesis and they can kind of see the individual papers,"
+    },
+    {
+      "start": 1161.44,
+      "end": 1166.56,
+      "text": "you know, they weren't just taken as an individual, but they were taken as a, you know, a wider"
+    },
+    {
+      "start": 1168.4,
+      "end": 1175.68,
+      "text": "sort of theme and topic. A very common mistake that unfortunately I have seen in the previous"
+    },
+    {
+      "start": 1175.68,
+      "end": 1181.76,
+      "text": "cohort is that people will try to cram every single idea into, you know, from all their sources,"
+    },
+    {
+      "start": 1181.76,
+      "end": 1187.28,
+      "text": "they might try to discuss every single source, they might try to discuss like 10 or 15 and that's just"
+    },
+    {
+      "start": 1187.28,
+      "end": 1191.92,
+      "text": "not what you should be doing. Breathe, take a minute and choose two to three, which you are"
+    },
+    {
+      "start": 1191.92,
+      "end": 1197.04,
+      "text": "the most relevant. Frankly, I think two is good enough. If you have a third and okay,"
+    },
+    {
+      "start": 1197.04,
+      "end": 1201.68,
+      "text": "that's fine. But really, you don't need to be saying everything, just say the most important"
+    },
+    {
+      "start": 1201.76,
+      "end": 1208.56,
+      "text": "things. Right, let's move on to the fourth component. So the research contribution,"
+    },
+    {
+      "start": 1208.56,
+      "end": 1214.64,
+      "text": "aka the originality. So obviously, because we have already done the discussion and the"
+    },
+    {
+      "start": 1214.64,
+      "end": 1220.32,
+      "text": "conclusion lessons, you might be a bit familiar with what I mean by this. So I'm sure you're"
+    },
+    {
+      "start": 1220.32,
+      "end": 1224.96,
+      "text": "aware that in your conclusion, you have to talk about the future implementations of your"
+    },
+    {
+      "start": 1224.96,
+      "end": 1230.4,
+      "text": "research, you know, possibly how it could impact people theoretically, and even, you know,"
+    },
+    {
+      "start": 1230.4,
+      "end": 1235.76,
+      "text": "in real life with practical applications. So it's kind of the same here. But once again,"
+    },
+    {
+      "start": 1235.76,
+      "end": 1240.72,
+      "text": "you're summarizing it into maybe like two sentences. So it's as much shorter."
+    },
+    {
+      "start": 1242.08,
+      "end": 1248.0,
+      "text": "Right. So those people actually skip this section, but don't, it is very important,"
+    },
+    {
+      "start": 1248.0,
+      "end": 1253.04,
+      "text": "because it kind of answers the question of what is new? What can I gain from your paper and how"
+    },
+    {
+      "start": 1253.04,
+      "end": 1258.0,
+      "text": "can it advance later research? So if you're writing an empirical paper, you can follow"
+    },
+    {
+      "start": 1258.0,
+      "end": 1262.64,
+      "text": "this formula. And I really do recommend that you do. So start by saying something like this study"
+    },
+    {
+      "start": 1262.64,
+      "end": 1268.4,
+      "text": "contributes to whatever research it is, whatever body of field you're looking at. And then then you"
+    },
+    {
+      "start": 1268.4,
+      "end": 1273.12,
+      "text": "have to outline what was the new finding that you had. So whether it was looking at a new"
+    },
+    {
+      "start": 1273.12,
+      "end": 1278.48,
+      "text": "population, looking at a research gap, looking at testing a new context, outline what your"
+    },
+    {
+      "start": 1278.48,
+      "end": 1283.36,
+      "text": "contribution was from this paper, and then outline why it is new. Why is it unique? Why"
+    },
+    {
+      "start": 1283.44,
+      "end": 1288.0,
+      "text": "is it very helpful for the future? Why is it helpful for the theory? Why is it helpful for,"
+    },
+    {
+      "start": 1288.0,
+      "end": 1294.16,
+      "text": "you know, practical applications? So try to link your body of literature to the wider"
+    },
+    {
+      "start": 1294.16,
+      "end": 1299.36,
+      "text": "conversation, you know, talk about not a paper and itself, but what the paper could be like in the"
+    },
+    {
+      "start": 1299.36,
+      "end": 1305.28,
+      "text": "wider field. Because as you know, when you write and finish your paper, it's not just going to"
+    },
+    {
+      "start": 1305.28,
+      "end": 1309.68,
+      "text": "be like a single paper, it will be connected to so many other papers. So it's very important"
+    },
+    {
+      "start": 1309.68,
+      "end": 1316.72,
+      "text": "that you kind of address this wider field in your abstract. So when you're talking about kind"
+    },
+    {
+      "start": 1316.72,
+      "end": 1320.72,
+      "text": "of your contributions, you can talk about whether you're looking at a new population from many of"
+    },
+    {
+      "start": 1320.72,
+      "end": 1324.56,
+      "text": "you, this may be the case, you may be studying a country that hasn't been, you know, studied a"
+    },
+    {
+      "start": 1324.56,
+      "end": 1330.24,
+      "text": "lot in the past, you can discuss, you know, an unaddressed research gap, anything that you"
+    },
+    {
+      "start": 1330.24,
+      "end": 1333.92,
+      "text": "found was your gap, which you were focusing on to make your paper kind of, you know,"
+    },
+    {
+      "start": 1333.92,
+      "end": 1340.64,
+      "text": "unique. This is when you can put it in. So it's kind of helping you to make sure that, you know,"
+    },
+    {
+      "start": 1340.64,
+      "end": 1346.24,
+      "text": "it's not just, what can I say, it's not just a bank of detail, but it kind of shows that you're"
+    },
+    {
+      "start": 1346.24,
+      "end": 1350.88,
+      "text": "thinking a bit more outside of the box. So if I was to give you a really good example,"
+    },
+    {
+      "start": 1350.88,
+      "end": 1355.36,
+      "text": "I would say something along the lines of this study contributes to the growing literature on"
+    },
+    {
+      "start": 1355.36,
+      "end": 1359.84,
+      "text": "transit information by examining committed responses to occupancy information in Central Asia"
+    },
+    {
+      "start": 1359.92,
+      "end": 1364.24,
+      "text": "in a central Asian context, which has received limited scholarly attention. So what this has"
+    },
+    {
+      "start": 1364.24,
+      "end": 1368.64,
+      "text": "done very great from the very onset is that it's outlined the body of literature. It's"
+    },
+    {
+      "start": 1368.64,
+      "end": 1374.16,
+      "text": "outlined the wider kind of feels that this paper fits into. It talks about the fact that they're"
+    },
+    {
+      "start": 1374.16,
+      "end": 1379.12,
+      "text": "looking at this new idea of, you know, commuter responsive in this idea, in this country, in"
+    },
+    {
+      "start": 1379.12,
+      "end": 1384.08,
+      "text": "this area that was not previously examined. So literally, as you can see, it is one sentence"
+    },
+    {
+      "start": 1384.16,
+      "end": 1391.04,
+      "text": "that it does so much. Okay. Same thing again for a therapy paper. Obviously, the structure"
+    },
+    {
+      "start": 1391.04,
+      "end": 1395.52,
+      "text": "is a bit different, but it has the same purpose. So the formula that you're going to be wanting"
+    },
+    {
+      "start": 1395.52,
+      "end": 1401.04,
+      "text": "to follow will once again outline the wider literature that you're looking on. And then"
+    },
+    {
+      "start": 1401.04,
+      "end": 1408.34,
+      "text": "have I gone back instead of forward? Just a second. No, okay. I'm good. So what does it"
+    },
+    {
+      "start": 1408.34,
+      "end": 1412.42,
+      "text": "outlines the general like literature and the general, you know, feels like you're looking"
+    },
+    {
+      "start": 1412.42,
+      "end": 1417.14,
+      "text": "at and then it talks about your things. Once again, theme one and theme two. And it read and"
+    },
+    {
+      "start": 1417.14,
+      "end": 1425.46,
+      "text": "it actually this formula should be a bit adapted. Right. So outline the greater field."
+    },
+    {
+      "start": 1426.1,
+      "end": 1431.54,
+      "text": "Talk about your things. But then when you have your research gap, use that research gap to"
+    },
+    {
+      "start": 1431.54,
+      "end": 1436.74,
+      "text": "also link to why your paper is unique. So it's basically the same logic as your empirical"
+    },
+    {
+      "start": 1436.74,
+      "end": 1440.02,
+      "text": "paper, except your contributions are going to be a bit different, you know, the"
+    },
+    {
+      "start": 1440.02,
+      "end": 1444.1,
+      "text": "contributions will come from the synthesis rather than the fact you're collecting new data."
+    },
+    {
+      "start": 1444.1,
+      "end": 1448.82,
+      "text": "So it's your basically kind of naming the kinds of things that your synthesis work will do and what"
+    },
+    {
+      "start": 1448.82,
+      "end": 1454.34,
+      "text": "it helps to contribute just in a very simplified way. So if I was looking at example for this for"
+    },
+    {
+      "start": 1454.34,
+      "end": 1458.98,
+      "text": "you, it could be something along the lines of this review contributes to the literature on"
+    },
+    {
+      "start": 1458.98,
+      "end": 1462.74,
+      "text": "small state diplomacy by bringing together economic and political explanations that"
+    },
+    {
+      "start": 1462.74,
+      "end": 1466.34,
+      "text": "typically treated separately in existing scholarship. So what this has done is"
+    },
+    {
+      "start": 1466.34,
+      "end": 1470.26,
+      "text": "first of all, it's outlined the greater field that it's looking at. So small state diplomacy,"
+    },
+    {
+      "start": 1470.26,
+      "end": 1475.62,
+      "text": "that is the greater field. It's brought in your two themes of economic and political explanations."
+    },
+    {
+      "start": 1475.62,
+      "end": 1479.7,
+      "text": "And then this outlines, you know, kind of why there is a research gap, that being there was"
+    },
+    {
+      "start": 1479.7,
+      "end": 1487.3,
+      "text": "not previous, you know, research in this area. Very common mistake again. Of course, I like"
+    },
+    {
+      "start": 1487.3,
+      "end": 1493.3,
+      "text": "to outline you these mistakes just so you can avoid them. But don't try to claim that you're"
+    },
+    {
+      "start": 1493.3,
+      "end": 1499.46,
+      "text": "the first ever person to study this topic. It's probably never true. Although I'm sure your papers"
+    },
+    {
+      "start": 1499.46,
+      "end": 1504.42,
+      "text": "are all very original, your papers are kind of like this, you have so many different contributions"
+    },
+    {
+      "start": 1504.42,
+      "end": 1508.74,
+      "text": "from other papers, because of course, we're raising other papers, you are analyzing other"
+    },
+    {
+      "start": 1508.74,
+      "end": 1513.22,
+      "text": "papers. So it's not correct to say oh, my paper is the first to ever study this topic."
+    },
+    {
+      "start": 1513.22,
+      "end": 1519.06,
+      "text": "Because in fact, your paper is sort of like, is like this structure built on from different"
+    },
+    {
+      "start": 1519.06,
+      "end": 1526.9,
+      "text": "research. So be cautious of your wording. And components five, the practical or policy"
+    },
+    {
+      "start": 1526.9,
+      "end": 1530.5,
+      "text": "implementations, it basically is what it says on the team."
+    },
+    {
+      "start": 1532.5,
+      "end": 1539.38,
+      "text": "So here you're trying to address who should care about your paper and kind of how it can"
+    },
+    {
+      "start": 1539.38,
+      "end": 1544.18,
+      "text": "be used by them. So there will always be someone who, you know, wants to read your paper,"
+    },
+    {
+      "start": 1544.18,
+      "end": 1548.1,
+      "text": "always someone who will kind of be the most, you know, prominent target of your paper,"
+    },
+    {
+      "start": 1548.42,
+      "end": 1552.82,
+      "text": "this is written for. So when you're writing your empirical paper, you can kind of follow"
+    },
+    {
+      "start": 1552.82,
+      "end": 1557.06,
+      "text": "the structure of, you know, saying something like this finding may help"
+    },
+    {
+      "start": 1557.94,
+      "end": 1564.34,
+      "text": "blank whoever it may be, and someone else, because of this action. So it could be"
+    },
+    {
+      "start": 1564.34,
+      "end": 1568.42,
+      "text": "frankly, whatever is suited to your paper, this is when you have to really think about"
+    },
+    {
+      "start": 1568.42,
+      "end": 1573.94,
+      "text": "how your paper could be used. So name a real stakeholder, talk about maybe is it teachers,"
+    },
+    {
+      "start": 1573.94,
+      "end": 1581.06,
+      "text": "is it policymakers, is it, you know, companies, be specific, don't just say vague, don't just say"
+    },
+    {
+      "start": 1581.06,
+      "end": 1586.74,
+      "text": "vague things like society or people, or the world, that's not specific, you have to be"
+    },
+    {
+      "start": 1587.3,
+      "end": 1593.14,
+      "text": "very detailed. Also talk about the practical action. So how could they use it? But be"
+    },
+    {
+      "start": 1593.14,
+      "end": 1596.66,
+      "text": "realistic, don't say that they're going to create a new country out of nowhere. You have"
+    },
+    {
+      "start": 1596.66,
+      "end": 1601.54,
+      "text": "to be very realistic when it comes to this. So an example of this could be these findings"
+    },
+    {
+      "start": 1601.54,
+      "end": 1606.74,
+      "text": "can help transit planners and city officials decide where real-time occupancy displays will"
+    },
+    {
+      "start": 1606.74,
+      "end": 1611.22,
+      "text": "generate the greatest impact on rider behavior. So what it's done here is that it's outlined"
+    },
+    {
+      "start": 1611.22,
+      "end": 1616.1,
+      "text": "two different types of people that could benefit from this paper, transit planners and city officials."
+    },
+    {
+      "start": 1616.1,
+      "end": 1619.86,
+      "text": "And then what it's also done is that it's explained how they can possibly use this. So"
+    },
+    {
+      "start": 1619.86,
+      "end": 1627.94,
+      "text": "to generate, you know, information on rider behaviors. Let's move on. So once again,"
+    },
+    {
+      "start": 1627.94,
+      "end": 1632.5,
+      "text": "your lit review paper has a slightly different formula, but it's basically the same thing. So"
+    },
+    {
+      "start": 1632.5,
+      "end": 1636.58,
+      "text": "once again, you're going to outline your stakeholder, so who is this paper targeted for,"
+    },
+    {
+      "start": 1636.58,
+      "end": 1642.18,
+      "text": "who will use this the most, and then how could they use it. And then what you're also going"
+    },
+    {
+      "start": 1642.18,
+      "end": 1650.18,
+      "text": "to continue to say is such as understanding and reconsidering this topic. So as I've said,"
+    },
+    {
+      "start": 1650.18,
+      "end": 1655.06,
+      "text": "the same rule as the lit review paper, but of course you're going to be writing about"
+    },
+    {
+      "start": 1655.06,
+      "end": 1659.78,
+      "text": "different things. So name your real audience, name a real action, talk about how they could use it,"
+    },
+    {
+      "start": 1659.78,
+      "end": 1664.1,
+      "text": "how maybe it could shift people's thinking, how it could shift a specific decision on an idea."
+    },
+    {
+      "start": 1665.86,
+      "end": 1671.7,
+      "text": "So, you know, once again, same thing. And make sure that the action, no matter what"
+    },
+    {
+      "start": 1671.7,
+      "end": 1678.26,
+      "text": "action verb you use, it leans towards understanding like an idea. So it leans to understanding"
+    },
+    {
+      "start": 1678.26,
+      "end": 1683.78,
+      "text": "your, you know, field and your topic. So let me kind of give you a better example,"
+    },
+    {
+      "start": 1683.78,
+      "end": 1688.82,
+      "text": "because I know it's kind of hard to imagine how you could write this without seeing an example. So"
+    },
+    {
+      "start": 1688.82,
+      "end": 1693.22,
+      "text": "you could write something along the lines of this review may help policy makers and regional"
+    },
+    {
+      "start": 1693.22,
+      "end": 1699.7,
+      "text": "analysts better understand the domestic political pressures shaping Uzbekistan's economic diplomacy."
+    },
+    {
+      "start": 1699.7,
+      "end": 1704.42,
+      "text": "So once again, it's outlined to stakeholders who could use this, it's outlined"
+    },
+    {
+      "start": 1705.62,
+      "end": 1708.42,
+      "text": "how they could use it, you know, to understand political pressures, and it's"
+    },
+    {
+      "start": 1708.58,
+      "end": 1713.06,
+      "text": "outlined what field they could use it in. So understanding economic diplomacy."
+    },
+    {
+      "start": 1716.26,
+      "end": 1723.06,
+      "text": "Once again, be very realistic. Don't overclaim things. I know it's very nice to be idealistic"
+    },
+    {
+      "start": 1723.06,
+      "end": 1727.06,
+      "text": "and think that loads of people will read your paper, but you have to be a bit down to work."
+    },
+    {
+      "start": 1727.06,
+      "end": 1731.22,
+      "text": "Like it's a bit unrealistic to think that the president's going to personally read your"
+    },
+    {
+      "start": 1731.22,
+      "end": 1736.74,
+      "text": "paper to decide policies. That is a bit far stretching. So try to be grounded,"
+    },
+    {
+      "start": 1736.74,
+      "end": 1741.14,
+      "text": "try to be a bit realistic, but obviously think very analytically and think realistically."
+    },
+    {
+      "start": 1743.28,
+      "end": 1748.88,
+      "text": "And component six, the literature, sorry, the limitations and future research,"
+    },
+    {
+      "start": 1749.84,
+      "end": 1755.76,
+      "text": "kind of similar to what your conclusion has. But once again, this is summarized to like"
+    },
+    {
+      "start": 1755.76,
+      "end": 1764.56,
+      "text": "one or two sentences max. Generally, the shortest thing, but it can have lots of benefits as"
+    },
+    {
+      "start": 1764.56,
+      "end": 1770.08,
+      "text": "it will kind of help to improve the credibility of your paper. So when you're writing a little"
+    },
+    {
+      "start": 1770.08,
+      "end": 1773.76,
+      "text": "review, sorry, when you're writing your paper papers, the kind of structure that you should be"
+    },
+    {
+      "start": 1773.76,
+      "end": 1781.52,
+      "text": "following is, you know, saying that your findings shed light on, you know, sorry, your findings"
+    },
+    {
+      "start": 1781.52,
+      "end": 1786.16,
+      "text": "should be interpreted in light of this limitation. So be honest, don't try hide it because obviously"
+    },
+    {
+      "start": 1786.16,
+      "end": 1789.84,
+      "text": "they will read your paper and find this limitation anyways. So this limitation could"
+    },
+    {
+      "start": 1789.84,
+      "end": 1795.84,
+      "text": "be anything your sample size, your sampling method, your self report data, whatever it may be,"
+    },
+    {
+      "start": 1795.84,
+      "end": 1800.64,
+      "text": "your biggest limitation mentioned it here, you can literally only name maybe like one of your"
+    },
+    {
+      "start": 1800.64,
+      "end": 1805.44,
+      "text": "weakest points, it doesn't have to be 20 the student, you shouldn't name every single limitation"
+    },
+    {
+      "start": 1805.44,
+      "end": 1810.8,
+      "text": "that you have, maybe just one or two max. And then you can follow on by saying future"
+    },
+    {
+      "start": 1810.8,
+      "end": 1815.68,
+      "text": "research should try to fix whatever limitation that you just addressed. So link them together,"
+    },
+    {
+      "start": 1815.68,
+      "end": 1820.32,
+      "text": "how your limitation, but then link a solution to that for future research. So you could say"
+    },
+    {
+      "start": 1820.32,
+      "end": 1824.8,
+      "text": "something along the lines of the findings should be interpreted in light of the studies"
+    },
+    {
+      "start": 1824.8,
+      "end": 1829.6,
+      "text": "reliance on convenient, convenient samplings and self reported intentions, future research"
+    },
+    {
+      "start": 1829.6,
+      "end": 1835.2,
+      "text": "should track actual boarding behavior across larger randomly selected or I can't see that"
+    },
+    {
+      "start": 1835.2,
+      "end": 1858.11,
+      "text": "what last words. One second. Okay, so I cannot see that one last word I'm sure you can see"
+    },
+    {
+      "start": 1858.11,
+      "end": 1865.31,
+      "text": "on your screens. But it has a structure as I've said, it's told you the limitation very"
+    },
+    {
+      "start": 1865.31,
+      "end": 1870.99,
+      "text": "specific limitation. It's literally only told you one or two here, but then it's linked it to"
+    },
+    {
+      "start": 1870.99,
+      "end": 1877.31,
+      "text": "future research by showing how you can resolve it, which is kind of good. I, if you have received"
+    },
+    {
+      "start": 1877.31,
+      "end": 1882.27,
+      "text": "your feedback from you should have received your feedback from your methodology, but you may have"
+    },
+    {
+      "start": 1882.27,
+      "end": 1886.51,
+      "text": "seen that I have kind of asked you to put positive spin on your limitations, which"
+    },
+    {
+      "start": 1886.51,
+      "end": 1891.15,
+      "text": "kind of is true for all the sections of your paper. It's very good to be honest, it's very good to"
+    },
+    {
+      "start": 1891.15,
+      "end": 1895.31,
+      "text": "outline your limitations, but try to make it as positive as you can, because obviously that you"
+    },
+    {
+      "start": 1895.31,
+      "end": 1899.55,
+      "text": "don't want to undermine your credibility by waffling on about your limitations for ages."
+    },
+    {
+      "start": 1900.75,
+      "end": 1906.59,
+      "text": "So your little review paper, your little review paper burnt again, very similar,"
+    },
+    {
+      "start": 1906.59,
+      "end": 1911.31,
+      "text": "outline your limitation, whether it be because of the language, the time period, the source,"
+    },
+    {
+      "start": 1911.31,
+      "end": 1916.83,
+      "text": "no matter what it is, outline it first and then suggest that future research should try to fix this,"
+    },
+    {
+      "start": 1917.71,
+      "end": 1924.03,
+      "text": "whether it's trying to test your topic empirically or trying to expand to other regions, for example,"
+    },
+    {
+      "start": 1924.03,
+      "end": 1928.75,
+      "text": "if you're looking at, I don't know, Gothic literature in England, you might want to suggest"
+    },
+    {
+      "start": 1928.75,
+      "end": 1933.47,
+      "text": "that perhaps Gothic literature should be studied in other countries or on a wider scale."
+    },
+    {
+      "start": 1934.11,
+      "end": 1940.27,
+      "text": "So once again, very simple thing, name your scope, name the boundary, name what kind of"
+    },
+    {
+      "start": 1940.27,
+      "end": 1947.23,
+      "text": "research gap you might, you know, surface from the components of the limitations that you have,"
+    },
+    {
+      "start": 1948.35,
+      "end": 1953.31,
+      "text": "and kind of link it once back to your future research. So an example would be the review"
+    },
+    {
+      "start": 1953.31,
+      "end": 1958.75,
+      "text": "help was limited to English language sources published between 2010 to 2014. Future research"
+    },
+    {
+      "start": 1958.75,
+      "end": 1963.23,
+      "text": "should empirically test whether domestic elite competition chips multi-vector policy decisions."
+    },
+    {
+      "start": 1963.23,
+      "end": 1968.35,
+      "text": "So once again, very simple, it's outlined maybe two limitations, but then it's used"
+    },
+    {
+      "start": 1968.35,
+      "end": 1973.23,
+      "text": "the future research to outline how these could be resolved, showing that you are thinking ahead,"
+    },
+    {
+      "start": 1973.23,
+      "end": 1977.31,
+      "text": "you're not just stuck on your limitations, but you're able to see how they could be improved."
+    },
+    {
+      "start": 1980.96,
+      "end": 1987.76,
+      "text": "But I will say, don't apologize for your limitations, don't be like, oh, I'm so sorry,"
+    },
+    {
+      "start": 1987.76,
+      "end": 1991.04,
+      "text": "I had this and that, don't do it, there's no point, you don't need to do that at all."
+    },
+    {
+      "start": 1991.04,
+      "end": 1995.92,
+      "text": "Be honest, be direct, say this was my limitation, and then just go on, just admit it and move"
+    },
+    {
+      "start": 1995.92,
+      "end": 2003.84,
+      "text": "forward. Right, we are coming to the end, but I do want to share you kind of like,"
+    },
+    {
+      "start": 2004.56,
+      "end": 2007.92,
+      "text": "I guess that's one point where they said the secret source, like the kind of cherry on top,"
+    },
+    {
+      "start": 2007.92,
+      "end": 2012.48,
+      "text": "the kind of great things that make your paper and the abstract and specific really stand out."
+    },
+    {
+      "start": 2014.0,
+      "end": 2021.44,
+      "text": "So here is kind of the formulas that I've given you before, but kind of summarized"
+    },
+    {
+      "start": 2021.44,
+      "end": 2028.4,
+      "text": "into a skeleton. This is kind of how your paper for the empirical, you know, for empirical paper"
+    },
+    {
+      "start": 2028.4,
+      "end": 2034.16,
+      "text": "should be written. So I'm not going to read this again, because we have already read this,"
+    },
+    {
+      "start": 2034.16,
+      "end": 2040.24,
+      "text": "but as you can see, it is not long, it is maybe a paragraph max, but it does so much,"
+    },
+    {
+      "start": 2040.24,
+      "end": 2044.72,
+      "text": "you have so much good detail here, me reading, you know, a paper, an abstract that has this"
+    },
+    {
+      "start": 2044.72,
+      "end": 2048.96,
+      "text": "formula, I can automatically know what this paper is about, what method they use, how they"
+    },
+    {
+      "start": 2048.96,
+      "end": 2053.2,
+      "text": "collected their data, what data they collected, and what possible limitations they might have."
+    },
+    {
+      "start": 2053.2,
+      "end": 2059.04,
+      "text": "It answers basically everything in the span of a paragraph, which is literally what the abstract"
+    },
+    {
+      "start": 2059.04,
+      "end": 2065.6,
+      "text": "is aiming to do. Same thing for your lit review. Once again, this is all the formulas,"
+    },
+    {
+      "start": 2065.6,
+      "end": 2069.2,
+      "text": "you know, put together in a paragraph, but as you can see, it is very simple,"
+    },
+    {
+      "start": 2069.2,
+      "end": 2072.8,
+      "text": "you're discussing your themes, you're outlining what your themes were, how you find your themes,"
+    },
+    {
+      "start": 2073.68,
+      "end": 2077.84,
+      "text": "the research gap, you can discuss how your themes are connected, maybe how they,"
+    },
+    {
+      "start": 2077.84,
+      "end": 2083.04,
+      "text": "you know, contradict, you talk about who this is important for, why there is a limitation,"
+    },
+    {
+      "start": 2083.04,
+      "end": 2087.92,
+      "text": "and how you can resolve this limitation with future research. Very simple. Down to the point,"
+    },
+    {
+      "start": 2087.92,
+      "end": 2092.88,
+      "text": "there is no workflow, there is no description, it just states what it does and it moves on,"
+    },
+    {
+      "start": 2092.88,
+      "end": 2096.4,
+      "text": "because realistically, I'm sure you guys have done it as well when you're finding your sources,"
+    },
+    {
+      "start": 2096.4,
+      "end": 2099.36,
+      "text": "the first thing you do is read the abstracts. You want it to be short, you want it to"
+    },
+    {
+      "start": 2099.36,
+      "end": 2103.2,
+      "text": "be snappy, you want to get the general idea very quickly before you continue to read the"
+    },
+    {
+      "start": 2103.2,
+      "end": 2110.64,
+      "text": "paper. And so this is what you guys are writing. So as always, we get the question of how many words,"
+    },
+    {
+      "start": 2110.64,
+      "end": 2119.12,
+      "text": "how many sentences, and this hopefully kind of breaks it down. 35 to 45 words is about like"
+    },
+    {
+      "start": 2119.12,
+      "end": 2123.44,
+      "text": "the max for most sections, of course your findings are going to be a larger section,"
+    },
+    {
+      "start": 2123.44,
+      "end": 2129.92,
+      "text": "so about 60 to 70, and then your limitations are going to be a bit shorter, so maybe 20 to"
+    },
+    {
+      "start": 2129.92,
+      "end": 2136.4,
+      "text": "30, but realistically, no matter how many words you write, it should maybe be a paragraph, no more"
+    },
+    {
+      "start": 2136.4,
+      "end": 2145.22,
+      "text": "than two. Right, okay. Before we wrap up, I am going to get you guys to do a quick exercise,"
+    },
+    {
+      "start": 2145.22,
+      "end": 2148.1,
+      "text": "because I know I've been talking for ages and it's so annoying sometimes to just sit and"
+    },
+    {
+      "start": 2148.1,
+      "end": 2155.3,
+      "text": "listen all at once, so let's do this. So you're going to have two to three minutes to read"
+    },
+    {
+      "start": 2155.3,
+      "end": 2160.26,
+      "text": "through this scenario, and then I'm going to give you about five to seven, just a quickly"
+    },
+    {
+      "start": 2160.26,
+      "end": 2164.58,
+      "text": "draft and abstract. It doesn't have to be perfect, it doesn't have to be, you know,"
+    },
+    {
+      "start": 2166.66,
+      "end": 2171.62,
+      "text": "crazy, you know, good. I just want to see whether you guys have got the general structure down."
+    },
+    {
+      "start": 2172.58,
+      "end": 2176.34,
+      "text": "So this is the empirical scenario, and then I think the next one should be the lit review"
+    },
+    {
+      "start": 2176.34,
+      "end": 2187.58,
+      "text": "scenario. Oh, it's not letting me go to the next one. Okay, that's fine. So I guess the lit"
+    },
+    {
+      "start": 2187.58,
+      "end": 2195.1,
+      "text": "review scenario is not popping up, but so, okay, you guys will read through this very quickly."
+    },
+    {
+      "start": 2196.7,
+      "end": 2202.14,
+      "text": "Well, look at this paper, look at this research topic, and then write a few sentences to draft"
+    },
+    {
+      "start": 2202.14,
+      "end": 2208.78,
+      "text": "and abstract. You can either send it to me in the general chat, you can send it to me directly."
+    },
+    {
+      "start": 2209.82,
+      "end": 2216.22,
+      "text": "I will stop talking now and I will set a timer for about, let's say, 10 minutes. So"
+    },
+    {
+      "start": 2216.22,
+      "end": 2223.02,
+      "text": "read the task, write a few sentences for the abstract. Start."
+    },
+    {
+      "start": 2246.3,
+      "end": 2250.03,
+      "text": "Hi. Sorry, I have a question now."
+    },
+    {
+      "start": 2254.05,
+      "end": 2254.61,
+      "text": "Hello, yes."
+    },
+    {
+      "start": 2256.13,
+      "end": 2259.01,
+      "text": "Can you send the formula? Are you sure with us?"
+    },
+    {
+      "start": 2259.01,
+      "end": 2263.97,
+      "text": "Of course. I will go back quickly. If you guys want to take like a photo or a screenshot quickly,"
+    },
+    {
+      "start": 2263.97,
+      "end": 2272.82,
+      "text": "you can do that. Okay, this is the empirical formula. I'll give you guys a few minutes,"
+    },
+    {
+      "start": 2272.82,
+      "end": 2281.52,
+      "text": "a few seconds to take a screenshot of that quickly. I'm moving on to the lit review formula"
+    },
+    {
+      "start": 2281.52,
+      "end": 2292.58,
+      "text": "and hopefully that should have been enough time. If you want me to go back, let me know."
+    },
+    {
+      "start": 2292.58,
+      "end": 2477.95,
+      "text": "All right, you've got about five minutes left. So hopefully you have read through this and"
+    },
+    {
+      "start": 2477.95,
+      "end": 2599.52,
+      "text": "you're starting to write. Okay, we've got like maybe a minute and a half left. So if you are"
+    },
+    {
+      "start": 2599.52,
+      "end": 2604.64,
+      "text": "still writing, maybe you want to finish writing your last few sentences and then I'll go through"
+    },
+    {
+      "start": 2604.64,
+      "end": 2677.49,
+      "text": "the examples you guys have sent me. Okay, guys, that is time. I think some people have sent"
+    },
+    {
+      "start": 2677.49,
+      "end": 2689.9,
+      "text": "in some examples, so I will read those. Okay, let's go through this first one. Okay, so public"
+    },
+    {
+      "start": 2689.9,
+      "end": 2695.02,
+      "text": "transport, passengers, what's inside between boarding and credit bus and waiting for the"
+    },
+    {
+      "start": 2695.1,
+      "end": 2699.98,
+      "text": "squared services with access to reliable co-op patient study aims to develop and evaluate"
+    },
+    {
+      "start": 2699.98,
+      "end": 2705.5,
+      "text": "status and an integrated system that combines automatic bus occupancy estimation with real-time"
+    },
+    {
+      "start": 2705.5,
+      "end": 2712.78,
+      "text": "current information and scroll down. And to examine how such information may influence"
+    },
+    {
+      "start": 2712.78,
+      "end": 2717.42,
+      "text": "passenger decision on that, the study consists of two connected components. They're engineering"
+    },
+    {
+      "start": 2717.42,
+      "end": 2722.86,
+      "text": "components focused on designing a ceiling mounted camera based as evidence device that estimates"
+    },
+    {
+      "start": 2722.86,
+      "end": 2729.26,
+      "text": "parking distance between commutes communicates the results to a passenger information platform"
+    },
+    {
+      "start": 2729.26,
+      "end": 2735.66,
+      "text": "that's in the dirt and the real world pilot to investigate how perceived crowdsing and wait"
+    },
+    {
+      "start": 2735.66,
+      "end": 2740.86,
+      "text": "time and the effect of the bottom week program survey indicates that passengers are likely to"
+    },
+    {
+      "start": 2740.86,
+      "end": 2746.3,
+      "text": "wait one and blah blah blah. Survey findings are subsequently compared with"
+    },
+    {
+      "start": 2746.3,
+      "end": 2751.74,
+      "text": "occupancy conditions measured during the device testing. The study provides a unified"
+    },
+    {
+      "start": 2751.74,
+      "end": 2757.02,
+      "text": "framework for connecting technical occupancy measurements of passenger behavior as results"
+    },
+    {
+      "start": 2757.02,
+      "end": 2762.38,
+      "text": "may support development of more informative public transport applications and future field"
+    },
+    {
+      "start": 2763.74,
+      "end": 2767.66,
+      "text": "evidence, sorry, future field experiments of real-time current information."
+    },
+    {
+      "start": 2768.3,
+      "end": 2774.38,
+      "text": "Very well done. Okay, one thing that I will say, your first sentence here is a bit too"
+    },
+    {
+      "start": 2774.38,
+      "end": 2780.3,
+      "text": "descriptive. You don't need to kind of give like a background idea just from the very start"
+    },
+    {
+      "start": 2780.3,
+      "end": 2784.78,
+      "text": "outline what your study is doing. So frankly, I think you could do without this first sentence"
+    },
+    {
+      "start": 2784.78,
+      "end": 2790.3,
+      "text": "that starts with the public transports, go directly into this study aims to evaluate and"
+    },
+    {
+      "start": 2790.3,
+      "end": 2798.86,
+      "text": "outline the aims of this current. From then it is very good. You outline the themes"
+    },
+    {
+      "start": 2804.96,
+      "end": 2807.68,
+      "text": "and investigate how you're collecting your data. That's very good."
+    },
+    {
+      "start": 2808.64,
+      "end": 2816.8,
+      "text": "And you talk about the results and how it was compared. Very good. Other than that, other than"
+    },
+    {
+      "start": 2816.8,
+      "end": 2823.36,
+      "text": "your first sentence being a bit on the descriptive side is very good. So let me read the second"
+    },
+    {
+      "start": 2823.36,
+      "end": 2828.0,
+      "text": "example. This study investigates how this audience perceived legitimate academic dishonest"
+    },
+    {
+      "start": 2828.0,
+      "end": 2834.72,
+      "text": "using a generative AI and how this distinction matches their self-reported AI practice. 140"
+    },
+    {
+      "start": 2834.72,
+      "end": 2839.36,
+      "text": "responses commuted to the survey. Very good. 140 news were chosen for further analysis. Very good."
+    },
+    {
+      "start": 2840.16,
+      "end": 2845.44,
+      "text": "Who matched the study criteria? Criterion responses about analyzing using man-made"
+    },
+    {
+      "start": 2845.44,
+      "end": 2850.64,
+      "text": "UTEP methods. The indicators indicated that most students you see using AI to understand"
+    },
+    {
+      "start": 2850.64,
+      "end": 2854.88,
+      "text": "hard topics and bring something that's academic acceptable. Losing AI to generate. Okay. Very"
+    },
+    {
+      "start": 2854.88,
+      "end": 2861.04,
+      "text": "good. These findings may help educators and teachers by providing a how students"
+    },
+    {
+      "start": 2861.04,
+      "end": 2868.56,
+      "text": "distance to academic integrity. Very good. This is very good. My one thing I would say"
+    },
+    {
+      "start": 2869.12,
+      "end": 2873.2,
+      "text": "is that I think what you're trying to do with the second to last sentence. So the sentence that"
+    },
+    {
+      "start": 2873.2,
+      "end": 2877.36,
+      "text": "starts with their perception mainly match their self-reported AI studies. Actually,"
+    },
+    {
+      "start": 2877.36,
+      "end": 2883.2,
+      "text": "I think that results you kind of are missing under the limitation. Your structure is very good."
+    },
+    {
+      "start": 2883.2,
+      "end": 2886.96,
+      "text": "You outline all the key information. You talk about the results, how it was gathered,"
+    },
+    {
+      "start": 2886.96,
+      "end": 2893.04,
+      "text": "what the general findings were. Then the one thing that you're missing is a limitation,"
+    },
+    {
+      "start": 2893.04,
+      "end": 2896.88,
+      "text": "but I think you didn't get time to finish this. That's fine. So if you add your limitation, that"
+    },
+    {
+      "start": 2896.88,
+      "end": 2902.88,
+      "text": "would be perfect. Okay. Thank you so much for those examples. Is there any more from anyone?"
+    },
+    {
+      "start": 2902.88,
+      "end": 2909.84,
+      "text": "You can either send it in the group chat. You can unmute to speak. You can send it to me"
+    },
+    {
+      "start": 2909.84,
+      "end": 2920.78,
+      "text": "directly. Up to you guys. I will wait a few minutes to see if anyone else wants to send"
+    },
+    {
+      "start": 2920.78,
+      "end": 2932.46,
+      "text": "anything. You send it to me directly. I haven't received it yet. I'm assuming it will come in"
+    },
+    {
+      "start": 2932.46,
+      "end": 2939.26,
+      "text": "a minute. Or on my phone. Okay. I've received it on my phone. Let me read this. This study"
+    },
+    {
+      "start": 2939.26,
+      "end": 2943.34,
+      "text": "investigates to what extent the campus tutoring centres affect university students"
+    },
+    {
+      "start": 2943.42,
+      "end": 2947.82,
+      "text": "self-report exam performance, the results are based on an online surveillance of 180 university"
+    },
+    {
+      "start": 2947.82,
+      "end": 2952.14,
+      "text": "students using descriptive statistics and group comparison. The findings indicate that students"
+    },
+    {
+      "start": 2952.14,
+      "end": 2957.58,
+      "text": "who use the tutoring centre reported confidence had on average 30% higher results than those who"
+    },
+    {
+      "start": 2957.58,
+      "end": 2962.38,
+      "text": "have never used it. Very good. Moreover, most respondents were first year students."
+    },
+    {
+      "start": 2964.46,
+      "end": 2968.54,
+      "text": "I don't think you need that one sentence, but that's fine. These findings may help university"
+    },
+    {
+      "start": 2968.54,
+      "end": 2973.02,
+      "text": "administrators to look at exam confidence rather than just grades and deciding whether to"
+    },
+    {
+      "start": 2973.42,
+      "end": 2977.74,
+      "text": "expand tutoring centres, hours or staffing. The results should be interpreted in light of"
+    },
+    {
+      "start": 2977.74,
+      "end": 2983.02,
+      "text": "limited sample size restrictions to university. Further research is needed to figure out"
+    },
+    {
+      "start": 2983.98,
+      "end": 2989.9,
+      "text": "to figure if this can be applied to other universities. Very good. Okay. You have the"
+    },
+    {
+      "start": 2989.9,
+      "end": 2993.34,
+      "text": "key structure here. You're outlining what your paper is looking at. You've given me some"
+    },
+    {
+      "start": 2994.14,
+      "end": 2998.22,
+      "text": "numerical dates in terms of how many people were studied. You've given me the general"
+    },
+    {
+      "start": 2998.22,
+      "end": 3005.66,
+      "text": "results. You have also outlined how the future research can be built upon the limitations. Very"
+    },
+    {
+      "start": 3005.66,
+      "end": 3021.26,
+      "text": "good. That is a fantastic example. It seems that there may not be any others. If you do want"
+    },
+    {
+      "start": 3021.26,
+      "end": 3025.58,
+      "text": "me to check it, you can send it now. I can have a read through and give you a bit of general"
+    },
+    {
+      "start": 3025.58,
+      "end": 3035.42,
+      "text": "feedback. But if not, your homework for this week has been set. The discussion and the"
+    },
+    {
+      "start": 3035.42,
+      "end": 3039.02,
+      "text": "conclusion, please focus on the discussion first and then you can move on to the conclusion task."
+    },
+    {
+      "start": 3039.9,
+      "end": 3045.26,
+      "text": "Your homework for the abstract will probably be posted sometime next week or yes,"
+    },
+    {
+      "start": 3045.26,
+      "end": 3049.58,
+      "text": "probably sometime next week to give you guys some space to finish everything in time."
+    },
+    {
+      "start": 3050.3,
+      "end": 3054.7,
+      "text": "Of course, as always, if you have any questions before then or during that period,"
+    },
+    {
+      "start": 3054.7,
+      "end": 3061.42,
+      "text": "you can always message myself or any of the other mentors. But I will stop recording because it"
+    },
+    {
+      "start": 3061.42,
+      "end": 3072.1,
+      "text": "doesn't seem like we have any other examples coming in. Let me stop recording."
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "retrieved_on": "2026-09-12",
+  "spec_url": "https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nano/docs/jetson_orin_nano_devkit_carrier_board_specification_sp.pdf",
+  "layout_url": "https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nano/docs/jetson_orin_nano_devkit_carrier_board_reference_design_files_a04_20230320.zip/",
+  "source_hashes": {
+    "nvidia_carrier_spec_v1.3.pdf": "4a0f7ba948bce4881e176f0f8636ef3dbd40e3df9dd33134e6a7433359d18c02",
+    "nvidia_reference_a04.zip": "dee9ef4a2d0110b2e34a6899a11644165ad74eb81aebe28166647efe8d934bcb",
+    "P3768_A04.brd.alg": "a3b6f12e109cd7d2e97f7ecee415d40c9848125ddb850d2b7992d77750882b55"
+  },
+  "outline_mm": [
+    -4,
+    -17,
+    96,
+    62
+  ],
+  "transformation": "Board local = layout + (4,17); enclosure = board local + (14,24). No pixel-derived hole positions.",
+  "hole_evidence": [
+    {
+      "source_line": 124465,
+      "layout_xy_mm": [
+        92.0,
+        0.0
+      ],
+      "pad_stack": "NTH_275P",
+      "header": [
+        "SYM_NAME",
+        "SYM_TYPE",
+        "COMP_DEVICE_TYPE",
+        "REFDES",
+        "CLASS",
+        "SUBCLASS",
+        "RECORD_TAG",
+        "GRAPHIC_DATA_NAME",
+        "GRAPHIC_DATA_NUMBER",
+        "GRAPHIC_DATA_1",
+        "GRAPHIC_DATA_2",
+        "GRAPHIC_DATA_3",
+        "GRAPHIC_DATA_4",
+        "GRAPHIC_DATA_5",
+        "GRAPHIC_DATA_6",
+        "GRAPHIC_DATA_7",
+        "GRAPHIC_DATA_8",
+        "GRAPHIC_DATA_9",
+        "GRAPHIC_DATA_10",
+        "PIN_NUMBER",
+        "PIN_NAME",
+        "PIN_TYPE",
+        "PAD_STACK_NAME",
+        "PAD_SHAPE_NAME",
+        "PAD_TYPE",
+        "PAD_FLASH",
+        "DRILL_HOLE_X",
+        "DRILL_HOLE_Y",
+        "NET_NAME",
+        "PIN_X",
+        "PIN_Y"
+      ],
+      "record": "S!MECH_RECT_01000X00790_HOLES_C!PACKAGE!MOUNTING_HOLE_X2-P3768_MOUNTING_HOLE!MEC5!PIN!SOLDERMASK_TOP!30443 1!CIRCLE!2!92.000!0.000!3.000!3.000!!!!!!!!!UNSPEC!NTH_275P!CIRCLE!REGULAR!!92.000!0.000!!92.000!0.000!"
+    },
+    {
+      "source_line": 124475,
+      "layout_xy_mm": [
+        0.0,
+        0.0
+      ],
+      "pad_stack": "NTH_275P",
+      "header": [
+        "SYM_NAME",
+        "SYM_TYPE",
+        "COMP_DEVICE_TYPE",
+        "REFDES",
+        "CLASS",
+        "SUBCLASS",
+        "RECORD_TAG",
+        "GRAPHIC_DATA_NAME",
+        "GRAPHIC_DATA_NUMBER",
+        "GRAPHIC_DATA_1",
+        "GRAPHIC_DATA_2",
+        "GRAPHIC_DATA_3",
+        "GRAPHIC_DATA_4",
+        "GRAPHIC_DATA_5",
+        "GRAPHIC_DATA_6",
+        "GRAPHIC_DATA_7",
+        "GRAPHIC_DATA_8",
+        "GRAPHIC_DATA_9",
+        "GRAPHIC_DATA_10",
+        "PIN_NUMBER",
+        "PIN_NAME",
+        "PIN_TYPE",
+        "PAD_STACK_NAME",
+        "PAD_SHAPE_NAME",
+        "PAD_TYPE",
+        "PAD_FLASH",
+        "DRILL_HOLE_X",
+        "DRILL_HOLE_Y",
+        "NET_NAME",
+        "PIN_X",
+        "PIN_Y"
+      ],
+      "record": "S!MECH_RECT_01000X00790_HOLES_C!PACKAGE!MOUNTING_HOLE_X2-P3768_MOUNTING_HOLE!MEC5!PIN!SOLDERMASK_TOP!30453 1!CIRCLE!2!0.000!0.000!3.000!3.000!!!!!!!!!UNSPEC!NTH_275P!CIRCLE!REGULAR!!0.000!0.000!!0.000!0.000!"
+    },
+    {
+      "source_line": 124485,
+      "layout_xy_mm": [
+        92.0,
+        58.0
+      ],
+      "pad_stack": "NTH_275P",
+      "header": [
+        "SYM_NAME",
+        "SYM_TYPE",
+        "COMP_DEVICE_TYPE",
+        "REFDES",
+        "CLASS",
+        "SUBCLASS",
+        "RECORD_TAG",
+        "GRAPHIC_DATA_NAME",
+        "GRAPHIC_DATA_NUMBER",
+        "GRAPHIC_DATA_1",
+        "GRAPHIC_DATA_2",
+        "GRAPHIC_DATA_3",
+        "GRAPHIC_DATA_4",
+        "GRAPHIC_DATA_5",
+        "GRAPHIC_DATA_6",
+        "GRAPHIC_DATA_7",
+        "GRAPHIC_DATA_8",
+        "GRAPHIC_DATA_9",
+        "GRAPHIC_DATA_10",
+        "PIN_NUMBER",
+        "PIN_NAME",
+        "PIN_TYPE",
+        "PAD_STACK_NAME",
+        "PAD_SHAPE_NAME",
+        "PAD_TYPE",
+        "PAD_FLASH",
+        "DRILL_HOLE_X",
+        "DRILL_HOLE_Y",
+        "NET_NAME",
+        "PIN_X",
+        "PIN_Y"
+      ],
+      "record": "S!MECH_RECT_01000X00790_HOLES_C!PACKAGE!MOUNTING_HOLE_X2-P3768_MOUNTING_HOLE!MEC5!PIN!SOLDERMASK_TOP!30463 1!CIRCLE!2!92.000!58.000!3.000!3.000!!!!!!!!!UNSPEC!NTH_275P!CIRCLE!REGULAR!!92.000!58.000!!92.000!58.000!"
+    },
+    {
+      "source_line": 124495,
+      "layout_xy_mm": [
+        0.0,
+        58.0
+      ],
+      "pad_stack": "NTH_275P",
+      "header": [
+        "SYM_NAME",
+        "SYM_TYPE",
+        "COMP_DEVICE_TYPE",
+        "REFDES",
+        "CLASS",
+        "SUBCLASS",
+        "RECORD_TAG",
+        "GRAPHIC_DATA_NAME",
+        "GRAPHIC_DATA_NUMBER",
+        "GRAPHIC_DATA_1",
+        "GRAPHIC_DATA_2",
+        "GRAPHIC_DATA_3",
+        "GRAPHIC_DATA_4",
+        "GRAPHIC_DATA_5",
+        "GRAPHIC_DATA_6",
+        "GRAPHIC_DATA_7",
+        "GRAPHIC_DATA_8",
+        "GRAPHIC_DATA_9",
+        "GRAPHIC_DATA_10",
+        "PIN_NUMBER",
+        "PIN_NAME",
+        "PIN_TYPE",
+        "PAD_STACK_NAME",
+        "PAD_SHAPE_NAME",
+        "PAD_TYPE",
+        "PAD_FLASH",
+        "DRILL_HOLE_X",
+        "DRILL_HOLE_Y",
+        "NET_NAME",
+        "PIN_X",
+        "PIN_Y"
+      ],
+      "record": "S!MECH_RECT_01000X00790_HOLES_C!PACKAGE!MOUNTING_HOLE_X2-P3768_MOUNTING_HOLE!MEC5!PIN!SOLDERMASK_TOP!30473 1!CIRCLE!2!0.000!58.000!3.000!3.000!!!!!!!!!UNSPEC!NTH_275P!CIRCLE!REGULAR!!0.000!58.000!!0.000!58.000!"
+    },
+    {
+      "source_line": 124505,
+      "layout_xy_mm": [
+        86.0,
+        58.0
+      ],
+      "pad_stack": "NTH_275P",
+      "header": [
+        "SYM_NAME",
+        "SYM_TYPE",
+        "COMP_DEVICE_TYPE",
+        "REFDES",
+        "CLASS",
+        "SUBCLASS",
+        "RECORD_TAG",
+        "GRAPHIC_DATA_NAME",
+        "GRAPHIC_DATA_NUMBER",
+        "GRAPHIC_DATA_1",
+        "GRAPHIC_DATA_2",
+        "GRAPHIC_DATA_3",
+        "GRAPHIC_DATA_4",
+        "GRAPHIC_DATA_5",
+        "GRAPHIC_DATA_6",
+        "GRAPHIC_DATA_7",
+        "GRAPHIC_DATA_8",
+        "GRAPHIC_DATA_9",
+        "GRAPHIC_DATA_10",
+        "PIN_NUMBER",
+        "PIN_NAME",
+        "PIN_TYPE",
+        "PAD_STACK_NAME",
+        "PAD_SHAPE_NAME",
+        "PAD_TYPE",
+        "PAD_FLASH",
+        "DRILL_HOLE_X",
+        "DRILL_HOLE_Y",
+        "NET_NAME",
+        "PIN_X",
+        "PIN_Y"
+      ],
+      "record": "S!MECH_RECT_01000X00790_HOLES_C!PACKAGE!MOUNTING_HOLE_X2-P3768_MOUNTING_HOLE!MEC5!PIN!SOLDERMASK_TOP!30483 1!CIRCLE!2!86.000!58.000!3.000!3.000!!!!!!!!!UNSPEC!NTH_275P!CIRCLE!REGULAR!!86.000!58.000!!86.000!58.000!"
+    },
+    {
+      "source_line": 124515,
+      "layout_xy_mm": [
+        86.0,
+        0.0
+      ],
+      "pad_stack": "NTH_275P",
+      "header": [
+        "SYM_NAME",
+        "SYM_TYPE",
+        "COMP_DEVICE_TYPE",
+        "REFDES",
+        "CLASS",
+        "SUBCLASS",
+        "RECORD_TAG",
+        "GRAPHIC_DATA_NAME",
+        "GRAPHIC_DATA_NUMBER",
+        "GRAPHIC_DATA_1",
+        "GRAPHIC_DATA_2",
+        "GRAPHIC_DATA_3",
+        "GRAPHIC_DATA_4",
+        "GRAPHIC_DATA_5",
+        "GRAPHIC_DATA_6",
+        "GRAPHIC_DATA_7",
+        "GRAPHIC_DATA_8",
+        "GRAPHIC_DATA_9",
+        "GRAPHIC_DATA_10",
+        "PIN_NUMBER",
+        "PIN_NAME",
+        "PIN_TYPE",
+        "PAD_STACK_NAME",
+        "PAD_SHAPE_NAME",
+        "PAD_TYPE",
+        "PAD_FLASH",
+        "DRILL_HOLE_X",
+        "DRILL_HOLE_Y",
+        "NET_NAME",
+        "PIN_X",
+        "PIN_Y"
+      ],
+      "record": "S!MECH_RECT_01000X00790_HOLES_C!PACKAGE!MOUNTING_HOLE_X2-P3768_MOUNTING_HOLE!MEC5!PIN!SOLDERMASK_TOP!30493 1!CIRCLE!2!86.000!0.000!3.000!3.000!!!!!!!!!UNSPEC!NTH_275P!CIRCLE!REGULAR!!86.000!0.000!!86.000!0.000!"
+    }
+  ],
+  "selected_holes": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      86.0,
+      0.0
+    ],
+    [
+      0.0,
+      58.0
+    ],
+    [
+      86.0,
+      58.0
+    ]
+  ],
+  "other_holes_not_used": [
+    [
+      92.0,
+      0.0
+    ],
+    [
+      92.0,
+      58.0
+    ]
+  ]
+}

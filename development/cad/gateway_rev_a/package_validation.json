@@ -1,0 +1,8 @@
+{
+  "erc_violations": 0,
+  "expected_nets_verified": 3,
+  "vendor_hole_coordinates_verified": 4,
+  "bom_rows_verified": 13,
+  "mechanical_report": "mechanical_validation.json",
+  "native_render_status": "OK: native FreeCAD views rendered; FCStd saved with final objects visible."
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="930" viewBox="0 0 1440 930">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#24534a"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#172e29}.title{font-size:28px;font-weight:bold}.head{font-size:20px;font-weight:bold}.body{font-size:17px}.note{font-size:15px;fill:#536960}.box{fill:white;stroke:#507d70;stroke-width:2}.candidate{fill:#fff6dc;stroke:#a77f29;stroke-width:2}.line{fill:none;stroke:#24534a;stroke-width:2.5;marker-end:url(#arrow)}.optional{stroke-dasharray:8 6}.power{fill:none;stroke:#a77f29;stroke-width:2.5;marker-end:url(#arrow)}</style>
+<rect width="1440" height="930" fill="#f6f5ef"/>
+<text x="44" y="52" class="title">SANASH — архитектура подключения к штатному видео</text>
+<text x="44" y="84" class="body">Ревизия 0.1 • 12 сентября 2026 • структурная схема для выбора интерфейса</text>
+<text x="44" y="111" class="note">Распиновки, компоненты и размещение вычисления ещё не утверждены. Подключение физически не проверено.</text>
+
+<rect x="44" y="165" width="260" height="106" rx="8" class="box"/>
+<text x="63" y="196" class="head">Штатные камеры</text><text x="63" y="225" class="body">Салонные каналы</text><text x="63" y="250" class="note">Модели и ракурсы: неизвестны</text>
+<path d="M304 218H365" class="line"/>
+<rect x="365" y="165" width="330" height="106" rx="8" class="box"/>
+<text x="384" y="196" class="head">Штатная видеосистема</text><text x="384" y="225" class="body">Регистратор / коммутация</text><text x="384" y="250" class="note">Точную топологию выяснить у техника</text>
+<path d="M695 218H790" class="line"/>
+<rect x="790" y="165" width="280" height="106" rx="8" class="box"/>
+<text x="809" y="196" class="head">Монитор водителя</text><text x="809" y="225" class="body">Штатная функция сохраняется</text><text x="809" y="250" class="note">Независимость выхода проверить</text>
+
+<path d="M455 271V350H325V382" class="line optional"/>
+<path d="M600 271V350H715V382" class="line optional"/>
+<text x="54" y="322" class="head">Кандидаты входа SANASH — выбрать после идентификации системы</text>
+<rect x="44" y="382" width="520" height="122" rx="8" class="candidate"/>
+<text x="64" y="414" class="head">A. Отдельный цифровой поток</text><text x="64" y="443" class="body">Разрешённый сетевой доступ → декодирование</text><text x="64" y="470" class="note">Адрес, протокол, кодек и права: подтвердить</text><text x="64" y="491" class="note">Доступ через сервер оператора также проверяется</text>
+<rect x="605" y="382" width="520" height="122" rx="8" class="candidate"/>
+<text x="625" y="414" class="head">B. Отдельный видеовыход</text><text x="625" y="443" class="body">Совместимый захват → цифровые кадры</text><text x="625" y="470" class="note">Формат, разъём и распиновка: подтвердить</text><text x="625" y="491" class="note">Переходник до подтверждения не выбирается</text>
+
+<path d="M325 504V548H555V581" class="line optional"/><path d="M845 504V548H655V581" class="line optional"/>
+<rect x="350" y="581" width="570" height="125" rx="8" class="box"/>
+<text x="370" y="613" class="head">Функция обработки SANASH</text><text x="370" y="642" class="body">Декодирование → оценка загруженности → статус</text><text x="370" y="669" class="note">Вычисление в автобусе либо на сервере: открыто</text><text x="370" y="691" class="note">Для серверного варианта отдельно проектируется передача видео</text>
+<path d="M920 644H1000" class="line"/>
+<rect x="1000" y="581" width="395" height="125" rx="8" class="box"/>
+<text x="1020" y="613" class="head">Интеграция Avtobys</text><text x="1020" y="642" class="body">Загруженность + время + ID</text><text x="1020" y="669" class="note">Частота, TTL, транспорт: согласовать</text><text x="1020" y="691" class="note">Уровни и score требуют определения</text>
+
+<rect x="44" y="581" width="260" height="125" rx="8" class="candidate"/>
+<text x="63" y="612" class="head">Питание модуля</text><text x="63" y="642" class="body">Источник → защита</text><text x="63" y="668" class="body">→ преобразование</text><text x="63" y="692" class="note">Цепи и номиналы: после BOM</text>
+<path d="M304 644H350" class="power"/>
+
+<rect x="44" y="753" width="1351" height="135" rx="8" fill="#e6eee7"/>
+<text x="64" y="786" class="head">Следующие инженерные решения</text>
+<text x="64" y="816" class="body">1. Подтвердить вход и место вычисления → 2. Выбрать модули и питание → 3. Электрическая схема и BOM</text>
+<text x="64" y="845" class="body">4. Компоновка, охлаждение и крепление → 5. CAD, чертежи и сборка → 6. Стендовая проверка</text>
+<text x="64" y="872" class="note">Экспорт записи позволяет проверить изображение до live-подключения. Схема не является монтажной или принципиальной.</text>
+</svg>

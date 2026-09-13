@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\User\OneDrive\Desktop\me\Sanash\development\cad\gateway_rev_a\sanash_gateway.kicad_sch</source>
+    <date>2026-09-12T22:30:49</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>SANASH bench gateway - system interconnect</title>
+        <company>SANASH</company>
+        <rev>A0</rev>
+        <date>2026-09-12</date>
+        <source>sanash_gateway.kicad_sch</source>
+        <comment number="1" value="Not a vehicle power circuit or PCB fabrication schematic"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="A1">
+      <value>JETSON / J16 DC INPUT</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SANASH" part="KitDC" description=""/>
+      <property name="Sheetname" value="sanash_gateway"/>
+      <property name="Sheetfile" value="sanash_gateway.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c063f800-28b9-5d49-ad6f-099c1a293f07</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="CENTER"/>
+            <pin num="SLEEVE"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="A2">
+      <value>JETSON / J15 ETHERNET</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SANASH" part="KitLAN" description=""/>
+      <property name="Sheetname" value="sanash_gateway"/>
+      <property name="Sheetfile" value="sanash_gateway.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33e5a03d-b22f-59b5-9a25-6e483b4e6bc3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="PORT"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PS1">
+      <value>INCLUDED NVIDIA ADAPTER</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SANASH" part="KitPSU" description=""/>
+      <property name="Sheetname" value="sanash_gateway"/>
+      <property name="Sheetfile" value="sanash_gateway.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3596a8c8-866c-5fab-ad07-dd1388e09121</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="CENTER"/>
+            <pin num="SLEEVE"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X1">
+      <value>AUTHORISED VIDEO NETWORK</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SANASH" part="VideoLAN" description=""/>
+      <property name="Sheetname" value="sanash_gateway"/>
+      <property name="Sheetfile" value="sanash_gateway.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4b612dd2-94ce-5dec-ae7a-7a0ed0558781</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="PORT"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="SANASH" part="KitDC">
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">JETSON / J16 DC INPUT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="CENTER" name="+DC" type="power_in"/>
+        <pin num="SLEEVE" name="RETURN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SANASH" part="KitLAN">
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">JETSON / J15 ETHERNET</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="PORT" name="RJ45_port" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SANASH" part="KitPSU">
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">INCLUDED NVIDIA ADAPTER</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="CENTER" name="+19V" type="power_out"/>
+        <pin num="SLEEVE" name="RETURN" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="SANASH" part="VideoLAN">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">AUTHORISED VIDEO NETWORK</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="PORT" name="RJ45_port" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SANASH">
+      <uri>${KIPRJMOD}/SANASH.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/DC_19V_CENTER" class="Default">
+      <node ref="A1" pin="CENTER" pinfunction="+DC_CENTER" pintype="power_in"/>
+      <node ref="PS1" pin="CENTER" pinfunction="+19V_CENTER" pintype="power_out"/>
+    </net>
+    <net code="2" name="/DC_RETURN_SLEEVE" class="Default">
+      <node ref="A1" pin="SLEEVE" pinfunction="RETURN_SLEEVE" pintype="power_in"/>
+      <node ref="PS1" pin="SLEEVE" pinfunction="RETURN_SLEEVE" pintype="power_out"/>
+    </net>
+    <net code="3" name="/ETHERNET_CABLE_ASSEMBLY" class="Default">
+      <node ref="A2" pin="PORT" pinfunction="RJ45_port_PORT" pintype="passive"/>
+      <node ref="X1" pin="PORT" pinfunction="RJ45_port_PORT" pintype="passive"/>
+    </net>
+  </nets>
+</export>

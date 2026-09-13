@@ -1,0 +1,26 @@
+import FreeCAD as App
+import FreeCADGui as Gui
+from pathlib import Path
+from PySide import QtCore, QtWidgets
+root = Path("C:/Users/User/OneDrive/Desktop/me/Sanash/development/cad/gateway_rev_a")
+try:
+    doc=App.openDocument(str(root/'sanash_enclosure.FCStd'))
+    for o in doc.Objects:
+        if o.ViewObject:o.ViewObject.Visibility=False
+    for name,color in [('Base',(0.17,0.24,0.30)),('Lid',(0.72,0.78,0.82)),('CarrierReference',(0.18,0.52,0.35))]:
+        o=doc.getObject(name);o.ViewObject.Visibility=True;o.ViewObject.ShapeColor=color;o.ViewObject.LineColor=(0.10,0.13,0.16);o.ViewObject.DisplayMode='Flat Lines'
+    Gui.activeDocument().activeView().viewAxonometric()
+    Gui.activeDocument().activeView().fitAll()
+    Gui.updateGui()
+    (root/'drawings').mkdir(exist_ok=True)
+    Gui.activeDocument().activeView().saveImage(str(root/'drawings/enclosure_closed.png'),1600,1200,'White')
+    doc.getObject('Lid').ViewObject.Visibility=False
+    Gui.updateGui()
+    Gui.activeDocument().activeView().saveImage(str(root/'drawings/enclosure_open.png'),1600,1200,'White')
+    doc.getObject('Lid').ViewObject.Visibility=True
+    doc.recompute();doc.save()
+    (root/'render_status.txt').write_text('OK: native FreeCAD views rendered; FCStd saved with final objects visible.')
+except Exception:
+    import traceback
+    (root/'render_status.txt').write_text(traceback.format_exc())
+QtCore.QTimer.singleShot(100, QtWidgets.QApplication.instance().quit)

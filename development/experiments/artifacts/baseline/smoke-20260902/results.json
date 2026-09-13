@@ -1,0 +1,127 @@
+{
+ "run_id": "smoke-20260902",
+ "finished_utc": "2026-09-02T18:43:28+00:00",
+ "commit": "38d39dccf45e253475ffbe2f17e274ae92acc2f8",
+ "backend": "local cpu, torch 2.13.0+cpu, python 3.13.3",
+ "config": {
+  "images_zip": "C:\\Users\\User\\OneDrive\\Desktop\\me\\Sanash\\data\\external\\disco_images.zip",
+  "density_zip": "C:\\Users\\User\\OneDrive\\Desktop\\me\\Sanash\\data\\external\\disco_density_maps.zip",
+  "subset_dir": "C:\\Users\\User\\OneDrive\\Desktop\\me\\Sanash\\data\\interim\\disco_baseline",
+  "output_dir": "C:\\Users\\User\\OneDrive\\Desktop\\me\\Sanash\\outputs\\baseline",
+  "image_height": 216,
+  "image_width": 384,
+  "density_stride": 8,
+  "density_scale": 1.0,
+  "batch_size": 2,
+  "learning_rate": 0.0001,
+  "epochs": 2,
+  "seed": 2026,
+  "device": "cpu",
+  "num_workers": 0,
+  "density_hw": [
+   27,
+   48
+  ]
+ },
+ "data_manifest": {
+  "created_utc": "2026-09-02T18:41:17+00:00",
+  "seed": 2026,
+  "source": {
+   "images_zip": {
+    "path": "C:\\Users\\User\\OneDrive\\Desktop\\me\\Sanash\\data\\external\\disco_images.zip",
+    "bytes": 2186215586
+   },
+   "density_zip": {
+    "path": "C:\\Users\\User\\OneDrive\\Desktop\\me\\Sanash\\data\\external\\disco_density_maps.zip",
+    "bytes": 122132558
+   }
+  },
+  "split_sizes_in_archive": {
+   "train": 1435,
+   "val": 200,
+   "test": 300
+  },
+  "extracted": {
+   "train": [
+    "0344",
+    "0521",
+    "0985",
+    "1149",
+    "1751",
+    "1784",
+    "2333",
+    "3074",
+    "3299",
+    "3549",
+    "4013",
+    "4248",
+    "4405",
+    "4622",
+    "stage2-0365",
+    "stage2-0767"
+   ],
+   "val": [
+    "0085",
+    "1302",
+    "1597",
+    "1757",
+    "3061",
+    "4292",
+    "stage2-0464",
+    "stage2-0777"
+   ],
+   "test": [
+    "0466",
+    "0764",
+    "0896",
+    "1118",
+    "1183",
+    "4379",
+    "5716",
+    "stage2-0730"
+   ]
+  },
+  "subset_sha256": "d9a1db9d827be2e15acac68a71825750c9a4bc4d053df2b4b77660c1afe73a35"
+ },
+ "train_mean_count": 104.22448873519897,
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 0.19605796178802848,
+   "n": 8,
+   "true_mean_count": 118.61680603027344,
+   "pred_mean_count": 28.15392303466797,
+   "model_mae": 104.18504500389099,
+   "model_rmse": 135.69560140995404,
+   "constant_value": 104.22448873519897,
+   "constant_mae": 89.11681175231934,
+   "constant_rmse": 103.60494915265177
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.19277068984229118,
+   "n": 8,
+   "true_mean_count": 118.61680603027344,
+   "pred_mean_count": 60.19682312011719,
+   "model_mae": 94.24045467376709,
+   "model_rmse": 112.50209469869161,
+   "constant_value": 104.22448873519897,
+   "constant_mae": 89.11681175231934,
+   "constant_rmse": 103.60494915265177
+  }
+ ],
+ "final_val": {
+  "epoch": 2,
+  "train_loss": 0.19277068984229118,
+  "n": 8,
+  "true_mean_count": 118.61680603027344,
+  "pred_mean_count": 60.19682312011719,
+  "model_mae": 94.24045467376709,
+  "model_rmse": 112.50209469869161,
+  "constant_value": 104.22448873519897,
+  "constant_mae": 89.11681175231934,
+  "constant_rmse": 103.60494915265177
+ },
+ "wall_seconds": 5.6,
+ "disclaimer": "Smoke test on a subset of DISCO, a public outdoor crowd dataset. Not bus cabin data, not a validated model, not product performance."
+}

@@ -1,0 +1,203 @@
+[{"stream_name":"stdout","time":1.236330762,"data":"========================================================================\n"}
+,{"stream_name":"stdout","time":1.236414132,"data":"Sanas depth occupancy - mode: SINGLE (CPU, no training)\n"}
+,{"stream_name":"stdout","time":1.236421037,"data":"========================================================================\n"}
+,{"stream_name":"stdout","time":1.236425815,"data":"\n"}
+,{"stream_name":"stdout","time":1.236430269,"data":"------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":1.236435109,"data":"DIAGNOSTIC: contents of /kaggle/input/notebooks/diypyzsdiyas/sanas-extract-subset\n"}
+,{"stream_name":"stdout","time":1.236439571,"data":"------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":1.241887065,"data":"  file        15,750  __output__.json\n"}
+,{"stream_name":"stdout","time":1.241919986,"data":"  file       393,980  __results__.html\n"}
+,{"stream_name":"stdout","time":1.241926532,"data":"  file        24,936  __script__.ipynb\n"}
+,{"stream_name":"stdout","time":1.241931054,"data":"  file        23,338  __script__.py\n"}
+,{"stream_name":"stdout","time":1.241935336,"data":"  file             0  custom.css\n"}
+,{"stream_name":"stdout","time":1.241939926,"data":"  dir              0  subset\n"}
+,{"stream_name":"stdout","time":1.24194453,"data":"mirror: hf\n"}
+,{"stream_name":"stdout","time":1.464270549,"data":"archive size: 73,515,214,805 bytes\n"}
+,{"stream_name":"stdout","time":1.5521055430000001,"data":"central directory: 298,694 entries, 44,954,940 bytes at offset 73,470,259,767\n"}
+,{"stream_name":"stdout","time":3.688821525,"data":"\n"}
+,{"stream_name":"stdout","time":3.688848723,"data":"selection (shared definition, src/sanas/selection.py):\n"}
+,{"stream_name":"stdout","time":3.688854445,"data":"  images                     1,289\n"}
+,{"stream_name":"stdout","time":3.68885931,"data":"  labels                     32,911\n"}
+,{"stream_name":"stdout","time":3.688864019,"data":"  depth                      1,204\n"}
+,{"stream_name":"stdout","time":3.688868764,"data":"  total_members              35,404\n"}
+,{"stream_name":"stdout","time":3.68887348,"data":"  total_compressed_bytes     675,932,572\n"}
+,{"stream_name":"stdout","time":3.6888783050000002,"data":"  GB selected                0.676\n"}
+,{"stream_name":"stdout","time":3.688883115,"data":"  per-camera depth frames    {'front_left_depth': 1204}\n"}
+,{"stream_name":"stdout","time":3.688887886,"data":"  regression vs executed run: CLEAN\n"}
+,{"stream_name":"stdout","time":3.732874762,"data":"extracting 35,404 members in 2,456 range request(s); ~0.741 GB to transfer\n"}
+,{"stream_name":"stdout","time":6.067580765,"data":"  run 25/2456  files=29  out=0.008 GB  ~317.5 MB/s\n"}
+,{"stream_name":"stdout","time":8.865663283,"data":"  run 50/2456  files=54  out=0.015 GB  ~144.4 MB/s\n"}
+,{"stream_name":"stdout","time":11.346104112999999,"data":"  run 75/2456  files=79  out=0.021 GB  ~97.3 MB/s\n"}
+,{"stream_name":"stdout","time":14.074546526,"data":"  run 100/2456  files=104  out=0.028 GB  ~71.7 MB/s\n"}
+,{"stream_name":"stdout","time":16.81370116,"data":"  run 125/2456  files=129  out=0.034 GB  ~56.7 MB/s\n"}
+,{"stream_name":"stdout","time":19.885100649,"data":"  run 150/2456  files=154  out=0.041 GB  ~45.9 MB/s\n"}
+,{"stream_name":"stdout","time":23.425675176,"data":"  run 175/2456  files=179  out=0.047 GB  ~37.6 MB/s\n"}
+,{"stream_name":"stdout","time":25.949129457,"data":"  run 200/2456  files=204  out=0.054 GB  ~33.4 MB/s\n"}
+,{"stream_name":"stdout","time":28.50408617,"data":"  run 225/2456  files=229  out=0.060 GB  ~29.9 MB/s\n"}
+,{"stream_name":"stdout","time":31.347763867,"data":"  run 250/2456  files=254  out=0.067 GB  ~26.8 MB/s\n"}
+,{"stream_name":"stdout","time":34.42386429,"data":"  run 275/2456  files=279  out=0.073 GB  ~24.1 MB/s\n"}
+,{"stream_name":"stdout","time":37.458582831,"data":"  run 300/2456  files=304  out=0.080 GB  ~22.0 MB/s\n"}
+,{"stream_name":"stdout","time":39.898791977,"data":"  run 325/2456  files=329  out=0.086 GB  ~20.5 MB/s\n"}
+,{"stream_name":"stdout","time":43.189173776,"data":"  run 350/2456  files=354  out=0.093 GB  ~18.8 MB/s\n"}
+,{"stream_name":"stdout","time":46.372060293,"data":"  run 375/2456  files=379  out=0.099 GB  ~17.4 MB/s\n"}
+,{"stream_name":"stdout","time":49.247570876,"data":"  run 400/2456  files=404  out=0.106 GB  ~16.3 MB/s\n"}
+,{"stream_name":"stdout","time":52.256033825,"data":"  run 425/2456  files=429  out=0.112 GB  ~15.3 MB/s\n"}
+,{"stream_name":"stdout","time":54.569572671,"data":"  run 450/2456  files=454  out=0.119 GB  ~14.6 MB/s\n"}
+,{"stream_name":"stdout","time":57.727854885,"data":"  run 475/2456  files=479  out=0.125 GB  ~13.7 MB/s\n"}
+,{"stream_name":"stdout","time":61.101093622,"data":"  run 500/2456  files=504  out=0.132 GB  ~12.9 MB/s\n"}
+,{"stream_name":"stdout","time":64.723469005,"data":"  run 525/2456  files=529  out=0.138 GB  ~12.2 MB/s\n"}
+,{"stream_name":"stdout","time":67.661317419,"data":"  run 550/2456  files=554  out=0.145 GB  ~11.6 MB/s\n"}
+,{"stream_name":"stdout","time":70.88158441,"data":"  run 575/2456  files=579  out=0.152 GB  ~11.0 MB/s\n"}
+,{"stream_name":"stdout","time":73.273420546,"data":"  run 600/2456  files=604  out=0.159 GB  ~10.7 MB/s\n"}
+,{"stream_name":"stdout","time":76.258401088,"data":"  run 625/2456  files=629  out=0.165 GB  ~10.2 MB/s\n"}
+,{"stream_name":"stdout","time":79.136900196,"data":"  run 650/2456  files=654  out=0.172 GB  ~9.8 MB/s\n"}
+,{"stream_name":"stdout","time":82.74046297699999,"data":"  run 675/2456  files=679  out=0.178 GB  ~9.4 MB/s\n"}
+,{"stream_name":"stdout","time":85.483830884,"data":"  run 700/2456  files=704  out=0.185 GB  ~9.1 MB/s\n"}
+,{"stream_name":"stdout","time":88.512127718,"data":"  run 725/2456  files=729  out=0.191 GB  ~8.7 MB/s\n"}
+,{"stream_name":"stdout","time":91.65389661,"data":"  run 750/2456  files=754  out=0.198 GB  ~8.4 MB/s\n"}
+,{"stream_name":"stdout","time":94.343143772,"data":"  run 775/2456  files=779  out=0.204 GB  ~8.2 MB/s\n"}
+,{"stream_name":"stdout","time":97.624381323,"data":"  run 800/2456  files=804  out=0.211 GB  ~7.9 MB/s\n"}
+,{"stream_name":"stdout","time":100.836302654,"data":"  run 825/2456  files=829  out=0.217 GB  ~7.6 MB/s\n"}
+,{"stream_name":"stdout","time":104.328483083,"data":"  run 850/2456  files=854  out=0.224 GB  ~7.4 MB/s\n"}
+,{"stream_name":"stdout","time":106.601818726,"data":"  run 875/2456  files=879  out=0.230 GB  ~7.2 MB/s\n"}
+,{"stream_name":"stdout","time":109.915294762,"data":"  run 900/2456  files=904  out=0.237 GB  ~7.0 MB/s\n"}
+,{"stream_name":"stdout","time":112.116724535,"data":"  run 925/2456  files=929  out=0.243 GB  ~6.8 MB/s\n"}
+,{"stream_name":"stdout","time":114.908119135,"data":"  run 950/2456  files=954  out=0.249 GB  ~6.7 MB/s\n"}
+,{"stream_name":"stdout","time":117.958218747,"data":"  run 975/2456  files=979  out=0.256 GB  ~6.5 MB/s\n"}
+,{"stream_name":"stdout","time":120.728978548,"data":"  run 1000/2456  files=1,004  out=0.262 GB  ~6.3 MB/s\n"}
+,{"stream_name":"stdout","time":123.587045079,"data":"  run 1025/2456  files=1,029  out=0.269 GB  ~6.2 MB/s\n"}
+,{"stream_name":"stdout","time":126.73901242,"data":"  run 1050/2456  files=1,054  out=0.275 GB  ~6.0 MB/s\n"}
+,{"stream_name":"stdout","time":129.598657869,"data":"  run 1075/2456  files=1,079  out=0.282 GB  ~5.9 MB/s\n"}
+,{"stream_name":"stdout","time":132.29313742,"data":"  run 1100/2456  files=1,104  out=0.288 GB  ~5.8 MB/s\n"}
+,{"stream_name":"stdout","time":135.364930431,"data":"  run 1125/2456  files=1,129  out=0.294 GB  ~5.6 MB/s\n"}
+,{"stream_name":"stdout","time":138.45276912,"data":"  run 1150/2456  files=1,154  out=0.301 GB  ~5.5 MB/s\n"}
+,{"stream_name":"stdout","time":141.194691164,"data":"  run 1175/2456  files=1,179  out=0.307 GB  ~5.4 MB/s\n"}
+,{"stream_name":"stdout","time":144.259530829,"data":"  run 1200/2456  files=1,204  out=0.314 GB  ~5.3 MB/s\n"}
+,{"stream_name":"stdout","time":146.882575818,"data":"  run 1225/2456  files=1,229  out=0.320 GB  ~5.2 MB/s\n"}
+,{"stream_name":"stdout","time":149.942814548,"data":"  run 1250/2456  files=1,254  out=0.327 GB  ~5.1 MB/s\n"}
+,{"stream_name":"stdout","time":152.940743034,"data":"  run 1275/2456  files=1,279  out=0.333 GB  ~5.0 MB/s\n"}
+,{"stream_name":"stdout","time":156.248441311,"data":"  run 1300/2456  files=1,306  out=0.340 GB  ~4.9 MB/s\n"}
+,{"stream_name":"stdout","time":159.101476872,"data":"  run 1325/2456  files=1,332  out=0.347 GB  ~4.8 MB/s\n"}
+,{"stream_name":"stdout","time":163.141254861,"data":"  run 1350/2456  files=1,357  out=0.354 GB  ~4.6 MB/s\n"}
+,{"stream_name":"stdout","time":165.972140207,"data":"  run 1375/2456  files=1,383  out=0.361 GB  ~4.6 MB/s\n"}
+,{"stream_name":"stdout","time":168.61238809,"data":"  run 1400/2456  files=1,409  out=0.369 GB  ~4.5 MB/s\n"}
+,{"stream_name":"stdout","time":171.28050144,"data":"  run 1425/2456  files=1,435  out=0.376 GB  ~4.4 MB/s\n"}
+,{"stream_name":"stdout","time":174.311164528,"data":"  run 1450/2456  files=1,461  out=0.383 GB  ~4.3 MB/s\n"}
+,{"stream_name":"stdout","time":177.991143237,"data":"  run 1475/2456  files=1,486  out=0.390 GB  ~4.3 MB/s\n"}
+,{"stream_name":"stdout","time":181.054142801,"data":"  run 1500/2456  files=1,511  out=0.397 GB  ~4.2 MB/s\n"}
+,{"stream_name":"stdout","time":185.045292062,"data":"  run 1525/2456  files=1,538  out=0.405 GB  ~4.1 MB/s\n"}
+,{"stream_name":"stdout","time":188.14907351,"data":"  run 1550/2456  files=1,566  out=0.412 GB  ~4.0 MB/s\n"}
+,{"stream_name":"stdout","time":192.081977683,"data":"  run 1575/2456  files=1,591  out=0.419 GB  ~3.9 MB/s\n"}
+,{"stream_name":"stdout","time":194.871467242,"data":"  run 1600/2456  files=1,616  out=0.427 GB  ~3.9 MB/s\n"}
+,{"stream_name":"stdout","time":198.190721399,"data":"  run 1625/2456  files=1,644  out=0.435 GB  ~3.8 MB/s\n"}
+,{"stream_name":"stdout","time":201.108636008,"data":"  run 1650/2456  files=1,670  out=0.442 GB  ~3.8 MB/s\n"}
+,{"stream_name":"stdout","time":204.510288649,"data":"  run 1675/2456  files=1,697  out=0.450 GB  ~3.7 MB/s\n"}
+,{"stream_name":"stdout","time":207.373282075,"data":"  run 1700/2456  files=1,723  out=0.457 GB  ~3.6 MB/s\n"}
+,{"stream_name":"stdout","time":210.521687499,"data":"  run 1725/2456  files=1,748  out=0.464 GB  ~3.6 MB/s\n"}
+,{"stream_name":"stdout","time":213.110109792,"data":"  run 1750/2456  files=1,774  out=0.471 GB  ~3.5 MB/s\n"}
+,{"stream_name":"stdout","time":216.678981291,"data":"  run 1775/2456  files=1,799  out=0.478 GB  ~3.5 MB/s\n"}
+,{"stream_name":"stdout","time":219.561896125,"data":"  run 1800/2456  files=1,826  out=0.485 GB  ~3.4 MB/s\n"}
+,{"stream_name":"stdout","time":222.615644138,"data":"  run 1825/2456  files=1,851  out=0.492 GB  ~3.4 MB/s\n"}
+,{"stream_name":"stdout","time":225.83166959,"data":"  run 1850/2456  files=1,877  out=0.499 GB  ~3.3 MB/s\n"}
+,{"stream_name":"stdout","time":228.45174296,"data":"  run 1875/2456  files=1,903  out=0.507 GB  ~3.3 MB/s\n"}
+,{"stream_name":"stdout","time":231.922154402,"data":"  run 1900/2456  files=1,929  out=0.514 GB  ~3.2 MB/s\n"}
+,{"stream_name":"stdout","time":235.175313053,"data":"  run 1925/2456  files=1,956  out=0.521 GB  ~3.2 MB/s\n"}
+,{"stream_name":"stdout","time":239.033163668,"data":"  run 1950/2456  files=1,983  out=0.529 GB  ~3.1 MB/s\n"}
+,{"stream_name":"stdout","time":242.293999456,"data":"  run 1975/2456  files=2,008  out=0.536 GB  ~3.1 MB/s\n"}
+,{"stream_name":"stdout","time":245.352106027,"data":"  run 2000/2456  files=2,034  out=0.543 GB  ~3.1 MB/s\n"}
+,{"stream_name":"stdout","time":249.046454714,"data":"  run 2025/2456  files=2,060  out=0.550 GB  ~3.0 MB/s\n"}
+,{"stream_name":"stdout","time":252.264043032,"data":"  run 2050/2456  files=2,086  out=0.558 GB  ~3.0 MB/s\n"}
+,{"stream_name":"stdout","time":255.80907488,"data":"  run 2075/2456  files=2,112  out=0.565 GB  ~2.9 MB/s\n"}
+,{"stream_name":"stdout","time":258.28100878,"data":"  run 2100/2456  files=2,138  out=0.572 GB  ~2.9 MB/s\n"}
+,{"stream_name":"stdout","time":262.040218277,"data":"  run 2125/2456  files=2,163  out=0.578 GB  ~2.9 MB/s\n"}
+,{"stream_name":"stdout","time":264.680260747,"data":"  run 2150/2456  files=2,189  out=0.586 GB  ~2.8 MB/s\n"}
+,{"stream_name":"stdout","time":268.284487041,"data":"  run 2175/2456  files=2,215  out=0.593 GB  ~2.8 MB/s\n"}
+,{"stream_name":"stdout","time":271.775887187,"data":"  run 2200/2456  files=2,243  out=0.600 GB  ~2.8 MB/s\n"}
+,{"stream_name":"stdout","time":274.876454148,"data":"  run 2225/2456  files=2,271  out=0.608 GB  ~2.7 MB/s\n"}
+,{"stream_name":"stdout","time":277.865518517,"data":"  run 2250/2456  files=2,298  out=0.615 GB  ~2.7 MB/s\n"}
+,{"stream_name":"stdout","time":281.058644963,"data":"  run 2275/2456  files=2,324  out=0.622 GB  ~2.7 MB/s\n"}
+,{"stream_name":"stdout","time":283.924102889,"data":"  run 2300/2456  files=2,349  out=0.629 GB  ~2.6 MB/s\n"}
+,{"stream_name":"stdout","time":286.491919554,"data":"  run 2325/2456  files=2,375  out=0.636 GB  ~2.6 MB/s\n"}
+,{"stream_name":"stdout","time":289.777618699,"data":"  run 2350/2456  files=2,401  out=0.643 GB  ~2.6 MB/s\n"}
+,{"stream_name":"stdout","time":293.149168341,"data":"  run 2375/2456  files=2,426  out=0.650 GB  ~2.6 MB/s\n"}
+,{"stream_name":"stdout","time":296.425330426,"data":"  run 2400/2456  files=2,451  out=0.657 GB  ~2.5 MB/s\n"}
+,{"stream_name":"stdout","time":299.24628275,"data":"  run 2425/2456  files=2,476  out=0.664 GB  ~2.5 MB/s\n"}
+,{"stream_name":"stdout","time":301.938453486,"data":"  run 2450/2456  files=2,501  out=0.671 GB  ~2.5 MB/s\n"}
+,{"stream_name":"stdout","time":305.187564513,"data":"  run 2456/2456  files=35,404  out=0.686 GB  ~2.5 MB/s\n"}
+,{"stream_name":"stdout","time":305.187603992,"data":"  corrected 1204 file extension(s) after magic-byte sniff (e.g. cameras/depth/front_left_depth/images/1779354669570683565.jpg -\u003e cameras/depth/front_left_depth/images/1779354669570683565.png)\n"}
+,{"stream_name":"stdout","time":305.188370863,"data":"\n"}
+,{"stream_name":"stdout","time":305.188423093,"data":"extracted 35,404 files, 0.686 GB in 301.5s (1,204 extensions corrected by magic-byte sniff)\n"}
+,{"stream_name":"stdout","time":306.292668871,"data":"labels: 1,289 rows -\u003e /kaggle/working/subset/labels.jsonl\n"}
+,{"stream_name":"stdout","time":306.29311998,"data":"count_view  {'0': 218, '1': 632, '2': 389, '3': 50}\n"}
+,{"stream_name":"stdout","time":306.293519054,"data":"count_cabin {'0': 120, '1': 656, '2': 453, '3': 60}\n"}
+,{"stream_name":"stdout","time":306.329018963,"data":"\n"}
+,{"stream_name":"stdout","time":306.329064332,"data":"rig:\n"}
+,{"stream_name":"stdout","time":306.336379706,"data":"  front_left_depth     848x480 fx=422.0 origin_in_base=[-1.18  4.22  1.95]\n"}
+,{"stream_name":"stdout","time":306.343725175,"data":"\n"}
+,{"stream_name":"stdout","time":306.34376091,"data":"frames with a count_cabin label: 1,289\n"}
+,{"stream_name":"stdout","time":306.344098837,"data":"count distribution: {'0': 120, '1': 656, '2': 453, '3': 60}\n"}
+,{"stream_name":"stdout","time":306.344108429,"data":"BEV grid 120x120 cells of 0.1 m, z 0.6-2.0 m\n"}
+,{"stream_name":"stdout","time":330.056092673,"data":"\n"}
+,{"stream_name":"stdout","time":330.056143361,"data":"frames scored: 1,204   matched depth frames per camera: {'front_left_depth': 1204}\n"}
+,{"stream_name":"stdout","time":330.056149781,"data":"\n"}
+,{"stream_name":"stdout","time":330.056154799,"data":"DEPTH RANGE REALITY CHECK (share of pixels, mean over frames)\n"}
+,{"stream_name":"stdout","time":330.056989373,"data":"  front_left_depth     zero 15.5%  in 0.3-3.0m 42.2%  beyond 42.3%\n"}
+,{"stream_name":"stdout","time":330.057016921,"data":"  VERDICT: on at least one camera most of the frame lies outside the\n"}
+,{"stream_name":"stdout","time":330.057023123,"data":"  sensor's reliable window. These scores describe the NEAR FIELD ONLY.\n"}
+,{"stream_name":"stdout","time":330.057252026,"data":"\n"}
+,{"stream_name":"stdout","time":330.05726048,"data":"STEP 1: FLOOR COVERAGE (empty-cabin frames: 118)\n"}
+,{"stream_name":"stdout","time":330.643689886,"data":"  occupied-region cells (from every 3D box, dilated 0.3 m): 4,110\n"}
+,{"stream_name":"stdout","time":330.643735298,"data":"    front_left_depth     covers  10.0% of the region\n"}
+,{"stream_name":"stdout","time":330.643743001,"data":"  UNION of 1 camera(s): 10.0% covered, 3,699 cells unseen\n"}
+,{"stream_name":"stdout","time":330.643749643,"data":"\n"}
+,{"stream_name":"stdout","time":330.643763312,"data":"STEP 2/3: OCCUPANCY SCORES vs GROUND TRUTH\n"}
+,{"stream_name":"stdout","time":332.645430423,"data":"\n"}
+,{"stream_name":"stdout","time":332.645471944,"data":"  single camera: front_left_depth  (n=1,204)\n"}
+,{"stream_name":"stdout","time":332.64547888,"data":"    Pearson  r   : 0.184   95% CI [0.133, 0.231]\n"}
+,{"stream_name":"stdout","time":332.645484264,"data":"    Spearman rho : 0.139   95% CI [0.081, 0.199]\n"}
+,{"stream_name":"stdout","time":332.645489509,"data":"    monotonic in count: False\n"}
+,{"stream_name":"stdout","time":332.645494772,"data":"     count       n       mean     median        std\n"}
+,{"stream_name":"stdout","time":332.645500372,"data":"         0     118     0.0014     0.0013     0.0003\n"}
+,{"stream_name":"stdout","time":332.645506045,"data":"         1     615     0.0017     0.0015     0.0007\n"}
+,{"stream_name":"stdout","time":332.64551132,"data":"         2     412     0.0019     0.0015     0.0010\n"}
+,{"stream_name":"stdout","time":332.645516728,"data":"         3      59     0.0017     0.0014     0.0009\n"}
+,{"stream_name":"stdout","time":332.645522345,"data":"    FRAGILE: sparse levels (fewer than 100 frames): count 3: n=59\n"}
+,{"stream_name":"stdout","time":332.645528229,"data":"    FRAGILE: highest occupancy observed is 3; the dataset never exceeds 4 and this subset tops out lower still, so nothing here speaks to a full cabin\n"}
+,{"stream_name":"stdout","time":334.469280734,"data":"\n"}
+,{"stream_name":"stdout","time":334.469311365,"data":"  merged 1 camera(s)  (n=1,204)\n"}
+,{"stream_name":"stdout","time":334.469317953,"data":"    Pearson  r   : 0.184   95% CI [0.133, 0.231]\n"}
+,{"stream_name":"stdout","time":334.469323654,"data":"    Spearman rho : 0.139   95% CI [0.081, 0.199]\n"}
+,{"stream_name":"stdout","time":334.469329607,"data":"    monotonic in count: False\n"}
+,{"stream_name":"stdout","time":334.46933479,"data":"     count       n       mean     median        std\n"}
+,{"stream_name":"stdout","time":334.469389217,"data":"         0     118     0.0014     0.0013     0.0003\n"}
+,{"stream_name":"stdout","time":334.469397297,"data":"         1     615     0.0017     0.0015     0.0007\n"}
+,{"stream_name":"stdout","time":334.469402189,"data":"         2     412     0.0019     0.0015     0.0010\n"}
+,{"stream_name":"stdout","time":334.469406607,"data":"         3      59     0.0017     0.0014     0.0009\n"}
+,{"stream_name":"stdout","time":334.469411127,"data":"    FRAGILE: sparse levels (fewer than 100 frames): count 3: n=59\n"}
+,{"stream_name":"stdout","time":334.46941589,"data":"    FRAGILE: highest occupancy observed is 3; the dataset never exceeds 4 and this subset tops out lower still, so nothing here speaks to a full cabin\n"}
+,{"stream_name":"stdout","time":334.469421182,"data":"\n"}
+,{"stream_name":"stdout","time":334.469425652,"data":"STEP 5: SCOPE\n"}
+,{"stream_name":"stdout","time":334.46943046,"data":"  This measures GEOMETRY AND INFRASTRUCTURE: whether the rig sees the floor,\n"}
+,{"stream_name":"stdout","time":334.469435658,"data":"  whether depth deprojects into a coherent cabin frame, and whether a BEV\n"}
+,{"stream_name":"stdout","time":334.469440614,"data":"  occupancy score moves with occupant count at all.\n"}
+,{"stream_name":"stdout","time":334.469445474,"data":"  It does NOT test behaviour in a genuinely full cabin. The dataset never\n"}
+,{"stream_name":"stdout","time":334.469450402,"data":"  exceeds 4 occupants and this subset tops out lower, so the crowded regime\n"}
+,{"stream_name":"stdout","time":334.469455041,"data":"  that the product exists to measure is entirely unobserved.\n"}
+,{"stream_name":"stdout","time":334.469460315,"data":"  Ground truth is model-generated pseudo-labels, not human annotation.\n"}
+,{"stream_name":"stdout","time":334.469465237,"data":"  Single 32-minute daytime session: nothing here speaks to low light.\n"}
+,{"stream_name":"stdout","time":334.469470274,"data":"\n"}
+,{"stream_name":"stdout","time":334.469475353,"data":"  Statistical fragility:\n"}
+,{"stream_name":"stdout","time":334.46948018,"data":"   - sparse levels (fewer than 100 frames): count 3: n=59\n"}
+,{"stream_name":"stdout","time":334.469484882,"data":"   - highest occupancy observed is 3; the dataset never exceeds 4 and this subset tops out lower still, so nothing here speaks to a full cabin\n"}
+,{"stream_name":"stdout","time":334.469490118,"data":"  Correlation point estimates above are reported with bootstrap intervals\n"}
+,{"stream_name":"stdout","time":334.469495239,"data":"  precisely because the point estimate alone would look more solid than it is.\n"}
+,{"stream_name":"stdout","time":334.470317901,"data":"\n"}
+,{"stream_name":"stdout","time":334.470332052,"data":"wrote /kaggle/working/depth_occupancy_single_metrics.json\n"}
+,{"stream_name":"stdout","time":334.470337144,"data":"========================================================================\n"}
+,{"stream_name":"stderr","time":337.443378493,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":337.443439301,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":337.828501945,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":337.828532615,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":339.508155248,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":341.569405751,"data":"[NbConvertApp] Writing 616488 bytes to __results__.html\n"}
+]

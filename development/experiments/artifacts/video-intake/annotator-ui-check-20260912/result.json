@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "origin": "synthetic",
+  "url": "http://127.0.0.1:8769/annotate.html",
+  "checks": [
+    "point placement",
+    "point labels",
+    "undo",
+    "rater-switch guard",
+    "JSON download",
+    "draft reload",
+    "explicit reviewed zero",
+    "unreviewed excluded",
+    "wrong-rater import rejected",
+    "desktop render",
+    "mobile no overflow",
+    "no page errors"
+  ],
+  "page_errors": []
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "File": ".\\sanas_form_router\\Code.gs",
+    "Hash": "19CFC95484B01CCF5584C1B892101065603608DC707F6800986813170E595EB7"
+  },
+  {
+    "File": ".\\sanas_form_router\\Index.html",
+    "Hash": "495544AF7048E9455FC0140DB135B520DF9A60A5DD6462632BA51B9F122D84A1"
+  },
+  {
+    "File": ".\\research\\survey\\wave2\\master_responses.gs",
+    "Hash": "0C98BBDF4EE114DDB415E71BB62558B8E5DFFE5C5BABB00706DDFCEF076E670D"
+  },
+  {
+    "File": ".\\research\\survey\\wave2\\verify_local.cjs",
+    "Hash": "8DF54C26EBF0B0CAA8E192A0949DE2CE6BE8D4C2C87133E054B0F165B035C56B"
+  },
+  {
+    "File": ".\\research\\survey\\wave2\\check_public_forms.cjs",
+    "Hash": "57D9DEBC40E45EEC85944AFB40C381938BDB669945C8BE40371E2DB2537FBAE2"
+  }
+]

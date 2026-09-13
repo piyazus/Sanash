@@ -1,0 +1,492 @@
+[00:01-00:15] Okay, perfect. Right. Just this. So, as I said, we're going to be going through our abstracts today, so
+[00:16-00:23] the cherry on the cake, the final section of your paper. So, I'm going to kind of outline to you the
+[00:23-00:27] very quick foundations, like very quick structure, the very quick things that you'll want to include
+[00:27-00:30] in your abstract. And of course, as always, we will go into more detail and more depth and
+[00:30-00:34] discuss exactly kind of what those, you know, structures and what those little, you know,
+[00:34-00:42] sub parts look in, you know, greater detail. So, the abstract is basically your whole paper,
+[00:42-00:49] just summarized into like one paragraph is very short. Was there a message in the chat? Sorry.
+[00:51-01:00] So, it is very short. It is, so sorry, keep getting messages from the chat. It's very short.
+[01:00-01:06] It's basically a really good summary of your paper, condensed into like a couple paragraphs,
+[01:06-01:12] two at most, one ideally. So, there's going to be six main components. So, your research objectives,
+[01:12-01:16] your design, your methodology, your research findings, the contributions, the practical
+[01:16-01:22] implications and the limitations with future research. Sorry, it should be limitations
+[01:22-01:28] and future research. So, those are your kinds of main things. You may find, as you're looking
+[01:28-01:33] at this, it's kind of very similar to what your conclusion is like, but there is a difference.
+[01:33-01:38] The main difference being your abstract is much shorter than your conclusion. It is much more
+[01:38-01:42] condensed. I'm sure that you guys, of course, as you're reading, you know, research for your paper,
+[01:42-01:47] as you're reading other papers, the first thing that you would have to read is the abstract. So,
+[01:47-01:50] it kind of, you know, you already have an idea of what it is, kind of what the purpose is.
+[01:50-01:55] It is very much a very short, you know, summarized version of your paper.
+[01:56-02:02] So, of course, writing an abstract and identifying a very good one is very easy. It's not, you know,
+[02:02-02:06] a hard task to see an abstract and say, oh, it's very bad or very good. It's quite, you know,
+[02:06-02:11] easy to identify a very good one. But obviously, building one from scratch under a bit of time
+[02:11-02:15] pressure is not very easy. It's quite a skill that hopefully you guys will be able to learn.
+[02:17-02:21] Of course, if you're doing an empirical paper, there is a bit of a difference
+[02:21-02:27] when you compare your abstract to a lit review paper, but it's not significant. The main difference
+[02:27-02:31] is that with the lit review paper, you're not going to have any samples, there's no data collection,
+[02:31-02:35] there's no percentages. So, you don't really mention these things, but of course, if you're
+[02:35-02:39] doing an empirical paper where you've conducted a survey, you will have, you know, things like
+[02:39-02:45] this that you must discuss. So, you can kind of treat them as like two separate types of
+[02:45-02:48] abstracts in a way, although they are very similar. They are a bit different.
+[02:50-02:58] So, let's move on. Okay, so let's go through the first components. Your research objective.
+[02:58-03:01] One thing I will say before I go through these components is that when I say components,
+[03:01-03:05] it's literally only a few sentences. You only have to spend like maybe
+[03:05-03:09] two to three sentences discussing each component, because keep in mind,
+[03:09-03:13] your abstract is very short. Most cases, it's just a paragraph. Sometimes,
+[03:13-03:17] if you really need to, you can split it into two smaller paragraphs, but ideally,
+[03:17-03:25] it is just one paragraph. So, with that being said, oh, so the first thing you want to do
+[03:25-03:28] is outline your research objective. So, this is the opening. The main thing,
+[03:28-03:32] no matter what type of paper you're writing, the reader has to know the topic and they
+[03:32-03:36] have to know the problem that you are trying to, you know, fix and resolve and find solutions
+[03:36-03:42] from in the very first few sentences. It can be so simple. You don't need to do much here,
+[03:42-03:46] you know, it's nothing crazy. For example, if you're writing an empirical paper, it can
+[03:46-03:52] literally just be this study examines blank, whatever you're looking at, among, you know,
+[03:52-03:57] your population in this country. So, if you literally follow that formula, it is literally a
+[03:57-04:01] sentence. All you need is maybe a sentence or two just to outline what your paper is,
+[04:01-04:05] what it's looking at, who it's looking at and where. So, it's kind of, in a way,
+[04:05-04:09] rephrasing a research question into a sentence to tell the readers what exactly
+[04:09-04:15] your paper is on. So, the verb here, you know, when you say examines, tests,
+[04:15-04:20] investigates, it tells the reader automatically what kind of paper this is, what kind of method
+[04:20-04:27] did you use, you know, if you use, like, this study, examed or this study reviewed. It kind
+[04:27-04:32] of gives the reader from, like, a very onset, it gives the idea that perhaps your paper is
+[04:32-04:35] a little bit of paper. Obviously, you will state this, but from the very first sentence,
+[04:35-04:39] they can identify what type of paper you're writing. However, if your first
+[04:39-04:45] verb is this study tests, it, once again, it gives the idea that you're writing an empirical paper.
+[04:45-04:49] So, the verb is very important. So, make sure you pick it very specifically and make sure it
+[04:49-04:55] aligns with the type of paper that you're writing. And then also the relationship or the
+[04:55-04:58] phenomenon, you know, whatever you're studying in your paper, it should almost be,
+[04:58-05:02] like a research question, should be almost the same, just in a statement format.
+[05:03-05:07] The population, of course, will be a bit more specific. Don't just say people,
+[05:07-05:11] don't just say, you know, I don't know, everyone, you have to be specific,
+[05:11-05:16] say commuters, say high school students, say business owners, be specific. Of course,
+[05:16-05:19] it's going to come very simple to you guys, because it's basically a research question
+[05:19-05:25] just rewired the bit. So, it is very simple. And if we look at a very good opening sentence,
+[05:25-05:29] it could be something along the lines of, this study investigates the extent to which
+[05:29-05:34] life was occupancy, information effects, bordering decisions of commuters,
+[05:34-05:39] sorry, commuters and alati. Very good, very simple and literally only takes a sentence.
+[05:39-05:43] You outline the verb, you know, you say investigates, which tells me already that you're writing some
+[05:43-05:47] kinds of, you know, maybe lit review paper. And then you say the facts that you're looking at,
+[05:47-05:51] so bus time occupancy. And then you also tell me where and who you're looking at. So, very great.
+[05:52-05:56] So, very similar for lit review papers is the opening, be very clear, you know,
+[05:56-06:02] outline what you're doing. But there is a slight difference. So, what you might do instead
+[06:02-06:07] is you might write something like this paper of examine synthesizers, analyzers. And then you have
+[06:07-06:15] to say whatever your topic is in order to, and this is where you insert the purpose. So, discuss,
+[06:15-06:20] are you identifying patterns? Are you trying to clarify something? Are you trying to explain
+[06:20-06:25] something? Are you trying to answer a question? And then regarding whatever your topic is.
+[06:25-06:29] So, a really good example of this could be this review synthesizers,
+[06:29-06:33] existing scholarship on a small state's foreign policy behavior in order to explain
+[06:33-06:39] why is Bekazan pursued a multi-debted foreign economic policy after 2017. Very simple here.
+[06:39-06:43] It uses a verb which signals the type of paper that you're looking at. It signals the fact
+[06:43-06:47] that you're looking at existing research and that you're not conducting any of your own.
+[06:47-06:50] And then when we move on, of course, it talks about the body. It talks about what
+[06:50-06:54] topic you're looking at. And it tells you the purpose. It tells you what it's trying to
+[06:54-06:59] do. What is the purpose of this paper? You know, why have you written it? And then once again,
+[06:59-07:04] it tells you the smaller focus of the paper. So, you know, with the verb, pick what you think
+[07:04-07:09] matches your paper. Obviously, you may find that one verb works better for your verb,
+[07:09-07:14] for your paper than another, completely down to you. Use your own judgment to, you know,
+[07:14-07:18] kind of craft your first opening sentence, however you think is best. But of course,
+[07:18-07:22] make sure it fits the purpose of outlining the topic very generally. It doesn't have
+[07:22-07:26] to be complex. It can be one sentence. You just have to make sure that the reader
+[07:26-07:32] automatically knows what you're talking about. So, let's move on to component two.
+[07:32-07:39] Once again, this can literally be a couple sentences. This is, of course, where the main
+[07:39-07:44] differences in the empirical paper and literary papers for the abstracts really do come, because
+[07:44-07:48] I'm sure you can see with component one, with the opening, it's kind of similar, you know,
+[07:48-07:50] you're kind of doing the same things. Of course, you're writing about different things,
+[07:50-07:54] but your structure is pretty much the same. Component two, of course, is where you
+[07:54-08:01] will discuss almost completely two separate things. So, once again, it should be very tight.
+[08:01-08:05] Two to three sentences is more than enough, you know, don't try waffle on for ages.
+[08:06-08:09] Trust me, if the readers like your paper, they will continue your paper and they will find
+[08:09-08:15] the results. You don't have to give them crazy amount of detail. So, a general structure
+[08:15-08:18] that I would say if you're writing an empirical paper is first of all, name your site, name
+[08:18-08:22] the size of your population. Give a number. Tell me if you're looking at 20 people,
+[08:22-08:28] if you're looking at 2,000 people, and then look at the method. Were you serving them? Were you
+[08:28-08:35] interviewing them? Were you, you know, setting them questionnaires? Outline that. And then also
+[08:35-08:40] outline how they were analysed. So, did you, you know, use descriptive statistics? Did you
+[08:40-08:45] create graphs? What were you doing? So, three main things. The size of your population,
+[08:45-08:51] the method you use to collect your data, data collection details as well that goes alongside,
+[08:51-08:56] you know, the method, and then your analysis method. So, one thing that's very important is that
+[08:56-09:02] you have to say your population size, you know, whether it's 20 people or 2,000, it kind of gives,
+[09:02-09:06] you know, different levels of trust. If I can see your paper from the very onset and I can see that
+[09:06-09:11] you've had a great, you know, sample size, that is a green flag. That shows me automatically
+[09:11-09:15] that I can trust your paper. I want to continue reading your paper. So, it's a very good thing
+[09:15-09:22] to have very early on. Hence why we're asking you to do it in your abstracts. The analysis method
+[09:22-09:26] should match whatever you actually use to analyse this very, you know, plain forward. Whatever you
+[09:26-09:32] use to analyse your data, just insert it here. So, if we were to fill in these example,
+[09:32-09:36] and if I was to give you a very good example of what you could write, I would say something
+[09:36-09:41] along the lines of 214 commuters completed an in-person survey at major bus stops across
+[09:41-09:48] Almaty. The responses were analysed using the scripted statistics and across that one word is
+[09:49-09:54] I can't see that one word at the end because of my screen is hiding it. Okay, but you get the
+[09:54-09:59] general idea. So, it tells you how many people are looking at. It tells you how they were
+[09:59-10:03] studied. It tells you how the responses were collected and it tells you how the,
+[10:03-10:07] you know, data that was collected was analysed. Three main things.
+[10:07-10:16] So, that is your empirical paper. Your little review paper is, of course, very different.
+[10:17-10:21] As always, keep it concise. Keep it tight. So, you don't need to talk about, you know, your methodology
+[10:21-10:31] for ages. Two to three sentences is, you know, plenty. So, the structure here kind of does
+[10:31-10:35] differ. So, the first thing I'm going to be wanting to do is mention the type of review.
+[10:35-10:40] Was it systematic? Was it narrative? Was it chronological? And then you should
+[10:40-10:46] outline the type of sources you use. So, give a number. Was it, I don't know, 15 pay reviewed
+[10:46-10:53] sources? Was it 20 policy reports? Give a bit of more specific detail about how many papers
+[10:53-10:58] and what type of, you know, papers, resources you were looking at. Also, give me a time range.
+[10:58-11:05] So, I looked at my papers from 2015 to, I don't know, 2019. Give that kind of detail.
+[11:05-11:10] And then once again, give your method. Was it a thematic analysis? Was it a chronological analysis?
+[11:10-11:16] That kind of detail. When, you know, when you include these kind of details from the very
+[11:16-11:20] onset, it tells the readers that your research progress was like, it was rigorous. You went
+[11:20-11:24] through it systematically. You had all the protocols. You went through all the, you know,
+[11:24-11:28] necessary processes. And it's kind of, once again, a very good green flag because it
+[11:28-11:33] shows that your paper is trustworthy. You really do need the number of sources that we're
+[11:33-11:38] using. Once again, because it gives a sense of a scope. It tells the reader, you know, how
+[11:38-11:43] broad is this paper? How many different ideas have they looked at? Equally with the range of the,
+[11:43-11:47] you know, year that you're looking at. Once again, it tells you the time sensitive words.
+[11:47-11:52] It tells you what papers, what papers were you looking at? You know, what was the story?
+[11:52-11:56] What was the perspective you're kind of taking on? So, all this detail is very important
+[11:56-12:00] because it gives the reader a lot of information. Although you may not think it does,
+[12:00-12:04] it really does. It tells them, you know, how you treated this paper tells them, you know,
+[12:04-12:08] were you rigorous? Were you very delicate with it? Did you have a load of, you know,
+[12:08-12:13] resources that, you know, you can rely upon? So it's very essential that you have these kinds
+[12:13-12:19] of details. So if I was to write my lit review, you know, abstract, I would say something along
+[12:19-12:23] the lines of, you know, an additive review of 32 peer reviewed articles and policy reports
+[12:23-12:29] published between 2010 to 2024 was conducted using thematic analysis. So simple. You can see
+[12:29-12:35] it's literally one sentence. You can have two or three if you want up to you, but it can be so
+[12:35-12:39] simple as that. You know, you're telling the type of review. You're telling how many papers you
+[12:39-12:43] reviewed. What type of papers were you looking at? What was the year that you were looking at?
+[12:43-12:50] And how did you analyze them? Very simple. One thing I will say, a very common mistake
+[12:50-12:57] that I do tend to see a lot is that students will try to, you know, turn all of these into
+[12:57-13:01] like a defense. You know, they try to show that, you know, they're justifying their method,
+[13:01-13:05] but that's not what you're doing. You're not, you're not trying to justify a method. You're not
+[13:05-13:09] trying to, you know, prove and explain why you did your method the way that you did it.
+[13:09-13:13] You're just stating it. You just, you're just saying, I did this and that's on move on,
+[13:13-13:20] you know, you don't have to have crazy detail. So components three, once again,
+[13:20-13:27] a few sentences, all the research findings. Actually, I will, I will comment on this later.
+[13:28-13:33] It should be changed to most research findings instead of all, but I will explain why in a minute.
+[13:33-13:41] So this is kind of the heart of the abstract. This will deserve the most space, but once again,
+[13:41-13:46] no more than like two to three sentences. It doesn't have to be long. Pick maybe two to
+[13:46-13:51] three findings and directly go, answer the research question and report exactly what you found.
+[13:51-13:57] The reason why I said you shouldn't put all your research findings is that sometimes I'm sure you
+[13:57-14:01] may have noticed by this point is that not all of the findings that you receive answer your research
+[14:01-14:06] question. You might have found other very interesting ideas and other interesting facts,
+[14:06-14:09] but if they're not related to your research question, there is no point of putting in
+[14:09-14:13] your abstract because inevitably you're not going to discuss it in your paper.
+[14:13-14:19] There's no point of discussing in your abstract. So with that being said, when you're writing your
+[14:19-14:23] empirical paper, the things that you want to do first of all is outline, you know,
+[14:23-14:28] observe outline. What is your findings showing? Is it indicating? Is it showing? Is it revealing?
+[14:28-14:33] This is very important because it will show you how strong the evidence is. It will imply
+[14:33-14:37] whether something's been uncovered, whether it has been, you know, just indicated slightly or
+[14:37-14:44] whether it's been, you know, completely found like this new idea. It's very important what
+[14:44-14:48] verb you pick. And the next thing you want to be doing is outline your first finding.
+[14:49-14:55] So this could be a comparison, a pattern, and then you want to have like some kind of connector.
+[14:55-15:00] So you can say, although, you know, you found this pattern, you also found this alongside
+[15:00-15:05] it, or although, you know, you found this pattern, you found this other pattern which
+[15:05-15:10] this group of it. So it's very simple. It can kind of, you know, this is a bit more flexible
+[15:10-15:15] because you can talk about your findings in a bit more of a less structured way. So you can just
+[15:16-15:21] mention one, you know, link into the other, or you can talk about one main idea in a bit more
+[15:21-15:27] depth. But very please keep in mind, do not just list it. Don't just list every single result.
+[15:27-15:32] You have to try to link them together a little bit. So an example of what you could do here
+[15:32-15:37] is you could say something like, the findings indicate that frequent commuters were considerably
+[15:37-15:42] more likely than occasional commuters to say, occupancy information would affect their boarding
+[15:42-15:49] decisions. And, oh, the bottom of the screen is hidden from me again. But I can't say the
+[15:49-15:54] last sentence, but I'm sure you guys can see the last sentence. So something, something higher
+[15:54-16:03] value, this is being very annoying today, sorry, higher value on that information. So you can see,
+[16:04-16:08] it tells you, you know, it has the verb to indicate how strong the evidence is. And here
+[16:08-16:13] they've chosen the verb indicates. And then they go on to tell you their first finding. So, you
+[16:13-16:18] know, the fact that occasional commuters, you know, say that occupancy frequency would affect
+[16:18-16:23] their boarding decisions, you know, less than, you know, the frequent commuters first idea.
+[16:23-16:30] And then it links onto a second, you know, headlining idea. So the connecting word is doing
+[16:30-16:34] a lot of work here, although it might not seem it's, you know, it is addressing the tension is
+[16:34-16:39] addressing a contrast or perhaps even a similarity between your findings. It is kind of, you know,
+[16:39-16:43] bringing them together and it shows that, you know, your second finding is almost
+[16:43-16:48] complimenting your first, if they're tied together and some, you know, idea. Obviously,
+[16:48-16:51] how they're tied together will be down to you, it's going to differ based on your paper
+[16:51-16:56] and your topic. But the very, very key important thing is, and this is a really smart way to actually
+[16:56-17:01] sort of outline two findings without going into like crazy detail and, you know, writing too much,
+[17:01-17:04] is that you link them together. When you link them together, you end up writing less,
+[17:04-17:08] you end up being more concise, but you still, you're still very direct and forward.
+[17:10-17:15] So let's continue. Same thing for your let review paper.
+[17:16-17:22] Two to three sentences, your results are very important. But once again, do not go
+[17:22-17:27] listing everything. Only choose the ones which directly answer your research question and
+[17:27-17:32] outline them very simply. So the structure and formula that you're going to want to follow
+[17:32-17:36] is, you know, say something along the lines of like this review reveals that
+[17:36-17:43] wherever you are looking at, whether that be, I don't know a specific book or specific,
+[17:43-17:48] you know, general topic is divided between theme one and theme two, or it is connected
+[17:48-17:52] between that theme one and two, theme two, whatever it may be. And then you want to have a
+[17:52-17:58] connector which outlines the tension between these. So I will give you an example first,
+[17:58-18:02] and I'm going to kind of explain what I mean by this. So you could write something along
+[18:02-18:06] the lines of the review reveals that existing scholarship converges on economic necessities
+[18:06-18:11] as the dominant explanation for multiplexer policy, or the role of domestic political
+[18:11-18:19] competition remains comparatively unexamined. So what this example does here is that it outlines
+[18:19-18:26] two different themes within the general idea of, you know, multiplexer policy, but it kind of
+[18:26-18:31] puts them in the posing, you know, I aspect, so they kind of aligns a bit of a difference
+[18:31-18:38] between them. It shows that they're a bit, you know, divided. So what is very important to
+[18:39-18:43] it? What I would recommend is that you pick two themes, which are kind of the opposite,
+[18:43-18:46] which you can kind of talk about more. Obviously, make sure that they're things that you actually
+[18:46-18:51] frowns. But with most papers, you will find that you do have papers that are perhaps a little bit
+[18:51-18:58] different. So, you know, name your themes, they could be explanations, they could be schools
+[18:58-19:01] of thought, they could be frankly anything just you have to name them very clearly.
+[19:02-19:06] The gap in the tension is going to be wherever, you know, elevates from this summary.
+[19:06-19:11] What is the contribution? What has your papers contributed? What was these like themes and findings
+[19:11-19:17] contributed, which perhaps make them a little bit different to one another? So this is obviously
+[19:17-19:21] great because the reader can see your synthesis and they can kind of see the individual papers,
+[19:21-19:26] you know, they weren't just taken as an individual, but they were taken as a, you know, a wider
+[19:28-19:35] sort of theme and topic. A very common mistake that unfortunately I have seen in the previous
+[19:35-19:41] cohort is that people will try to cram every single idea into, you know, from all their sources,
+[19:41-19:47] they might try to discuss every single source, they might try to discuss like 10 or 15 and that's just
+[19:47-19:51] not what you should be doing. Breathe, take a minute and choose two to three, which you are
+[19:51-19:57] the most relevant. Frankly, I think two is good enough. If you have a third and okay,
+[19:57-20:01] that's fine. But really, you don't need to be saying everything, just say the most important
+[20:01-20:08] things. Right, let's move on to the fourth component. So the research contribution,
+[20:08-20:14] aka the originality. So obviously, because we have already done the discussion and the
+[20:14-20:20] conclusion lessons, you might be a bit familiar with what I mean by this. So I'm sure you're
+[20:20-20:24] aware that in your conclusion, you have to talk about the future implementations of your
+[20:24-20:30] research, you know, possibly how it could impact people theoretically, and even, you know,
+[20:30-20:35] in real life with practical applications. So it's kind of the same here. But once again,
+[20:35-20:40] you're summarizing it into maybe like two sentences. So it's as much shorter.
+[20:42-20:48] Right. So those people actually skip this section, but don't, it is very important,
+[20:48-20:53] because it kind of answers the question of what is new? What can I gain from your paper and how
+[20:53-20:58] can it advance later research? So if you're writing an empirical paper, you can follow
+[20:58-21:02] this formula. And I really do recommend that you do. So start by saying something like this study
+[21:02-21:08] contributes to whatever research it is, whatever body of field you're looking at. And then then you
+[21:08-21:13] have to outline what was the new finding that you had. So whether it was looking at a new
+[21:13-21:18] population, looking at a research gap, looking at testing a new context, outline what your
+[21:18-21:23] contribution was from this paper, and then outline why it is new. Why is it unique? Why
+[21:23-21:28] is it very helpful for the future? Why is it helpful for the theory? Why is it helpful for,
+[21:28-21:34] you know, practical applications? So try to link your body of literature to the wider
+[21:34-21:39] conversation, you know, talk about not a paper and itself, but what the paper could be like in the
+[21:39-21:45] wider field. Because as you know, when you write and finish your paper, it's not just going to
+[21:45-21:49] be like a single paper, it will be connected to so many other papers. So it's very important
+[21:49-21:56] that you kind of address this wider field in your abstract. So when you're talking about kind
+[21:56-22:00] of your contributions, you can talk about whether you're looking at a new population from many of
+[22:00-22:04] you, this may be the case, you may be studying a country that hasn't been, you know, studied a
+[22:04-22:10] lot in the past, you can discuss, you know, an unaddressed research gap, anything that you
+[22:10-22:13] found was your gap, which you were focusing on to make your paper kind of, you know,
+[22:13-22:20] unique. This is when you can put it in. So it's kind of helping you to make sure that, you know,
+[22:20-22:26] it's not just, what can I say, it's not just a bank of detail, but it kind of shows that you're
+[22:26-22:30] thinking a bit more outside of the box. So if I was to give you a really good example,
+[22:30-22:35] I would say something along the lines of this study contributes to the growing literature on
+[22:35-22:39] transit information by examining committed responses to occupancy information in Central Asia
+[22:39-22:44] in a central Asian context, which has received limited scholarly attention. So what this has
+[22:44-22:48] done very great from the very onset is that it's outlined the body of literature. It's
+[22:48-22:54] outlined the wider kind of feels that this paper fits into. It talks about the fact that they're
+[22:54-22:59] looking at this new idea of, you know, commuter responsive in this idea, in this country, in
+[22:59-23:04] this area that was not previously examined. So literally, as you can see, it is one sentence
+[23:04-23:11] that it does so much. Okay. Same thing again for a therapy paper. Obviously, the structure
+[23:11-23:15] is a bit different, but it has the same purpose. So the formula that you're going to be wanting
+[23:15-23:21] to follow will once again outline the wider literature that you're looking on. And then
+[23:21-23:28] have I gone back instead of forward? Just a second. No, okay. I'm good. So what does it
+[23:28-23:32] outlines the general like literature and the general, you know, feels like you're looking
+[23:32-23:37] at and then it talks about your things. Once again, theme one and theme two. And it read and
+[23:37-23:45] it actually this formula should be a bit adapted. Right. So outline the greater field.
+[23:46-23:51] Talk about your things. But then when you have your research gap, use that research gap to
+[23:51-23:56] also link to why your paper is unique. So it's basically the same logic as your empirical
+[23:56-24:00] paper, except your contributions are going to be a bit different, you know, the
+[24:00-24:04] contributions will come from the synthesis rather than the fact you're collecting new data.
+[24:04-24:08] So it's your basically kind of naming the kinds of things that your synthesis work will do and what
+[24:08-24:14] it helps to contribute just in a very simplified way. So if I was looking at example for this for
+[24:14-24:18] you, it could be something along the lines of this review contributes to the literature on
+[24:18-24:22] small state diplomacy by bringing together economic and political explanations that
+[24:22-24:26] typically treated separately in existing scholarship. So what this has done is
+[24:26-24:30] first of all, it's outlined the greater field that it's looking at. So small state diplomacy,
+[24:30-24:35] that is the greater field. It's brought in your two themes of economic and political explanations.
+[24:35-24:39] And then this outlines, you know, kind of why there is a research gap, that being there was
+[24:39-24:47] not previous, you know, research in this area. Very common mistake again. Of course, I like
+[24:47-24:53] to outline you these mistakes just so you can avoid them. But don't try to claim that you're
+[24:53-24:59] the first ever person to study this topic. It's probably never true. Although I'm sure your papers
+[24:59-25:04] are all very original, your papers are kind of like this, you have so many different contributions
+[25:04-25:08] from other papers, because of course, we're raising other papers, you are analyzing other
+[25:08-25:13] papers. So it's not correct to say oh, my paper is the first to ever study this topic.
+[25:13-25:19] Because in fact, your paper is sort of like, is like this structure built on from different
+[25:19-25:26] research. So be cautious of your wording. And components five, the practical or policy
+[25:26-25:30] implementations, it basically is what it says on the team.
+[25:32-25:39] So here you're trying to address who should care about your paper and kind of how it can
+[25:39-25:44] be used by them. So there will always be someone who, you know, wants to read your paper,
+[25:44-25:48] always someone who will kind of be the most, you know, prominent target of your paper,
+[25:48-25:52] this is written for. So when you're writing your empirical paper, you can kind of follow
+[25:52-25:57] the structure of, you know, saying something like this finding may help
+[25:57-26:04] blank whoever it may be, and someone else, because of this action. So it could be
+[26:04-26:08] frankly, whatever is suited to your paper, this is when you have to really think about
+[26:08-26:13] how your paper could be used. So name a real stakeholder, talk about maybe is it teachers,
+[26:13-26:21] is it policymakers, is it, you know, companies, be specific, don't just say vague, don't just say
+[26:21-26:26] vague things like society or people, or the world, that's not specific, you have to be
+[26:27-26:33] very detailed. Also talk about the practical action. So how could they use it? But be
+[26:33-26:36] realistic, don't say that they're going to create a new country out of nowhere. You have
+[26:36-26:41] to be very realistic when it comes to this. So an example of this could be these findings
+[26:41-26:46] can help transit planners and city officials decide where real-time occupancy displays will
+[26:46-26:51] generate the greatest impact on rider behavior. So what it's done here is that it's outlined
+[26:51-26:56] two different types of people that could benefit from this paper, transit planners and city officials.
+[26:56-26:59] And then what it's also done is that it's explained how they can possibly use this. So
+[26:59-27:07] to generate, you know, information on rider behaviors. Let's move on. So once again,
+[27:07-27:12] your lit review paper has a slightly different formula, but it's basically the same thing. So
+[27:12-27:16] once again, you're going to outline your stakeholder, so who is this paper targeted for,
+[27:16-27:22] who will use this the most, and then how could they use it. And then what you're also going
+[27:22-27:30] to continue to say is such as understanding and reconsidering this topic. So as I've said,
+[27:30-27:35] the same rule as the lit review paper, but of course you're going to be writing about
+[27:35-27:39] different things. So name your real audience, name a real action, talk about how they could use it,
+[27:39-27:44] how maybe it could shift people's thinking, how it could shift a specific decision on an idea.
+[27:45-27:51] So, you know, once again, same thing. And make sure that the action, no matter what
+[27:51-27:58] action verb you use, it leans towards understanding like an idea. So it leans to understanding
+[27:58-28:03] your, you know, field and your topic. So let me kind of give you a better example,
+[28:03-28:08] because I know it's kind of hard to imagine how you could write this without seeing an example. So
+[28:08-28:13] you could write something along the lines of this review may help policy makers and regional
+[28:13-28:19] analysts better understand the domestic political pressures shaping Uzbekistan's economic diplomacy.
+[28:19-28:24] So once again, it's outlined to stakeholders who could use this, it's outlined
+[28:25-28:28] how they could use it, you know, to understand political pressures, and it's
+[28:28-28:33] outlined what field they could use it in. So understanding economic diplomacy.
+[28:36-28:43] Once again, be very realistic. Don't overclaim things. I know it's very nice to be idealistic
+[28:43-28:47] and think that loads of people will read your paper, but you have to be a bit down to work.
+[28:47-28:51] Like it's a bit unrealistic to think that the president's going to personally read your
+[28:51-28:56] paper to decide policies. That is a bit far stretching. So try to be grounded,
+[28:56-29:01] try to be a bit realistic, but obviously think very analytically and think realistically.
+[29:03-29:08] And component six, the literature, sorry, the limitations and future research,
+[29:09-29:15] kind of similar to what your conclusion has. But once again, this is summarized to like
+[29:15-29:24] one or two sentences max. Generally, the shortest thing, but it can have lots of benefits as
+[29:24-29:30] it will kind of help to improve the credibility of your paper. So when you're writing a little
+[29:30-29:33] review, sorry, when you're writing your paper papers, the kind of structure that you should be
+[29:33-29:41] following is, you know, saying that your findings shed light on, you know, sorry, your findings
+[29:41-29:46] should be interpreted in light of this limitation. So be honest, don't try hide it because obviously
+[29:46-29:49] they will read your paper and find this limitation anyways. So this limitation could
+[29:49-29:55] be anything your sample size, your sampling method, your self report data, whatever it may be,
+[29:55-30:00] your biggest limitation mentioned it here, you can literally only name maybe like one of your
+[30:00-30:05] weakest points, it doesn't have to be 20 the student, you shouldn't name every single limitation
+[30:05-30:10] that you have, maybe just one or two max. And then you can follow on by saying future
+[30:10-30:15] research should try to fix whatever limitation that you just addressed. So link them together,
+[30:15-30:20] how your limitation, but then link a solution to that for future research. So you could say
+[30:20-30:24] something along the lines of the findings should be interpreted in light of the studies
+[30:24-30:29] reliance on convenient, convenient samplings and self reported intentions, future research
+[30:29-30:35] should track actual boarding behavior across larger randomly selected or I can't see that
+[30:35-30:58] what last words. One second. Okay, so I cannot see that one last word I'm sure you can see
+[30:58-31:05] on your screens. But it has a structure as I've said, it's told you the limitation very
+[31:05-31:10] specific limitation. It's literally only told you one or two here, but then it's linked it to
+[31:10-31:17] future research by showing how you can resolve it, which is kind of good. I, if you have received
+[31:17-31:22] your feedback from you should have received your feedback from your methodology, but you may have
+[31:22-31:26] seen that I have kind of asked you to put positive spin on your limitations, which
+[31:26-31:31] kind of is true for all the sections of your paper. It's very good to be honest, it's very good to
+[31:31-31:35] outline your limitations, but try to make it as positive as you can, because obviously that you
+[31:35-31:39] don't want to undermine your credibility by waffling on about your limitations for ages.
+[31:40-31:46] So your little review paper, your little review paper burnt again, very similar,
+[31:46-31:51] outline your limitation, whether it be because of the language, the time period, the source,
+[31:51-31:56] no matter what it is, outline it first and then suggest that future research should try to fix this,
+[31:57-32:04] whether it's trying to test your topic empirically or trying to expand to other regions, for example,
+[32:04-32:08] if you're looking at, I don't know, Gothic literature in England, you might want to suggest
+[32:08-32:13] that perhaps Gothic literature should be studied in other countries or on a wider scale.
+[32:14-32:20] So once again, very simple thing, name your scope, name the boundary, name what kind of
+[32:20-32:27] research gap you might, you know, surface from the components of the limitations that you have,
+[32:28-32:33] and kind of link it once back to your future research. So an example would be the review
+[32:33-32:38] help was limited to English language sources published between 2010 to 2014. Future research
+[32:38-32:43] should empirically test whether domestic elite competition chips multi-vector policy decisions.
+[32:43-32:48] So once again, very simple, it's outlined maybe two limitations, but then it's used
+[32:48-32:53] the future research to outline how these could be resolved, showing that you are thinking ahead,
+[32:53-32:57] you're not just stuck on your limitations, but you're able to see how they could be improved.
+[33:00-33:07] But I will say, don't apologize for your limitations, don't be like, oh, I'm so sorry,
+[33:07-33:11] I had this and that, don't do it, there's no point, you don't need to do that at all.
+[33:11-33:15] Be honest, be direct, say this was my limitation, and then just go on, just admit it and move
+[33:15-33:23] forward. Right, we are coming to the end, but I do want to share you kind of like,
+[33:24-33:27] I guess that's one point where they said the secret source, like the kind of cherry on top,
+[33:27-33:32] the kind of great things that make your paper and the abstract and specific really stand out.
+[33:34-33:41] So here is kind of the formulas that I've given you before, but kind of summarized
+[33:41-33:48] into a skeleton. This is kind of how your paper for the empirical, you know, for empirical paper
+[33:48-33:54] should be written. So I'm not going to read this again, because we have already read this,
+[33:54-34:00] but as you can see, it is not long, it is maybe a paragraph max, but it does so much,
+[34:00-34:04] you have so much good detail here, me reading, you know, a paper, an abstract that has this
+[34:04-34:08] formula, I can automatically know what this paper is about, what method they use, how they
+[34:08-34:13] collected their data, what data they collected, and what possible limitations they might have.
+[34:13-34:19] It answers basically everything in the span of a paragraph, which is literally [34:18-34:25] what [34:19-34:25] is aiming to do. Same thing for your lit review. Once again, this is all the formulas,
+[34:25-34:29] you know, put together in a paragraph, but as you can see, it is very simple,
+[34:29-34:32] you're discussing your themes, you're outlining what your themes were, how you find your themes,
+[34:33-34:37] the research gap, you can discuss how your themes are connected, maybe how they,
+[34:37-34:43] you know, contradict, you talk about who this is important for, why there is a limitation,
+[34:43-34:47] and how you can resolve this limitation with future research. Very simple. Down to the point,
+[34:47-34:52] there is no workflow, there is no description, it just states what it does and it moves on,
+[34:52-34:56] because realistically, I'm sure you guys have done it as well when you're finding your sources,
+[34:56-34:59] the first thing you do is read the abstracts. You want it to be short, you want it to
+[34:59-35:03] be snappy, you want to get the general idea very quickly before you continue to read the
+[35:03-35:10] paper. And so this is what you guys are writing. So as always, we get the question of how many words,
+[35:10-35:19] how many sentences, and this hopefully kind of breaks it down. 35 to 45 words is about like
+[35:19-35:23] the max for most sections, of course your findings are going to be a larger section,
+[35:23-35:29] so about 60 to 70, and then your limitations are going to be a bit shorter, so maybe 20 to
+[35:29-35:36] 30, but realistically, no matter how many words you write, it should maybe be a paragraph, no more
+[35:36-35:45] than two. Right, okay. Before we wrap up, I am going to get you guys to do a quick exercise,
+[35:45-35:48] because I know I've been talking for ages and it's so annoying sometimes to just sit and
+[35:48-35:55] listen all at once, so let's do this. So you're going to have two to three minutes to read
+[35:55-36:00] through this scenario, and then I'm going to give you about five to seven, just a quickly
+[36:00-36:04] draft and abstract. It doesn't have to be perfect, it doesn't have to be, you know,
+[36:06-36:11] crazy, you know, good. I just want to see whether you guys have got the general structure down.
+[36:12-36:16] So this is the empirical scenario, and then I think the next one should be the lit review
+[36:16-36:27] scenario. Oh, it's not letting me go to the next one. Okay, that's fine. So I guess the lit
+[36:27-36:35] review scenario is not popping up, but so, okay, you guys will read through this very quickly.
+[36:36-36:42] Well, look at this paper, look at this research topic, and then write a few sentences to draft
+[36:42-36:48] and abstract. You can either send it to me in the general chat, you can send it to me directly.
+[36:49-36:56] I will stop talking now and I will set a timer for about, let's say, 10 minutes. So
+[36:56-37:03] read the task, write a few sentences for the abstract. Start.
+[37:26-37:30] Hi. Sorry, I have a question now.
+[37:34-37:34] Hello, yes.
+[37:36-37:39] Can you send the formula? Are you sure with us?
+[37:39-37:43] Of course. I will go back quickly. If you guys want to take like a photo or a screenshot quickly,
+[37:43-37:52] you can do that. Okay, this is the empirical formula. I'll give you guys a few minutes,
+[37:52-38:01] a few seconds to take a screenshot of that quickly. I'm moving on to the lit review formula
+[38:01-38:12] and hopefully that should have been enough time. If you want me to go back, let me know.
+[38:12-41:17] All right, you've got about five minutes left. So hopefully you have read through this and
+[41:17-43:19] you're starting to write. Okay, we've got like maybe a minute and a half left. So if you are
+[43:19-43:24] still writing, maybe you want to finish writing your last few sentences and then I'll go through
+[43:24-44:37] the examples you guys have sent me. Okay, guys, that is time. I think some people have sent
+[44:37-44:49] in some examples, so I will read those. Okay, let's go through this first one. Okay, so public
+[44:49-44:55] transport, passengers, what's inside between boarding and credit bus and waiting for the
+[44:55-44:59] squared services with access to reliable co-op patient study aims to develop and evaluate
+[44:59-45:05] status and an integrated system that combines automatic bus occupancy estimation with real-time
+[45:05-45:12] current information and scroll down. And to examine how such information may influence
+[45:12-45:17] passenger decision on that, the study consists of two connected components. They're engineering
+[45:17-45:22] components focused on designing a ceiling mounted camera based as evidence device that estimates
+[45:22-45:29] parking distance between commutes communicates the results to a passenger information platform
+[45:29-45:35] that's in the dirt and the real world pilot to investigate how perceived crowdsing and wait
+[45:35-45:40] time and the effect of the bottom week program survey indicates that passengers are likely to
+[45:40-45:46] wait one and blah blah blah. Survey findings are subsequently compared with
+[45:46-45:51] occupancy conditions measured during the device testing. The study provides a unified
+[45:51-45:57] framework for connecting technical occupancy measurements of passenger behavior as results
+[45:57-46:02] may support development of more informative public transport applications and future field
+[46:03-46:07] evidence, sorry, future field experiments of real-time current information.
+[46:08-46:14] Very well done. Okay, one thing that I will say, your first sentence here is a bit too
+[46:14-46:20] descriptive. You don't need to kind of give like a background idea just from the very start
+[46:20-46:24] outline what your study is doing. So frankly, I think you could do without this first sentence
+[46:24-46:30] that starts with the public transports, go directly into this study aims to evaluate and
+[46:30-46:38] outline the aims of this current. From then it is very good. You outline the themes
+[46:44-46:47] and investigate how you're collecting your data. That's very good.
+[46:48-46:56] And you talk about the results and how it was compared. Very good. Other than that, other than
+[46:56-47:03] your first sentence being a bit on the descriptive side is very good. So let me read the second
+[47:03-47:08] example. This study investigates how this audience perceived legitimate academic dishonest
+[47:08-47:14] using a generative AI and how this distinction matches their self-reported AI practice. 140
+[47:14-47:19] responses commuted to the survey. Very good. 140 news were chosen for further analysis. Very good.
+[47:20-47:25] Who matched the study criteria? Criterion responses about analyzing using man-made
+[47:25-47:30] UTEP methods. The indicators indicated that most students you see using AI to understand
+[47:30-47:34] hard topics and bring something that's academic acceptable. Losing AI to generate. Okay. Very
+[47:34-47:41] good. These findings may help educators and teachers by providing a how students
+[47:41-47:48] distance to academic integrity. Very good. This is very good. My one thing I would say
+[47:49-47:53] is that I think what you're trying to do with the second to last sentence. So the sentence that
+[47:53-47:57] starts with their perception mainly match their self-reported AI studies. Actually,
+[47:57-48:03] I think that results you kind of are missing under the limitation. Your structure is very good.
+[48:03-48:06] You outline all the key information. You talk about the results, how it was gathered,
+[48:06-48:13] what the general findings were. Then the one thing that you're missing is a limitation,
+[48:13-48:16] but I think you didn't get time to finish this. That's fine. So if you add your limitation, that
+[48:16-48:22] would be perfect. Okay. Thank you so much for those examples. Is there any more from anyone?
+[48:22-48:29] You can either send it in the group chat. You can unmute to speak. You can send it to me
+[48:29-48:40] directly. Up to you guys. I will wait a few minutes to see if anyone else wants to send
+[48:40-48:52] anything. You send it to me directly. I haven't received it yet. I'm assuming it will come in
+[48:52-48:59] a minute. Or on my phone. Okay. I've received it on my phone. Let me read this. This study
+[48:59-49:03] investigates to what extent the campus tutoring centres affect university students
+[49:03-49:07] self-report exam performance, the results are based on an online surveillance of 180 university
+[49:07-49:12] students using descriptive statistics and group comparison. The findings indicate that students
+[49:12-49:17] who use the tutoring centre reported confidence had on average 30% higher results than those who
+[49:17-49:22] have never used it. Very good. Moreover, most respondents were first year students.
+[49:24-49:28] I don't think you need that one sentence, but that's fine. These findings may help university
+[49:28-49:33] administrators to look at exam confidence rather than just grades and deciding whether to
+[49:33-49:37] expand tutoring centres, hours or staffing. The results should be interpreted in light of
+[49:37-49:43] limited sample size restrictions to university. Further research is needed to figure out
+[49:43-49:49] to figure if this can be applied to other universities. Very good. Okay. You have the
+[49:49-49:53] key structure here. You're outlining what your paper is looking at. You've given me some
+[49:54-49:58] numerical dates in terms of how many people were studied. You've given me the general
+[49:58-50:05] results. You have also outlined how the future research can be built upon the limitations. Very
+[50:05-50:21] good. That is a fantastic example. It seems that there may not be any others. If you do want
+[50:21-50:25] me to check it, you can send it now. I can have a read through and give you a bit of general
+[50:25-50:35] feedback. But if not, your homework for this week has been set. The discussion and the
+[50:35-50:39] conclusion, please focus on the discussion first and then you can move on to the conclusion task.
+[50:39-50:45] Your homework for the abstract will probably be posted sometime next week or yes,
+[50:45-50:49] probably sometime next week to give you guys some space to finish everything in time.
+[50:50-50:54] Of course, as always, if you have any questions before then or during that period,
+[50:54-51:01] you can always message myself or any of the other mentors. But I will stop recording because it
+[51:01-51:12] doesn't seem like we have any other examples coming in. Let me stop recording.

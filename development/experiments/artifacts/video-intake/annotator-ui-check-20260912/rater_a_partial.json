@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "type": "sanash_point_annotations",
+  "project_key": "80bfd6fc27718b5070bff8645a87ea6c19ff7d323eb3de600bf1c9aa6d34609c",
+  "source_sha256": "fc26bbd418feb060b783a34b8a7d6848d2904e6ba9ebbcfc3c35c422cde1ea8e",
+  "origin": "synthetic",
+  "session_id": "SYNTHETIC20260912",
+  "vehicle_id": null,
+  "channel_id": "CH01",
+  "rater_id": "QA_BROWSER_A",
+  "frames": [
+    {
+      "frame_id": "SYNTHETIC20260912_CH01_001",
+      "image_sha256": "f7e2b28dfcc7e02335a5eae46097fffdf8353d3cf6d5bb352437f7d81492259b",
+      "actual_offset_s": 10,
+      "reviewed": true,
+      "points": [
+        {
+          "x": 0.24947145877378435,
+          "y": 0.2988019732205779,
+          "zone": "middle",
+          "posture": "seated",
+          "visibility": "partial"
+        },
+        {
+          "x": 0.6997885835095138,
+          "y": 0.599483204134367,
+          "zone": "rear",
+          "posture": "seated",
+          "visibility": "inferred"
+        }
+      ],
+      "notes": "SYNTHETIC UI CHECK ONLY"
+    },
+    {
+      "frame_id": "SYNTHETIC20260912_CH01_002",
+      "image_sha256": "eac4774631975274e5b23958e95c28c0a1b91fb27f39602e11cdf51cfccb70dd",
+      "actual_offset_s": 30,
+      "reviewed": false,
+      "points": [],
+      "notes": ""
+    },
+    {
+      "frame_id": "SYNTHETIC20260912_CH01_003",
+      "image_sha256": "f6e6d5f5c1c56398edd2d3efd8cb23c910cf40b7e3230894a5714742a7c7f454",
+      "actual_offset_s": 50,
+      "reviewed": false,
+      "points": [],
+      "notes": ""
+    }
+  ],
+  "exported_at_utc": "2026-09-12T15:25:17.192Z"
+}

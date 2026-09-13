@@ -1,0 +1,18 @@
+{
+  "verified_on": "2026-09-12",
+  "platform": "Windows",
+  "kicad": {
+    "version": "10.0.6",
+    "cli": "C:/Program Files/KiCad/10.0/bin/kicad-cli.exe",
+    "python": "C:/Program Files/KiCad/10.0/bin/python.exe",
+    "verified": ["cli version", "schematic command availability", "pcbnew Python import and build version"]
+  },
+  "freecad": {
+    "version": "1.1.3",
+    "cli": "C:/Program Files/FreeCAD 1.1/bin/freecadcmd.exe",
+    "python": "C:/Program Files/FreeCAD 1.1/bin/python.exe",
+    "opencascade_version": "7.8.1",
+    "verified": ["cli version", "FreeCAD and Part Python imports"]
+  },
+  "status": "Engineering runtimes available; native product design and fabrication validation remain separate work."
+}

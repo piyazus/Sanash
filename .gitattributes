@@ -1,3 +1,6 @@
 # core.autocrlf on Windows would check these out with CRLF, and bash refuses
 # to run a script whose shebang line ends in \r.
 *.sh text eol=lf
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.alg filter=lfs diff=lfs merge=lfs -text

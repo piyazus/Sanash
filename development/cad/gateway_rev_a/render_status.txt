@@ -1,0 +1,1 @@
+OK: native FreeCAD views rendered; FCStd saved with final objects visible.

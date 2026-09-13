@@ -1,34 +1,23 @@
 data/
 outputs/
+/development/experiments/artifacts/
 *.zip
 # Reference papers kept on disk, too large for history
 /*.pdf
 research/refs/*
-# ...but keep the refgraph index and topic synthesis notes (small, structured)
+# ...but keep the machine-readable refgraph index
 !research/refs/graph.json
-!research/refs/REFGRAPH_REPORT.md
-!research/refs/LITERATURE_DISCOVERY_LOG.md
-!research/refs/academic_writing_conventions.md
 !research/refs/*/
 research/refs/*/*
-!research/refs/*/README.md
-# ...and the verified reference base: markdown, bibtex and its validator only
-!research/refs/base/references.md
+# ...and the verified reference base: BibTeX and its validator only
 !research/refs/base/references.bib
 !research/refs/base/validate.py
 # Course/outreach material dropped into the repo, large and not project source
 research/coursework/*
-# ...but keep the write-ups: notes, transcripts, and the directory README
-!research/coursework/README.md
-!research/coursework/course_notes.md
-!research/coursework/WRITING_RULES.md
-!research/coursework/HW_lit_review_submission.md
-!research/coursework/results_section_draft.md
+# ...but keep the transcripts
 !research/coursework/transcripts/
 # Outreach: contact lists carry personal email addresses and stay untracked.
 business/outreach/*
-# ...but the cold email template and style rules carry no personal data
-!business/outreach/template.md
 .kaggle/
 __pycache__/
 *.pyc
@@ -45,3 +34,5 @@ tmp/
 # Meeting recordings and screenshots dropped into the repo root
 /*.mp4
 /*.png
+materials/**/*.mp4
+materials/**/*.png

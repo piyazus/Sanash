@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "kind": "inter_rater_count_comparison",
+  "origin": "synthetic",
+  "project_key": "80bfd6fc27718b5070bff8645a87ea6c19ff7d323eb3de600bf1c9aa6d34609c",
+  "raters": [
+    "QA_BROWSER_A",
+    "QA_BROWSER_B"
+  ],
+  "paired_reviewed_frames": 2,
+  "excluded_unreviewed_frames": [
+    "SYNTHETIC20260912_CH01_003"
+  ],
+  "mean_absolute_count_difference": 0.5,
+  "exact_count_agreement_fraction": 0.5,
+  "frames": [
+    {
+      "frame_id": "SYNTHETIC20260912_CH01_001",
+      "rater_1_count": 2,
+      "rater_2_count": 1,
+      "absolute_count_difference": 1,
+      "inferred_counts": [
+        1,
+        0
+      ],
+      "zone_counts": {
+        "front": [
+          0,
+          0
+        ],
+        "middle": [
+          1,
+          1
+        ],
+        "rear": [
+          1,
+          0
+        ],
+        "door": [
+          0,
+          0
+        ],
+        "unclear": [
+          0,
+          0
+        ]
+      },
+      "notes": [
+        "SYNTHETIC UI CHECK ONLY",
+        ""
+      ]
+    },
+    {
+      "frame_id": "SYNTHETIC20260912_CH01_002",
+      "rater_1_count": 0,
+      "rater_2_count": 0,
+      "absolute_count_difference": 0,
+      "inferred_counts": [
+        0,
+        0
+      ],
+      "zone_counts": {
+        "front": [
+          0,
+          0
+        ],
+        "middle": [
+          0,
+          0
+        ],
+        "rear": [
+          0,
+          0
+        ],
+        "door": [
+          0,
+          0
+        ],
+        "unclear": [
+          0,
+          0
+        ]
+      },
+      "notes": [
+        "",
+        ""
+      ]
+    }
+  ],
+  "limitations": [
+    "Count agreement is not model accuracy or point-location agreement.",
+    "Different rater IDs do not prove independent annotation.",
+    "Counts include full/partial/inferred marks; invisible people are not measured.",
+    "Nearby frames are correlated; no confidence interval or population claim is computed."
+  ]
+}
