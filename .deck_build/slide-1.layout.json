@@ -1,0 +1,437 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/j6mmka",
+    "id": "j6mmka",
+    "slide": 1,
+    "layoutId": "e88b47aa-9db6-4750-b5ad-d8f296cca55f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "550c3687-341d-4050-96f4-aef2186548b4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#07131F",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e88b47aa-9db6-4750-b5ad-d8f296cca55f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "550c3687-341d-4050-96f4-aef2186548b4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "550c3687-341d-4050-96f4-aef2186548b4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/toj21sv6",
+      "id": "1",
+      "bbox": [
+        624,
+        0,
+        656,
+        720
+      ],
+      "alt": "Автобусы Алматы",
+      "contentType": "image/webp",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "bd6b0734-b063-4ec0-b8d0-4a7bcf116ed7",
+        "contentType": "image/webp",
+        "byteLength": 76184
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zydofy5o",
+      "id": "2",
+      "bbox": [
+        0,
+        0,
+        650,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#07131F",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yx4n6doj",
+      "id": "3",
+      "bbox": [
+        624,
+        0,
+        12,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#16D9C4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xwv6d8ny",
+      "id": "4",
+      "bbox": [
+        72,
+        62,
+        360,
+        36
+      ],
+      "geometry": "rect",
+      "text": "SANASH",
+      "textPreview": "SANASH",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#16D9C4",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SANASH"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SANASH",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#16D9C4",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SANASH",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#16D9C4",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvm5436d",
+      "id": "5",
+      "bbox": [
+        72,
+        178,
+        520,
+        190
+      ],
+      "geometry": "rect",
+      "text": "Загрузка автобуса\nв реальном времени",
+      "textPreview": "Загрузка автобуса | в реальном времени",
+      "resolvedFontSize": 54,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 54,
+        "typeface": "Aptos",
+        "color": "#F7FAFC",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Загрузка автобуса"
+          },
+          {
+            "index": 2,
+            "text": "в реальном времени"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Загрузка автобуса",
+          "lineSpacingPercent": 92000,
+          "resolvedTextStyle": {
+            "fontSize": 54,
+            "typeface": "Aptos",
+            "color": "#F7FAFC",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.92
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Загрузка автобуса",
+              "fontSize": 54,
+              "typeface": "Aptos",
+              "color": "#F7FAFC",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.92
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "в реальном времени",
+          "lineSpacingPercent": 92000,
+          "resolvedTextStyle": {
+            "fontSize": 54,
+            "typeface": "Aptos",
+            "color": "#F7FAFC",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.92
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "в реальном времени",
+              "fontSize": 54,
+              "typeface": "Aptos",
+              "color": "#F7FAFC",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.92
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/budoby5s",
+      "id": "6",
+      "bbox": [
+        74,
+        404,
+        480,
+        94
+      ],
+      "geometry": "rect",
+      "text": "Потолочная RGB-камера, edge-обработка и пять уровней загрузки для Avtobys",
+      "textPreview": "Потолочная RGB-камера, edge-обработка и пять уровней загрузки для Avtobys",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Aptos",
+        "color": "#DCE6ED",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Потолочная RGB-камера, edge-обработка и пять"
+          },
+          {
+            "index": 2,
+            "text": "уровней загрузки для Avtobys"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Потолочная RGB-камера, edge-обработка и пять уровней загрузки для Avtobys",
+          "lineSpacingPercent": 112000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#DCE6ED",
+            "alignment": "left",
+            "lineSpacing": 1.12
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Потолочная RGB-камера, edge-обработка и пять уровней загрузки для Avtobys",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#DCE6ED",
+              "alignment": "left",
+              "lineSpacing": 1.12
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/at4n2to7",
+      "id": "7",
+      "bbox": [
+        74,
+        620,
+        450,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Технический питч · Алматы · 2026",
+      "textPreview": "Технический питч · Алматы · 2026",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "Aptos",
+        "color": "#8FA7BA",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Технический питч · Алматы · 2026"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Технический питч · Алматы · 2026",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "typeface": "Aptos",
+            "color": "#8FA7BA",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Технический питч · Алматы · 2026",
+              "fontSize": 15,
+              "typeface": "Aptos",
+              "color": "#8FA7BA",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

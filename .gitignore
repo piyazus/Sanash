@@ -22,6 +22,11 @@ business/outreach/*
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.chart-data-*/
+.codex-finalizer/
+.deck_build/node_modules/
 tmp/
 .vscode/
 

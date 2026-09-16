@@ -1,0 +1,888 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BudgetAware в примере Sanash — научный режим</title>
+  <style>
+    :root {
+      --bg: #eef3fb;
+      --panel: #f7fbff;
+      --ink: #132846;
+      --muted: #5d7088;
+      --accent: #125ca8;
+      --good: #1f8f60;
+      --warn: #c7771c;
+      --bad: #bf3252;
+      --radius: 16px;
+      --shadow: 0 12px 28px rgba(16, 37, 59, 0.12);
+      --mono: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      --line: #d8e5f6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 10% 0%, #dbeaff 0%, transparent 36%),
+        radial-gradient(circle at 90% 0%, #efe8ff 0%, transparent 32%),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.35;
+      padding: 20px;
+    }
+
+    .app {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px;
+    }
+
+    .top {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background: linear-gradient(120deg, #0d4b95, #1f7ed1);
+      border-color: #0d4a94;
+      border: 1px solid #0d4a94;
+    }
+
+    .top:after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      right: -130px;
+      top: -120px;
+      border-radius: 50%;
+      background: #ffffff19;
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      margin: 0;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      color: #dce9ff;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      line-height: 1.18;
+      z-index: 1;
+      position: relative;
+    }
+
+    .lead {
+      margin: 8px 0 0;
+      color: #d6e9ff;
+      max-width: 85ch;
+      z-index: 1;
+      position: relative;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.02rem;
+    }
+
+    .two-col,
+    .three-col,
+    .split {
+      display: grid;
+      gap: 12px;
+    }
+
+    .two-col { grid-template-columns: 1.1fr 1fr; }
+    .three-col { grid-template-columns: repeat(3, 1fr); }
+
+    label {
+      font-size: 0.9rem;
+      color: #1f3750;
+      display: grid;
+      gap: 6px;
+    }
+
+    select, button, input[type="range"], .mini {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #bfd1ea;
+      font: inherit;
+      color: #112b47;
+    }
+
+    select, button, .mini {
+      padding: 10px;
+      background: #fff;
+    }
+
+    button {
+      margin-top: 4px;
+      border: 1px solid #145ea8;
+      color: white;
+      font-weight: 700;
+      background: linear-gradient(180deg, #2a86d8, #1360ad);
+      cursor: pointer;
+    }
+
+    .range-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .range-row output {
+      min-width: 72px;
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #bfd2ee;
+      background: #fff;
+      padding: 6px 8px;
+      font-family: var(--mono);
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #0d4f9a;
+    }
+
+    .metrics {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .metric {
+      background: #fff;
+      border: 1px dashed #c7dbf4;
+      border-radius: 12px;
+      padding: 8px;
+      display: grid;
+      gap: 2px;
+      min-height: 74px;
+    }
+
+    .metric small {
+      color: #6c8098;
+      font-size: 0.75rem;
+    }
+
+    .metric b {
+      font-size: 1rem;
+      line-height: 1.18;
+      color: #0c437d;
+    }
+
+    .formula {
+      margin: 0;
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      color: #1c3e61;
+      background: #edf4ff;
+      border: 1px solid #c9def9;
+      border-radius: 12px;
+      padding: 8px;
+      overflow: auto;
+      white-space: pre-wrap;
+    }
+
+    .small {
+      color: var(--muted);
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .kpi {
+      margin-top: 8px;
+      border: 1px solid #c9def9;
+      border-radius: 12px;
+      background: #f2f8ff;
+      padding: 8px 10px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .kpi span { color: #1f3c58; }
+
+    .meter {
+      position: relative;
+      margin-top: 8px;
+      height: 12px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #e6f0ff;
+    }
+
+    .seg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      transition: width 0.8s ease;
+      border-radius: 999px;
+    }
+
+    .seg.plan { background: #bbd0eb; left: 0; }
+    .seg.actual { background: linear-gradient(90deg, #2a84d4, #8cc1ff); right: auto; }
+
+    .meter-note {
+      margin-top: 6px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.76rem;
+      color: #657589;
+    }
+
+    .stages {
+      margin-top: 10px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .stage {
+      background: #fff;
+      border: 1px solid #d4e2f2;
+      border-radius: 12px;
+      padding: 8px;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .stage.show { opacity: 1; transform: translateY(0); }
+
+    .stage-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .grid {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      border: 1px solid #d6e3f3;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      font-size: 0.88rem;
+    }
+
+    th, td {
+      text-align: left;
+      border-bottom: 1px solid #e9f0fb;
+      padding: 8px 10px;
+    }
+
+    th {
+      background: #edf4ff;
+      color: #1b3a59;
+      font-weight: 700;
+    }
+
+    .history {
+      display: grid;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .history-item {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 8px;
+      background: #fff;
+      border: 1px dashed #c8dbf3;
+      border-radius: 10px;
+      padding: 8px;
+      align-items: start;
+      font-size: 0.88rem;
+    }
+
+    .history-item span {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #edf5ff;
+      color: #0d4f9a;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+
+    .scenario-card {
+      border: 1px solid #d2e3f4;
+      background: #fff;
+      border-radius: 12px;
+      padding: 9px;
+      cursor: pointer;
+      display: grid;
+      gap: 4px;
+      transition: transform 120ms ease, border-color 120ms ease;
+    }
+
+    .scenario-card:hover {
+      transform: translateY(-1px);
+      border-color: #9fc0eb;
+    }
+
+    .scenario-card h3 {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .scenario-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .chips {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      border-radius: 999px;
+      border: 1px solid #c8dff7;
+      background: #edf7ff;
+      color: #204a7a;
+      padding: 3px 9px;
+      font-size: 0.75rem;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 19px;
+      color: #304860;
+    }
+
+    pre {
+      margin: 8px 0 0;
+      background: #0d1f35;
+      color: #dbe9ff;
+      border: 1px solid #1c3150;
+      border-radius: 12px;
+      padding: 10px;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      white-space: pre;
+      overflow: auto;
+    }
+
+    .status {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px dashed #cfe2f7;
+      border-radius: 12px;
+      background: #fff;
+      color: #42576d;
+      font-size: 0.82rem;
+    }
+
+    .ok { color: var(--good); }
+    .warn { color: var(--warn); }
+    .bad { color: var(--bad); }
+
+    .meta {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: #5d7088;
+      font-size: 0.78rem;
+    }
+
+    .meta span {
+      background: #fff;
+      border: 1px solid #d2e3f5;
+      border-radius: 999px;
+      padding: 3px 9px;
+    }
+
+    @media (max-width: 1100px) {
+      .metrics { grid-template-columns: repeat(3, 1fr); }
+      .two-col, .three-col { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .metrics { grid-template-columns: repeat(2, 1fr); }
+      .top, .panel { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="panel top">
+      <p class="eyebrow">BudgetAware • методический протокол</p>
+      <h1>Sanash: имитация управляемого распределения output-токенов</h1>
+      <p class="lead">Интерактивная иллюстрация, где мы задаём экспериментальный сценарий и смотрим: как изменяется профиль распределения бюджета по этапам планирования и как растёт/снижается расхождение между планом и фактом. Это сделано в «исследовательском» формате с воспроизводимыми метриками.</p>
+    </section>
+
+    <section class="two-col">
+      <section class="panel">
+        <h2>1. Экспериментальный протокол</h2>
+        <div style="display:grid; gap:10px;">
+          <label>
+            Сценарий
+            <select id="scenarioSelect">
+              <option value="lean">Lean (быстрый и компактный)</option>
+              <option value="balanced">Balanced (станд. инженерный путь)</option>
+              <option value="deep">Deep (интенсивная валидация)</option>
+            </select>
+          </label>
+
+          <label>
+            Плановый бюджет (output токены)
+            <div class="range-row">
+              <input id="budgetRange" type="range" min="1800" max="9800" step="100" value="5200" />
+              <output id="budgetValue">5200</output>
+            </div>
+          </label>
+
+          <label>
+            Коэффициент неопределенности κ
+            <div class="range-row">
+              <input id="uncertaintyRange" type="range" min="0" max="1" step="0.05" value="0.35" />
+              <output id="uncertaintyValue">0.35</output>
+            </div>
+          </label>
+
+          <button id="runBtn">Запустить BudgetAware</button>
+        </div>
+
+        <div class="meta" id="metaLine"></div>
+
+        <div class="metrics">
+          <div class="metric"><small>Плановый бюджет</small><b id="plannedBudget">—</b></div>
+          <div class="metric"><small>Фактический бюджет</small><b id="actualBudget">—</b></div>
+          <div class="metric"><small>Дрейф (величина)</small><b id="driftValue">—</b><small id="driftPct">—</small></div>
+          <div class="metric"><small>MAD по стадиям (ср.)</small><b id="madValue">—</b></div>
+          <div class="metric"><small>TV-сходство</small><b id="matchValue">—</b><small>1 - TV</small></div>
+        </div>
+
+        <div class="split" style="margin-top:10px; grid-template-columns: repeat(2, 1fr);">
+          <div class="metric"><small>Энтропия распределения</small><b id="entropyValue">—</b><small>0=концентрировано, 1=равномерно</small></div>
+          <div class="metric"><small>KL дивергенция</small><b id="klValue">—</b><small>разница от плана</small></div>
+        </div>
+
+        <div style="margin-top:10px; display:grid; gap:8px;">
+          <strong>3) Итоговый вывод</strong>
+          <div class="kpi"><span>Результат для задачи</span><b id="outcomeText">—</b></div>
+          <div class="kpi"><span>Текущая гипотеза</span><b id="hypothesisText">—</b></div>
+          <ul id="fileList"></ul>
+        </div>
+
+        <p class="small" style="margin-top:8px;">Дифф-подобный фрагмент изменения:</p>
+        <pre id="snippet">Нажмите запуск, чтобы увидеть фрагмент.</pre>
+      </section>
+
+      <section class="panel">
+        <h2>2. Методика и формулы</h2>
+        <p class="small">Для каждого этапа j задано плановое распределение p_j и скорректированное априорноa_j:</p>
+        <pre class="formula">Шаг 1 (план):          B_plan = Σ B_j, где B_j = round(B * p_j)
+Шаг 2 (коррекция):      a'_j = a_j * (1 + κ · r_j)
+Шаг 3 (нормировка):      a_j = a'_j / Σ a'_k
+Шаг 4 (реальный бюджет): B_act = round(B · (1 + κ · γ_s))
+Шаг 5 (факт):           F_j = round(B_act · a_j)</pre>
+
+        <p class="small">Отклонения и метрики:</p>
+        <pre class="formula">Δ_j = F_j - B_j
+MAD = (1/n) Σ |Δ_j|
+TV = 0.5 · Σ |p_j - a_j|
+KL(P||A) = Σ p_j · ln(p_j / a_j)
+H(A)= -Σ a_j·ln(a_j)  (нормированная энтропия)</pre>
+
+        <h2>3. Этапная визуализация</h2>
+        <div id="stagesWrap" class="stages"></div>
+      </section>
+    </section>
+
+    <section class="panel">
+      <h2>4. Результаты по этапам</h2>
+      <div class="three-col">
+        <table class="grid" style="margin-top:0;">
+          <thead>
+            <tr>
+              <th>Этап</th>
+              <th>План</th>
+              <th>Факт</th>
+              <th>Δ (tk)</th>
+              <th>Δ (%)</th>
+            </tr>
+          </thead>
+          <tbody id="budgetRows"></tbody>
+        </table>
+
+        <div>
+          <h2 style="margin-top:0;">Дневник действий</h2>
+          <div id="history" class="history"></div>
+        </div>
+
+        <div>
+          <h2 style="margin-top:0;">Сравнение сценариев</h2>
+          <div id="scenarioCards" style="display:grid; gap:8px;"></div>
+        </div>
+      </div>
+
+      <div class="status" id="statusText">Нажмите «Запустить BudgetAware», чтобы получить воспроизводимый run.</div>
+    </section>
+  </main>
+
+  <script>
+    const scenarios = {
+      lean: {
+        label: "Lean — минимальный проход",
+        complexity: 0.58,
+        task: "Снижение риска ошибки классификации occupancy на порогах score",
+        hypothesis: "На малом бюджете приоритет — быстрое закрытие критических порогов без изменения контрактов API.",
+        files: [
+          "development/src/sanas_uplink/schema.py",
+          "development/src/sanas_uplink/message.py"
+        ],
+        stages: [
+          { name: "Inspect", plan: 14, baseActual: 13, risk: 0.32, note: "Выявление проблемных кейсов и устойчивости порогов." },
+          { name: "Plan", plan: 12, baseActual: 10, risk: 0.22, note: "Сжатый план правок и фиксации границ риск-порогов." },
+          { name: "Implement", plan: 48, baseActual: 52, risk: 0.68, note: "Две точечные коррекции и защита от неизвестного score." },
+          { name: "Verify", plan: 18, baseActual: 12, risk: 0.35, note: "Легкая проверка краевых score-сценариев." },
+          { name: "Report", plan: 8, baseActual: 13, risk: 0.19, note: "Только ключевые выводы и предположения." }
+        ],
+        history: [
+          "Сканируются текущие пороги и точки неустойчивости на границах score.",
+          "Уточняется стратегия: меньше этапов и сдержанный риск перерасхода.",
+          "Вносятся правки только в mapping thresholds.",
+          "Проводится минимальная краевая валидация и формируется итог."
+        ],
+        outcome: "Снижение частоты ошибочной классификации на нестабильных краях без изменения API."
+      },
+      balanced: {
+        label: "Balanced — стандартный рабочий проход",
+        complexity: 0.74,
+        task: "Нормализация score в диапазон 0..1 и контроль устойчивых порогов",
+        hypothesis: "Для качества важно больше средств на Inspect+Implement и добавление regression-guard тестов.",
+        files: [
+          "development/src/sanas_uplink/schema.py",
+          "development/src/sanas_uplink/filters.py",
+          "development/src/sanas_uplink/tests/test_crowding_schema.py"
+        ],
+        stages: [
+          { name: "Inspect", plan: 14, baseActual: 13, risk: 0.40, note: "Поиск связей pipeline и критических точек в API-контрактах." },
+          { name: "Plan", plan: 16, baseActual: 14, risk: 0.26, note: "Фиксация набора нормализации и тестов граничных значений." },
+          { name: "Implement", plan: 42, baseActual: 45, risk: 0.70, note: "Вносятся пороги и guardrails для schema/filters." },
+          { name: "Verify", plan: 18, baseActual: 21, risk: 0.59, note: "Добавляются тесты на диапазон 0..1 и выбросы." },
+          { name: "Report", plan: 10, baseActual: 8, risk: 0.30, note: "Итог с фиксированными assumptions и рисками в интеграции." }
+        ],
+        history: [
+          "Анализируется путь передачи данных: камера → occupancy state → отправка наружу.",
+          "Формируется матрица требований к обратной связи по quality gates.",
+          "Правки делаются для устойчивости в критических случаях и конфликтных score.",
+          "Дополняются тесты стабильности и проверяется воспроизводимость переходов."
+        ],
+        outcome: "Нормализация score и устойчивый 5-состояний вывод воспроизводимы на регрессионном наборе."
+      },
+      deep: {
+        label: "Deep — расширенная валидация",
+        complexity: 1.05,
+        task: "Добавление сглаживания и метрик надежности перед пилотом",
+        hypothesis: "Перед публикацией нужен слой шумоподавления + метрики уверенности по временной трассе score.",
+        files: [
+          "development/src/sanas_uplink/schema.py",
+          "development/src/sanas_uplink/filters.py",
+          "development/src/sanas_uplink/validation.py",
+          "development/src/sanas_uplink/tests/test_crowding_schema.py",
+          "development/src/sanas_uplink/tests/test_smoothing.py",
+          "development/src/sanas_uplink/README.md"
+        ],
+        stages: [
+          { name: "Inspect", plan: 11, baseActual: 11, risk: 0.52, note: "Полный разбор pipeline и мест деградации на потоке." },
+          { name: "Plan", plan: 16, baseActual: 19, risk: 0.56, note: "План включает EMA-сглаживание и confidence-трекинг." },
+          { name: "Implement", plan: 46, baseActual: 53, risk: 0.86, note: "Добавляется адаптивный фильтр score и анти-колебание state." },
+          { name: "Verify", plan: 20, baseActual: 14, risk: 0.71, note: "Расширенный набор тестов на шум, пропуски и нестабильные кадры." },
+          { name: "Report", plan: 7, baseActual: 6, risk: 0.22, note: "Концентрированный отчёт для пилота и чеклист на входе в эксплуатацию." }
+        ],
+        history: [
+          "Фиксация всех деградационных точек в потоке измерений.",
+          "Ввод adaptive smoothing для score + регуляция jitter state.",
+          "Появляются метрики confidence и тесты на нестабильность входа.",
+          "Формируется checklist и минимальные критерии допуска к пилоту."
+        ],
+        outcome: "Пакет готов к смоук-тестам на реальных видеопотоках перед пилотом."
+      }
+    };
+
+    const refs = {
+      lean: `# schema.py\n+ def occupancy_state(score):\n+ ... if score is None: return "unknown"\n+ return clamp_bucket(score, [0.2, 0.45, 0.7, 0.85])`,
+      balanced: `# schema.py\n+ LEVELS = ["low", "normal", "medium", "high", "full"]\n+ THRESHOLD = [0.0, 0.16, 0.32, 0.55, 0.80, 1.0]\n+ score = max(0.0, min(1.0, float(score)))`,
+      deep: `# validation.py\n+ from collections import deque\n+ history = deque(maxlen=5)\n+ score_smoothed = sum(history) / len(history)  # lightweight smoothing`
+    };
+
+    const scenarioSelect = document.getElementById('scenarioSelect');
+    const budgetRange = document.getElementById('budgetRange');
+    const budgetValue = document.getElementById('budgetValue');
+    const uncertaintyRange = document.getElementById('uncertaintyRange');
+    const uncertaintyValue = document.getElementById('uncertaintyValue');
+    const runBtn = document.getElementById('runBtn');
+    const plannedBudget = document.getElementById('plannedBudget');
+    const actualBudget = document.getElementById('actualBudget');
+    const driftValue = document.getElementById('driftValue');
+    const driftPct = document.getElementById('driftPct');
+    const madValue = document.getElementById('madValue');
+    const matchValue = document.getElementById('matchValue');
+    const entropyValue = document.getElementById('entropyValue');
+    const klValue = document.getElementById('klValue');
+    const outcomeText = document.getElementById('outcomeText');
+    const hypothesisText = document.getElementById('hypothesisText');
+    const fileList = document.getElementById('fileList');
+    const snippet = document.getElementById('snippet');
+    const budgetRows = document.getElementById('budgetRows');
+    const stagesWrap = document.getElementById('stagesWrap');
+    const history = document.getElementById('history');
+    const scenarioCards = document.getElementById('scenarioCards');
+    const statusText = document.getElementById('statusText');
+    const metaLine = document.getElementById('metaLine');
+
+    const norm = arr => {
+      const s = arr.reduce((x, y) => x + y, 0);
+      return arr.map(v => (s === 0 ? 0 : (v / s) * 100));
+    };
+
+    const tokensFromShares = (total, shares) => {
+      const sharesClamped = shares.map(v => Math.max(0, v));
+      const normed = norm(sharesClamped);
+      let remainder = total;
+      return normed.map((s, i) => {
+        if (i < normed.length - 1) {
+          const t = Math.max(0, Math.round(total * (s / 100)));
+          remainder -= t;
+          return t;
+        }
+        return Math.max(0, remainder);
+      });
+    };
+
+    const entropy = shares => {
+      const p = shares.map(v => Math.max(1e-9, v / 100));
+      const h = -p.reduce((acc, v) => acc - v * Math.log(v), 0);
+      return h / Math.log(p.length);
+    };
+
+    const totalVariation = (planP, actualP) => {
+      return 0.5 * planP.reduce((acc, p, i) => acc + Math.abs(p - actualP[i]), 0);
+    };
+
+    const klDiv = (planP, actualP) => {
+      const eps = 1e-12;
+      return planP.reduce((acc, p, i) => acc + p * Math.log(p / Math.max(eps, actualP[i])), 0);
+    };
+
+    const seedFromState = (scenario, budget, uncertainty) => {
+      const s = `${scenario}|${budget}|${uncertainty.toFixed(2)}|${Date.now().toString(36)}`;
+      let h = 2166136261;
+      for (let i = 0; i < s.length; i++) {
+        h ^= s.charCodeAt(i);
+        h += (h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24);
+      }
+      return Math.abs(h).toString(36).slice(0, 9).toUpperCase();
+    };
+
+    const sign = value => (value > 0 ? `+${value}` : `${value}`);
+
+    const pct = (x) => `${(x >= 0 ? '+' : '')}${x.toFixed(2)}%`;
+
+    const renderStages = (stages, planShares, planTokens, actualShares, actualTokens) => {
+      stagesWrap.innerHTML = '';
+      stages.forEach((s, idx) => {
+        const deltaShare = actualShares[idx] - planShares[idx];
+        const row = document.createElement('article');
+        row.className = 'stage';
+        requestAnimationFrame(() => row.classList.add('show'));
+
+        const cls = deltaShare > 1.8 ? 'bad' : (deltaShare < -1.8 ? 'ok' : '');
+        row.innerHTML = `
+          <div class="stage-head">
+            <strong>${s.name}</strong>
+            <span class="${cls}">${deltaShare >= 0 ? '+' : ''}${deltaShare.toFixed(1)} п.п.</span>
+          </div>
+          <div class="meter">
+            <div class="seg plan" style="width: 0%;"></div>
+            <div class="seg actual" style="width: 0%; left: 0; opacity: 0.85;"></div>
+          </div>
+          <div class="meter-note"><span>план: ${planShares[idx].toFixed(1)}% (${planTokens[idx]} tk)</span><span>факт: ${actualShares[idx].toFixed(1)}% (${actualTokens[idx]} tk)</span></div>
+          <div class="small" style="margin-top:5px;">${s.note}</div>
+        `;
+        stagesWrap.appendChild(row);
+
+        setTimeout(() => {
+          row.querySelector('.plan').style.width = `${planShares[idx]}%`;
+          row.querySelector('.actual').style.width = `${actualShares[idx]}%`;
+        }, 30);
+      });
+    };
+
+    const formatFileList = files => {
+      fileList.innerHTML = files.map(f => `<li>${f}</li>`).join('');
+    };
+
+    const renderHistory = items => {
+      history.innerHTML = '';
+      items.forEach((text, idx) => {
+        const e = document.createElement('div');
+        e.className = 'history-item';
+        e.innerHTML = `<span>${idx + 1}</span><div>${text}</div>`;
+        history.appendChild(e);
+      });
+    };
+
+    const renderScenarioCards = () => {
+      scenarioCards.innerHTML = '';
+      Object.entries(scenarios).forEach(([k, sc]) => {
+        const el = document.createElement('article');
+        el.className = 'scenario-card';
+        el.innerHTML = `
+          <h3>${sc.label}</h3>
+          <p>${sc.hypothesis}</p>
+          <div class="chips">
+            <span class="chip">κ=${sc.complexity.toFixed(2)}</span>
+            <span class="chip">${sc.files.length} файлов</span>
+            <span class="chip">Этапов: ${sc.stages.length}</span>
+          </div>
+        `;
+        el.addEventListener('click', () => {
+          scenarioSelect.value = k;
+          run();
+        });
+        scenarioCards.appendChild(el);
+      });
+    };
+
+    const mean = arr => arr.reduce((a, b) => a + b, 0) / arr.length;
+
+    function run() {
+      const key = scenarioSelect.value;
+      const sc = scenarios[key];
+      const B = Number(budgetRange.value);
+      const kappa = Number(uncertaintyRange.value);
+
+      const planShares = sc.stages.map(s => s.plan);
+      const baseActual = sc.stages.map(s => s.baseActual);
+      const risk = sc.stages.map(s => s.risk);
+
+      const corrected = baseActual.map((v, i) => v * (1 + kappa * risk[i]));
+      const actualShares = norm(corrected);
+      const Bplanned = B;
+      const Bactual = Math.max(0, Math.round(B * (1 + kappa * (0.09 + 0.18 * sc.complexity))));
+      const budgetOvershoot = Bactual - Bplanned;
+
+      const planTokens = tokensFromShares(Bplanned, planShares);
+      const actualTokens = tokensFromShares(Bactual, actualShares);
+      const delta = actualTokens.map((v, i) => v - planTokens[i]);
+      const mad = delta.reduce((acc, d) => acc + Math.abs(d), 0) / delta.length;
+      const tv = totalVariation(
+        planShares.map(v => v / 100),
+        actualShares.map(v => v / 100)
+      );
+      const kl = klDiv(
+        planShares.map(v => v / 100),
+        actualShares.map(v => v / 100)
+      );
+      const ent = entropy(actualShares);
+      const match = Math.max(0, 1 - tv) * 100;
+      const drp = budgetOvershoot;
+
+      const seed = seedFromState(key, B, kappa);
+
+      plannedBudget.textContent = `${Bplanned.toLocaleString()} tk`;
+      actualBudget.textContent = `${Bactual.toLocaleString()} tk`;
+      driftValue.textContent = `${sign(drp)} tk`;
+      driftValue.className = drp > 0 ? 'bad' : (drp < 0 ? 'ok' : '');
+      driftPct.textContent = `${pct((drp / Bplanned) * 100)} от планового`;
+      madValue.textContent = `${mad.toFixed(1)} tk`;
+      matchValue.textContent = `${match.toFixed(1)}%`;
+      entropyValue.textContent = ent.toFixed(3);
+      klValue.textContent = kl.toFixed(3);
+      outcomeText.textContent = sc.outcome;
+      hypothesisText.textContent = sc.hypothesis;
+
+      budgetRows.innerHTML = '';
+      sc.stages.forEach((stage, i) => {
+        const d = delta[i];
+        const dPct = (planTokens[i] ? (d / planTokens[i]) * 100 : 0);
+        const row = document.createElement('tr');
+        const cls = d > 0 ? 'bad' : (d < 0 ? 'ok' : '');
+        row.innerHTML = `
+          <td>${stage.name}</td>
+          <td>${planShares[i].toFixed(1)}% (${planTokens[i]})</td>
+          <td>${actualShares[i].toFixed(1)}% (${actualTokens[i]})</td>
+          <td class="${cls}">${sign(d)} tk</td>
+          <td class="${cls}">${dPct >= 0 ? '+' : ''}${dPct.toFixed(1)}%</td>
+        `;
+        budgetRows.appendChild(row);
+      });
+
+      renderStages(sc.stages, planShares, planTokens, actualShares, actualTokens);
+      renderHistory(sc.history);
+      formatFileList(sc.files);
+      snippet.textContent = refs[key];
+      budgetValue.textContent = B;
+      uncertaintyValue.textContent = kappa.toFixed(2);
+
+      const driftInterpret = drp > 0
+        ? 'перерасход бюджета из-за повышенной неопределенности'
+        : (drp < 0 ? 'снижение расхода за счет экономии этапа' : 'баланс сохранён');
+
+      metaLine.innerHTML = `
+        <span>seed: ${seed}</span>
+        <span>время запуска: ${new Date().toLocaleTimeString('ru-RU')}</span>
+        <span>толщина риска: ${sc.complexity.toFixed(2)}</span>
+      `;
+
+      statusText.innerHTML = `
+        Режим сценария «${sc.label}» выполнен: расхождение этапов измерено, итоговая метрика сходства <strong>${match.toFixed(1)}%</strong>, 
+        ${driftInterpret} (drift = <strong>${sign(drp)} tk</strong>).
+      `;
+
+      scenarioCards.querySelectorAll('.scenario-card').forEach((card, idx) => {
+        card.style.borderColor = '#d2e3f4';
+      });
+    }
+
+    const sync = () => {
+      const presets = { lean: 3200, balanced: 5400, deep: 8600 };
+      budgetRange.value = presets[scenarioSelect.value] || 5400;
+      run();
+    };
+
+    scenarioSelect.addEventListener('change', sync);
+    budgetRange.addEventListener('input', () => {
+      budgetValue.textContent = budgetRange.value;
+    });
+    uncertaintyRange.addEventListener('input', () => {
+      uncertaintyValue.textContent = Number(uncertaintyRange.value).toFixed(2);
+    });
+    runBtn.addEventListener('click', run);
+
+    renderScenarioCards();
+    budgetValue.textContent = budgetRange.value;
+    uncertaintyValue.textContent = Number(uncertaintyRange.value).toFixed(2);
+    sync();
+  </script>
+</body>
+</html>
